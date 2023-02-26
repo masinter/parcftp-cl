@@ -1,0 +1,42 @@
+% -*- Mode: TeX -*-
+
+%%% \bookline  =  Short name of book
+%%
+%%  This used to be called "Working Draft---Programming Language Common Lisp"
+%%  on every page, but that's problematic since if we `promote' it we'd have to
+%%  correct every page.  Instead, let's just say the short title on every page
+%%  and have the full status on the cover page.
+
+%\let\bookline\empty  % No longer needed. -kmp 8-Apr-92
+\def\bookline{Programming Language---Common Lisp}
+
+%%% \longbookline  =  Full name of book
+%%
+%%  This is used only on true cover page, so is permitted to have the whole long
+%%  drawn out name.
+
+\def\longbookline{draft proposed American National Standard
+for Information Systems---\bookline}
+
+% \def\longbookline{working draft American National Standard
+% for Information Systems---\bookline}
+
+% \DocumentNumber
+% X3J13's document number.
+
+\def\DocumentNumber{X3J13/94-101R}
+
+% \VersionDisclaimer
+% Special information about this version.
+
+%\def\VersionDisclaimer{This page intentionally left almost blank.}
+\def\VersionDisclaimer{{\it Versions 15.17 (X3J13/94-101) and 15.17R (X3J13/94-101R)
+  are absolutely identical except for
+      changes to the document number and date on the cover and in each page's header,
+      addition of this disclaimer on the back of the cover page,
+      additions to the Edit and Review History on page Credits iv,
+  and changes to the names and headings in the credits section on pages Credits v-vii.
+  There are NO technical changes between these versions;
+  from a normative point of view, 
+  the documents X3J13/94-101 and X3J13/94-101R
+  are entirely interchangeable.}}

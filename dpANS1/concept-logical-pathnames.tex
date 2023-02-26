@@ -1,0 +1,93 @@
+% -*- Mode: TeX -*-
+
+\beginSubsection{Syntax of Logical Pathname Namestrings}
+
+\issue{PATHNAME-LOGICAL:ADD}
+The syntax of a \term{logical pathname} \term{namestring} is as follows:
+ 
+{\tt \lbracket\ \i{host} ":" \rbracket\ \lbracket\ ";" \rbracket\ 
+\lbr\ \i{directory} ";" \rbr\ * \lbracket\ \i{name} \rbracket\ 
+\lbracket\  "." \i{type} \lbracket\ "." 
+\i{version} \rbracket\ \rbracket\/}
+
+\noindent
+\boxfig
+{\advance\baselineskip by 2.5pt
+\halign{\hskip\leftskip#\hfil&#\hfil\cr
+\i{host}::$=$ \i{word} &\cr
+\i{directory}::$=$ \i{word} $\vert$ \i{wildcard-word} $\vert$
+\f{**} &\cr
+\i{name}::$=$ \i{word} $\vert$ \i{wildcard-word} &\cr
+\i{type}::$=$ \i{word} $\vert$ \i{wildcard-word} &\cr
+\i{version}::$=$  \i{pos-int} $\vert$ \f{newest} 
+$\vert$ \f{NEWEST} $\vert$ \f{*} &\cr
+\i{word}::$=$ one or more uppercase letters, digits, and hyphens. &\cr
+\i{wildcard-word}::$=$ one or more asterisks, uppercase letters, &\cr
+  digits, and hyphens, including at least one asterisk, with no two
+  asterisks adjacent.  &\cr
+\i{pos-int}::$=$ \term{integer} {\tt > 0} &\cr
+}}
+\caption{Logical-pathname syntax}
+\endfig
+\indent 
+The following information applies to the syntax.
+\beginlist
+\itemitem{\b{Host}}
+
+\i{Host} has been defined as a \term{logical pathname} host 
+by using \macref{setf} of \funref{logical-pathname-translations}.
+The \term{logical pathname} host name \f{"SYS"} is reserved for the implementation.
+The existence and meaning of \f{SYS:} \term{logical pathnames} 
+is \term{implementation-defined}.
+ 
+\itemitem{\b{Device}}
+ 
+There is no device,
+so the device component of a \term{logical pathname} is always \kwd{unspecific}.
+%!!! Put this elsewhere? -kmp 12-May-91
+No other component can be \kwd{unspecific}.  
+
+\itemitem{\b{Directory}}
+
+If a \term{semicolon} precedes the directories,
+the \i{directory} component is relative, otherwise it is absolute.
+\f{**} parses into \kwd{wild-inferiors}.
+ 
+\itemitem{\b{Type}}
+
+The \i{type} of a 
+\term{logical pathname} for a \clisp\ source file is \f{"LISP"}.
+  This should be translated into whatever type is appropriate in a physical
+  pathname.
+ 
+\itemitem{\b{Version}}
+
+Some file systems do not have \i{versions}.  
+\term{logical pathname} translation to such a file system ignores the 
+\i{version}.  This implies that a program cannot rely on being able
+to store more than one version of a file named by a \term{logical pathname}.
+\f{*} parses into \kwd{wild}.  
+
+\itemitem{\b{Wildcard-word}}
+
+Each asterisk in a \i{wildcard-word} matches a sequence of zero or more characters.
+The \i{wildcard-word} \f{*} parses into \kwd{wild},
+the others parse into \term{strings}.
+ 
+\itemitem{\b{Any other value}}
+ 
+The consequences of using any value not specified here as a 
+\term{logical pathname} component are unspecified.
+
+\endlist 
+
+In \i{words} and \i{wildcard-words} lowercase letters are translated to
+uppercase.  The consequences of using other characters are unspecified.
+The null string \f{""} is not a valid value for any component of a \term{logical pathname},
+since \f{""} is neither a \i{word} nor a \i{wildcard-word}.
+
+%This wasn't a valid reference.
+%See ``Input/Output'' for parsing and file manipulation details.
+\endissue{PATHNAME-LOGICAL:ADD}
+
+\endSubsection%{Syntax of Logical Pathname Namestrings}

@@ -1,0 +1,33 @@
+For now, this directory contains the files that changed between
+version 15.17 and 15.17R.
+
+ Changed source files:
+
+   chap-0.tex                4229(8) 08/13/94 00:07:00 ftp
+   chap-0-edit-history.tex  23069(8) 08/13/94 00:07:00 ftp
+   setup-title.tex           1613(8) 08/13/94 00:07:00 ftp
+   setup-version.tex          217(8) 08/13/94 00:07:00 ftp
+
+ Changed product files:
+
+   chap-0.dvi.Z             78327(8) 08/13/94 00:06:00 ftp
+
+   Actually, if one re-ran TeX, all of the chapters chap-1.dvi
+   through chap-26.dvi (and chap-a.dvi) would also change because
+   the header on each page would change.  But no other part would
+   change and it's not recommended that you kill the trees needed
+   to print those other files if you don't have to.
+
+   Eventually, those .dvi.Z files may be placed here just in case,
+   but for now we haven't bothered.
+
+ Other support files:
+
+   signatures.text            245(8) 08/13/94 00:07:00 ftp
+
+   This contains the md5 signatures for the files in this directory.
+
+ Missing files:
+
+   You can get the rest of the files from its sibling directory: dpANS3
+

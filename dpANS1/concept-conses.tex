@@ -1,0 +1,79 @@
+% -*- Mode: TeX -*-
+
+\Thenextfigure\ lists some \term{defined names}
+that are applicable to \term{conses}, \term{lists}, and \term{trees}.
+
+\displaythree{List defined names -- 1}{
+append&cdadr&list*\cr
+butlast&cdar&list-length\cr
+caaaar&cddaar&make-list\cr
+caaadr&cddadr&nbutlast\cr
+caaar&cddar&nconc\cr
+caadar&cdddar&ninth\cr
+caaddr&cddddr&nreconc\cr
+caadr&cdddr&nth\cr
+caar&cddr&nthcdr\cr
+cadaar&cdr&pop\cr
+cadadr&cons&push\cr
+cadar&copy-alist&pushnew\cr
+caddar&copy-list&rest\cr
+cadddr&copy-tree&revappend\cr
+caddr&eighth&second\cr
+cadr&endp&seventh\cr
+car&fifth&sixth\cr
+cdaaar&first&tenth\cr
+cdaadr&fourth&third\cr
+cdaar&last&tree-equal\cr
+cdadar&ldiff&\cr
+cdaddr&list&\cr
+}
+
+ 
+\Thenextfigure\ lists some \term{list} structure alteration and
+% expression
+substitution \term{defined names}.
+
+\displaythree{List defined names -- 2}{
+nsublis&rplaca&subst-if\cr
+nsubst&rplacd&subst-if-not\cr
+nsubst-if&sublis&\cr
+nsubst-if-not&subst&\cr
+}
+
+\Thenextfigure\ lists some set operation and association list \term{defined names}.
+\goodbreak         
+
+\displaythree{List defined names -- 3}{
+acons&member-if-not&rassoc-if-not\cr
+adjoin&nintersection&set-difference\cr
+assoc&nset-difference&set-exclusive-or\cr
+assoc-if&nset-exclusive-or&subsetp\cr
+assoc-if-not&nunion&tailp\cr
+intersection&pairlis&union\cr
+member&rassoc&\cr
+member-if&rassoc-if&\cr
+}
+
+%%They can find this definition in the glossary.
+% A \term{dotted list} is a chain of \term{conses} linked 
+% by their \term{cdr} components and terminated by an 
+% \term{object} that is not a \term{cons} and not \nil.
+
+%Barrett: This forces something like
+% 	    \f{(MEMBER X '(X Y . Z))} to detect the \f{( . Z )}
+% 	  in safe code even when it would not naturally be reached
+% 	  by the search.  We should soften this slightly.
+%KMP: Fixed.
+Except as explicitly specified otherwise,
+any \term{standardized} \term{function} that takes a \term{parameter}
+that required to be a \term{list} should be prepared to signal 
+an error \oftype{type-error} if the \term{value} received is a \term{dotted list}.
+
+% Sandra complained that this was only said a few places, 
+% and needed to be said more.
+% This is a stopgap while we make sure we mean it everywhere.
+Except as explicitly specified otherwise,
+for any \term{standardized} \term{function} that takes a \term{parameter}
+that is required to be a \term{list}, 
+the consequences are undefined 
+if that \term{list} is \term{circular}.

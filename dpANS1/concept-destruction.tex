@@ -1,0 +1,52 @@
+% -*- Mode: TeX -*-
+% Destructive Operations
+
+\beginsubsection{Transfer of Control during a Destructive Operation}
+
+%%% This text used to just apply to SORT.
+%%% KMP modified it to generalize from errors to arbitrary transfer 
+%%%   of control, since not just errors can cause this. Consider:
+%%%   (prog foo ((a (list 1 2 3 4 5 6 7 8 9 10)))
+%%%     (sort a #'(lambda (x y) 
+%%%                 (if (zerop (random 5)) (return-from foo a) (> x y)))))
+%%% Barrett suggested further generalizing it for other the sake of 
+%%%   application to other destructive operations.
+%%% KMP agreed since it's true that things are ill-defined whether we say 
+%%% it or not, so we might as well say it explicitly.
+%%%
+%%% Original text from SORT:
+%%%  %% 14.4.0 8
+%%%  Should execution of the \param{key} or the \param{predicate} 
+%%%  cause an error,
+%%%  the state of the \param{sequence} being sorted is
+%%%  undefined.  However, if the error is corrected, the sort will
+%%%  proceed correctly. 
+
+Should a transfer of control out of a \term{destructive} operation occur
+(\eg due to an error) the state of the \param{object} being modified is
+\term{implementation-dependent}.
+
+\beginsubsubsection{Examples of Transfer of Control during a Destructive Operation}
+
+The following examples illustrate some of the many ways in which the
+\term{implementation-dependent} nature of the modification can manifest
+itself.
+
+\code
+ (let ((a (list 2 1 4 3 7 6 'five)))
+   (ignore-errors (sort a #'<))
+   a)
+\EV (1 2 3 4 6 7 FIVE)
+\OV (2 1 4 3 7 6 FIVE)
+\OV (2)
+
+ (prog foo ((a (list 1 2 3 4 5 6 7 8 9 10)))
+   (sort a #'(lambda (x y) (if (zerop (random 5)) (return-from foo a) (> x y)))))
+\EV (1 2 3 4 5 6 7 8 9 10)
+\OV (3 4 5 6 2 7 8 9 10 1)
+\OV (1 2 4 3)
+\endcode
+
+\endsubsubsection%{Examples of Transfer of Control during a Destructive Operation}
+
+\endsubsection%{Transfer of Control during a Destructive Operation}

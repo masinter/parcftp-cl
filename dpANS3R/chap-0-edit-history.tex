@@ -1,0 +1,499 @@
+% -*- Mode: TeX -*-
+
+$$\halign to \hsize{\leftskip\iskip#\hfil\quad&#\hfil\quad&#\hfil\cr
+Principal Technical Editors:\cr
+\noalign{\vskip 8pt}
+\b{Kent M. Pitman}     & Harlequin, Inc. 	       & 1993-present \cr
+		       & Symbolics, Inc. 	       & 1990-1992    \cr
+\b{Kathy Chapman}      & Digital Equipment Corporation & 1987-1989    \cr
+\noalign{\vskip 8pt}
+Occasional Guest Editors:\cr
+\noalign{\vskip 8pt}
+\b{Richard P. Gabriel} & Lucid, Inc.\cr
+\b{Sandra Loosemore}   & self\cr
+}
+$$
+
+\goodbreak
+
+$$\halign to \hsize{\leftskip\iskip#\hfil\cr
+Financial Contributors to the Editing Process:\cr
+\noalign{\vskip 8pt}
+\b{Digital Equipment Corporation}\cr
+\b{Harlequin, Ltd.} and \b{Harlequin, Inc.}\cr
+\b{Symbolics, Inc.}\cr
+\b{Apple, Inc.}\cr
+\b{Franz, Inc.}\cr
+\b{Lucid, Inc.}\cr}
+$$
+
+\goodbreak
+
+Special thanks to Guy L. Steele Jr. and Digital Press for producing {\CLtL},
+and for relaxing copyright restrictions enough to make it possible for that
+document's text to provide an early basis of this work.
+
+\vfill\eject
+
+$$\halign to \hsize{\leftskip\iskip#\hfil\quad&#\hfil\quad&#\hfil\cr
+Edit and Review History:\span\span\cr
+\noalign{\vskip 8pt}
+ 01-Jan-89 & Chapman   & Draft of Chapters 1.1 (scope).\cr
+ 01-Jan-89 & Pitman    & Draft of Chapters 5.1 (conditions).\cr
+ 01-May-89 & Chapman   & Draft of 1.2--1.6. \cr
+ 01-May-89 & Gabriel   & Rewrite of Chapters 1.1 and 5.1.\cr
+ 01-Jun-89 & Loosemore & Review of Chapter 4.2. \cr
+ 01-Jun-89 & Pitman    & Review of Glossary \cr
+ 15-Jun-89 & Gabriel   & Rewrite of Glossary \cr
+ 16-Jun-89 & Margolin  & Comments on Chapters 2.1--2.4 (types, objects).\cr
+ 23-Jun-89 & Gabriel   & Rewrite of 4.2. \cr
+ 07-Jul-89 & Moon      & Review of Chapters 4.1, 4.3 \cr
+ 12-Jul-89 & Gabriel   & Revision of 4.2. \cr
+ 15-Jul-89 & Pitman    & Review of Glossary \cr
+ 18-Jul-89 & Gray      & Comments on 5.1 \cr
+ 25-Jul-89 & Gabriel   & Revision of Chapters 1.2--1.6, 2.2\cr
+ 26-Jul-89 & Gabriel   & Rewrite of 5.1 \cr
+ 26-Jul-89 & Gabriel   & Rewrite of 4.1. \cr
+ 27-Jul-89 & Pitman    & Revision of 5.1 \cr
+ 27-Jul-89 & Gabriel   & Revision of 5.1 \cr
+ 28-Jul-89 & Chapman   & Draft of 2.2, 3.2, 3.3, 5.4 \cr
+ 28-Jul-89 & Gabriel   & Revision of Glossary.\cr
+ 01-Oct-89 & Margolin  & Review of Dictionary from Jun-89 draft.\cr
+ 20-Jan-91 & Pitman    & Draft 8.81 (for X3J13 review). Document X3J13/91-101.\cr
+ 29-Jan-91 & Waters    & Review of 8.81/Chapter 23 (Printer).\cr
+ 01-Mar-91 & Moon      & Review of 8.81/Chapter 4 (Evaluation and Compilation).\cr
+ 01-Mar-91 & Barrett   & Review of 8.81/Chapter 4 (Evaluation and Compilation).\cr
+ 01-Mar-91 & Moon      & Review of 8.81/Glossary.\cr
+ 13-Mar-90 & Wechsler  & Review of 8.81/Glossary.\cr
+ 21-Mar-91 & Kerns     & Review of 8.81/Chapter 1.\cr
+ 26-Apr-91 & Margolin  & Review of 8.81/Chapters 1--12.\cr
+ 15-May-91 & Barrett   & Review of 8.81/Chapters 5 (Misc), 11 (Conditions).\cr
+ 04-Jun-91 & Laddaga   & Review of 9.60/Chapter 20 (Pathnames).\cr
+ 10-Jun-91 & Pitman    & Draft 9.126 (for X3J13 review). Document X3J13/91-102.\cr
+ 02-Sep-91 & Barrett   & Review of 9.28/Chapter 4 (Evaluation and Compilation).\cr
+ 02-Sep-91 & Barrett   & Review of 9.52/Chapter 4 (Evaluation and Compilation).\cr
+ 15-Sep-91 & Barrett   & Review of 9.126/Chapter 4 (Evaluation and Compilation)\cr
+	   &	       & \quad and Chapter 7 (Evaluation/Compilation).\cr
+	   &	       & \quad(some comments not yet merged)\cr
+ 18-Sep-91 & Wechsler  & Review of 9.126.\cr
+ 21-Sep-91 & Barrett   & Review of 10.16/Chapter 7 (Evaluation/Compilation).\cr
+	   &	       & \quad(some comments not yet merged)\cr
+ 28-Sep-91 & Barrett   & Review of 10.95/Chapter 25 (Printer).\cr
+	   &	       & \quad(some comments not yet merged)\cr
+ 13-Oct-91 & Barrett   & Review (and help editing) of 10.104/Chapter 4\cr
+ 	   &	       & \quad(Evaluation and Compilation)\cr
+ 15-Oct-91 & Waters    & Review of 10.95/Chapter 25 (Printer).\cr
+ 24-Oct-91 & Pitman    & Draft 10.156 (for X3J13 review). Document X3J13/91-103.\cr
+ 04-Nov-91 & Moon      & Review of 10.156/Chapter 5 (Data and Control Flow)\cr
+	   &	       & \quad and Chapter 26 (Glossary).\cr
+ 11-Nov-91 & Loosemore & Review of 10.156/Chapter 2 (Syntax),\cr
+	   &	       & \quad Chapter 3 (Evaluation and Compilation),\cr
+	   &	       & \quad Chapter 5 (Data and Control Flow), 
+			       and Chapter 8 (Structures).\cr
+ 02-Dec-91 & Barrett   & Review of 10.156/Chapter 4 (Types and Classes),\cr
+	   &	       & \quad and Chapter 10 (Symbols).\cr
+ 02-Dec-91 & Barrett   & Review of 10.156/Chapter 3 (Evaluation and Compilation),\cr
+	   &	       & \quad Chapter 6 (Iteration), Chapter 9 (Conditions),\cr
+	   &           & \quad and Chapter 14 (Conses).\cr
+	   &	       & \quad(some comments not yet merged)\cr
+ 09-Dec-91 & Gabriel   & Review of 10.156/Chapter 1 (Introduction),\cr
+           &           & \quad Chapter 2 (Syntax), 
+			   and Chapter 3 (Evaluation and Compilation).\cr
+ 09-Dec-91 & Ida       & Light review of 10.156/Chapters 1-5.\cr
+ 09-Dec-91 & Moon      & Review of 10.156/Chapter 3 (Evaluation and Compilation).\cr
+	   &	       & \quad(some comments not yet merged)\cr
+ 10-Dec-91 & Loosemore & Review of 10.156/Chapter 10 (Symbols),\cr
+           &           & \quad Chapter 20 (Files), and Chapter 13 (Characters).\cr
+ 10-Dec-91 & Loosemore & Review of 10.156/Chapter 14 (Conses).\cr
+	   &	       & \quad(some comments not yet merged)\cr
+ 10-Dec-91 & Laubsch   & Review of 10.156/Chapters 1 (Introduction),\cr
+	   &	       & \quad Chapter 2 (Syntax), Chapter 3 (Evaluation and Compilation),\cr
+	   &	       & \quad Chapter 4 (Types and Classes), 
+			       Chapter 5 (Data and Control Flow), \cr
+	   &	       & \quad Chapter 7 (Objects), Chapter 11 (Packages),\cr
+	   &	       & \quad Chapter 19 (Filenames), and Chapter 21 (Streams).\cr
+ 18-Dec-91 & Margolin  & Review of 10.156/Chapter 18 (Hash Tables).\cr
+ 04-Jan-92 & White     & Review of 10.156/Chapter 6 (Iteration),\cr
+	   &	       & \quad Chapter 11 (Packages), Chapter 18 (Hash Tables),\cr
+	   &	       & \quad and Chapter 23 (Reader).\cr
+ 04-Jan-92 & White     & Review of 10.156/Chapter 26 (Glossary).\cr
+	   &	       & \quad(some comments not yet merged)\cr
+ 04-Jan-92 & Barrett   & Review of 10.156/Chapter 18 (Hash Tables) and Chapter 16 (Strings).\cr
+ 04-Jan-92 & Barrett   & Review of 10.156/Chapter 15 (Arrays) and Chapter 21 (Streams).\cr
+	   &	       & \quad(some comments not yet merged)\cr
+ 06-Jan-92 & Loosemore & Review of 10.156/Chapter 16 (Strings),\cr
+	   &           & \quad Chapter 17 (Sequences), and Chapter 25 (Environment).\cr
+ 06-Jan-92 & Loosemore & Review of 10.156/Chapter 21 (Streams) and Chapter 23 (Reader).\cr
+	   &	       & \quad(some comments not yet merged)\cr
+ 06-Jan-92 & Margolin  & Review of 10.156/Chapter 2 (Syntax).\cr
+ 07-Jan-92 & Margolin  & Review of 10.156/Chapter 4 (Types and Classes).\cr
+ 03-Feb-92 & Aspinall  & Review of 10.156/Chapter 12 (Numbers).\cr
+ 16-Feb-92 & Pitman    & Draft 11.82 (for X3J13 letter ballot). Document X3J13/92-101.\cr
+ 16-Mar-92 & Loosemore & Review of 11.82/Chapter 1, 3, 4, 5, 7, 8, 9, 10,\cr
+	   &	       & \quad 11, 12, 18, 22, 23, 24, 25, and 26.\cr
+ 16-Feb-92 & Pitman    & Draft 12.24 (for X3 consideration). Document X3J13/92-102.\cr
+ 09-Sep-92 & Samson    & Public Review Comments (\#1). Documents X3J13/92-1001 to 92-1003.\cr
+ 22-Oct-92 & Rose, Yen & Public Review Comments (\#2). Documents X3J13/92-1101 to 92-1103.\cr
+ 23-Oct-92 & Staley    & Public Review Comments (\#3). Documents X3J13/92-1201 to 92-1204.\cr
+ 09-Nov-92 & Barrett   & Public Review Comments (\#4). Documents X3J13/92-3101 to 92-3110.\cr
+ 11-Nov-92 & Moon      & Public Review Comments (\#5). Documents X3J13/92-3201 to 92-3248.\cr
+ 17-Nov-92 & Loosemore & Public Review Comments (\#6). Documents X3J13/92-1301 to 92-1335.\cr
+ 23-Nov-92 & Margolin  & Public Review Comments (\#7). Documents X3J13/92-1401 to 92-1419.\cr
+ 23-Nov-92 & Withington & Public Review Comments (\#8a). Documents X3J13/92-1501 to 92-1512.\cr
+ 23-Nov-92 & Feinberg   & Public Review Comments (\#8b). Documents X3J13/92-1601 to 92-1603.\cr
+ 23-Nov-92 & Wechsler   & Public Review Comments (\#8c). Documents X3J13/92-1701 to 92-1703.\cr
+ 23-Nov-92 & Moore     & Public Review Comments (\#9). Documents X3J13/92-1801 to 92-1802.\cr
+ 23-Nov-92 & Flanagan  & Public Review Comments (\#10). Documents X3J13/92-1901 to 92-1910.\cr
+ 23-Nov-92 & Dalton    & Public Review Comments (\#11). Documents X3J13/92-2001 to 92-2012.\cr
+ 23-Nov-92 & Gallagher & Public Review Comments (\#12). Documents X3J13/92-2101 to 92-2103.\cr
+ 23-Nov-92 & Norvig    & Public Review Comments (\#13). Documents X3J13/92-2201 to 92-2208.\cr
+ 24-Nov-92 & Robertson & Public Review Comments (\#14). Document X3J13/92-2301.\cr
+ 23-Nov-92 & Kawabe    & Public Review Comments (\#15). Documents X3J13/92-2401 to 92-2403.\cr
+ 23-Nov-92 & Barrett   & Public Review Comments (\#16). Documents X3J13/92-2511 to X3J13/92-2531.\cr
+ 23-Nov-92 & Wertheimer & Public Review Comments (\#17). Document X3J13/92-2601.\cr
+ 24-Nov-92 & Pitman    & Public Review Comments (\#18). Documents X3J13/92-2701 to 92-2742.\cr
+ 24-Nov-92 & Mato Mira & Public Review Comments (\#19). Documents X3J13/92-2801 to 92-2805.\cr
+ 24-Nov-92 & Philpot   & Public Review Comments (\#20). Document X3J13/92-2901.\cr
+ 23-Nov-92 & Cerys     & Public Review Comments (\#21). Document X3J13/92-3001.\cr
+ 30-Aug-93 & Pitman    & Draft 13.65 (for X3J13 consideration). Document X3J13/93-101.\cr
+ 04-Oct-93 & X3J13     & Minor fixes to Draft 13.65 before sending to X3.\cr
+ 05-Oct-93 & Pitman    & Draft 14.10 (for X3 consideration). Document X3J13/93-102.\cr
+ 08-Nov-93 & Dalton    & ``reply to reply to pr comments''.  Document X3J13/94-311.\cr
+ 04-Apr-94 & Boyer, Kaufmann, Moore \span\omit\cr
+           &           & Public Review Comments (\#1).  Document X3J13/94-305.\cr
+ 05-Apr-94 & Pitman    & Public Review Comments (\#2).  Document X3J13/94-306.\cr
+ 14-Mar-94 & Schulenburg & Public Review Comments (\#3).  Document X3J13/94-307.\cr
+ 04-Apr-94 & Shepard   & Late commentary.  Document X3J13/94-309.\cr
+ 05-May-94 & X3J13     & Editorial-only changes to Draft 14.10 in response to comments.\cr
+ 10-May-94 & Pitman    & Draft 15.17 (for X3 consideration). Document X3J13/94-101.\cr
+ 12-Aug-94 & X3J13     & Letter ballot to make specific corrections to Credits.\cr
+	   &           & Drafts 15.17 and 15.17R are {\it identical\/} except for:\cr
+	   &	       & \quad Changes to document date and version number.\cr
+	   &           & \quad Disclaimer added to back of cover page.\cr
+	   &	       & \quad Changes to this Edit and Review History, page {\it Credits iv}.\cr
+	   &	       & \quad Changes to names and headings, pages {\it Credits v-vii}.\cr
+ 12-Aug-94 & Pitman    & Draft {\rev} (for X3 consideration). Document {\DocumentNumber}.\cr
+} $$
+
+\vfill\eject
+
+\goodbreak
+
+The following lists of information are almost certainly incomplete, but
+it was felt that it was better to risk publishing incomplete information
+than to fail to acknowledge important contributions by the many people
+and organizations who have contributed to this effort.
+
+Mention here of any individual or organization does not imply
+endorsement of this document by that individual or organization.
+
+$$\halign to \hsize{\leftskip\iskip#\hfil\quad&#\hfil\cr
+%Committee Chairs:&\cr
+Ad Hoc Group Chairs:&\cr
+\noalign{\vskip 8pt}
+  Characters                & Linden, Thom        \cr
+  Charter                   & Ennis, Susan P.     \cr
+% "Compiler" => "Compiler Specification" per X3J13 -kmp 12-Aur-94
+  Compiler Specification    & Haflich, Steven M.  \cr
+                            & Loosemore, Sandra   \cr
+  Editorial                 & Chapman, Kathy      \cr
+% Added Walter per X3J13 -kmp 12-Aug-94
+			    & van Roggen, Walter  \cr
+% "Conditions" => "Error and Condition System" per X3J13 -kmp 12-Aug-94
+  Error and Condition System & Pitman, Kent M.     \cr
+%% Removed per X3J13 at May 4-5, 1994 meeting. -kmp 9-May-94
+%                           & Daniels, Andy       \cr
+%% Added per X3J13 at May 4-5, 1994 meeting. -kmp 9-May-94
+  Graphics \& Windows       & Douglas Rand        \cr
+%Added Schoen per X3J13. -kmp 12-Aug-94
+			    & Schoen, Eric	  \cr
+% "Iteration" => "Iteration Facility".
+  Iteration Facility        & White, JonL         \cr
+% "Cleanup" => "Language Cleanup" per X3J13 -kmp 12-Aug-94
+  Language Cleanup          & Masinter, Larry     \cr
+                            & Fahlman, Scott      \cr
+%% Removed per X3J13 at May 4-5, 1994 meeting. -kmp 9-May-94
+%                           & Waters, Richard C.  \cr
+%                           & Perdue, Crispin     \cr
+  Lisp$\sub1$/Lisp$\sub2$   & Gabriel, Richard P. \cr
+%% Removed per X3J13 at May 4-5, 1994 meeting. -kmp 9-May-94
+%                           & Pitman, Kent M.     \cr
+  Macros                    & Haflich, Steven M.  \cr
+                            & Pitman, Kent M.     \cr
+%Added Wegman per X3J13 -kmp 12-Aug-94
+			    & Wegman, Mark        \cr
+% "Objects" to "Object System" per X3J13 -kmp 12-Aug-94
+  Object System             & Bobrow, Daniel G.   \cr
+  Presentation of Standard  & Brown, Gary L.      \cr
+  Pretty Printer            & Waters, Richard C.  \cr
+  Public Review             & Ida, Masayuki       \cr
+  Types \& Declarations     & Scherlis, William L. \cr
+  Validation                & Berman, Richard     \cr
+%% Removed per X3J13 -kmp 12-Aug-94
+%			    & Balzer, Bob	  \cr
+}
+$$
+
+\goodbreak
+
+% Per X3J13
+% Added these names to the section "Major Administrative Contributions":
+% 	Van Deusen, Mary
+% 	White, Jon L.
+% -kmp 12-Aug-94
+
+$$\halign to \hsize{\leftskip\iskip#\hfil\quad&#\hfil\cr
+Major Administrative Contributions:\cr
+\noalign{\vskip 8pt}
+%% Added "Loeffler" and "Tyson" per Pitman #3 (by X3J13 vote at May 4-5, 1994 meeting)
+%% -kmp 9-May-94
+Barrett, Kim&          % Administration of Cleanup
+Mathis, Robert\cr      % Convenor; Chairman; Interfacing to X3, etc.
+Brown, Gary L.&        % Secretary, Funding administration for DEC's editorship
+Pitman, Kent M.\cr     % Administration of Cleanup, agenda setting
+Eiron, Hanoch&         % Funding administration for Franz, Help finding other funding
+Steele, Guy L., Jr.\cr % Interfacing to X3, etc.; Vice-Chairman; Roberts Rules expert 
+Gabriel, Richard P.&   % Interfacing to ISO, etc.
+Tyson, Mabry\cr        % Mailing lists at SRI
+Haflich, Steven M.&    % Establishment of second-generation CL Editorship
+Van Deusen, Mary\cr    % Secretary
+Ida, Masayuki&         % International Liaison to Japan
+White, JonL\cr         % Vice-Chairman
+Loeffler, David D.&    % Mailing lists at MCC
+Whittemore, Susan\cr   % Funding administration for Apple
+Loosemore, Sandra&     % Administration of Cleanup and Compiler, agenda setting
+Woodyatt, Anne\cr      % Funding administration for Harlequin
+Masinter, Larry&       % Administration of Cleanup, agenda setting
+Zubkoff, Jan L.\cr     % Meeting organization, Secretary, Funding administration for Lucid
+}
+$$
+
+\goodbreak
+
+% Per X3J13:
+%  Added these names to the section "Major Technical Contributions":    
+% 	Fahlman, Scott
+% 	Keene, Sonya
+% 	Kempf, James
+% 	Kerns, Robert W.
+% 	Masinter, Larry
+% 	Mlynarik, Richard
+% 	Weinreb, Daniel
+% 
+%  Reordered the names in the section "Major Technical Contributions" so
+%   as to appear in alphabetical order.
+%
+% -kmp 12-Aug-94
+
+$$\halign to \hsize{\leftskip\iskip#\hfil\quad&#\hfil\quad&\qquad\qquad#\hfil\cr
+Major Technical Contributions:\cr
+\noalign{\vskip 8pt}
+Barrett, Kim A.      &         % Review, Cleanups
+Keene, Sonya         &         % CLOS
+Moon, David A.       \cr       % Review, CLOS, Conditions
+Bobrow, Daniel G.    &         % CLOS
+Kempf, James         &         % CLOS
+Perdue, Crispin      \cr       % Iteration
+Daniels, Andy        &         % Conditions
+Kerns, Robert W.     &         % Characters
+Pitman, Kent M.      \cr       % Review, Conditions, Cleanup, Editor, Lisp1/Lisp2
+DeMichiel, Linda G.  &         % CLOS
+Kiczales, Gregor     &         % CLOS
+Steele, Guy L., Jr.  \cr       % Review, CLtL
+Dussud, Patrick H.   &         % CLOS
+Loosemore, Sandra    &         % Review, Compiler
+Waters, Richard C.   \cr       % Pretty Printer, Iteration
+Fahlman, Scott       &         % CLtL, Cleanup
+Margolin, Barry      &         % Review
+Weinreb, Daniel      \cr       % CLtL, CLOS
+Gabriel, Richard P.  &         % Review, Editing, CLOS
+Masinter, Larry      &         % Cleanup
+White, JonL          \cr       % Review, LOOP
+Ida, Masayuki        &         % Administration of Public Review work
+Mlynarik, Richard    &         % Conditions
+                     \cr
+}
+$$
+
+% Per X3J13:
+%
+%   Removed these names from the section "Organizational Participants":
+% 	Barrett, Kim
+% 	Greenblatt, Richard
+% 	Kerns, Robert W.
+% 	Loosemore, Sandra"
+%
+%   Added these names to the section "Organizational Participants":
+% 	Computer & Business Equipment Manufacturing Association (X3 Secretariat)
+% 	CSC
+% 	DARPA
+% 	Ibuki
+% 	ParcPlace Systems, Inc.
+% 	University of Maryland
+%
+%   Changed the spelling of these names in the section "Organizational Participants":
+%       /from/                          /to/
+%       SRI                             SRI International
+%       Johnson Controls                Johnson Controls, Inc.
+%       AI Architects                   AI Architects, Inc.
+%
+%   Title changed from "Organizational Participants" to 
+%   "Participating Companies and Organizations"
+%   
+% -kmp 12-Aug-94
+
+$$\halign to \hsize{\leftskip\iskip#\hfil\quad&#\hfil\cr
+Participating Companies and Organizations:\cr
+\noalign{\vskip 8pt}
+AI Architects, Inc.                &
+Lucid, Inc.                        \cr
+Amoco Production Co.               &
+MCC                                \cr
+Aoyama Gakuin University           &
+MIT                                \cr
+Apple Computer                     &
+MITRE Corporation                  \cr
+Boeing Advanced Technology Center  &
+MSC                                \cr
+Carnegie-Mellon University         &
+NASA Ames Research Center          \cr
+Chestnut Software                  &
+National Bureau of Standards       \cr
+Computer Sciences                  &
+Nihon Symbolics                    \cr
+Computer {\ampersand} Business Equipment Manufacturing Association (X3 Secretariat) 
+			 \span\omit\cr
+CONTEL                             &
+ParcPlace Systems, Inc.            \cr
+CSC                                &
+Prime Computer                     \cr
+DARPA &
+Siemens                            \cr
+Digital Equipment Corporation      &
+Southern Illinois University       \cr
+Encore                             &
+Sperry                             \cr
+Evans {\ampersand} Sutherland      &
+SRI International                  \cr
+Franz, Inc.                        &
+Sun Microsystems                   \cr
+Gigamos                            &
+Symbolics                          \cr
+GMD                                &
+Tektronix                          \cr
+Gold Hill                          &
+Texas Instruments                  \cr
+Grumman Data Systems Corporation   &
+The Aerospace Corporation          \cr
+Harlequin, Ltd.                    &
+Thinking Machines Corporation      \cr
+Hewlett-Packard                    &
+Unisys                             \cr
+Honeywell                          &
+University of Bath                 \cr
+IBM                                &
+University of Edinburgh            \cr
+Ibuki                              &
+University of Maryland             \cr
+Integrated Inference Machines      &
+University of Utah                 \cr
+International LISP Associates      &
+US Army                            \cr
+Johnson Controls, Inc.             &
+USC/ISI                            \cr
+LMI                                &
+Xerox                              \cr
+}
+$$
+
+\vfill\eject
+
+% Per X3J13:
+%
+%  Added these names to the section "Individual Participants":
+% 	Adler, Annette
+% 	Allen, Stanley
+% 	Doi, Takumi
+% 	Drescher, Gary
+% 	Frayman, Felix
+% 	Goldstein, Brad
+% 	Hendler, Jim
+% 	Kachurik, Catherine A.
+% 	Kahn, Ken
+% 	Mlynarik, Richard
+% 	Posner, Dave
+% 	Squires, Stephen L.
+% 	Van Deusen, Mary
+% 	Weyhrauch, Richard
+% 
+% Changed the spelling of these names in the section "Individual Participants":
+% 		/from/				/to/
+% 		Bartley, David			Bartley, David H.
+%		Beckerle, Mike			Beckerle, Michael
+% 		Boelk, Mary			Boelk, Mary P.
+% (3)		Brown, Gary			Brown, Gary L.
+% (4)		Haflich, Steve			Haflich, Steven M.
+% 		Matthews, Dave			Matthews, David C.
+% 		Rosenking, Jeff			Rosenking, Jeffrey P.
+% (2)     	Scherlis, William		Scherlis, William L.
+% 		Soley, Richard			Soley, Richard M.
+%
+% The parenthetical numbers indicate total number of fixed occurrences in this file,
+% not just in individual participants.
+% 
+% Remove duplicate occurrence of "van Roggen, Walter" from the section
+% "Individual Participants".
+
+
+$$\halign to \hsize{\leftskip\iskip#\hfil\quad&#\hfil\quad&#\hfil\cr
+Individual Participants:\cr
+\noalign{\vskip 8pt}
+% These are attendees from minutes back through 3/88.  Others to be added
+% per earlier minutes if they can be found.
+%
+% Later: Some earlier minutes were found, plus X3J13 voted on a bunch of
+%  these. -kmp 12-Aug-94
+%
+Adler, Annette&Haflich, Steven M.&Peck, Jeff\cr
+Allen, Stanley&Harris, Richard M.&Pellegrino, Bob\cr
+Antonisse, Jim&Hendler, Jim&Perdue, Crispin\cr
+Arbaugh, Bill&Hewitt, Carl&Philipp, Christopher\cr
+Balzer, Bob&Hornig, Charles&Pierson, Dan\cr
+Barrett, Kim&Ida, Masayuki&Pitman, Kent M.\cr
+Bartley, David H.&Kachurik, Catherine A.&Posner, Dave\cr
+Beckerle, Michael&Kahn, Ken&Raghavan, B.\cr
+Beiser, Paul&Keene, Sonya&Rand, Douglas\cr
+Benson, Eric&Keller, Shaun&Rininger, Jeff\cr
+Berman, Richard&Kempf, James&Rosenking, Jeffrey P.\cr
+Bobrow, Daniel G.&Kerns, Robert W.&Scherlis, William L.\cr
+Boelk, Mary P.&Kiczales, Gregor&Shiota, Eiji\cr
+Brittain, Skona&Kolb, Dieter&Sizer, Andy\cr
+Brown, Gary L.&Koschmann, Timothy&Slater, David\cr
+Chailloux, Jerome&Kosinski, Paul&Sodan, Angela\cr
+Chapman, Kathy&Larson, Aaron&Soley, Richard M.\cr
+Clinger, Will&Latto, Andy&Squires, Stephen L.\cr
+Coffee, Peter C.&Laubsch, Joachim&St. Clair, Bill\cr
+Cugini, John&Layer, Kevin&Stanhope, Philip\cr
+Curtis, Pavel&Linden, Thom&Steele, Guy L., Jr.\cr
+Dabrowski, Christopher&Loeffler, David D.&Tucker, Paul\cr
+Daessler, Klaus&Loosemore, Sandra&Turba, Thomas\cr
+Dalton, Jeff&Magataca, Mituhiro&Unietis, Dave\cr
+Daniels, Andy&Margolin, Barry&Van Deusen, Mary\cr
+DeMichiel, Linda G.&Masinter, Larry&van Roggen, Walter\cr
+Doi, Takumi&Mathis, Robert&Waldrum, Ellen\cr
+Drescher, Gary&Matthews, David C.&Waters, Richard C.\cr
+Duggan, Jerry&McCarthy, John&Wechsler, Allan\cr
+Dussud, Patrick H.&Mikelsons, Martin&Wegman, Mark\cr
+Ennis, Susan P.&Mlynarik, Richard&Weinreb, Daniel\cr
+Fahlman, Scott&Moon, David A.&Weyhrauch, Richard\cr
+Frayman, Felix&Moore, Timothy&White, JonL\cr
+Gabriel, Richard P.&Nicoud, Stephen&Wieland, Alexis\cr
+Giansiracusa, Bob&Nilsson, Jarl&Withington, P. Tucker\cr
+Goldstein, Brad&O'Dell, Jim&Wright, Whitman\cr
+Gray, David&Ohlander, Ron&York, Bill\cr
+Greenblatt, Richard&Padget, Julian&Zacharias, Gail\cr
+Hadden, George D.&Palter, Gary&Zubkoff, Jan L.\cr
+
+}
+$$
+
