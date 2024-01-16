@@ -1,0 +1,5529 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 4.0, for use with Frame 4.0 products
+% This ps_prolog file is Copyright (c) 1986-1993 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameBuilder and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to True, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (4.0) def 
+/FMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	FMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto
+	show FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(PostScript Lang. Ref. Man., 2nd Ed., H.2.4 says EPS must not call X              )
+	dup dup (X) search pop exch pop exch pop length 
+	4 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+/concatprocs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin 
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/FrameNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		setrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+FMLevel1 not { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} if
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				FMPColor graymode and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not FMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	FMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgrxfer FMLOCAL
+	/orggxfer FMLOCAL
+	/orgbxfer FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/orgrproc FMLOCAL
+	/orggproc FMLOCAL
+	/orgbproc FMLOCAL
+	/organgle FMLOCAL
+	/orgrangle FMLOCAL
+	/orggangle FMLOCAL
+	/orgbangle FMLOCAL
+	/orgfreq FMLOCAL
+	/orgrfreq FMLOCAL
+	/orggfreq FMLOCAL
+	/orgbfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/edown FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /FrameNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	FMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{{1 dict dup /PageSize [paperwidth paperheight]put setpagedevice}stopped
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		 {1 dict dup /ManualFeed manualfeed put setpagedevice } stopped pop }
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			FrameNegative {
+				1 1 4 { 
+					pop { 1 exch sub } concatprocs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		FrameNegative {
+			{ 1 exch sub } concatprocs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/pagesave FMLOCAL
+/orgmatrix FMLOCAL
+/landscape FMLOCAL
+/pwid FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/initmatrix {(initmatrix) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setPatternMode {
+	FMLevel1 {
+		/bwidth  exch def
+		/bpside  exch def
+		/bstring exch def
+		/onbits 0 def  /offbits 0 def
+		freq sangle landscape {90 add} if 
+			{/y exch def
+			 /x exch def
+			 /xindex x 1 add 2 div bpside mul cvi def
+			 /yindex y 1 add 2 div bpside mul cvi def
+			 bstring yindex bwidth mul xindex 8 idiv add get
+			 1 7 xindex 8 mod sub bitshift and 0 ne FrameNegative {not} if
+			 {/onbits  onbits  1 add def 1}
+			 {/offbits offbits 1 add def 0}
+			 ifelse
+			}
+			setscreen
+		offbits offbits onbits add div FrameNegative {1.0 exch sub} if
+		/FrameCurGray exch def
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		FMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode FMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode FMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+	/rad FMLOCAL
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+      dup dup
+      24 eq { pop pop 3 mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+FMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch concatprocs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def
+	FMLevel1 {	
+		colorsetup
+		/is w d wbytes string def
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is w d wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	FMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {ip} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/d 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris} {gis} {bis} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/d 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris gis bis w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(4.0) FMVERSION
+1 1 0 0 595.28 841.89 0 1 8 FMDOCUMENT
+0 0 /Times-Bold FMFONTDEFINE
+1 0 /Times-Roman FMFONTDEFINE
+2 0 /Times-Italic FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: A4
+%%EndPaperSize
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+45.64 95.95 288.64 167.95 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+45.64 167.95 285.76 590.95 R
+V
+0 10 Q
+0 X
+(ABSTRACT) 45.64 584.28 T
+1 F
+0.14 (The design of CSCW systems has often had its roots in eth-) 45.64 573.28 P
+2.42 (nomethodological understandings of work and investiga-) 45.64 562.28 P
+1.14 (tions of working settings. Increasingly) 45.64 551.28 P
+1.14 (, we are also seeing) 203.16 551.28 P
+0.36 (these ideas applied to critique and inform HCI design more) 45.64 540.28 P
+0.41 (generally) 45.64 529.28 P
+0.41 (. However) 82.2 529.28 P
+0.41 (, the attempt to design from the basis of) 123.86 529.28 P
+0.69 (ethnomethodology is fraught with methodological dangers.) 45.64 518.28 P
+1.22 (In particular) 45.64 507.28 P
+1.22 (, ethnomethodology\325) 95.61 507.28 P
+1.22 (s overriding concern with) 179.61 507.28 P
+1.89 (the detail of practice poses some serious problems when) 45.64 496.28 P
+0.12 (attempts are made to design around such understandings. In) 45.64 485.28 P
+2.35 (this paper) 45.64 474.28 P
+2.35 (, we discuss the range and application of eth-) 86.74 474.28 P
+1.19 (nomethodological investigations of technology in working) 45.64 463.28 P
+6.03 (settings, describe how ethnomethodologically-af) 45.64 452.28 P
+6.03 (\336liated) 257.98 452.28 P
+0.92 (work has approached system design and discuss ways that) 45.64 441.28 P
+0.22 (ethnomethodology can move from design critique to design) 45.64 430.28 P
+(practice: the advent of) 45.64 419.28 T
+2 F
+(technomethodology) 137.28 419.28 T
+1 F
+(.) 214.95 419.28 T
+0 F
+(Keywords) 45.64 402.28 T
+1 F
+1.54 (Ethnography) 45.64 391.28 P
+1.54 (, ethnomethodology) 96.65 391.28 P
+1.54 (, design practice, method-) 177.54 391.28 P
+(ology) 45.64 380.28 T
+(, accounts, abstraction.) 67.77 380.28 T
+0 F
+(ETHNOMETHODOLOGY AND DESIGN) 45.64 363.28 T
+1 F
+0.02 (There has been much discussion within the HCI community) 45.64 352.28 P
+1.84 (about a \322turn to the social\323 \050e.g. [23], [38]\051. Particularly) 45.64 341.28 P
+0.44 (within CSCW) 45.64 330.28 P
+0.44 (, but also within HCI, many of those who are) 101.56 330.28 P
+0.37 (considering such a move have been attracted to ethnometh-) 45.64 319.28 P
+3.51 (odology [18] as a favoured sociological position. Eth-) 45.64 308.28 P
+6.04 (nomethodology turns away from the structures and) 45.64 297.28 P
+0.36 (theorising of traditional sociology) 45.64 286.28 P
+0.36 (, concentrating instead on) 181.91 286.28 P
+-0.2 (the details of the practices through which action and interac-) 45.64 275.28 P
+0.16 (tion are accomplished. In this respect, designers have found) 45.64 264.28 P
+1.25 (ethnomethodology a richer resource for insights about the) 45.64 253.28 P
+-0.17 (or) 45.64 242.28 P
+-0.17 (ganisation of work than other) 53.79 242.28 P
+-0.17 (, more theoretically oriented,) 170.46 242.28 P
+(sociological positions.) 45.64 231.28 T
+0.31 (More or less ethnomethodologically-oriented investigations) 45.64 214.28 P
+0.13 (are now regularly presented at CSCW conferences \050e.g. [1],) 45.64 203.28 P
+-0.23 ([5], [7], [8], [30], [37], [39]\051 and increasingly at HCI confer-) 45.64 192.28 P
+0.89 (ences \050[6], [13], [26]\051. Ethnomethodology is being used to) 45.64 181.28 P
+309.52 95.95 549.64 590.95 R
+7 X
+V
+0 X
+(inform design through:) 309.52 584.28 T
+(1.) 309.52 567.28 T
+1.36 (\336eldwork investigations that develop an understanding) 323.69 567.28 P
+0.88 (of work and or) 323.69 556.28 P
+0.88 (ganisations from the \322inside\323, providing) 385.3 556.28 P
+1.5 (innovative insights into the or) 323.69 545.28 P
+1.5 (ganisational situatedness) 448.97 545.28 P
+1.37 (of work and the methods and practices through which) 323.69 534.28 P
+4.15 (work activities and interactions are assembled and) 323.69 523.28 P
+0.76 (which may be used in the design of technology to sup-) 323.69 512.28 P
+(port work; and) 323.69 501.28 T
+(2.) 309.52 487.28 T
+1.21 (developing an understanding of the temporal or) 323.69 487.28 P
+1.21 (ganisa-) 520.76 487.28 P
+0.11 (tion of activities and interactions, revealing them to be a) 323.69 476.28 P
+1.35 (moment-by-moment or) 323.69 465.28 P
+1.35 (ganisation, and in so doing fur-) 417.91 465.28 P
+1.77 (nishing new concepts around which to generally con-) 323.69 454.28 P
+(sider the design of technology) 323.69 443.28 T
+(.) 443.58 443.28 T
+3.04 (There are a number of inter) 309.52 426.28 P
+3.04 (-related reasons why some) 434.17 426.28 P
+-0.04 (within the design community are taking up these two sets of) 309.52 415.28 P
+(issues.) 309.52 404.28 T
+1.21 (First, Lucy Suchman\325) 309.52 387.28 P
+1.21 (s book \322Plans and Situated Actions\323) 398.33 387.28 P
+1.71 ([43], which articulated an ar) 309.52 376.28 P
+1.71 (gument that has signi\336cantly) 429.21 376.28 P
+0.47 (in\337uenced many designers, was partly founded in the work) 309.52 365.28 P
+1.29 (of ethnomethodology) 309.52 354.28 P
+1.29 (. Her analysis emphasised a perspec-) 395.99 354.28 P
+0.81 (tive on purposeful human action as situated in \050and or) 309.52 343.28 P
+0.81 (gan-) 531.87 343.28 P
+0.09 (ised around\051 the context of particular circumstances, and, in) 309.52 332.28 P
+0.39 (doing so, provided a forceful critique of the user modelling) 309.52 321.28 P
+1.51 (and plan-based approaches common in both HCI and AI.) 309.52 310.28 P
+0.93 (Suchman\325) 309.52 299.28 P
+0.93 (s book has had considerable in\337uence upon HCI) 349.52 299.28 P
+0.45 (research and design, becoming almost an icon of a concern) 309.52 288.28 P
+0.35 (in HCI with work settings and the detail of everyday work-) 309.52 277.28 P
+1.07 (ing practices; and, as relevant parts of the design commu-) 309.52 266.28 P
+0.91 (nity have taken on board Suchman\325) 309.52 255.28 P
+0.91 (s ar) 455.44 255.28 P
+0.91 (guments, they have) 470.33 255.28 P
+0.32 (also taken on, perhaps unwittingly) 309.52 244.28 P
+0.32 (, an ethnomethodological) 447.62 244.28 P
+(in\337uence.) 309.52 233.28 T
+-0.07 (Second, there has been a strong and vocal group within HCI) 309.52 216.28 P
+-0.23 (who have consistently ar) 309.52 205.28 P
+-0.23 (gued that the requirements for tech-) 407.79 205.28 P
+0.99 (nology should be developed around the work situations of) 309.52 194.28 P
+1.21 (users, most particularly in the Participatory Design move-) 309.52 183.28 P
+0.54 (ment \050e.g. [22]\051. Ethnomethodology is generally concerned) 309.52 172.28 P
+0.58 (with the \322detailed and observable practices which make up) 309.52 161.28 P
+3.56 (the incarnate production of ordinary social facts\323 [35]) 309.52 150.28 P
+0.85 (which means that its studies of work domains contain rich) 309.52 139.28 P
+1.37 (descriptions of work practices. This may suggest to those) 309.52 128.28 P
+1.73 (who are already concerned with the relationship between) 309.52 117.28 P
+0.04 (work and design that they have an analytic ally who may be) 309.52 106.28 P
+45.64 608.95 549.64 761.95 R
+7 X
+V
+0 18 Q
+0 X
+(T) 111.2 749.95 T
+(echnomethodology: Paradoxes and Possibilities) 121.55 749.95 T
+0 12 Q
+(Graham Button and Paul Dourish) 210.29 717.95 T
+1 F
+(Rank Xerox Research Centre) 227.49 704.95 T
+(Cambridge Laboratory \050EuroP) 210.54 691.95 T
+(ARC\051) 356.07 691.95 T
+(61 Regent Street) 257.64 678.95 T
+(Cambridge CB2 1AB) 245.64 665.95 T
+(United Kingdom) 257.14 652.95 T
+(+44 1223 341500) 255.25 639.95 T
+(button@cambridge.rxrc.xerox.com, dourish@cambridge.rxrc.xerox.com) 123.29 626.95 T
+45.64 93.95 285.64 151.95 R
+7 X
+V
+2 10 Q
+0 X
+1.62 (Pr) 45.64 145.28 P
+1.62 (oc. ACM Confer) 55.27 145.28 P
+1.62 (ence on Human Factors in Computing) 123.96 145.28 P
+(Systems CHI\32596, V) 45.64 134.28 T
+(ancouver) 120.35 134.28 T
+(, Canada, April 13\32018, 1996.) 156.45 134.28 T
+J
+J
+45.64 156.95 149.64 156.95 2 L
+0.5 H
+2 Z
+N
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "1" 1
+%%Page: "2" 2
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 10 Q
+0 X
+0 0 0 1 0 0 0 K
+-0.06 (readily turned to as a resource to draw upon either for meth-) 45.64 756.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(odological sustenance or even empirical descriptions.) 45.64 745.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.25 (Third, for a variety of reasons that we will not go into here,) 45.64 728.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.28 (ethnography as a method of enquiry has been attracting a) 45.64 717.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.28 (great deal of attention from some within CSCW and HCI) 45.64 706.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.17 (\050see e.g. [2], [31]\051. Like some other positions within sociol-) 45.64 695.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.74 (ogy) 45.64 684.28 P
+3.74 (, ethnomethodology uses ethnographically generated) 59.99 684.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.82 (material in its studies, though the analyses that it develops) 45.64 673.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.41 (from these can vary signi\336cantly from those produced by) 45.64 662.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.39 (other types of sociology) 45.64 651.28 P
+0.39 (. It is often dif) 142.54 651.28 P
+0.39 (\336cult for those in the) 200.86 651.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.02 (design community to apprehend the dif) 45.64 640.28 P
+3.02 (ference between) 217.5 640.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.37 (competing sociological ar) 45.64 629.28 P
+0.37 (guments, and the relevance for so) 149.51 629.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.31 (doing might even be questionable. Ethnomethodology may) 45.64 618.28 P
+0.31 (,) 283.26 618.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.82 (as a consequence, be basking in the sun of ethnography in) 45.64 607.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.26 (general, some in design equating an interest in ethnography) 45.64 596.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(with an interest in ethnomethodology) 45.64 582.61 T
+1 8 Q
+(1) 195.08 586.61 T
+1 10 Q
+(.) 199.08 582.61 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.02 (Fourth, Grudin [23] has ar) 45.64 565.61 P
+-0.02 (gued that HCI has passed through) 150.62 565.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 (a number of stages and is currently moving from the fourth) 45.64 554.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.19 (stage which focused upon a dialogue with the user to a \336fth) 45.64 543.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.11 (stage of focusing the interface not around the individual but) 45.64 532.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.05 (the work setting. Ethnomethodology may thus be, for some,) 45.64 521.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.23 (a port in the storm of transition, for ethnomethodologists\325) 45.64 510.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.84 (emphasis upon not only work practice but also upon the) 45.64 499.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.77 (or) 45.64 488.61 P
+2.77 (ganisational situatedness of work may of) 53.79 488.61 P
+2.77 (fer candidate) 231.06 488.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.33 (solutions to problems of incorporating the work settings, as) 45.64 477.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(well as work practice, into design.) 45.64 466.61 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.25 (However) 45.64 449.61 P
+0.25 (, the experience has been that the attempt to incor-) 81.89 449.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.12 (porate ethnomethodological understandings into design\321) 45.64 438.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.03 (either speci\336c artifacts, or the design process in general\321) 45.64 427.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.9 (has been problematic. The models, assumptions, processes) 45.64 416.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.06 (and sensitivities of the various groups involved have been) 45.64 405.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.32 (suf) 45.64 394.61 P
+1.32 (\336ciently dif) 57.68 394.61 P
+1.32 (ferent as to present problems for their inte-) 105.2 394.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.99 (gration. This paper) 45.64 383.61 P
+0.99 (, indeed, follows in a tradition of intro-) 123.03 383.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.95 (spection and analysis on the integration of our disciplines,) 45.64 372.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.04 (and the respective roles played by each \050e.g. [31], [41]\051, and) 45.64 361.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.89 (this re\337ection mirrors similar issues in the integration of) 45.64 350.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.12 (other theoretical approaches to the human sciences into HCI) 45.64 339.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.22 (design \050e.g. [3]\051. In this paper we want to unpack the issues) 45.64 328.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+8.09 (surrounding the application of ethnomethodological) 45.64 317.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.84 (accounts of working situations, and, critically) 45.64 306.61 P
+3.84 (, of eth-) 246.69 306.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.89 (nomethodology itself, not only to situations which involve) 45.64 295.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.69 (technology) 45.64 284.61 P
+0.69 (, but to the design and introduction of advanced) 89.43 284.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.83 (technologies. Our goal is primarily to understand and) 45.64 273.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.75 (develop the relationship between ethnomethodology and) 45.64 262.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.14 (technological design; secondarily) 45.64 251.61 P
+1.14 (, we hope that this might) 181.15 251.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.47 (address some issues in the relationship of the human sci-) 45.64 240.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(ences to HCI practice more widely) 45.64 229.61 T
+(.) 184.12 229.61 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.59 (Having reviewed the basis for the current interest in eth-) 45.64 212.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.47 (nomethodology within HCI, we will next examine the con-) 45.64 201.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.73 (tributions that have so far been made for technological) 45.64 190.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.56 (support for socially-or) 45.64 179.61 P
+2.56 (ganised activity which have come) 140 179.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.87 (from an ethnomethodological perspective\321what we\325ll call) 45.64 168.61 P
+0 0 0 1 0 0 0 K
+45.64 144.95 285.76 159.12 C
+0 0 0 1 0 0 0 K
+54.14 157.13 195.87 157.13 2 L
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+-8.36 24.95 603.64 816.95 C
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(1.) 45.64 138.95 T
+(Although we cannot develop the point, note that ethnography) 52.39 138.95 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(and ethnomethodology are not the same thing. Loosely) 45.64 129.95 T
+(, ethnogra-) 243.04 129.95 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(phy can be thought of as a collection of techniques for gathering) 45.64 120.95 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(and or) 45.64 111.95 T
+(ganising \336eld materials, while ethnomethodology is an ana-) 68.22 111.95 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(lytic study policy which may draw upon ethnographic materials.) 45.64 102.95 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 10 Q
+(\322technomethodology\323.) 309.52 756.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(ASPECTS OF TECHNOMETHODOLOGY) 309.52 739.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+3.01 (Ethnomethodologically af) 309.52 728.28 P
+3.01 (\336liated studies have been con-) 416.51 728.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.85 (ducted across a wide range of work situations that involve) 309.52 717.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.58 (technology: the work of air traf) 309.52 706.28 P
+2.58 (\336c controllers [25], city) 447.48 706.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 (stockbrokers [30], software engineers [12], designers [36],) 309.52 695.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.14 (print shop workers [8], municipal transport controllers [27],) 309.52 684.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.33 (as well as the users of menu-driven computer systems [29],) 309.52 673.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(multimedia technologies [28] and photocopiers [43].) 309.52 662.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.3 (These studies fall into two related areas of enquiry: investi-) 309.52 645.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.67 (gations of the or) 309.52 634.28 P
+0.67 (ganisation of social action and interaction;) 376.61 634.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.06 (and investigations of the or) 309.52 623.28 P
+-0.06 (ganisation of work and work set-) 417.99 623.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(tings.) 309.52 612.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(The Organisation of Social Action and Interaction) 309.52 595.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+0.85 (One direction of research has been into the ways in which) 309.52 584.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.37 (people or) 309.52 573.28 P
+2.37 (ganise and manage everyday social activity) 349.19 573.28 P
+2.37 (. In) 533.94 573.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+6.39 (particular) 309.52 562.28 P
+6.39 (, Conversation Analysis, a branch of eth-) 347.44 562.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 (nomethodology) 309.52 551.28 P
+0.35 (, has developed an extensive corpus of \336nd-) 371.65 551.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.15 (ings about the ways in which people generally build up their) 309.52 540.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.69 (social actions and interactions with one another) 309.52 529.28 P
+0.69 (, and, more) 503.26 529.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.43 (recently) 309.52 518.28 P
+0.43 (, a conversation analytic sensibility has been exten-) 341.08 518.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.74 (sively used in studies of the ways in which people interact) 309.52 507.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.06 (with one another through or around technology) 309.52 496.28 P
+0.06 (. An obvious) 498.12 496.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.19 (contender for such scrutiny are technologies that provide for) 309.52 485.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.26 (access between persons who are geographically distributed,) 309.52 474.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.54 (and attention has been paid to video-mediated communica-) 309.52 463.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.01 (tion \050e.g. [28]\051. The thrust of this work is to furnish descrip-) 309.52 452.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.68 (tions of the ways in which persons normally or) 309.52 441.28 P
+0.68 (ganise their) 502.57 441.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.53 (actions and interactions and then compare this to what is) 309.52 430.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.02 (possible or not possible using the technology) 309.52 419.28 P
+-0.02 (. However) 488.73 419.28 P
+-0.02 (, it is) 529.95 419.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.65 (not just video-mediated communication that has been the) 309.52 408.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.17 (subject of such examinations, but also other work settings in) 309.52 397.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.34 (which technology is used, such as control suites [27], the) 309.52 386.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.59 (doctor) 309.52 375.28 P
+2.59 (\325) 335.44 375.28 P
+2.59 (s consulting room [21], and stock dealing rooms) 338.22 375.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([30].) 309.52 364.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(The Organisation of W) 309.52 347.28 T
+(ork) 407.59 347.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+-0.08 (A second major thrust in the work of ethnomethodology has) 309.52 336.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.51 (been the examination of the practices and methods through) 309.52 325.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.81 (which people accomplish their work. In particular) 309.52 314.28 P
+1.81 (, it has) 519.64 314.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.08 (been concerned with how it is or) 309.52 303.28 P
+0.08 (ganised in such a way as to) 440.32 303.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.43 (make it recognisable to others as uniquely the work it is.) 309.52 292.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.24 (Ethnomethodologically af) 309.52 281.28 P
+0.24 (\336liated studies of work have been) 413.74 281.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.25 (made of technologically rich work settings. Suchman has,) 309.52 270.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.19 (over a number of studies \050e.g. [45]\051, developed descriptions) 309.52 259.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.3 (of the practices through which particular types of work-set-) 309.52 248.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.21 (tings are or) 309.52 237.28 P
+1.21 (ganised as centres of co-ordination. A team of) 356.75 237.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.17 (researchers at Lancaster University in the UK have, again) 309.52 226.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.18 (over the course of a number of studies \050e.g. [25]\051, developed) 309.52 215.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.51 (detailed descriptions of the work of air) 309.52 204.28 P
+1.51 (-traf) 473.33 204.28 P
+1.51 (\336c controllers.) 490.36 204.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.43 (There has also been a series of studies of the work of engi-) 309.52 193.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.39 (neers \050e.g. [42]\051. In addition to these examples of sustained) 309.52 182.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.99 (enquiries into domains of work there have been numerous) 309.52 171.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.22 (one-of) 309.52 160.28 P
+1.22 (f studies of work and the role of technology) 335.44 160.28 P
+1.22 (. These) 519.53 160.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.33 (mainly involved studies of the or) 309.52 149.28 P
+2.33 (ganisation of the work) 452.93 149.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.99 (prior to the introduction of technology and the subsequent) 309.52 138.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.77 (ef) 309.52 127.28 P
+1.77 (fects that the technology had, e.g. Button and Harper) 317.11 127.28 P
+1.77 (\325) 542.97 127.28 P
+1.77 (s) 545.75 127.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.81 ([1) 309.52 116.28 P
+2.81 (1] examination of the introduction of an accountancy) 317.48 116.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.33 (package into the furniture industry and Bowers, Button and) 309.52 105.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "2" 2
+%%Page: "3" 3
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 10 Q
+0 X
+0 0 0 1 0 0 0 K
+1.06 (Sharrock\325) 45.64 756.28 P
+1.06 (s [8] description of the impact of a Management) 84.52 756.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.2 (Information System on the work practices involved in the) 45.64 745.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 (or) 45.64 734.28 P
+0.16 (ganisation of a \337ow of work on the shop-\337oor in the print) 53.79 734.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(industry) 45.64 723.28 T
+(.) 77.77 723.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Ethnomethodological Critiques of T) 45.64 706.28 T
+(echnology) 198.34 706.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+0.12 (W) 45.64 695.28 P
+0.12 (e have been describing two main themes in ethnomethod-) 54.28 695.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.29 (ological work, the or) 45.64 684.28 P
+0.29 (ganisation of social action and interac-) 129.64 684.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.23 (tion and the or) 45.64 673.28 P
+0.23 (ganisation of work, and how these have been) 104.19 673.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.32 (applied by those who claim an ethnomethodological af) 45.64 662.28 P
+0.32 (\336lia-) 266.87 662.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.67 (tion to the study of social action, interaction and work) 45.64 651.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.56 (involving technology) 45.64 640.28 P
+2.56 (. T) 132.82 640.28 P
+2.56 (aken together) 145.79 640.28 P
+2.56 (, ethnomethodologi-) 202.09 640.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.18 (cally af) 45.64 629.28 P
+-0.18 (\336liated studies have produced a strong critique of the) 74.99 629.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.1 (design of technology at work for they have displayed that) 45.64 618.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.24 (technology) 45.64 607.28 P
+2.24 (, at best, often fails to support the work it is) 89.43 607.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.61 (designed for) 45.64 596.28 P
+0.61 (, or at worst, does not allow people to actually) 95.56 596.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.33 (engage in their work, because the technology is not aligned) 45.64 585.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.12 (to the practices through which they or) 45.64 574.28 P
+1.12 (ganise their actions,) 203.81 574.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.24 (interactions and work. Heath et al summarise this conclu-) 45.64 563.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.43 (sion for CSCW in the following: \322Despite impressive tech-) 45.64 552.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.34 (nological developments in CSCW) 45.64 541.28 P
+1.34 (, it is widely recognised) 185.13 541.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.09 (that there are relatively few examples of successful applica-) 45.64 530.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.39 (tions in real world settings. [...] it is suggested that the lack) 45.64 519.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.21 (of success of CSCW systems derives not so much from their) 45.64 508.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.99 (technological limitations, but more from their insensitivity) 45.64 497.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.06 (to the or) 45.64 486.28 P
+-0.06 (ganisation of work and communication in real work) 78.68 486.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(environments\323 [30].) 45.64 475.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.81 (W) 45.64 458.28 P
+0.81 (e will content ourselves with two examples to make this) 54.28 458.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.92 (point. First, based in part upon Conversation Analysis and) 45.64 447.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.7 (the work of its founder Harvey Sacks, Lucy Suchman [44]) 45.64 436.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.58 (has challenged speech act theory upon which systems such) 45.64 425.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.47 (as W) 45.64 414.28 P
+0.47 (inograd and Flores\325 \322) 65.98 414.28 P
+1 9 Q
+0.43 (THE) 152.67 414.28 P
+0.43 (COORDINATOR\323) 172.84 414.28 P
+1 10 Q
+0.47 ( are based.) 242.33 414.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.96 (The thrust of her criticism in this respect is that conversa-) 45.64 403.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.17 (tion analysis has demonstrated that meaning and intention) 45.64 392.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+5.72 (are interactionally contingent, something that is not) 45.64 381.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 (accounted for in speech act theory) 45.64 370.28 P
+1 (. Consequently) 186.87 370.28 P
+1 (, this is a) 247.21 370.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 (feature of ordinary action and interaction which cannot be) 45.64 359.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.01 (supported by) 45.64 348.28 P
+1 9 Q
+2.71 (THE) 106.09 348.28 P
+2.71 (COORDINATOR) 128.54 348.28 P
+1 10 Q
+3.01 (, indeed a feature of) 194.04 348.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.97 (social action and interaction that is violated in the stipula-) 45.64 337.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(tive or) 45.64 326.28 T
+(ganisation imposed by the system.) 71.29 326.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.44 (Second, Bowers, Button and Sharrock [8] examined the) 45.64 309.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.69 (work of printers on the shop-\337oor and described how) 45.64 298.28 P
+1.69 (, in) 271.28 298.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.9 (being faced with the uncertainties of orders which could) 45.64 287.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.45 (result in either periods of high demand which stretched) 45.64 276.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.17 (operators and machinery or in periods of low demand when) 45.64 265.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.54 (operators and machinery were idle, operators would use ad) 45.64 254.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.85 (hoc practices not found in the formal representation of the) 45.64 243.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.16 (work-\337ow of the print room, to \322even out\323 the \337ow of work.) 45.64 232.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.47 (However) 45.64 221.28 P
+0.47 (, when a technology designed to or) 81.89 221.28 P
+0.47 (ganise the \337ow) 224.26 221.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.76 (of work on the shop-\337oor was introduced, it utilised a for-) 45.64 210.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.2 (mal model of work \337ow which prevented the operators from) 45.64 199.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.07 (utilising their ad hoc practices. The result was that the print-) 45.64 188.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.12 (ing work was seriously disrupted with order deadlines being) 45.64 177.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.12 (missed and signi\336cant over) 45.64 166.28 P
+1.12 (-time having to be done. Quite) 157.95 166.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.06 (simply) 45.64 155.28 P
+0.06 (, the technology was not designed with knowledge of) 72.22 155.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.34 (the methods and practices through which the work it was) 45.64 144.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.19 (designed to or) 45.64 133.28 P
+1.19 (ganise was done, the methods and practices) 104.5 133.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(being revealed through ethnomethodological study) 45.64 122.28 T
+(.) 248.3 122.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Critique and Design\321T) 309.52 756.28 T
+(wo Paradoxes) 411.57 756.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+0.54 (As we have seen, then, ethnomethodological analyses have) 309.52 745.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.01 (been used in a range of circumstances to critique technolog-) 309.52 734.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.4 (ical design in particular working settings and situations.) 309.52 723.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.98 (Ethnomethodology) 309.52 712.28 P
+0.98 (, in attending in particular to the details) 385.54 712.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.49 (of everyday action and work practice, has been able to) 309.52 701.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.05 (expose an unfortunate paradox in the design of technologies) 309.52 690.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.26 (for collaborative activity \050or socially-constructed action\051.) 309.52 679.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.43 (This is the) 309.52 668.28 P
+2 F
+0.43 (paradox of system design) 354.98 668.28 P
+1 F
+0.43 (\321that the introduction) 457.66 668.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.82 (of technology designed to support \322lar) 309.52 657.28 P
+1.82 (ge-scale\323 activities) 472.01 657.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.53 (while fundamentally transforming the \322small-scale\323 detail) 309.52 646.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.46 (of action can systematically undermine exactly the detailed) 309.52 635.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.24 (features of working practice) 309.52 624.28 P
+2 F
+3.24 (thr) 437.43 624.28 P
+3.24 (ough which) 448.73 624.28 P
+1 F
+3.24 ( the \322lar) 498.36 624.28 P
+3.24 (ge-) 536.87 624.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.83 (scale\323 activity is, in fact, accomplished. It points, funda-) 309.52 613.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.58 (mentally) 309.52 602.28 P
+2.58 (, to the interdependence of minute practice and) 343.87 602.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(grand accomplishment.) 309.52 591.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.12 (However) 309.52 574.28 P
+0.12 (, in so doing, ethnomethodology \336nds itself caught) 345.77 574.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.8 (in a second paradox\321the) 309.52 560.61 P
+2 F
+0.8 (paradox of technomethodology) 417.12 560.61 P
+1 8 Q
+0.64 (2) 543.14 564.61 P
+1 10 Q
+0.8 (.) 547.14 560.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.46 (Given the concern with the particular) 309.52 549.61 P
+0.46 (, with detail, and with) 460.56 549.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.51 (the moment-by-moment or) 309.52 538.61 P
+2.51 (ganisation of action, how can) 422.12 538.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.3 (ethnomethodology be applied to the design of new technol-) 309.52 527.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4.64 (ogies? Certainly) 309.52 516.61 P
+4.64 (, ethnomethodologists have ur) 378.78 516.61 P
+4.64 (ged that) 513.06 516.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.63 (designers take into account the methods and practices) 309.52 505.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.53 (through which social action, interaction and categories of) 309.52 494.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.13 (work are or) 309.52 483.61 P
+-0.13 (ganised; but in the face of the unavoidably trans-) 355.17 483.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.16 (formational nature of technology and system design in) 309.52 472.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.94 (working settings, it would seem that ethnomethodology) 309.52 461.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.53 (becomes relatively powerless. Its tradition is in analysing) 309.52 450.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 (practice, rather than \322inventing the future\323. Even Heath and) 309.52 439.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.43 (Luf) 309.52 428.61 P
+1.43 (f) 323.78 428.61 P
+1.43 (\325) 327.66 428.61 P
+1.43 (s observations of the relative impotence of gaze and) 330.44 428.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.38 (gesture in video-mediated communication are, to an extent,) 309.52 417.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.6 (undermined by accounts of the active transformation of) 309.52 406.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.09 (visual conduct in video-mediated interaction by which the) 309.52 395.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.54 (same communicative) 309.52 384.61 P
+2 F
+2.54 (accomplishments) 401.81 384.61 P
+1 F
+2.54 ( are reconstructed;) 470.69 384.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.2 (reconstructed, ironically enough, out of the) 309.52 373.61 P
+2 F
+1.2 (lived detail) 491.69 373.61 P
+1 F
+1.2 ( of) 537.61 373.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(video interaction [17].) 309.52 362.61 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.19 (Ethnomethodologists interested in technology and design) 309.52 345.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.21 (have thus so far) 309.52 334.61 P
+-0.21 (, and after much ef) 371.53 334.61 P
+-0.21 (fort, managed to make the) 445.77 334.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.38 (\336rst step from the study of the use of technology to the cri-) 309.52 323.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.65 (tique of technology) 309.52 312.61 P
+1.65 (. The next step, however) 389.93 312.61 P
+1.65 (, is yet to be) 494.43 312.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.26 (taken and will be more problematic, which is to move from) 309.52 301.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.75 (critique to design. How can design now productively learn) 309.52 290.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(from ethnomethodology?) 309.52 279.61 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(LEARNING FROM ETHNOMETHODOLOGY) 309.52 262.61 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+-0.14 (W) 309.52 251.61 P
+-0.14 (e have outlined two related forms of \322technomethodologi-) 318.16 251.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.61 (cal\323 enquiry) 309.52 240.61 P
+1.61 (. Operating across these, however) 359.62 240.61 P
+1.61 (, are funda-) 500.61 240.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.19 (mental issues about how to incorporate \336ndings and insights) 309.52 229.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.24 (from ethnomethodology into the process of design. This) 309.52 218.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.48 (integration is at the heart of technomethodology) 309.52 207.61 P
+0.48 (, and raises) 503.96 207.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4.67 (some of the most important questions for both eth-) 309.52 196.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.87 (nomethodologists and designers. T) 309.52 185.61 P
+0.87 (o explore the issues, we) 450.88 185.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.5 (set out three ways in which this relationship can operate.) 309.52 174.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.06 (T) 309.52 163.61 P
+0.06 (wo caveats should be noted. First, actual practice will tend) 314.93 163.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.2 (to draw) 309.52 152.61 P
+-0.2 (, to some extent, on elements of each; but a pedagog-) 338.93 152.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.99 (ical separation helps frame the discussion. Second, for the) 309.52 141.61 P
+0 0 0 1 0 0 0 K
+309.52 117.95 549.64 132.12 C
+0 0 0 1 0 0 0 K
+318.02 130.13 459.75 130.13 2 L
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+-8.36 24.95 603.64 816.95 C
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(2.) 309.52 111.95 T
+(T) 316.27 111.95 T
+(aken together) 321.14 111.95 T
+(, these paradoxes produce what Grudin and) 369.51 111.95 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Grinter [24] have called the \322ethnographers\325 dilemma\323.) 309.52 102.95 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "3" 3
+%%Page: "4" 4
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 10 Q
+0 X
+0 0 0 1 0 0 0 K
+1.03 (CHI audience, we present these lar) 45.64 756.28 P
+1.03 (gely in terms of design) 189.99 756.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+-0.1 (learning fr) 45.64 745.28 P
+-0.1 (om) 88.23 745.28 P
+1 F
+-0.1 ( the ethnomethodological perspective; in prac-) 100.45 745.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(tice, of course, the relationship is bidirectional.) 45.64 734.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Learning fr) 45.64 717.28 T
+(om the Ethnomethodologist) 95.18 717.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+3.36 (Ar) 45.64 706.28 P
+3.36 (guably) 56.01 706.28 P
+3.36 (, to date, the most widespread and successful) 82.58 706.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.75 (approach to incorporating ethnomethodological input into) 45.64 695.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.02 (the design process is for the design process and designers to) 45.64 684.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+1.1 (learn fr) 45.64 673.28 P
+1.1 (om the ethnomethodologist.) 76.65 673.28 P
+1 F
+1.1 ( In this model, the eth-) 189.69 673.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.32 (nomethodologist goes into the \336eld to study a work setting.) 45.64 662.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.14 (While the results may be written up as an ethnomethodolog-) 45.64 651.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.03 (ical account of the work, it is not this account, but rather the) 45.64 640.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.29 (ethnomethodologist, who will be the primary resource for) 45.64 629.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.24 (the design process. Fresh from the \336eld, brimming with) 45.64 618.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.79 (detailed observations and an analytical framework within) 45.64 607.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.43 (which to or) 45.64 596.28 P
+3.43 (ganise them, the ethnomethodologist works) 97.87 596.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.84 (closely with the designers from the earliest points in the) 45.64 585.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.31 (process. From the designers\325 perspective, the ethnomethod-) 45.64 574.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.5 (ologist serves as a proxy for the users in the \336eld\321or) 45.64 563.28 P
+0.5 (, per-) 264.15 563.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.97 (haps more accurately) 45.64 552.28 P
+1.97 (, a proxy for the) 133.9 552.28 P
+2 F
+1.97 (\336eld setting) 210.42 552.28 P
+1 F
+1.97 ( itself.) 258.78 552.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.29 (Design ideas can be \322bounced of) 45.64 541.28 P
+0.29 (f\323 the ethnomethodologist,) 178.24 541.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.9 (who draws on \336eld observations both to evaluate and to) 45.64 530.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(contribute to aspects of the design.) 45.64 519.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.21 (Where is the locus of the ethnomethodology) 45.64 502.28 P
+0.21 (, in this model?) 223.45 502.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.86 (Primarily) 45.64 491.28 P
+0.86 (, it is in the ethnomethodologist\325) 82.77 491.28 P
+0.86 (s head. From the) 216.52 491.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.4 (perspective of the designers, the ethnomethodologist is) 45.64 480.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.17 (almost indistinguishable from any other \336eldworker) 45.64 469.28 P
+2.17 (, and) 264.14 469.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 (ethnomethodology) 45.64 458.28 P
+4 (, itself, is not crucial as input. Eth-) 119.99 458.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.86 (nomethodologists will presumably use their analytical per-) 45.64 447.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.54 (spective in shaping a story about the \336eld setting, and in) 45.64 436.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.16 (evaluating and contributing to the design. However) 45.64 425.28 P
+-0.16 (, it is pri-) 249.55 425.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.12 (marily the ethnomethodologist\321as a trained \336eld worker\321) 45.64 414.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(who acts as a channel between the designers and the users.) 45.64 403.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Learning fr) 45.64 386.28 T
+(om Ethnomethodological Accounts) 95.18 386.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+0.32 (A second approach is to or) 45.64 375.28 P
+0.32 (ganise the design around) 153.96 375.28 P
+2 F
+0.32 (speci\336-) 256.88 375.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.58 (cally) 45.64 364.28 P
+1 F
+1.58 ( ethnomethodological analysis. In particular) 65.08 364.28 P
+1.58 (, the sec-) 246.79 364.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.05 (ond approach involves) 45.64 353.28 P
+2 F
+1.05 (learning fr) 141.82 353.28 P
+1.05 (om ethnomethodological) 185.55 353.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.66 (accounts of work settings.) 45.64 342.28 P
+1 F
+0.66 ( Like the \336rst approach, this will) 151.51 342.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.4 (probably involve the close collaboration of ethnomethodol-) 45.64 331.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.89 (ogist and designer; however) 45.64 320.28 P
+0.89 (, the primary dif) 160.4 320.28 P
+0.89 (ference is that) 227.88 320.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.89 (the designer is working with a speci\336cally ethnomethod-) 45.64 309.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.82 (ological analysis of the work situation, rather than with an) 45.64 298.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.02 (ethnomethodologist who might use their training and judge-) 45.64 287.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(ment to respond to design speci\336cs.) 45.64 276.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.92 (The locus of ethnomethodology is in the account\321and) 45.64 259.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.26 (that\325) 45.64 248.28 P
+0.26 (s a key distinction, because now it is an explicit part of) 63.42 248.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.35 (the communication between \336eld and design. In many) 45.64 237.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.43 (ways, this is a much more satisfactory way to proceed; one) 45.64 226.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.21 (which proceeds from an understanding that ethnomethodol-) 45.64 215.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.18 (ogy is an analytical perspective, a form of \322writing up\323) 45.64 204.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.63 (rather than a form of data collection [2]. However) 45.64 193.28 P
+2.63 (, it\325) 265.9 193.28 P
+2.63 (s) 281.87 193.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.95 (harder to do, and it\325) 45.64 182.28 P
+2.95 (s certainly less common. The \336rst) 136.03 182.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.24 (approach, after all, does not require the designers to be suf) 45.64 171.28 P
+-0.24 (\336-) 276.87 171.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.57 (ciently well-versed in ethnomethodology to be able to read) 45.64 160.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.57 (an ethnomethodologist\325) 45.64 149.28 P
+2.57 (s account of a working situation.) 142.38 149.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.51 (What\325) 45.64 138.28 P
+1.51 (s more, the \336rst approach more directly re\337ects the) 70.08 138.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.87 (feeling that design must \322engage the user\323; the feeling) 45.64 127.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 (which has lead to the emer) 45.64 116.28 P
+0.16 (gence of User) 153.15 116.28 P
+0.16 (-Centred Design as) 208.8 116.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.14 (a movement, and to the increasing use of ethnographic \336eld) 45.64 105.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.5 (techniques in design in the \336rst place! Connection between) 309.52 756.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.23 (designers and users is valued and sought out, so the \322discon-) 309.52 745.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.43 (nection\323 implied by mediation through an ethnomethod-) 309.52 734.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+6.61 (ological analysis rather than through a person is,) 309.52 723.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.18 (consequently) 309.52 712.28 P
+0.18 (, to be avoided. However) 361.64 712.28 P
+0.18 (, the second approach) 462.47 712.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.75 (more adequately builds on ethnomethodological under-) 309.52 701.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.54 (standing \050rather than simply any \336eld observation\051; and so,) 309.52 690.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.01 (if we are to take seriously a turn towards ethnomethodology) 309.52 679.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+1.28 (in particular) 309.52 668.28 P
+1 F
+1.28 (, then we must similarly understand how this) 361.24 668.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(second approach proceeds.) 309.52 657.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Learning fr) 309.52 640.28 T
+(om Ethnomethodology) 359.06 640.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+0.77 (In the \336rst approach, design was or) 309.52 629.28 P
+0.77 (ganised directly around) 454.22 629.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.99 (the contribution or involvement of an ethnomethodologist.) 309.52 618.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.95 (In the second approach, it was or) 309.52 607.28 P
+1.95 (ganised around an eth-) 452.97 607.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.41 (nomethodological analysis of a working situation; a more) 309.52 596.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.58 (explicit basis in ethnomethodological investigation, rather) 309.52 585.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.06 (than simply on \336eld observation and commentary) 309.52 574.28 P
+0.06 (. The third) 507.57 574.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.38 (approach is to make the connection at a deeper level yet.) 309.52 563.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.6 (Here, the design process) 309.52 552.28 P
+2 F
+2.6 (learns fr) 420.18 552.28 P
+2.6 (om ethnomethodology) 456.58 552.28 P
+1 F
+2.6 (.) 547.14 552.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.85 (That is, we consider the implications which foundational) 309.52 541.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.37 (ethnomethodological principles\321those insights and per-) 309.52 530.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.32 (spectives which characterise the discipline\321hold for both) 309.52 519.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.01 (the artifacts and processes of design. In this approach,) 309.52 508.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.1 (design does not take on board ethnomethodological analysis) 309.52 497.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.19 (and insights, but takes on board the very study policy of eth-) 309.52 486.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(nomethodology) 309.52 475.28 T
+(.) 371.65 475.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.04 (This approach dif) 309.52 458.28 P
+0.04 (fers signi\336cantly from the \336rst two, in that) 379.95 458.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.32 (it regards the relationship between ethnomethodology and) 309.52 447.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.02 (system design as a theoretical matter) 309.52 436.28 P
+0.02 (. Again, this theoretical) 455.98 436.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.94 (orientation is why we have been concentrating on eth-) 309.52 425.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.69 (nomethodology) 309.52 414.28 P
+0.69 (, rather than qualitative methods in general.) 371.65 414.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.42 (So, rather than have systems design and ethnomethodology) 309.52 403.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.43 (\322reach\323 towards each other and \322meet\323 at a design, we) 309.52 392.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.24 (instead look to for) 309.52 381.28 P
+1.24 (ge more foundational relationships, and) 386.1 381.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.75 (then approach design from this new position. This founda-) 309.52 370.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.2 (tional relationship is one in which design adopts the analytic) 309.52 359.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4.43 (mentality of ethnomethodology) 309.52 348.28 P
+4.43 (, and ethnomethodology) 443.84 348.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.18 (dons the practical mantle of design. W) 309.52 337.28 P
+3.18 (e look forward,) 481.92 337.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.61 (through this approach, to what Gar\336nkel has often referred) 309.52 326.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.04 (to as the emer) 309.52 315.28 P
+2.04 (gence of a \322hybrid\323 discipline out of eth-) 371.26 315.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(nomethodological studies of other disciplines.) 309.52 304.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.04 (This approach is as radical for ethnomethodology as it is for) 309.52 287.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.12 (system design. On the one hand, it deals directly with the) 309.52 276.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.39 (generally operative social processes which are the currency) 309.52 265.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.02 (of ethnomethodology; elements such as situatedness, practi-) 309.52 254.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.4 (cal action and representation, achievement and mechanism,) 309.52 243.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.33 (phenomena of order) 309.52 232.28 P
+0.33 (, and accountability) 390.3 232.28 P
+0.33 (. On the other hand,) 468.9 232.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.75 (it deals with the fundamental, almost implicit, aspects of) 309.52 221.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.05 (system design\321generalisation and abstraction, con\336gura-) 309.52 210.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.25 (tion, data and process, \336xedness and mutability) 309.52 199.28 P
+1.25 (. So rather) 505.77 199.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.37 (than ask, \322what are the implications of this ethnomethod-) 309.52 188.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.16 (ological account of the work of hotel receptionists for the) 309.52 177.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.52 (design of a booking system?\323, we might ask, \322what are the) 309.52 166.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.05 (implications of the operation and use of member categorisa-) 309.52 155.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.12 (tions for questions of individuality and grouping in software) 309.52 144.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(systems?\323. This is a quite dif) 309.52 133.28 T
+(ferent order of question.) 424.89 133.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.41 (T) 309.52 116.28 P
+0.41 (o make this more concrete, let\325) 314.93 116.28 P
+0.41 (s consider a speci\336c exam-) 440.27 116.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.41 (ple. In recent work, we have been concerned with issues of) 309.52 105.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "4" 4
+%%Page: "5" 5
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 10 Q
+0 X
+0 0 0 1 0 0 0 K
+0.58 (abstraction and representation in system design. In particu-) 45.64 756.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.14 (lar) 45.64 745.28 P
+1.14 (, we have looked at the contrast between, on one hand,) 55.79 745.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.45 (the traditional role of abstraction in systems design and, on) 45.64 734.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.31 (the other) 45.64 723.28 P
+0.31 (, the practical aspects of representations of activity) 80.82 723.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.66 (from an ethnomethodological perspective. From this we) 45.64 712.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.54 (have developed a notion of \322accounts\323 [16]; computational) 45.64 701.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.82 (representations which systems continuously of) 45.64 690.28 P
+1.82 (fer of their) 239.37 690.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.66 (own behaviour and activity) 45.64 679.28 P
+1.66 (, as a resource for improvised) 159.13 679.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4.96 (and contextualised action) 45.64 665.61 P
+1 8 Q
+3.97 (3) 157.21 669.61 P
+1 10 Q
+4.96 (. Accounts draw on recent) 161.21 665.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.24 (research on software architectures and \322open implementa-) 45.64 654.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.07 (tions\323 [33], which introduce the idea of a \322causal connec-) 45.64 643.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+7.2 (tion\323 which maintains the correspondence between) 45.64 632.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.83 (representations and the systems they represent. In the) 45.64 621.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.22 (accounts model, this causal connection provides for the con-) 45.64 610.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.42 (tinual) 45.64 599.61 P
+2 F
+0.42 (accountability) 71.34 599.61 P
+1 F
+0.42 ( of the account; the backing in its rela-) 128.56 599.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4.61 (tionship to the action of the system which lends it) 45.64 588.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.05 (legitimacy) 45.64 577.61 P
+-0.05 (. Just as ethnomethodology has shown how social) 87.21 577.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.1 (activity is accountable, i.e. performed in such a way as to) 45.64 566.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.38 (reveal its or) 45.64 555.61 P
+3.38 (ganisation, so our notion of computational) 99.43 555.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.65 (accountability relates interface activity to the structure of) 45.64 544.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.83 (what lies below) 45.64 533.61 P
+1.83 (. Interface activity is or) 111.41 533.61 P
+1.83 (ganised within an) 211.56 533.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.32 (account of the system\325) 45.64 522.61 P
+2.32 (s action, so that it can become a) 142.31 522.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.13 (resource for the ongoing management of user activity and) 45.64 511.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(interaction.) 45.64 500.61 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.09 (The notion of accounts and accountability as a basis for sys-) 45.64 483.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+5.53 (tem-building constitutes a signi\336cant reorientation of) 45.64 472.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.47 (abstraction in system design. Computational abstractions) 45.64 461.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.63 (provide modularity and separation. The abstraction \322stands) 45.64 450.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4.15 (for\323 the behaviour of the code which implements it.) 45.64 439.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.39 (Abstraction barriers are opaque; on the one hand, they hide) 45.64 428.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 (the complexity of what lies behind, and on the other) 45.64 417.61 P
+1 (, they) 262.54 417.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.87 (present it for use in some rationalised way) 45.64 406.61 P
+2.87 (. So system) 234.19 406.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.1 (design traf) 45.64 395.61 P
+3.1 (\336cs in abstractions, rather than in meanings,) 91.05 395.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(interpretations or behaviours.) 45.64 384.61 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 (Accounts begin to capture some of the \337avour of the social.) 45.64 367.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.56 (This alternative view is less concerned with what the) 45.64 356.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.7 (abstraction \050or representation\051) 45.64 345.61 P
+2 F
+0.7 (is) 170.75 345.61 P
+1 F
+0.7 (, in itself, focusing instead) 177.42 345.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.17 (on what it can do and how it can be made to work. They) 45.64 334.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 (place the emphasis on where the abstraction came from,) 45.64 323.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.11 (how and why it was produced, by whom and for whom. The) 45.64 312.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.61 (representation exists only by dint of its being maintained) 45.64 301.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.62 (and supported, being made acceptable to the parties on) 45.64 290.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.1 (either side for some set of purposes and actions. So when) 45.64 279.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.04 (we begin to design systems with a model of \322abstractions as) 45.64 268.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.25 (accounts\323, the action isn\325) 45.64 257.61 P
+0.25 (t in the abstraction, but in how the) 147.31 257.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.22 (abstraction can be) 45.64 246.61 P
+2 F
+0.22 (worked) 121 246.61 P
+1 F
+0.22 (\321in the notions of accountability) 150.44 246.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(which make it useful.) 45.64 235.61 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.57 (Accounts illustrate the investigation of an aspect of system) 45.64 218.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.79 (design with respect to an aspect of ethnomethodology as a) 45.64 207.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.93 (body of knowledge. As such, they exemplify our third) 45.64 196.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+5.18 (approach to system learning\321from ethnomethodology) 45.64 185.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4.48 (itself, rather than from particular ethnomethodological) 45.64 174.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.23 (investigations, or from the ethnomethodologist as a proxy of) 45.64 163.61 P
+0 0 0 1 0 0 0 K
+45.64 135.95 285.76 150.12 C
+0 0 0 1 0 0 0 K
+54.14 148.13 195.87 148.13 2 L
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+-8.36 24.95 603.64 816.95 C
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(3.) 45.64 129.95 T
+(W) 52.39 129.95 T
+(e present this work only as an example of the relationship) 60.16 129.95 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(between fundamental concepts from the disciplines; a fuller) 45.64 120.95 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(description\321an \322account of accounts\323\321is outwith the scope of) 45.64 111.95 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(this paper) 45.64 102.95 T
+(.) 80.39 102.95 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 10 Q
+5.12 (the working situation. The success of the \336rst two) 309.52 756.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.09 (approaches in the development of CSCW systems and tech-) 309.52 745.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.91 (nologies is testament to their value; however) 309.52 734.28 P
+1.91 (, the deeper) 499.45 734.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.92 (connection between ethnomethodology and system design,) 309.52 723.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.89 (as disciplines, seems crucial to the progression from study) 309.52 712.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(and critique to design.) 309.52 701.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(HUMAN SCIENCES AND DESIGN PRACTICE) 309.52 684.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+1.5 (The general problem which we have addressed here\321the) 309.52 673.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.54 (relationship between a body of disciplinary knowledge and) 309.52 662.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.52 (the practice of HCI or CSCW design\321is hardly a new one) 309.52 651.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.4 (to the HCI community) 309.52 640.28 P
+0.4 (. Over the past ten years or so, many) 400.35 640.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.86 (analyses have focused on the relationship between a range) 309.52 629.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.26 (of scienti\336c understandings and HCI design \050see, for exam-) 309.52 618.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.02 (ple, [3], [34]\051; a range of design approaches drawing on dif-) 309.52 607.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.13 (ferent levels of theoretical input have been developed and) 309.52 596.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.52 (explored \050e.g. [14], [15], [32]\051; and attempts have been) 309.52 585.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+6.05 (made to integrate multiple theoretical and practical) 309.52 574.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(approaches to HCI design \050e.g. [4], [9]\051.) 309.52 563.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.27 (In many ways, some of the distinctions which we have pre-) 309.52 546.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.38 (sented in this paper\321especially our separation between the) 309.52 535.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+5.31 (three modes of incorporation of ethnomethodological) 309.52 524.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.22 (understandings into design ef) 309.52 513.28 P
+-0.22 (forts\321mirror these analyses of) 426.16 513.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.31 (\050primarily\051 cognitive science and human factors knowledge) 309.52 502.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.82 (into the HCI design process. In much the same way as we) 309.52 491.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.53 (describe designers learning from ethnomethodologists as) 309.52 480.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.22 (work-setting proxies, so human factors specialists have) 309.52 469.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.82 (been introduced into design teams. Similarly) 309.52 458.28 P
+1.82 (, by analogy) 496.84 458.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.82 (with our second form of collaboration, attempts have been) 309.52 447.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.14 (made to inform system design on the basis of cognitive) 309.52 436.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.29 (models of human activity) 309.52 425.28 P
+1.29 (. And \336nally) 414.68 425.28 P
+1.29 (, our third approach) 466.89 425.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.63 (can be thought as being related to more radical attempts to) 309.52 414.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.18 (restructure the design process around a cognitive \322science) 309.52 403.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 (base\323. Even in particular) 309.52 392.28 P
+0.35 (, restricted areas of research inves-) 409.04 392.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.1 (tigation, we can see these various approaches operating at) 309.52 381.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.46 (once\321consider) 309.52 370.28 P
+1.46 (, for example, the range of ways in which) 371.88 370.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.82 (research on mental models has been incorporated, more or) 309.52 359.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(less directly) 309.52 348.28 T
+(, into the design of interactive systems.) 356.92 348.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.5 (In this way) 309.52 331.28 P
+0.5 (, then, our concerns here relate to a lar) 354.31 331.28 P
+0.5 (ger set of) 511.42 331.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.18 (concerns within the HCI community) 309.52 320.28 P
+0.18 (. As such, we hope that) 455.69 320.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.57 (our perspective can also shed light on those general issues.) 309.52 309.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.29 (However) 309.52 298.28 P
+2.29 (, there are a number of aspects of our position) 345.77 298.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.67 (which dif) 309.52 287.28 P
+2.67 (fer from these approaches in signi\336cant ways,) 350.06 287.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.29 (some of them based on the nature of the particular theoreti-) 309.52 276.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.69 (cal perspective, ethnomethodology) 309.52 265.28 P
+0.69 (, which concerns us. W) 449.94 265.28 P
+0.69 (e) 545.2 265.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(will address three here.) 309.52 254.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.18 (The \336rst reason to explore these issues was discussed in the) 309.52 237.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.62 (\336rst section of this paper\321the prevalence of ethnomethod-) 309.52 226.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.02 (ological perspectives in the design of collaborative systems.) 309.52 215.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.66 (Collaborative systems open up new sets of issues for theo-) 309.52 204.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.61 (retical exploration, and we have increasingly found those) 309.52 193.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.12 (issues work their way back to more traditional areas of HCI.) 309.52 182.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.44 (So, just as the various approaches to the incorporation of) 309.52 171.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.64 (cognitive and psychological approaches to HCI design) 309.52 160.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.29 (re\337ect the particular details of the various approaches\321) 309.52 149.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.11 (indeed, dif) 309.52 138.28 P
+2.11 (ferent approaches appear to be most fruitfully) 354.22 138.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.61 (applied in dif) 309.52 127.28 P
+0.61 (ferent ways and at dif) 363.88 127.28 P
+0.61 (ferent points in the pro-) 452.77 127.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.87 (cess\321so a focus on ethnomethodology) 309.52 116.28 P
+1.87 (, simply as a new) 473 116.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(discipline, opens up these issues to further scrutiny) 309.52 105.28 T
+(.) 512.74 105.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "5" 5
+%%Page: "6" 6
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 10 Q
+0 X
+0 0 0 1 0 0 0 K
+-0.11 (The second important point to be made is that the third level) 45.64 756.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4.97 (of connection between ethnomethodology and system) 45.64 745.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.65 (design which we have advocated, and described with the) 45.64 734.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.55 (example of the \322accounts\323 work, is) 45.64 723.28 P
+2 F
+0.55 (not) 191.93 723.28 P
+1 F
+0.55 ( a link between the-) 204.71 723.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.78 (ory and practice; it\325) 45.64 712.28 P
+0.78 (s a link between theory and theory) 126.01 712.28 P
+0.78 (. An) 267.76 712.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.43 (important understanding which underpins our attempt to) 45.64 701.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.01 (identify fruitful relationships of this sort is that it is not sim-) 45.64 690.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.44 (ply enough to consider the implications which a theoretical) 45.64 679.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.78 (orientation has for the way in which we design systems;) 45.64 668.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.36 (rather) 45.64 657.28 P
+0.36 (, it is critical that we consider the implications for the) 68.56 657.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+1.54 (natur) 45.64 646.28 P
+1.54 (e of the systems we design) 66.94 646.28 P
+1 F
+1.54 (. A respectfulness for the) 179.35 646.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.17 (notion of improvised action, or for the social production and) 45.64 635.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.58 (use of representations, forces a reorientation of perspective) 45.64 624.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(which reaches deeper than the design process itself.) 45.64 613.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.04 (The third issue has to do with the very nature of ethnometh-) 45.64 596.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.52 (odological understandings; and, in particular) 45.64 585.28 P
+3.52 (, with eth-) 237.89 585.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.97 (nomethodology\325) 45.64 574.28 P
+1.97 (s overriding attentiveness to the detail of) 111.2 574.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.06 (practice. Ethnomethodology itself set out to respecify issues) 45.64 563.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.03 (arising from the application of models, theories and struc-) 45.64 552.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.49 (tures in traditional sociology) 45.64 541.28 P
+2.49 (, and hence ethnomethodol-) 167.19 541.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.84 (ogy\325) 45.64 530.28 P
+2.84 (s position on the relationship between practice and) 63.42 530.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.76 (generalisation is itself a slippery one, forcing us to look in) 45.64 519.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4.28 (new ways at how to incorporate ethnomethodological) 45.64 508.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4.7 (understandings in system design. So this relationship) 45.64 497.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.41 (between the abstract and the particular is the crux of any) 45.64 486.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.02 (relationship we might try to derive between ethnomethodol-) 45.64 475.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(ogy and design.) 45.64 464.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(ABSTRACTION AND P) 45.64 447.28 T
+(AR) 151.01 447.28 T
+(TICULARITY) 165.1 447.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+1.71 (\322... the r) 54.28 436.28 P
+1.71 (eported phenomena ar) 91.49 436.28 P
+1.71 (e only inspectably the) 185.07 436.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.36 (case. They ar) 54.28 426.28 P
+0.36 (e unavailable to the arts of designing and) 108.22 426.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.99 (interpr) 54.28 416.28 P
+1.99 (eting de\336nitions, metaphors, models, construc-) 81.69 416.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.54 (tions, types or ideals. They cannot be r) 54.28 406.28 P
+2.54 (ecover) 226.92 406.28 P
+2.54 (ed by) 253.2 406.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.01 (attempts, no matter how thoughtful, to specify an exam-) 54.28 396.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(inable practice by detailing a generality) 54.28 386.28 T
+(.\323) 214.55 386.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\321Har) 54.28 376.28 T
+(old Gar\336nkel [19]) 78.91 376.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+0.04 (The roots of ethnomethodology\321and, in particular) 45.64 360.28 P
+0.04 (, its radi-) 249.85 360.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.33 (cal respeci\336cation of the issues of sociological analysis\321) 45.64 349.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.73 (are \336rmly grounded in a primary concern with the particu-) 45.64 338.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.15 (lars of everyday) 45.64 327.28 P
+2.15 (, practical action. System design, on the) 113.71 327.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.86 (other hand, is fundamentally about the creation, manipula-) 45.64 316.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.06 (tion and use of abstractions. So, as ethnomethodology has) 45.64 305.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.45 (encountered systems design, it has sometimes, perhaps) 45.64 294.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.07 (unfairly) 45.64 283.28 P
+0.07 (, been seen as exclusively concerned with detail and) 76.65 283.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.09 (speci\336cs\321the \322excruciatingly particular\323\321and unwilling,) 45.64 272.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(or unable, to trade in generalisations.) 45.64 261.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.46 (However) 45.64 244.28 P
+0.46 (, this is a short-sighted criticism. It is important to) 81.89 244.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.37 (note that many of the social \322mechanisms\323 that ethnometh-) 45.64 233.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.03 (odology has described are found across many dif) 45.64 222.28 P
+3.03 (ferent) 262.44 222.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.81 (social circumstances. For example, Gar\336nkel and Sacks) 45.64 211.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.45 ([20] describe \322cohort independence\323 phenomena, by which) 45.64 200.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.68 (they mean social phenomena that are not tied to the scenic) 45.64 189.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.03 (features of their production. Thus, for example, the model) 45.64 178.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.9 (for turn-taking in conversation [40] is, in some crucial) 45.64 167.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.61 (respects, cohort independent in that it operates across local) 45.64 156.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.9 (circumstances such as gender) 45.64 145.28 P
+0.9 (, ethnicity) 165.96 145.28 P
+0.9 (, race, occupational) 206.21 145.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.42 (identity) 45.64 134.28 P
+1.42 (, etc. It is these sorts of generally operative social) 75.55 134.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.69 (processes, explicated by ethnomethodology) 45.64 123.28 P
+0.69 (, which we turn) 221.48 123.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.76 (to in our third approach to technomethodology) 45.64 112.28 P
+0.76 (. These pro-) 236.2 112.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.49 (cesses are, in Sacks et al\325) 45.64 101.28 P
+0.49 (s terms, \322context free, yet context) 148.62 101.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(sensitive\323.) 309.52 756.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.13 (Since we are advocating the use in design of general pro-) 309.52 739.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.37 (cesses arising from a discipline concerned with the particu-) 309.52 728.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.45 (lar) 309.52 717.28 P
+0.45 (, there are some issues to be clari\336ed. W) 319.67 717.28 P
+0.45 (e will make two) 484.12 717.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(points here.) 309.52 706.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.6 (The \336rst is to emphasise that the generally operative social) 309.52 689.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.29 (processes to which we make appeal are incontrovertibly) 309.52 678.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.02 (grounded in practice. They arise from, and are employed in,) 309.52 667.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.1 (the speci\336cs of everyday action. Their generality does not) 309.52 656.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.51 (lie in any \322abstracting away\323 of detail; it lies, instead, in) 309.52 645.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.24 (their general) 309.52 634.28 P
+2 F
+1.24 (operativeness,) 364.75 634.28 P
+1 F
+1.24 (the wide range of actions and) 425.98 634.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(interactions which they underpin.) 309.52 623.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.62 (The second observation is that ethnomethodologists and) 309.52 606.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.88 (system designers will typically put the generalisations of) 309.52 595.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.07 (their disciplines to work in very dif) 309.52 584.28 P
+2.07 (ferent ways. On one) 462.88 584.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.74 (hand, the ethnomethodologist\325) 309.52 573.28 P
+1.74 (s generalisations tend to be) 434.38 573.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+2.27 (analytic) 309.52 562.28 P
+1 F
+2.27 ( characterisations\321categories and descriptions of) 341.74 562.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.22 (action employed to delineate, describe and explicate action.) 309.52 551.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.4 (On the other hand, the abstractions of software engineering) 309.52 540.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.01 (are) 309.52 529.28 P
+2 F
+-0.01 (generative) 324.21 529.28 P
+1 F
+-0.01 (; they not only characterise system action but,) 366.42 529.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.62 (themselves, give rise to it. Abstractions in computer pro-) 309.52 518.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.21 (grams produce behaviour; indeed, all behaviour is generated) 309.52 507.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.05 (through some set of abstractions \050embodied in software sys-) 309.52 496.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.89 (tems, programming languages and instruction sets\051. As a) 309.52 485.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.3 (result, ethnomethodologists and system designers have, tra-) 309.52 474.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.14 (ditionally) 309.52 463.28 P
+3.14 (, had very dif) 347.21 463.28 P
+3.14 (ferent ideas of the scope, form,) 409.78 463.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(nature and use of generalisations.) 309.52 452.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.02 (Understanding the place of abstraction and generalisation in) 309.52 435.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.3 (ethnomethodological accounts of work is critical to making) 309.52 424.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.5 (the move between the three forms of learning, because it) 309.52 413.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.81 (represents a move towards the abstract. In particular) 309.52 402.28 P
+1.81 (, the) 530.61 402.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.63 (move represents an attempt to work with a set of) 309.52 391.28 P
+2 F
+0.63 (sensibili-) 512.97 391.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.94 (ties) 309.52 380.28 P
+1 F
+1.94 ( rather than with the details of speci\336c activity) 323.41 380.28 P
+1.94 (, even) 523.82 380.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.85 (though, of course, those sensibilities arise out of the disci-) 309.52 369.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.37 (pline\325) 309.52 358.28 P
+0.37 (s very concern with the grounded and speci\336c experi-) 332.3 358.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.12 (ence of everyday activity) 309.52 347.28 P
+-0.12 (. In other words, the third approach) 409.3 347.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.01 (to technomethodology attempts to align system design not) 309.52 336.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.31 (so much with the details of) 309.52 325.28 P
+2 F
+1.31 (speci\336c working practices) 427.94 325.28 P
+1 F
+1.31 (, as) 534.99 325.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.68 (with the details of the) 309.52 314.28 P
+2 F
+0.68 (means by which such working prac-) 402.08 314.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(tices arise and ar) 309.52 303.28 T
+(e constituted) 378.87 303.28 T
+1 F
+(.) 429.7 303.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.57 (This distinction is critical to the successful interworking of) 309.52 286.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.86 (systems design and ethnomethodology) 309.52 275.28 P
+1.86 (, as is the recogni-) 469.16 275.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.81 (tion\321and, subsequently) 309.52 264.28 P
+0.81 (, the) 406.9 264.28 P
+2 F
+0.81 (working) 428.24 264.28 P
+1 F
+0.81 (\321of the dif) 461.02 264.28 P
+0.81 (ference in) 509.13 264.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(models of abstraction.) 309.52 253.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.75 (Consider an example to illustrate this distinction. In recent) 309.52 236.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.82 (years, there has been an interest in utilising the insights of) 309.52 225.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.86 (ethnomethodology for the development of dialogical inter-) 309.52 214.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.54 (faces. Attempts have been made to build in the) 309.52 203.28 P
+2 F
+0.54 (speci\336cs) 504.38 203.28 P
+1 F
+0.54 ( of) 538.26 203.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.2 (Sacks et al\325) 309.52 192.28 P
+0.2 (s turn-taking model, such as the rules associated) 355.47 192.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.78 (with speaker transfer) 309.52 181.28 P
+1.78 (, into computer interfaces. However) 396.55 181.28 P
+1.78 (,) 547.14 181.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.35 (our ar) 309.52 170.28 P
+2.35 (gument is that the value of the turn-taking model) 335.29 170.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.14 (described by Sacks et al is in the way in which it shows how) 309.52 159.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.34 (the abstractions of conversational \337ow are) 309.52 148.28 P
+2 F
+0.34 (sustained) 483.2 148.28 P
+1 F
+0.34 (, rather) 520.98 148.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.23 (than rote procedures by which they might be) 309.52 137.28 P
+2 F
+-0.23 (enacted) 488.73 137.28 P
+1 F
+-0.23 ( [10]. It) 519.83 137.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.88 (is this notion of the ongoing management of conversation,) 309.52 126.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.27 (rather than the speci\336cs of any human dialogue, which pro-) 309.52 115.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.99 (vides an abstraction for design. When we fail to make the) 309.52 104.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "6" 6
+%%Page: "7" 7
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 10 Q
+0 X
+0 0 0 1 0 0 0 K
+0.68 (distinction, we fall foul of the paradox of technomethodol-) 45.64 756.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(ogy) 45.64 745.28 T
+(.) 59.99 745.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.26 (So, the two paradoxes which we described\321the paradox of) 45.64 728.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4.08 (system design, and, particularly) 45.64 717.28 P
+4.08 (, the paradox of tech-) 184.17 717.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.42 (nomethodology\321are based in lar) 45.64 706.28 P
+2.42 (ge part in the dif) 186.29 706.28 P
+2.42 (fering) 261.88 706.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.26 (forms and uses of generalisation in the two disciplines. The) 45.64 695.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.31 (third approach of technomethodology\321one which attempts) 45.64 684.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4.11 (to work with generally operative processes from eth-) 45.64 673.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.58 (nomethodology as resources for design\321is a starting-point) 45.64 662.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(in attempting to resolve some of these dif) 45.64 651.28 T
+(\336culties.) 211.28 651.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(SUMMAR) 45.64 634.28 T
+(Y) 91.39 634.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+1.89 (The design of both single-user and multi-user interactive) 45.64 623.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.84 (systems on the basis of ethnomethodological studies of) 45.64 612.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.37 (working settings and work practice has been relatively suc-) 45.64 601.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.46 (cessful, but nonetheless problematic. The force and telling-) 45.64 590.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.83 (ness of these accounts of work is testament to their utility) 45.64 579.28 P
+0.83 (,) 283.26 579.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.69 (but aspects of ethnomethodology\325) 45.64 568.28 P
+1.69 (s project pose problems) 185.98 568.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.18 (for design practice. The paradox of technomethodology lies) 45.64 557.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 (in the attempt to design novel technological solutions based) 45.64 546.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.24 (on an analytical perspective with a speci\336c orientation) 45.64 535.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 (towards the existing detail of practical action. W) 45.64 524.28 P
+0.35 (e have dis-) 241.73 524.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.07 (cussed three approaches to working with ethnomethodology) 45.64 513.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.1 (in system design; and in particular) 45.64 502.28 P
+2.1 (, we have proposed a) 193.22 502.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.24 (model which applies not simply to the process of design but,) 45.64 491.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.07 (crucially) 45.64 480.28 P
+-0.07 (, to the nature of computational artifacts in working) 79.98 480.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.17 (settings. Our intention is to identify ways in which eth-) 45.64 469.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 (nomethodology and system design can be combined in) 45.64 458.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.91 (ways which are respectful of both as bodies of knowledge) 45.64 447.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.07 (and practice; and, in so doing, we have pointed in particular) 45.64 436.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.11 (to fundamental dif) 45.64 425.28 P
+-0.11 (ferences in the nature and use of generali-) 119.11 425.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.19 (sations and abstractions in the two disciplines. Our ongoing) 45.64 414.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.52 (project is the investigation and exploitation of precisely) 45.64 403.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.57 (these relationships in the pursuit of technological support) 45.64 392.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(for everyday activity and working practice.) 45.64 381.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(ACKNOWLEDGMENTS) 45.64 364.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+0.75 (W) 45.64 353.28 P
+0.75 (e would like to acknowledge many colleagues who have) 54.28 353.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.18 (helped us develop these ideas, especially Annette Adler) 45.64 342.28 P
+2.18 (,) 283.26 342.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.3 (Bob Anderson, V) 45.64 331.28 P
+2.3 (ictoria Bellotti, John Bowers, Christian) 119.9 331.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.3 (Heath, Beki Grinter) 45.64 320.28 P
+2.3 (, W) 128.99 320.28 P
+2.3 (es Sharrock, and Lucy Suchman.) 144.92 320.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.58 (May they still talk to us. John T) 45.64 309.28 P
+0.58 (ang and the CHI reviewers) 176.24 309.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(provided valuable feedback on an earlier draft of this paper) 45.64 298.28 T
+(.) 281.96 298.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(REFERENCES) 45.64 281.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+([1]) 45.64 270.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+7.41 (Anderson, R., Button, G. and Sharrock, W) 67.24 270.28 P
+7.41 (.,) 280.76 270.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+9.84 (\322Supporting the Design Process W) 67.24 259.28 P
+9.84 (ithin an) 245.64 259.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+7.39 (Or) 67.24 248.28 P
+7.39 (ganisational Context\323, Proc. European Conf.) 77.61 248.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.88 (Computer) 67.24 237.28 P
+1.88 (-Supported Cooperative W) 107.04 237.28 P
+1.88 (ork ECSCW\32593,) 217.76 237.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Milano, Italy) 67.24 226.28 T
+(, September 1993.) 118.81 226.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([2]) 45.64 212.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.04 (Anderson, R., \322Representation and Requirements: The) 67.24 212.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.58 (V) 67.24 201.28 P
+2.58 (alue of Ethnography in System Design\323, Human-) 73.35 201.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Computer Interaction, 9, pp. 151\320182, 1994.) 67.24 190.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([3]) 45.64 176.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.57 (Barnard, P) 67.24 176.28 P
+-0.57 (., \322Building Bridges Between Basic Theories) 108.33 176.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.46 (and the Artifacts of Human-Computer Interaction\323, in) 67.24 165.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.65 (Carroll \050ed.\051,) 67.24 154.28 P
+2 F
+1.65 (\322Designing Interaction: Psychology at) 124.98 154.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+12.48 (the Human-Computer Interface\323) 67.24 143.28 P
+1 F
+12.48 (, Cambridge) 223.84 143.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(University Press, New Y) 67.24 132.28 T
+(ork, 1991.) 165.67 132.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([4]) 45.64 118.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.8 (Bellotti, V) 67.24 118.28 P
+0.8 (., Buckingham-Shum, S., MacLean, A. and) 108.98 118.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.7 (Hammond, N., \322Multidisciplinary Modelling in HCI) 67.24 107.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+5.55 (Design... In Theory and Practice\323) 331.12 756.28 P
+2 F
+5.55 (,) 487.43 756.28 P
+1 F
+5.55 (Proc. ACM) 497.98 756.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.4 (Conference on Human Factors in Computing Systems) 331.12 745.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(CHI\32595, Denver) 331.12 734.28 T
+(, Colorado, May 1995.) 395.7 734.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([5]) 309.52 720.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.2 (Bentley) 331.12 720.28 P
+1.2 (, R., Rodden, T) 361.58 720.28 P
+1.2 (., Sawyer) 425.82 720.28 P
+1.2 (, P) 464.1 720.28 P
+1.2 (., Sommerville, I.,) 474.75 720.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+9.66 (Hughes, J., Randall, D. and Shapiro, D.,) 331.12 709.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 (\322Ethnographically-Informed Systems Design for Air) 331.12 698.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+8.2 (T) 331.12 687.28 P
+8.2 (raf) 336.88 687.28 P
+8.2 (\336c Control) 347.8 687.28 P
+2 F
+8.2 (\323) 399.06 687.28 P
+1 F
+8.2 (, Proc. ACM Conference on) 404.62 687.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.92 (Computer) 331.12 676.28 P
+3.92 (-Supported Cooperative W) 370.92 676.28 P
+3.92 (ork CSCW\32594,) 485.72 676.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(T) 331.12 665.28 T
+(oronto, Canada, November 1992.) 336.53 665.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([6]) 309.52 651.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.84 (Bowers, J. and Pycock, J., \322T) 331.12 651.28 P
+0.84 (alking Through Design:) 452.4 651.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+9.77 (Requirements and Resistance in Cooperative) 331.12 640.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4.54 (Prototyping\323, Proc. ACM Conference on Human) 331.12 629.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.34 (Factors in Computing Systems CHI\32594, Boston, Mass.,) 331.12 618.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(May 1994.) 331.12 607.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([7]) 309.52 593.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.49 (Bowers, J., \322The W) 331.12 593.28 P
+2.49 (ork to Make a Network W) 416.65 593.28 P
+2.49 (ork:) 533.53 593.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.14 (Studying CSCW In Action\323, Proc. ACM Conference) 331.12 582.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.19 (on Computer) 331.12 571.28 P
+-0.19 (-Supported Cooperative W) 383.23 571.28 P
+-0.19 (ork CSCW\32594,) 489.82 571.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Chapel Hill, North Carolina, October 1994.) 331.12 560.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([8]) 309.52 546.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.27 (Bowers, J., Button, G. and Sharrock, W) 331.12 546.28 P
+1.27 (., \322W) 496.68 546.28 P
+1.27 (ork\337ow) 518.53 546.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.36 (from W) 331.12 535.28 P
+3.36 (ithin and W) 365.46 535.28 P
+3.36 (ithout) 419 535.28 P
+2 F
+3.36 (\323) 442.34 535.28 P
+1 F
+3.36 (, Proc. European Conf.) 447.9 535.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.88 (Computer) 331.12 524.28 P
+1.88 (-Supported Cooperative W) 370.92 524.28 P
+1.88 (ork ECSCW\32595,) 481.64 524.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Stockholm, Sweden, September 1995.) 331.12 513.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([9]) 309.52 499.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.18 (Buckingham-Shum, S. and Hammond, N., \322Delivering) 331.12 499.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.27 (HCI Modelling to Designers: A Framework, and Case) 331.12 488.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+5.04 (Study of Cognitive Modelling\323, Interacting with) 331.12 477.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Computers, in press.) 331.12 466.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([10]) 309.52 452.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.46 (Button, G. and Sharrock, W) 331.12 452.28 P
+2.46 (., \322On Simulacrums of) 451.98 452.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4.01 (Conversation\323, in Thomas \050ed\051,) 331.12 441.28 P
+2 F
+4.01 (\322The Social and) 476.05 441.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+10.34 (Interactional Dimensions of Human-Computer) 331.12 430.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.81 (Interfaces\323) 331.12 419.28 P
+1 F
+0.81 (, Cambridge University Press, Cambridge,) 376.67 419.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(1995.) 331.12 408.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([1) 309.52 394.28 T
+(1]) 317.48 394.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.4 (Button, G. and Harper) 331.12 394.28 P
+1.4 (, R., \322T) 424.08 394.28 P
+1.4 (aking the Or) 455.91 394.28 P
+1.4 (ganisation) 508.53 394.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+5.09 (into Accounts\323, in Button \050ed\051,) 331.12 383.28 P
+2 F
+5.09 (\322T) 482.96 383.28 P
+5.09 (echnology in) 493.16 383.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(W) 331.12 372.28 T
+(orking Or) 338.53 372.28 T
+(der\323) 377.88 372.28 T
+1 F
+(, Routledge, London, 1993.) 396.77 372.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([12]) 309.52 358.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.01 (Button, G. and Sharrock, W) 331.12 358.28 P
+0.01 (., \322Occasioned Practices in) 442.15 358.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.56 (the W) 331.12 347.28 P
+3.56 (ork of Software Engineers) 358.04 347.28 P
+2 F
+3.56 (\323) 473.96 347.28 P
+1 F
+3.56 (, in Jirotka and) 479.52 347.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.22 (Goguen \050eds.\051) 331.12 336.28 P
+2 F
+-0.22 (\322Requir) 389.84 336.28 P
+-0.22 (ements Engineering: Social and) 422.25 336.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(T) 331.12 325.28 T
+(echnical Issues\323) 335.76 325.28 T
+1 F
+(, Academic Press, London, 1994.) 402.14 325.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([13]) 309.52 311.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.33 (Button, G. and Sharrock, W) 331.12 311.28 P
+0.33 (., \322Ethnomethodology and) 443.43 311.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+9.27 (HCI\323, presentation at the CHI\32595 Research) 331.12 300.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Symposium, Denver) 331.12 289.28 T
+(, Colorado, May 1995.) 412.94 289.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([14]) 309.52 275.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.42 (Carroll, J. and Kellogg, W) 331.12 275.28 P
+3.42 (.,) 449.69 275.28 P
+2 F
+3.42 (\322) 460.6 275.28 P
+1 F
+3.42 (Artifact as Theory-) 466.16 275.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.07 (Nexus: Hermeneutics Meets Theory-Based Design\323,) 331.12 264.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+6.19 (Proc. ACM Conference on Human Factors in) 331.12 253.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Computing Systems CHI\32589, Austin, T) 331.12 242.28 T
+(exas, 1989.,) 487.1 242.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([15]) 309.52 228.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.05 (Carroll, J., Kellogg, W) 331.12 228.28 P
+0.05 (. and Rosson, M.B.,) 421.74 228.28 P
+2 F
+0.05 (\322) 503.9 228.28 P
+1 F
+0.05 (The T) 509.46 228.28 P
+0.05 (ask-) 532.98 228.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+8.65 (Artifact Cycle\323, in Carroll \050ed\051,) 331.12 217.28 P
+2 F
+8.65 (\322Designing) 502.97 217.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+5.47 (Interaction: Psychology at the Human-Computer) 331.12 206.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.24 (Interface\323) 331.12 195.28 P
+1 F
+2.24 (, Cambridge University press, New Y) 372.78 195.28 P
+2.24 (ork,) 533.81 195.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(1991.) 331.12 184.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([16]) 309.52 170.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+5.04 (Dourish, P) 331.12 170.28 P
+5.04 (., \322Accounting for System Behaviour:) 377.83 170.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 (Representation, Re\337ection and Resourceful Action\323,) 331.12 159.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+7.59 (Proc. Computers in Context CIC\32595, Aarhus,) 331.12 148.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Denmark, August 1995.) 331.12 137.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([17]) 309.52 123.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.15 (Dourish, P) 331.12 123.28 P
+0.15 (., Adler) 372.94 123.28 P
+0.15 (, A,. Bellotti, V) 402.95 123.28 P
+0.15 (. and Henderson, A. ,) 464.06 123.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.71 (\322Y) 331.12 112.28 P
+0.71 (our Place or Mine? Learning from Long-T) 341.78 112.28 P
+0.71 (erm Use) 515.32 112.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.44 (of V) 331.12 101.28 P
+2.44 (ideo Communication\323, to appear in Computer) 351 101.28 P
+2.44 (-) 546.31 101.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "7" 7
+%%Page: "8" 8
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 10 Q
+0 X
+0 0 0 1 0 0 0 K
+7.61 (Supported Cooperative W) 67.24 756.28 P
+7.61 (ork: An International) 186.1 756.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Journal.) 67.24 745.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([18]) 45.64 731.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+7.83 (Gar\336nkel, H., \322) 67.24 731.28 P
+2 F
+7.83 (Studies in Ethnomethodology\323) 144.82 731.28 P
+1 F
+7.83 (,) 283.26 731.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Prentice-Hall, Englewood Clif) 67.24 720.28 T
+(fs, New Jersey) 188.99 720.28 T
+(, 1967.) 246.93 720.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([19]) 45.64 706.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+5.38 (Gar\336nkel, H., \322Respeci\336cation\323, in Button \050ed\051,) 67.24 706.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+7.07 (\322Ethnomethodology and the Human Sciences\323,) 67.24 695.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(Cambridge University Press, Cambridge, 1991.) 67.24 684.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([20]) 45.64 670.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.06 (Gar\336nkel, H. and Sacks, H.,) 67.24 670.28 P
+2 F
+0.06 (\322) 182.52 670.28 P
+1 F
+0.06 (On Formal Structures of) 188.08 670.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.28 (Practical Actions\323, in McKinnley and T) 67.24 659.28 P
+0.28 (iryakian \050eds\051,) 227.72 659.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+5.62 (\322Theor) 67.24 648.28 P
+5.62 (etical Sociology\323) 96.32 648.28 P
+1 F
+5.62 (, pp. 338\320366, Appleton) 171.66 648.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Century Crofts, New Y) 67.24 637.28 T
+(ork, 1970.) 159.56 637.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([21]) 45.64 623.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.47 (Greatbatch, D., Luf) 67.24 623.28 P
+1.47 (f, P) 148.03 623.28 P
+1.47 (., Heath, C. and Campion, P) 162.29 623.28 P
+1.47 (.,) 280.76 623.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.72 (\322Interpersonal Communication and Human-Computer) 67.24 612.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.11 (Interaction: An examination of the use of computers in) 67.24 601.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.07 (medical consultations\323, Interacting with Computers, 5,) 67.24 590.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(pp. 193\321216, 1993.) 67.24 579.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([22]) 45.64 565.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.81 (Greenbaum, J. and Kyng, M.,) 67.24 565.28 P
+2 F
+3.81 (\322Design at W) 207.39 565.28 P
+3.81 (ork:) 269.1 565.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.71 (Cooperative Design of Computer Systems\323) 67.24 554.28 P
+1 F
+0.71 (, Laurence) 242.85 554.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Erlbaum Associates, Hillsdale, New Jersey) 67.24 543.28 T
+(, 1991.) 238.78 543.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([23]) 45.64 529.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+6.19 (Grudin, J., \322The Computer Reaches Out: The) 67.24 529.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.26 (Historical Continuity of Interface Design\323, in Proc.) 67.24 518.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.16 (ACM Conference on Human Factors in Computing) 67.24 507.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Systems CHI\32590, Seattle, W) 67.24 496.28 T
+(ashington, April 1990.) 179.49 496.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([24]) 45.64 482.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.13 (Grudin, J. and Grinter) 67.24 482.28 P
+0.13 (, R., \322Ethnography and Design\323,) 155.26 482.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.85 (Computer) 67.24 471.28 P
+0.85 (-Supported Cooperative W) 107.04 471.28 P
+0.85 (ork 3\0501\051, pp. 55\320) 215.71 471.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(59, 1995.) 67.24 460.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([25]) 45.64 446.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.92 (Harper) 67.24 446.28 P
+1.92 (, R. and Hughes, J., \322What A F-ing System!) 94.6 446.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.85 (Send \324em all to the same place and then expect us to) 67.24 435.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.02 (step \324em hitting: Making technology work in air traf) 67.24 424.28 P
+-0.02 (\336c) 275.76 424.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.67 (control\323, in Button \050ed\051,) 67.24 413.28 P
+2 F
+3.67 (\322T) 180.81 413.28 P
+3.67 (echnology in W) 191.01 413.28 P
+3.67 (orking) 259.65 413.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Or) 67.24 402.28 T
+(der\323) 77.98 402.28 T
+1 F
+(, Routledge, London, 1993.) 96.87 402.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([26]) 45.64 388.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4.93 (Heath, C. and Luf) 67.24 388.28 P
+4.93 (f, P) 153.76 388.28 P
+4.93 (., \322Disembodied Conduct:) 171.47 388.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+5.43 (Communication through video in a multi-media) 67.24 377.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.21 (environment\323) 67.24 366.28 P
+2 F
+2.21 (,) 122.23 366.28 P
+1 F
+2.21 ( Proc. ACM Conf. Human Factors in) 124.73 366.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.38 (Computing Systems CHI \32491, New Orleans, Louisiana,) 67.24 355.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(1991.) 67.24 344.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([27]) 45.64 330.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.88 (Heath, C. and Luf) 67.24 330.28 P
+1.88 (f, P) 144.62 330.28 P
+1.88 (.,) 159.28 330.28 P
+2 F
+1.88 (\322) 168.66 330.28 P
+1 F
+1.88 (Collaboration and Control:) 174.22 330.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.9 (Crisis Management and Multimedia T) 67.24 319.28 P
+2.9 (echnology in) 230.92 319.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+9.65 (London Under) 67.24 308.28 P
+9.65 (ground Line Control Rooms\325) 135.31 308.28 P
+9.65 (\325) 279.93 308.28 P
+2 F
+9.65 (,) 283.26 308.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+1.98 (Computer Supported Cooperative W) 67.24 297.28 P
+1.98 (ork, 1\0501\3202\051, pp.) 219.31 297.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(69\32095, 1992) 67.24 286.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([28]) 45.64 272.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+7.6 (Heath, C. and Luf) 67.24 272.28 P
+7.6 (f, P) 161.78 272.28 P
+7.6 (., \322Media Space and) 182.16 272.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+23.15 (Communicative Asymmetries: Preliminary) 67.24 261.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.42 (Observations of V) 67.24 250.28 P
+-0.42 (ideo-Mediated Interaction) 139.12 250.28 P
+2 F
+-0.42 (\323) 242.85 250.28 P
+1 F
+-0.42 (, Human-) 248.4 250.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Computer Interaction, 7\0503\051, pp. 315\320346, 1992.) 67.24 239.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([29]) 45.64 225.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.76 (Heath, C. and Luf) 67.24 225.28 P
+3.76 (f, P) 150.28 225.28 P
+3.76 (., \322System Use and Social) 166.82 225.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.6 (Or) 67.24 214.28 P
+-0.6 (ganisation\323, in Button \050ed.\051,) 77.61 214.28 P
+2 F
+-0.6 (\322T) 189.36 214.28 P
+-0.6 (echnology in W) 199.56 214.28 P
+-0.6 (orking) 259.65 214.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Or) 67.24 203.28 T
+(der\323) 77.98 203.28 T
+1 F
+(, Routledge, London, 1992.) 96.87 203.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([30]) 45.64 189.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.38 (Heath, C., Jirotka, M., Luf) 67.24 189.28 P
+2.38 (f, P) 182.66 189.28 P
+2.38 (. and Hindmarch, J.,) 197.81 189.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+12.94 (\322Unpacking Collaboration: The Interactional) 67.24 178.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.49 (Or) 67.24 167.28 P
+2.49 (ganisation of T) 77.61 167.28 P
+2.49 (rading in a City Dealing Room\323,) 142.78 167.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+5.71 (Proc. Third European Conference on Computer) 67.24 156.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.72 (Supported Cooperative W) 67.24 145.28 P
+3.72 (ork ECSCW\32593, Milano,) 178.31 145.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Italy) 67.24 134.28 T
+(, September 1993.) 84.92 134.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([31]) 45.64 120.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4.2 (Hughes, J., Randall, D. and Shapiro, D., \322From) 67.24 120.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+6.43 (Ethnographic Record to System Design: Some) 67.24 109.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.38 (Experiences from the Field\323, Computer Supported) 331.12 756.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Cooperative W) 331.12 745.28 T
+(ork, 1\0503\051, pp. 123\320141, 1993.) 391.14 745.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([32]) 309.52 731.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4.92 (Keiras, D., \322T) 331.12 731.28 P
+4.92 (owards a Practical GOMS Model) 396.63 731.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.64 (Methodology for User Interface Design\323) 331.12 720.28 P
+2 F
+0.64 (,) 496.42 720.28 P
+1 F
+0.64 ( in Helander) 498.92 720.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.41 (\050ed\051,) 331.12 709.28 P
+2 F
+2.41 (\322Handbook of Human-Computer Interaction\323) 354.63 709.28 P
+1 F
+2.41 (,) 547.14 709.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Elsevier) 331.12 698.28 T
+(, New Y) 363.49 698.28 T
+(ork, 1988.) 396.09 698.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([33]) 309.52 684.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.19 (Kiczales, G., \322T) 331.12 684.28 P
+-0.19 (owards a New Model of Abstraction in) 394.73 684.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.04 (Software Engineering\323, Proc. IMSA) 331.12 673.28 P
+1.04 (\32592 W) 478.37 673.28 P
+1.04 (orkshop on) 503.88 673.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.59 (Re\337ection and Metalevel Architectures, T) 331.12 662.28 P
+-0.59 (okyo, Nov 4\320) 496.09 662.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(7, 1992.) 331.12 651.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([34]) 309.52 637.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.36 (Long, J. and Dowell, J., \322Conceptions of the Discipline) 331.12 637.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.18 (of HCI: Craft, Applied Science and Engineering\323, in) 331.12 626.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.3 (Sutclif) 331.12 615.28 P
+-0.3 (fe and Macaulay \050eds.\051,) 357.61 615.28 P
+2 F
+-0.3 (\322People and Computers) 453.02 615.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(V\323) 331.12 604.28 T
+1 F
+(, Cambridge University Press, Cambridge, 1989.) 342.79 604.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([35]) 309.52 590.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+6.05 (L) 331.12 590.28 P
+6.05 (ynch, M., Livingstone, E. and Gar\336nkel, H.,) 336.68 590.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.76 (\322T) 331.12 579.28 P
+3.76 (emporal Order in Laboratory W) 340.97 579.28 P
+3.76 (ork\323, in Knoll-) 482.95 579.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.01 (Centina and Mulkay \050eds\051,) 331.12 568.28 P
+2 F
+-0.01 (\322Science Observed\323) 440.23 568.28 P
+1 F
+-0.01 (, Sage,) 522.71 568.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(London, 1983.) 331.12 557.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([36]) 309.52 543.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.07 (Rogers, Y) 331.12 543.28 P
+-0.07 (., \322Coordinating Computer) 370.31 543.28 P
+-0.07 (-Mediated W) 477.2 543.28 P
+-0.07 (ork\323,) 529.37 543.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.43 (Computer Supported Cooperative W) 331.12 532.28 P
+-0.43 (ork, 1\0504\051, pp. 295\320) 475.95 532.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(315, 1993.) 331.12 521.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([37]) 309.52 507.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.19 (Rogers, Y) 331.12 507.28 P
+1.19 (., \322Exploring Obstacles: Integrating CSCW) 371.57 507.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.49 (in Evolving Or) 331.12 496.28 P
+-0.49 (ganisations\323, Proc. ACM Conference on) 389.96 496.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.92 (Computer) 331.12 485.28 P
+3.92 (-Supported Cooperative W) 370.92 485.28 P
+3.92 (ork CSCW\32594,) 485.72 485.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Chapel Hill, North Carolina, October 1994.) 331.12 474.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([38]) 309.52 460.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.52 (Rogers, Y) 331.12 460.28 P
+1.52 (., Bannon, L. and Button, G.,) 371.9 460.28 P
+2 F
+1.52 (\322) 499.63 460.28 P
+1 F
+1.52 (Rethinking) 505.19 460.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.32 (Theoretical Frameworks for HCI\323, SIGCHI Bulletin,) 331.12 449.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(26\0501\051, 1994.) 331.12 438.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([39]) 309.52 424.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.07 (Rounce\336eld, M., Hughes, J., Rodden, T) 331.12 424.28 P
+0.07 (. and V) 489.6 424.28 P
+0.07 (iller) 518.3 424.28 P
+0.07 (, S.,) 534.01 424.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.91 (\322W) 331.12 413.28 P
+0.91 (orking with Constant Interruption: CSCW and the) 344.2 413.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.93 (Small Of) 331.12 402.28 P
+0.93 (\336ce\323, Proc. ACM Conference on Computer) 368.26 402.28 P
+0.93 (-) 546.31 402.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.7 (Supported Cooperative W) 331.12 391.28 P
+0.7 (ork CSCW\32594, Chapel Hill,) 436.15 391.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(North Carolina, November 1994.) 331.12 380.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([40]) 309.52 366.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 (Sacks, H., Scheglof) 331.12 366.28 P
+0 (f, E. and Jef) 409.55 366.28 P
+0 (ferson, G., \322A simplest) 457.42 366.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.95 (systematics for the or) 331.12 355.28 P
+3.95 (ganisation of turn-taking in) 428.62 355.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(conversation\323, Language, 50\0504\051, pp. 696\320735, 1974.) 331.12 344.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([41]) 309.52 330.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.63 (Shapiro, D., \322The Limits of Ethnography: Combining) 331.12 330.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.15 (Social Sciences for CSCW\323) 331.12 319.28 P
+2 F
+1.15 (,) 446.49 319.28 P
+1 F
+1.15 ( Proc. ACM Conference) 448.99 319.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.19 (on Computer) 331.12 308.28 P
+-0.19 (-Supported Cooperative W) 383.23 308.28 P
+-0.19 (ork CSCW\32594,) 489.82 308.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Chapel Hill, North Carolina, October 1994.) 331.12 297.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([42]) 309.52 283.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.87 (Sharrock, W) 331.12 283.28 P
+1.87 (., Button, G. and Anderson, R., \322Inside) 382.61 283.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+10.54 (Design\323, Hillsdale, N.J. Lawrence Erlbaum,) 331.12 272.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(forthcoming) 331.12 261.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([43]) 309.52 247.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4.71 (Suchman, L.,) 331.12 247.28 P
+2 F
+4.71 (\322Plans and Situated Actions: The) 396.36 247.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+12.04 (pr) 331.12 236.28 P
+12.04 (oblem of human-machine communication\323) 339.64 236.28 P
+1 F
+12.04 (,) 547.14 236.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Cambridge University Press, Cambridge, UK, 1987.) 331.12 225.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([44]) 309.52 211.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4.06 (Suchman, L., \322Do Categories have Politics? The) 331.12 211.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.33 (language/action perspective reconsidered\323, Computer) 331.12 200.28 P
+0.33 (-) 546.31 200.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.43 (Supported Cooperative W) 331.12 189.28 P
+-0.43 (ork, 2\0503\051, pp. 177\320190, 1994.) 433.88 189.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([45]) 309.52 175.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.78 (Suchman, L., \322Centers of Coordination: A case and) 331.12 175.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 (some themes\323) 331.12 164.28 P
+2 F
+0.16 (,) 387.66 164.28 P
+1 F
+0.16 (in Resnick \050ed\051,) 392.82 164.28 P
+2 F
+0.16 (\322Discourse, T) 459.4 164.28 P
+0.16 (ools and) 515.31 164.28 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Reasoning\323) 331.12 153.28 T
+1 F
+(, forthcoming.) 378.9 153.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "8" 8
+%%Trailer
+%%BoundingBox: 0 0 595.28 841.89
+%%PageOrder: Ascend
+%%Pages: 8
+%%DocumentFonts: Times-Bold
+%%+ Times-Roman
+%%+ Times-Italic
+%%EOF

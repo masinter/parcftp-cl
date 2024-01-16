@@ -1,0 +1,4264 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 5.0, for use with Frame 5.0 products
+% This ps_prolog file is Copyright (c) 1986-1995 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameMaker/SGML and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% FrameMaker users specify the proper paper size for each print job in the
+% "Print" dialog's "Printer Paper Size" "Width" and "Height~ fields.  If the
+% printer that the PS file is sent to does not support the requested paper
+% size, or if there is no paper tray of the proper size currently installed, 
+% then the job will not be printed.  The following flag, if set to true, will
+% cause the job to print on the default paper in such cases.
+%
+% EuroPARC: changed default to "true" (jpd)
+/FMAllowPaperSizeMismatch            false def
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to true, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% The following is a set of predefined optimal frequencies and angles for various
+% common dpi settings. This is taken from "Advances in Color Separation Using
+% PostScript Software Technology," from Adobe Systems (3/13/89 P.N. LPS 0043)
+% and corrolated with information which is in various PPD (4.0) files.
+%
+% The "dpiranges" figure is the minimum dots per inch device resolution which
+% can support this setting. The "low" and "high" values are controlled by the
+% setting of the FMUseHighFrequencyScreens flag above. The "TDot" flags control
+% the use of the "Yellow Triple Dot" feature whereby the frequency id divided by
+% three, but the dot function is "trippled" giving a block of 3x3 dots per cell.
+%
+% PatFreq is a compromise pattern frequency for ps Level 2 printers which is close
+% to the ideal WYSIWYG pattern frequency of 9 repetitions/inch but does not beat
+% (too badly) against the screen frequencies of any separations for that DPI.
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (5.0) def 
+/fMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	fMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto show
+	72 220 moveto show
+	FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!  Check installation;)
+		(also check ~/fminit and ./fminit for old versions) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(Adobe's PostScript Language Reference Manual, 2nd Edition, section H.2.4)
+	(says your EPS file is not valid, as it calls X              )
+	dup dup (X) search pop exch pop exch pop length 
+	5 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/fmConcatProcs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin [
+	/ALDsave
+	/FMdicttop
+	/FMoptop
+	/FMpointsize
+	/FMsaveobject
+	/b
+	/bitmapsave
+	/blut
+	/bpside
+	/bs
+	/bstring
+	/bwidth
+	/c
+	/cf
+	/cs
+	/cynu
+	/depth
+	/edown
+	/fh
+	/fillvals
+	/fw
+	/fx
+	/fy
+	/g
+	/gfile
+	/gindex
+	/grnt
+	/gryt
+	/gstring
+	/height
+	/hh
+	/i
+	/im
+	/indx
+	/is
+	/k
+	/kk
+	/landscape
+	/lb
+	/len
+	/llx
+	/lly
+	/m
+	/magu
+	/manualfeed
+	/n
+	/offbits
+	/onbits
+	/organgle
+	/orgbangle
+	/orgbfreq
+	/orgbproc
+	/orgbxfer
+	/orgfreq
+	/orggangle
+	/orggfreq
+	/orggproc
+	/orggxfer
+	/orgmatrix
+	/orgproc
+	/orgrangle
+	/orgrfreq
+	/orgrproc
+	/orgrxfer
+	/orgxfer
+	/pagesave
+	/paperheight
+	/papersizedict
+	/paperwidth
+	/pos
+	/pwid
+	/r
+	/rad
+	/redt
+	/sl
+	/str
+	/tran
+	/u
+	/urx
+	/ury
+	/val
+	/width
+	/width
+	/ws
+	/ww
+	/x
+	/x1
+	/x2
+	/xindex
+	/xpoint
+	/xscale
+	/xx
+	/y
+	/y1
+	/y2
+	/yelu
+	/yindex
+	/ypoint
+	/yscale
+	/yy
+] { 0 def } forall
+/FmBD {bind def} bind def
+systemdict /pdfmark known {
+	/fMAcrobat true def
+	
+	/FmPD /pdfmark load def
+	
+	
+	/FmPT /show load def
+	
+	
+	currentdistillerparams /CoreDistVersion get 2000 ge {
+	
+		
+		/FmPD2 /pdfmark load def
+		
+		
+		
+		
+		
+		/FmPA { mark exch /Dest exch 5 3 roll 
+				/View [ /XYZ null 6 -2 roll FmDC exch pop null] /DEST FmPD 
+		}FmBD
+	} {
+		
+		/FmPD2 /cleartomark load def
+		/FmPA {pop pop pop}FmBD
+	} ifelse
+} {
+	
+	/fMAcrobat false def
+	/FmPD /cleartomark load def
+	/FmPD2 /cleartomark load def
+	/FmPT /pop load def
+	/FmPA {pop pop pop}FmBD
+} ifelse
+/FmDC {
+	transform fMDefaultMatrix itransform cvi exch cvi exch
+}FmBD
+/FmBx {
+	dup 3 index lt {3 1 roll exch} if 
+	1 index 4 index lt {4 -1 roll 3 1 roll exch 4 1 roll} if
+}FmBD
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/fMNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		RealSetrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+fMLevel1 { 
+	
+	
+	
+	/patScreenDict 7 dict dup begin
+		<0f1e3c78f0e1c387> [ 45  { pop } {exch pop} 		.5   2 sqrt] FmBD
+		<0f87c3e1f0783c1e> [ 135 { pop } {exch pop}			.5   2 sqrt] FmBD
+		<cccccccccccccccc> [ 0   { pop } dup				.5   2	   ] FmBD
+		<ffff0000ffff0000> [ 90  { pop } dup				.5   2	   ] FmBD
+		<8142241818244281> [ 45  { 2 copy lt {exch} if pop}	dup .75  2 sqrt] FmBD
+		<03060c183060c081> [ 45  { pop } {exch pop}			.875 2 sqrt] FmBD
+		<8040201008040201> [ 135 { pop } {exch pop}			.875 2 sqrt] FmBD
+	end def
+} { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} ifelse
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				fMAcrobat not FMPColor graymode and and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not fMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/fMDefaultMatrix matrix defaultmatrix def
+/fMatrix2 matrix def
+/dpi    72 0 fMDefaultMatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 fMDefaultMatrix dtransform exch atan def
+	sangle fMatrix2 rotate 
+	fMDefaultMatrix fMatrix2 concatmatrix 
+	dup 0 get /sflipx exch def
+	    3 get /sflipy exch def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	fMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /fMNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	fMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{papersizefailure} if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{2 dict
+		 dup /PageSize [paperwidth paperheight] put
+		 manualfeed {dup /ManualFeed manualfeed put} if
+		 {setpagedevice} stopped {papersizefailure} if
+		}
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			fMNegative {
+				1 1 4 { 
+					pop { 1 exch sub } fmConcatProcs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		fMNegative {
+			{ 1 exch sub } fmConcatProcs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/papersizefailure {
+	FMAllowPaperSizeMismatch not
+		{
+(The requested paper size is not available in any currently-installed tray)
+(Edit the PS file to "FMAllowPaperSizeMismatch true" to use default tray)
+		 FMFAILURE } if
+	} def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYK } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYKGRAY } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+fMLevel1 {
+	/fmGetFlip {
+		fMatrix2 exch get mul 0 lt { -1 } { 1 } ifelse
+	} FmBD
+} if
+/setPatternMode {
+	fMLevel1 {
+		2 index patScreenDict exch known {
+			pop pop
+			patScreenDict exch get aload pop 
+			freq 								
+			mul									
+			5 2 roll							
+			fMatrix2 currentmatrix 1 get 0 ne {
+				3 -1 roll 90 add 3 1 roll 		
+				sflipx 1 fmGetFlip sflipy 2 fmGetFlip neg mul
+			} {  								
+				sflipx 0 fmGetFlip sflipy 3 fmGetFlip mul 
+			} ifelse
+			0 lt {exch pop} {pop} ifelse 		
+			fMNegative { 
+				{neg} fmConcatProcs 			
+			} if
+			bind
+			
+			
+			
+			systemdict /setscreen get exec		
+			/FrameCurGray exch def
+		} {
+			/bwidth  exch def
+			/bpside  exch def
+			/bstring exch def
+			/onbits 0 def  /offbits 0 def
+			freq sangle landscape {90 add} if 
+				{/ypoint exch def
+				 /xpoint exch def
+				 /xindex xpoint 1 add 2 div bpside mul cvi def
+				 /yindex ypoint 1 add 2 div bpside mul cvi def
+				 bstring yindex bwidth mul xindex 8 idiv add get
+				 1 7 xindex 8 mod sub bitshift and 0 ne fMNegative {not} if
+				 {/onbits  onbits  1 add def 1}
+				 {/offbits offbits 1 add def 0}
+				 ifelse
+				}
+				setscreen
+			offbits offbits onbits add div fMNegative {1.0 exch sub} if
+			/FrameCurGray exch def
+		} ifelse
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		fMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode fMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode fMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/rip4 { 
+	   
+	  
+	  kis cis copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  cis mis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  mis yis copy pop 
+	  dup dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  yis kis copy pop 
+	  3 mul is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+/wbytes { 
+      dup dup
+      8 gt { pop 8 idiv mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	cvtProc                
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def 
+	cvtProc              
+	/is width depth wbytes string def
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+fMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/kk cynu magu min yelu min def
+		/u kk currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 kk currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch fmConcatProcs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def
+	fMLevel1 {	
+		colorsetup
+		/is width depth wbytes string def
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is width depth wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	fMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {ip} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/depth 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip pop ris} {gis} {bis} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCMYKc { 
+	/depth 32 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip4 pop cis} {mis} {yis} {kis} true 4 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYK { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /mis width string def
+        /yis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf mis readhexstring pop } 
+        { cf yis readhexstring pop } 
+        { cf kis readhexstring pop } 
+        true 4 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/depth 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop ris gis bis width gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAYc { 
+	/depth 32 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop cis mis yis kis width cgray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/cgray { 
+        /ww exch def
+        /k exch def
+        /y exch def
+        /m exch def
+        /c exch def
+        0 1 ww 1 sub { /i exch def c i get m i get y i get k i get CMYKtoRGB
+				.144 mul 3 1 roll .587 mul 3 1 roll .299 mul add add
+				c i 3 -1 roll floor cvi put } for
+        c
+ 		} bind def
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop width gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /yis width string def
+        /mis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf mis readhexstring pop 
+          cf yis readhexstring pop 
+          cf kis readhexstring pop width cgray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(5.0) FMVERSION
+1 1 0 0 595.3 841.9 0 1 17 FMDOCUMENT
+0 0 /Helvetica-Bold FMFONTDEFINE
+1 0 /Times-Roman FMFONTDEFINE
+2 0 /Times-Bold FMFONTDEFINE
+3 0 /Times-Italic FMFONTDEFINE
+4 0 /Times-BoldItalic FMFONTDEFINE
+5 0 /Helvetica-BoldOblique FMFONTDEFINE
+6 0 /Courier FMFONTDEFINE
+7 1 /Symbol FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: A4
+%%EndPaperSize
+595.3 841.9 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+42.65 61.95 551.65 84.95 R
+7 X
+0 0 0 1 0 0 0 K
+V
+45.65 95.95 549.65 609.95 R
+V
+0 9 Q
+0 X
+(Abstract) 45.65 603.95 T
+1 10 Q
+1.64 (Many collaborative and communicative environments use) 45.65 590.29 P
+0.51 (notions of \322space\323 and spatial organisation to facilitate and) 45.65 579.29 P
+-0.54 (structure interaction. We argue that a focus on spatial models) 45.65 568.29 P
+0.54 (is misplaced. Drawing on understandings from architecture) 45.65 557.29 P
+-0.32 (and urban design, as well as from our own research findings,) 45.65 546.29 P
+1.97 (we highlight the critical distinction between \322space\323 and) 45.65 535.29 P
+-0.29 (\322place\323. While designers use spatial models to support inter-) 45.65 524.29 P
+-0.09 (action, we show how it is actually a notion of \322place\323 which) 45.65 513.29 P
+1.61 (frames interactive behaviour. This leads us to re-evaluate) 45.65 502.29 P
+4.11 (spatial systems, and discuss how \322place\323, rather than) 45.65 491.29 P
+(\322space\323, can support CSCW design.) 45.65 480.29 T
+2 F
+4.57 (Keywords) 45.65 463.29 P
+1 F
+4.57 (: space, place, media space, virtual reality,) 88.98 463.29 P
+(MUDs, metaphor.) 45.65 452.29 T
+0 11 Q
+(1) 45.65 431.62 T
+(Intr) 70.85 431.62 T
+(oduction) 88.35 431.62 T
+1 10 Q
+0.82 (We live in a three-dimensional world. The structure of the) 45.65 417.29 P
+0.23 (space around us moulds and guides our actions and interac-) 45.65 406.29 P
+0.46 (tions. With years of experience, we are all highly skilled at) 45.65 395.29 P
+-0.26 (structuring and interpreting space for our individual or inter-) 45.65 384.29 P
+(active purposes. For instance:) 45.65 373.29 T
+(\245) 45.65 356.29 T
+2.92 (The objects we w) 59.18 356.29 P
+2.92 (ork with most often are generally) 138.12 356.29 P
+-0.25 (arranged closest to us. Computer k) 59.18 345.29 P
+-0.25 (e) 196.72 345.29 P
+-0.25 (yboards, current doc-) 201.01 345.29 P
+4.76 (uments, common reference materials and f) 59.18 334.29 P
+4.76 (a) 253.4 334.29 P
+4.76 (v) 257.64 334.29 P
+4.76 (ourite) 262.44 334.29 P
+1.8 (pieces of music might immediately surround us in an) 59.18 323.29 P
+-0.06 (of) 59.18 312.29 P
+-0.06 (\336ce, while other materials are k) 67.26 312.29 P
+-0.06 (ept further a) 192.95 312.29 P
+-0.06 (w) 241.55 312.29 P
+-0.06 (ay \050in \336l-) 248.67 312.29 P
+(ing cabinets, cupboards or libraries\051.) 59.18 301.29 T
+(\245) 45.65 284.29 T
+2.58 (Ph) 59.18 284.29 P
+2.58 (ysical spaces are structured according to uses and) 69.69 284.29 P
+1.63 (needs for interaction. An of) 59.18 273.29 P
+1.63 (\336ce door can be closed to) 175.7 273.29 P
+-0.21 (gi) 59.18 262.29 P
+-0.21 (v) 66.71 262.29 P
+-0.21 (e independence from the space outside, or left open to) 71.56 262.29 P
+0.54 (let us see passers-by) 59.18 251.29 P
+0.54 (. People\325) 141.52 251.29 P
+0.54 (s of) 177.06 251.29 P
+0.54 (\336ces are more lik) 192.07 251.29 P
+0.54 (ely to) 262.73 251.29 P
+(be sited near to the of) 59.18 240.29 T
+(\336ces of their colleagues.) 145.3 240.29 T
+0.02 (Observing the way that space structures actions and interac-) 45.65 223.29 P
+2.82 (tions\321the \322affordances\323 of space [Gaver, 1992]\321many) 45.65 212.29 P
+-0.19 (designers have used spatial models and metaphors in collab-) 45.65 201.29 P
+4.42 (orative systems. The desktop metaphor of single-user) 45.65 190.29 P
+0.54 (systems has been extended to a metaphor of desks, offices,) 45.65 179.29 P
+0.33 (hallways and cities. These systems all facilitate natural col-) 45.65 168.29 P
+1.23 (laboration by exploiting our understandings of space\321the) 45.65 157.29 P
+0.64 (properties of the three-dimensional world in which we live) 45.65 146.29 P
+(and interact every day.) 45.65 135.29 T
+0.08 (In this paper, we will critically explore the use of space as a) 45.65 118.29 P
+-0.18 (basis for CSCW design. We will argue that the critical prop-) 45.65 107.29 P
+0.13 (erty which designers are seeking, which we call appropriate) 309.53 603.29 P
+0.08 (behavioural framing, is not rooted in the properties of space) 309.53 592.29 P
+-0.39 (at all. Instead, it is rooted in sets of mutually-held, and mutu-) 309.53 581.29 P
+0.63 (ally available, cultural understandings about behaviour and) 309.53 570.29 P
+-0.28 (action. In contrast to \322space\323, we call this a sense of \322place\323.) 309.53 559.29 P
+2.27 (Our principle is: \322Space is the opportunity; place is the) 309.53 548.29 P
+(understood reality\323.) 309.53 537.29 T
+1.76 (Place is a fundamental concept in architecture and urban) 309.53 520.29 P
+-0.23 (design, and we can learn from those disciplines how to think) 309.53 509.29 P
+1.03 (about place in collaborative systems. Place derives from a) 309.53 498.29 P
+0.91 (tension between connectedness and distinction, rather than) 309.53 487.29 P
+2.07 (from three-dimensional structure, and we can see this at) 309.53 476.29 P
+(work in a variety of collaborative systems.) 309.53 465.29 T
+0.19 (We will begin, in the next section, by looking at the current) 309.53 448.29 P
+-0.4 (use of space in collaborative systems, and how it is exploited) 309.53 437.29 P
+0.71 (to structure interaction. Next, we will introduce the related) 309.53 426.29 P
+0.26 (notion of place, and compare their roles in existing systems) 309.53 415.29 P
+(and consequences for future designs.) 309.53 404.29 T
+0 11 Q
+(2) 309.53 383.62 T
+(Space in Collaborative Systems) 334.73 383.62 T
+1 10 Q
+1.48 (The use of spatial metaphors and spatial organisation has) 309.53 369.29 P
+-0.25 (become increasingly popular in a collaborative systems over) 309.53 358.29 P
+-0.15 (the past few years. We will describe some systems, and then) 309.53 347.29 P
+(look at the properties they exhibit.) 309.53 336.29 T
+0 F
+(2.1) 309.53 317.29 T
+(Spatiall) 334.73 317.29 T
+(y-based Systems) 370.15 317.29 T
+3 F
+1.41 (Collaborative Virtual Reality) 309.53 304.29 P
+1 F
+1.41 (. Most demonstrably, experi-) 429.59 304.29 P
+2.32 (ments with collaborative virtual reality systems, such as) 309.53 293.29 P
+-0.61 (DIVE [Carlsson and Hagsand, 1993] and MASSIVE [Green-) 309.53 282.29 P
+2.24 (halgh and Benford, 1995], use virtual spaces to manage) 309.53 271.29 P
+0.02 (distributed multi-user interaction. Both of these systems use) 309.53 260.29 P
+-0.19 (a \322spatial model of interaction\323 [Benford and Fahlen, 1993],) 309.53 249.29 P
+-0.22 (in which participants\325 awareness of each other, and opportu-) 309.53 238.29 P
+-0.53 (nities for interaction, are managed through spatial extensions) 309.53 227.29 P
+2.77 (of their presence, attention and influence called \322aura\323,) 309.53 216.29 P
+1.06 (\322focus\323 and \322nimbus\323. These mechanisms are designed as) 309.53 205.29 P
+0.86 (computational equivalents of real-world patterns of aware-) 309.53 194.29 P
+4.94 (ness and interaction in these virtual spaces. Related) 309.53 183.29 P
+0.03 (mechanisms extend these interactional spaces for collabora-) 309.53 172.29 P
+4.61 (tive work, such as collaborative information retrieval) 309.53 161.29 P
+-0.61 ([Sawyer and Mariani, 1995], using spatial metaphors to visu-) 309.53 150.29 P
+(alise users in an information landscape.) 309.53 139.29 T
+3 F
+1.65 (MUDs) 309.53 122.29 P
+1 F
+1.65 (. At the other end of the technology spectrum, the) 336.19 122.29 P
+-0.57 (explosion of interest in the Internet has been accompanied by) 309.53 111.29 P
+-0.15 (a huge increase in the popularity of MUDs and MOOs [Cur-) 309.53 100.29 P
+45.65 618.95 549.65 761.95 R
+7 X
+V
+1 22 Q
+0 X
+(Re-Place-ing Space: The Roles of Place and Space in) 63.03 747.29 T
+(Collaborati) 198.78 719.29 T
+(v) 297.23 719.29 T
+(e Systems) 307.9 719.29 T
+1 12 Q
+(Steve Harrison) 214.66 684.62 T
+4 8 Q
+(*) 286.31 688.62 T
+1 12 Q
+( and Paul Dourish) 290.31 684.62 T
+2 8 Q
+(\240) 376.64 688.62 T
+4 F
+(*) 215.33 667.29 T
+1 12 Q
+(Xerox Palo Alto Research Center) 219.33 663.29 T
+2 8 Q
+(\240) 152.18 651.95 T
+1 12 Q
+(Rank Xerox Research Centre, Cambridge Lab \050EuroPARC\051) 156.18 647.95 T
+3 F
+(harrison@parc.xerox.com, dourish@europarc.xerox.com) 158.96 627.95 T
+45.65 67.95 549.65 84.95 R
+7 X
+V
+3 10 Q
+0 X
+(Draft submission for CSCW\32596\321not for distribution) 45.65 78.29 T
+1 F
+(.) 255.96 78.29 T
+3 F
+(Last modified: 3/12/96) 458.53 78.29 T
+FMENDPAGE
+%%EndPage: "1" 1
+%%Page: "2" 2
+595.3 841.9 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+42.65 61.95 551.65 84.95 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+(2) 545.25 78.29 T
+45.65 96.95 549.65 762.95 R
+7 X
+V
+0 X
+2.72 (tis and Nichols, 1994]; text-based \050or simple graphical\051) 45.65 756.29 P
+1.92 (interactive environments. Collaborative systems based on) 45.65 745.29 P
+-0.38 (these technologies [e.g. Curtis et al., 1995] have also empha-) 45.65 734.29 P
+1.27 (sised the use of \322real-world\323 spatial metaphors to support) 45.65 723.29 P
+0.18 (collaboration. MUDs structure their virtual worlds into sep-) 45.65 712.29 P
+1.53 (arate locations \050\322rooms\323\051, and allow participants to move) 45.65 701.29 P
+-0.1 (from location to location, selectively participating in events,) 45.65 690.29 P
+1.13 (activities and conversations. The spatial metaphor runs all) 45.65 679.29 P
+(the way through the MUD model of action and interaction.) 45.65 668.29 T
+3 F
+-0.3 (Multimedia Communications) 45.65 651.29 P
+1 F
+-0.3 (. The same principles have also) 161.74 651.29 P
+-0.22 (been at work in other communicative systems. Like collabo-) 45.65 640.29 P
+-0.36 (rative virtual realities, these have drawn upon analogies with) 45.65 629.29 P
+1.34 (the spatial organisation of the everyday physical world to) 45.65 618.29 P
+0.22 (structure aspects of multi-user interaction. For example, the) 45.65 607.29 P
+1.65 (original design of the Cruiser media space system [Root,) 45.65 596.29 P
+-0.57 (1988] used a metaphor of \322virtual hallways\323 as an organising) 45.65 585.29 P
+-0.57 (principle for interaction and participation in an AV-mediated) 45.65 574.29 P
+0.71 (communication system. The Vrooms system at EuroPARC) 45.65 563.29 P
+1.51 ([Borning and Travers, 1991] used spatial proximity in an) 45.65 552.29 P
+-0.38 (interface to control connections; and recent work on the Tor-) 45.65 541.29 P
+0.77 (onto Telepresence project has introduced multiple cameras) 45.65 530.29 P
+-0.21 (into a single media space node to reflect the notion of differ-) 45.65 519.29 P
+0.95 (ent views from the office doorway or across the desk of a) 45.65 508.29 P
+(colleague [Buxton, forthcoming].) 45.65 497.29 T
+-0.59 (The basic premise which lies behind these varied uses of spa-) 45.65 480.29 P
+0.64 (tial models and metaphors is that, in collaborative settings,) 45.65 469.29 P
+0.02 (designers can exploit our familiarity with the spatial organi-) 45.65 458.29 P
+0.14 (sation of our everyday physical environments. In particular,) 45.65 447.29 P
+-0.09 (they wish to exploit the ways that space structures and orga-) 45.65 436.29 P
+(nises activity and interaction.) 45.65 425.29 T
+0 F
+(2.2) 45.65 406.29 T
+(The Features of Space) 70.85 406.29 T
+1 F
+1.3 (There are many aspects of the \322real world\323 which can be) 45.65 393.29 P
+(exploited as part of a spatial model for collaboration:) 45.65 382.29 T
+3 F
+-0.21 (Relational orientation and reciprocity) 45.65 365.29 P
+1 F
+-0.21 (. The spatial organisa-) 197.52 365.29 P
+-0.33 (tion of the world is the same for all of us. \322Down\323 is towards) 45.65 354.29 P
+0.22 (the center of the earth, and \322up\323 is towards the sky; we rec-) 45.65 343.29 P
+-0.15 (ognise \322front\323 and \322back\323, and understand what that implies) 45.65 332.29 P
+0.12 (for our field-of-view. Our common orientation to the physi-) 45.65 321.29 P
+3.7 (cal world is an invaluable resource in presenting and) 45.65 310.29 P
+0.4 (interpreting activity and behaviour. Since we know that the) 45.65 299.29 P
+-0.37 (world is physically structured for others in just the same way) 45.65 288.29 P
+-0.09 (as it is for ourselves, we can use this understanding to orient) 45.65 277.29 P
+0.49 (our own behaviour for other people\325s use. This is what lets) 45.65 266.29 P
+-0.62 (us point to objects, or use spatial descriptions to establish ref-) 45.65 255.29 P
+1.04 (erence. Referring to \322the document on top of that pile\323 or) 45.65 244.29 P
+0.05 (\322the person standing by the bookcase\323 relies on mutual spa-) 45.65 233.29 P
+1.59 (tial orientation. Reference can also depend on our shared) 45.65 222.29 P
+-0.41 (experience of what it\325s like to be in a space, such as when we) 45.65 211.29 P
+-0.43 (tell someone, \322the door is on the left just as you come around) 45.65 200.29 P
+(the corner\323.) 45.65 189.29 T
+3 F
+-0.54 (Proximity and action) 45.65 172.29 P
+1 F
+-0.54 (. In the everyday world, we act \050more or) 129.01 172.29 P
+0.25 (less\051 where we are. We pick up objects that are near us, not) 45.65 161.29 P
+-0.49 (at a distance; we talk to people around us, because our voices) 45.65 150.29 P
+-0.01 (only travel a short distance; we carry things with us; and we) 45.65 139.29 P
+0.32 (get closer to things to view them clearly. Similar properties) 45.65 128.29 P
+-0.3 (are exploited in collaborative virtual spaces. Understandings) 45.65 117.29 P
+-0.21 (of proximity help us to relate people to activities and to each) 45.65 106.29 P
+1.44 (other. When we see a group of people gathered around a) 309.53 756.29 P
+-0.26 (meeting table, we understand something about their activity,) 309.53 745.29 P
+0.19 (and we know that another person standing off to one side is) 309.53 734.29 P
+(likely to be less involved in their activity.) 309.53 723.29 T
+3 F
+-0.23 (Partitioning) 309.53 706.29 P
+1 F
+-0.23 (. Following on from the notion of proximity and) 358.43 706.29 P
+-0.23 (activity is a notion of partitioning. Since actions and interac-) 309.53 695.29 P
+2.65 (tions fall off with distance, so distance can be used to) 309.53 684.29 P
+0.75 (partition activities and the extent of interaction. MUD sys-) 309.53 673.29 P
+3.28 (tems, for example, use rooms or locations to partition) 309.53 662.29 P
+-0.46 (activity. MUD rooms provide a restricted view into the set of) 309.53 651.29 P
+(interactions currently in progress in the system overall.) 309.53 640.29 T
+3 F
+0.26 (Presence and awareness) 309.53 623.29 P
+1 F
+0.26 (. As we move around the everyday) 408.93 623.29 P
+0.04 (world, it is filled not only with the artifacts, tools and repre-) 309.53 612.29 P
+0.43 (sentations of our work, but also with other people and with) 309.53 601.29 P
+0.33 (signs of their activity. The sense of other people\325s presence) 309.53 590.29 P
+0.11 (and the ongoing awareness of activity allows us to structure) 309.53 579.29 P
+-0.21 (our own activity, seamlessly integrating communication and) 309.53 568.29 P
+1.84 (collaboration ongoingly and unproblematically. Similarly,) 309.53 557.29 P
+7 (spatially-organised collaborative environments present) 309.53 546.29 P
+-0.37 (views of other people and their actions within the same envi-) 309.53 535.29 P
+0.37 (ronment which represents activity and holds the artifacts of) 309.53 524.29 P
+(work.) 309.53 513.29 T
+0 11 Q
+(3) 309.53 492.62 T
+(Appr) 334.73 492.62 T
+(opriate Beha) 360.17 492.62 T
+(vioural Framing) 426.63 492.62 T
+1 10 Q
+-0.04 (The real-world value of the features listed above is that they) 309.53 478.29 P
+0.48 (give critical cues which allow us to organise our behaviour) 309.53 467.29 P
+2.17 (appropriately \050such as moving towards people to talk to) 309.53 456.29 P
+0.9 (them, or referring to objects so that others can find them\051.) 309.53 445.29 P
+-0.1 (Collaborative virtual spaces exploit aspects of space \050spatial) 309.53 434.29 P
+0.1 (mechanisms, such as providing identity, orientation, a locus) 309.53 423.29 P
+0.6 (for activity, and a mode of control\051 which can be powerful) 309.53 412.29 P
+0.51 (tools for the design. But these spatial metaphors carry with) 309.53 401.29 P
+5.45 (them some decidedly non-metaphoric aspects\321spatial) 309.53 390.29 P
+0.96 (behaviours\321that emerge from our everyday experience of) 309.53 379.29 P
+(the physical world.) 309.53 368.29 T
+0.26 (So, what is being supported by spatial collaborative models) 309.53 351.29 P
+-0.26 (is a way of) 309.53 340.29 P
+3 F
+-0.26 (ongoingly managing activity) 354.58 340.29 P
+1 F
+-0.26 ( in collaborative set-) 468.5 340.29 P
+1.72 (tings. We call this) 309.53 329.29 P
+3 F
+1.72 (appropriate behavioural framing) 391.14 329.29 P
+1 F
+1.72 (. The) 527.37 329.29 P
+0.64 (implied rationale is that if we design collaborative systems) 309.53 318.29 P
+0.85 (around notions of space which mimic the spatial organisa-) 309.53 307.29 P
+1.6 (tion of the real world, then we can support the emergent) 309.53 296.29 P
+2.92 (patterns of human behaviour and interaction which our) 309.53 285.29 P
+2.41 (everyday actions in the physical world exhibit. In other) 309.53 274.29 P
+2.03 (words, spatially-organised systems will support spatially-) 309.53 263.29 P
+(managed behaviours.) 309.53 252.29 T
+1.65 (Our argument here is that this model is too simplistic. It) 309.53 235.29 P
+-0.36 (needs to be examined and studied further before it can be put) 309.53 224.29 P
+(to use in systems design.) 309.53 213.29 T
+0 11 Q
+(4) 309.53 192.62 T
+(Fr) 334.73 192.62 T
+(om Space to Place) 345.51 192.62 T
+1 10 Q
+0.72 (The properties outlined above define the notion of \322space\323) 309.53 178.29 P
+-0.01 (which we will use in this paper. Space is the structure of the) 309.53 167.29 P
+2.08 (world; it is the three-dimensional environment, in which) 309.53 156.29 P
+1.32 (objects and events occur, and in which they have relative) 309.53 145.29 P
+2 (position and direction. The properties of space are those) 309.53 134.29 P
+(which derive from that definition, as we showed above.) 309.53 123.29 T
+FMENDPAGE
+%%EndPage: "2" 2
+%%Page: "3" 3
+595.3 841.9 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+42.65 61.95 551.65 84.95 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+(3) 545.25 78.29 T
+45.65 96.95 549.65 762.95 R
+7 X
+V
+0 X
+1.6 (We argued that features of space have been exploited by) 45.65 756.29 P
+2.39 (system developers in the attempt to regain the sense of) 45.65 745.29 P
+3.18 (appropriate behavioural framing which we observe and) 45.65 734.29 P
+1.17 (encounter in the real world. However, in everyday action,) 45.65 723.29 P
+-0.33 (this appropriate behavioural framing comes not from a sense) 45.65 712.29 P
+2.52 (of) 45.65 701.29 P
+3 F
+2.52 (space) 58.99 701.29 P
+1 F
+2.52 (, but from a sense of) 81.76 701.29 P
+3 F
+2.52 (place) 181.02 701.29 P
+1 F
+2.52 (. Our key principle) 202.68 701.29 P
+2.17 (describes the relationship between the two:) 45.65 690.29 P
+3 F
+2.17 (Space is the) 233.65 690.29 P
+(opportunity; place is the understood reality) 45.65 679.29 T
+1 F
+(.) 219.81 679.29 T
+(So, what is place and what does it do for us?) 45.65 662.29 T
+0 F
+(4.1) 45.65 643.29 T
+(Place and Beha) 70.85 643.29 T
+(vioural Framing) 144.62 643.29 T
+1 F
+0.43 (Physically, a place is a space which is) 45.65 630.29 P
+3 F
+0.43 (invested with under-) 203.24 630.29 P
+10.11 (standings) 45.65 619.29 P
+1 F
+10.11 ( of behavioural appropriateness, cultural) 83.99 619.29 P
+-0.4 (expectations, and so forth. We are) 45.65 608.29 P
+3 F
+-0.4 (located) 182.11 608.29 P
+1 F
+-0.4 ( in \322space\323, but we) 211.55 608.29 P
+3 F
+-0.25 (act) 45.65 597.29 P
+1 F
+-0.25 ( in \322place\323. Furthermore, \322places\323 are spaces that are val-) 57.87 597.29 P
+-0.4 (ued. The distinction is rather like that between a \322house\323 and) 45.65 586.29 P
+-0.06 (a \322home\323; a house might keep out the wind and the rain, but) 45.65 575.29 P
+(a home is where we live.) 45.65 564.29 T
+0.92 (A conference hall and a theatre share many similar spatial) 45.65 547.29 P
+-0.07 (features \050such as lighting and orientation\051; and yet we rarely) 45.65 536.29 P
+0.14 (sing or dance when presenting conference papers, and to do) 45.65 525.29 P
+-0.01 (so would be regarded as at least slightly odd \050or would need) 45.65 514.29 P
+1.51 (to be explained\051. We wouldn\325t describe this behaviour as) 45.65 503.29 P
+-0.31 (\322out of space\323; but it would most certainly be \322out of place\323;) 45.65 492.29 P
+0.52 (and this feeling is so strong that we might try quite hard to) 45.65 481.29 P
+3 F
+-0.01 (interpret) 45.65 470.29 P
+1 F
+-0.01 ( a song or a dance as part of a presentation, if faced) 80.65 470.29 P
+1.63 (with it suddenly. It is a sense of place, not space, which) 45.65 459.29 P
+-0.34 (makes it appropriate to dance at a Grateful Dead concert, but) 45.65 448.29 P
+-0.54 (not at a Cambridge college high table; to be naked in the bed-) 45.65 437.29 P
+-0.36 (room, but not in the street; and to sit at our windows, peering) 45.65 426.29 P
+-0.32 (out, rather than at other people\325s windows, peering in. Place,) 45.65 415.29 P
+(not space, frames appropriate behaviour.) 45.65 404.29 T
+0.4 (Conversely, the same location\321with no changes in its spa-) 45.65 387.29 P
+-0.18 (tial organisation or layout\321may function as different places) 45.65 376.29 P
+0.21 (at different times. An office might act, at different times, as) 45.65 365.29 P
+0.95 (a place for contemplation, meetings, intimate conversation) 45.65 354.29 P
+0.39 (and sleep. So a place may be more specific than a space. A) 45.65 343.29 P
+(space is always what it is, but a place is how it\325s used.) 45.65 332.29 T
+0 F
+(4.2) 45.65 313.29 T
+(Place is) 70.85 313.29 T
+5 F
+(In) 110.88 313.29 T
+0 F
+( Space) 119.77 313.29 T
+1 F
+0.09 (One reason that it can be hard to see the separation between) 45.65 300.29 P
+0.79 (place and space is that, in our everyday experience, places) 45.65 289.29 P
+4.39 (largely exist within spaces. \050Later, however, we will) 45.65 278.29 P
+2.21 (describe some space-less places.\051 A place is generally a) 45.65 267.29 P
+0.97 (space with something added\321social meaning, convention,) 45.65 256.29 P
+0.58 (cultural understandings about role, function and nature and) 45.65 245.29 P
+0.42 (so on. The sense of place transforms the space. As a space,) 45.65 234.29 P
+0.09 (the brick porch outside EuroPARC where smokers gather is) 45.65 223.29 P
+-0.01 (uninviting; but it is valued as a place for relaxation and gos-) 45.65 212.29 P
+(sip. It\325s still a space, even though place is what matters.) 45.65 201.29 T
+0.19 (Since our world is spatial and three-dimensional, notions of) 45.65 184.29 P
+1.06 (space pervade our everyday experience. Everything in our) 45.65 173.29 P
+-0.56 (world is located in space, and so \322place\323 is tied up with it too.) 45.65 162.29 P
+0.82 (It is part of the very metaphoric structure of our language.) 45.65 151.29 P
+-0.01 (Tuan [1977] points out that even spatial relations are loaded) 45.65 140.29 P
+-0.14 (with meaning, with \322high\323 being good and \322low\323 being bad.) 45.65 129.29 P
+-0.26 (Lakoff and Johnson [1980] label this an \322orientational meta-) 45.65 118.29 P
+2.73 (phor\323 and give a long list of examples. Spatiality runs) 45.65 107.29 P
+1.53 (throughout our experience and our thought. Places derive) 309.53 756.29 P
+(much of their meaning, then, from their spatiality.) 309.53 745.29 T
+-0.51 (However, the sense of place is dependent on much more than) 309.53 728.29 P
+2.4 (simply the spatial organisation of our surroundings, and) 309.53 717.29 P
+1.37 (more than the three-dimensional arrangement of artefacts.) 309.53 706.29 P
+0.23 (Places also call up cultural understandings which help us to) 309.53 695.29 P
+(frame our behaviour.) 309.53 684.29 T
+0 F
+(4.3) 309.53 665.29 T
+(Place in Social Anal) 334.73 665.29 T
+(ysis) 429.07 665.29 T
+1 F
+0.37 (Analysts of social action have been concerned with notions) 309.53 652.29 P
+0.2 (of place, and with the settings which convey cultural mean-) 309.53 641.29 P
+0.68 (ing and frame behaviour. Goffman [1959] uses a theatrical) 309.53 630.29 P
+1.48 (metaphor, where \322frontstage\323 and \322backstage\323 distinguish) 309.53 619.29 P
+2.13 (different modes of behaviour and action in interpersonal) 309.53 608.29 P
+1 (interaction. He points explicitly to \322regions\323 as one of the) 309.53 597.29 P
+0.09 (elements which contributes to the framing of these different) 309.53 586.29 P
+-0.2 (styles of action. However, behaviour can be framed as much) 309.53 575.29 P
+-0.1 (by the presence of other individuals as by the location itself;) 309.53 564.29 P
+0.97 (in other words, the \322place\323 is more than simply a point in) 309.53 553.29 P
+(space.) 309.53 542.29 T
+-0.57 (Giddens [1984] adopts the term \322locales\323 to capture a similar) 309.53 525.29 P
+1.41 (sense of behavioural framing. Again, these are more than) 309.53 514.29 P
+0.45 (simply spaces; he observes, \322it is usually possible to desig-) 309.53 503.29 P
+-0.34 (nate locales in terms of their physical properties... but it is an) 309.53 492.29 P
+0.02 (error to suppose that locales can be described in those terms) 309.53 481.29 P
+0.45 (alone.\323 For Giddens, again, the critical feature of these set-) 309.53 470.29 P
+0.29 (tings is the way in which \322features of settings are [...] used,) 309.53 459.29 P
+0.26 (in a routine manner, to constitute the meaningful content of) 309.53 448.29 P
+0.42 (interaction\323. In other words, what these analysts point to in) 309.53 437.29 P
+-0.01 (human action is the how it is framed not only by spaces, but) 309.53 426.29 P
+0.66 (by the pattern of understandings, associations and expecta-) 309.53 415.29 P
+(tions with which they are infused.) 309.53 404.29 T
+0 F
+(4.4) 309.53 385.29 T
+(Place in the Built En) 334.73 385.29 T
+(vir) 430.47 385.29 T
+(onment) 442.5 385.29 T
+1 F
+0.4 (Place, as we have described it here, is a central concern for) 309.53 372.29 P
+0.46 (architects and urban designers. For example, Whyte [1988]) 309.53 361.29 P
+1.24 (provides detailed descriptions of the life of the street in a) 309.53 350.29 P
+0.89 (modern city. His comprehensive descriptions of the use of) 309.53 339.29 P
+1.97 (the street-side plazas highlight the issues between places) 309.53 328.29 P
+-0.43 (which \322work\323 and those which do not; whether or not people) 309.53 317.29 P
+0.78 (want to be there. Similarly, while Christopher Alexander\325s) 309.53 306.29 P
+0.49 ([1987] \322patterns\323 ostensibly describe principles of physical) 309.53 295.29 P
+-0.29 (design, the focus is less on the) 309.53 284.29 P
+3 F
+-0.29 (structure) 431.37 284.29 P
+1 F
+-0.29 ( of buildings and cit-) 467.48 284.29 P
+2.21 (ies, and more on the) 309.53 273.29 P
+3 F
+2.21 (living) 403.9 273.29 P
+1 F
+2.21 ( which goes on in them. He) 426.68 273.29 P
+0.61 (comments, \322Those of us who are concerned with buildings) 309.53 262.29 P
+0.35 (tend to forget too easily that all the life and soul of a place,) 309.53 251.29 P
+0.04 (all of our experiences there, depend not simply on the phys-) 309.53 240.29 P
+1.93 (ical environment, but on the pattern of events which we) 309.53 229.29 P
+(experience there.\323 [Alexander, 1979]) 309.53 218.29 T
+0.06 (So, architects and urban designers are concerned not simply) 309.53 201.29 P
+2.36 (with designing three-dimensional structures \050spaces\051, but) 309.53 190.29 P
+1.5 (with) 309.53 179.29 P
+3 F
+1.5 (places) 331.31 179.29 P
+1 F
+1.5 ( for people to) 356.86 179.29 P
+3 F
+1.5 (be) 418.98 179.29 P
+1 F
+1.5 (. For them, the idea of place) 428.42 179.29 P
+6.32 (derives from a tension between) 309.53 168.29 P
+3 F
+6.32 (connectedness) 468.62 168.29 P
+1 F
+6.32 ( and) 526.38 168.29 P
+3 F
+(distinction) 309.53 157.29 T
+1 F
+(.) 351.76 157.29 T
+3 F
+-0.57 (Connectedness) 309.53 140.29 P
+1 F
+-0.57 ( is the degree to which a place fits with its sur-) 369.52 140.29 P
+5.72 (roundings, maintaining a pattern in the surrounding) 309.53 129.29 P
+0.26 (environment \050such as color, material or form\051\321or respond-) 309.53 118.29 P
+-0.34 (ing to those patterns, even if it does not maintain the patterns) 309.53 107.29 P
+FMENDPAGE
+%%EndPage: "3" 3
+%%Page: "4" 4
+595.3 841.9 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+42.65 61.95 551.65 84.95 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+(4) 545.25 78.29 T
+45.65 96.95 549.65 762.95 R
+7 X
+V
+0 X
+1.44 (explicitly. It is when these relationships are broken down) 45.65 756.29 P
+(that we say that something is \322out of place\323.) 45.65 745.29 T
+-0.56 (One measure of placeness is the degree to which a place rein-) 45.65 728.29 P
+-0.48 (forces\321or even defines\321the pattern of its context. But to be) 45.65 717.29 P
+0.22 (a place is also to be distinct from its context. How is it pos-) 45.65 706.29 P
+1.17 (sible for a place to be both \322part of\323 and \322apart from\323 its) 45.65 695.29 P
+-0.54 (context? The tension is addressed by defining the) 45.65 684.29 P
+3 F
+-0.54 (distinctive-) 241.33 684.29 P
+1.13 (ness) 45.65 673.29 P
+1 F
+1.13 ( of a place in terms of the surrounding context\321 and) 62.87 673.29 P
+(vice versa.) 45.65 662.29 T
+0.68 (This model of place, in the tension between connectedness) 45.65 645.29 P
+0.77 (and distinction, will turn out to be a valuable way to think) 45.65 634.29 P
+0.97 (about and design places in computational space as well as) 45.65 623.29 P
+1.86 (physical space. First, though, we will present work from) 45.65 612.29 P
+0.12 (media spaces, to illustrate the distinction between place and) 45.65 601.29 P
+(space, and to ask, how do we make spaces into places?) 45.65 590.29 T
+0 11 Q
+(5) 45.65 569.62 T
+(Making a Place in Media Space) 70.85 569.62 T
+1 10 Q
+-0.48 (We have experimented with these ideas of space and place in) 45.65 555.29 P
+0.49 (research over the last ten years into \322media spaces\323 [Gaver) 45.65 544.29 P
+0.18 (et al., 1992; Bly et al., 1993]. Media spaces integrate audio,) 45.65 533.29 P
+0.19 (video and computer technology to provide a rich, malleable) 45.65 522.29 P
+-0.62 (infrastructure for workgroup communication across time and) 45.65 511.29 P
+-0.29 (space. This work\321especially recent reports bringing a long-) 45.65 500.29 P
+0.3 (term perspective \050e.g. Harrison et al., forthcoming; Dourish) 45.65 489.29 P
+-0.09 (et al., in press\051, presented in examples below\321vividly illus-) 45.65 478.29 P
+(trate the distinction between place and space.) 45.65 467.29 T
+-0.49 (It\325s no accident that these experimental audio-video environ-) 45.65 450.29 P
+-0.26 (ments are called Media) 45.65 439.29 P
+3 F
+-0.26 (Spaces) 140.15 439.29 P
+1 F
+-0.26 (, not Media) 167.92 439.29 P
+3 F
+-0.26 (Places) 215.48 439.29 P
+1 F
+-0.26 (. Placeness) 242.14 439.29 P
+-0.54 (is created and sustained by patterns of use; it\325s not something) 45.65 428.29 P
+0.7 (we can design in. On the other hand, placeness is what we) 45.65 417.29 P
+1.27 (want to support; we can design) 45.65 406.29 P
+3 F
+1.27 (for) 179.89 406.29 P
+1 F
+1.27 ( it. Media spaces were) 191.56 406.29 P
+-0.54 (intended to provide the structure from which placeness could) 45.65 395.29 P
+0.85 (arise, just as places arise out of the space around us. They) 45.65 384.29 P
+1.19 (were not designed as places themselves, but for people to) 45.65 373.29 P
+(make places in them.) 45.65 362.29 T
+0.1 (To understand how this works, we need to spend some time) 45.65 345.29 P
+(thinking about how people turn a space into a place.) 45.65 334.29 T
+0 F
+(5.1) 45.65 315.29 T
+(Adaptation and Appr) 70.85 315.29 T
+(opriation) 169.54 315.29 T
+1 F
+-0.46 (One critical element in the emergence of a sense of place and) 45.65 302.29 P
+0.54 (appropriate behaviour is support for) 45.65 291.29 P
+3 F
+0.54 (adaptation) 194.69 291.29 P
+1 F
+0.54 ( and) 238.03 291.29 P
+3 F
+0.54 (appro-) 258.55 291.29 P
+-0.5 (priation) 45.65 280.29 P
+1 F
+-0.5 ( of the technology by user communities. This applies) 77.88 280.29 P
+0.05 (to physical places as well as technological ones. We make a) 45.65 269.29 P
+0.27 (house into a home by arranging it to suit our lives, and put-) 45.65 258.29 P
+-0.5 (ting things there which reflect ourselves. People make places) 45.65 247.29 P
+0.68 (in media spaces with just the same ideas of adaptation and) 45.65 236.29 P
+-0.41 (appropriation. Like tacking pictures to the walls, rearranging) 45.65 225.29 P
+1.65 (the furniture or placing personal artifacts around a room,) 45.65 214.29 P
+(these are the ways that people can turn a space into a place.) 45.65 203.29 T
+5 9 Q
+(5.1.1) 45.65 186.95 T
+(Example: Linking Pub) 70.85 186.95 T
+(lic Spaces) 164.78 186.95 T
+1 10 Q
+1.17 (As an example, consider the very different experiences of) 45.65 174.29 P
+1 (two seemingly similar uses of video to link public spaces,) 45.65 163.29 P
+-0.19 (one at Xerox \050reported by Olson and Bly [1991]\051, and one at) 45.65 152.29 P
+(Bellcore \050reported by Fish et al. [1990]\051.) 45.65 141.29 T
+0.3 (Both experiments linked public spaces in R&D office envi-) 45.65 124.29 P
+5.89 (ronments with audio and video, to foster informal) 45.65 113.29 P
+2.53 (communication. However, the groups had very different) 45.65 102.29 P
+1.41 (experiences of the successes and failures of their connec-) 309.53 756.29 P
+-0.05 (tions. The Bellcore researchers were disappointed with their) 309.53 745.29 P
+0.9 (results, concluding that \322the current VideoWindow system) 309.53 734.29 P
+0.29 (lacks something due to factors we do not understand\323 [Fish) 309.53 723.29 P
+2.31 (et al., 1990, p.9]; the PARC researchers concluded \322the) 309.53 712.29 P
+-0.44 (media space offered something wonderful to those of us who) 309.53 701.29 P
+-0.32 (experienced the Palo Alto-Portland link\323 [Bly et al., 1993, p.) 309.53 690.29 P
+(45].) 309.53 679.29 T
+0.85 (We believe that one critical factor contributing to the very) 309.53 662.29 P
+1 (different patterns of use is this ability to participate, adapt) 309.53 651.29 P
+1.26 (and appropriate. In these experiments, the differences had) 309.53 640.29 P
+-0.12 (their roots in the technology used. The Xerox link used rela-) 309.53 629.29 P
+5.07 (tively inexpensive cameras, which were mounted on) 309.53 618.29 P
+1.34 (wheeled tripods. Anyone could pick them up, move them) 309.53 607.29 P
+0.82 (around and play with them\321and many people did. On the) 309.53 596.29 P
+0.26 (other hand, the Bellcore system used a prototype wide-scan) 309.53 585.29 P
+1.14 (camera array and video projection system. The equipment) 309.53 574.29 P
+0.33 (was designed to simulate copresence as closely as possible,) 309.53 563.29 P
+2.44 (with high-quality video and audio, and life-size images.) 309.53 552.29 P
+-0.47 (However, the result was that the forbidding equipment, com-) 309.53 541.29 P
+0.14 (plex and delicate to configure, could not be appropriated by) 309.53 530.29 P
+0.42 (its users. It wasn\325t theirs, and they could not) 309.53 519.29 P
+3 F
+0.42 (make) 492.43 519.29 P
+1 F
+0.42 ( it theirs.) 513.53 519.29 P
+-0.12 (This separation between users and technology could be seen) 309.53 508.29 P
+(to inhibit the community\325s adoption of the technology.) 309.53 497.29 T
+-0.07 (It is only over time, and with active participation and appro-) 309.53 480.29 P
+2.49 (priation, that a sense of place begins to permeate these) 309.53 469.29 P
+0.52 (systems. The sense of place must be forged by the users; it) 309.53 458.29 P
+-0.12 (cannot be inherent in the system itself. Space is the opportu-) 309.53 447.29 P
+2.95 (nity, and place is the understood reality. Just as space) 309.53 436.29 P
+2.96 (provides the underlying opportunity for a media space,) 309.53 425.29 P
+(place-making provides its realities.) 309.53 414.29 T
+-0.11 (Since the sense of place takes time to develop within a com-) 309.53 397.29 P
+-0.17 (munity, we look for it in studies of long-term use. A number) 309.53 386.29 P
+1.47 (of studies of \322virtual shared offices\323 linked by video and) 309.53 375.29 P
+-0.59 (audio over the long-term \050periods of two or three years\051 point) 309.53 364.29 P
+0.15 (to the emergence of place-centric behaviours and character-) 309.53 353.29 P
+0.23 (istics [Adler and Henderson, 1994; Dourish et al., in press].) 309.53 342.29 P
+0.14 (We found that new patterns of behaviour emerged, not only) 309.53 331.29 P
+-0.34 (between the \322direct\323 participants\321those whose offices were) 309.53 320.29 P
+0.23 (linked by the media space\321but also, critically, by others in) 309.53 309.29 P
+1.37 (physical or organisational proximity. We will discuss this) 309.53 298.29 P
+(further in our section on \322Hybrid Spaces\323) 309.53 287.29 T
+0 11 Q
+(6) 309.53 266.62 T
+(Place as a Cultural Phenomenon) 334.73 266.62 T
+1 10 Q
+1.19 (We have been developing the idea of a sense of place\321a) 309.53 252.29 P
+-0.37 (communally-held sense of appropriate behaviour, and a con-) 309.53 241.29 P
+4.57 (text for engaging in and interpreting action. This is) 309.53 230.29 P
+(essentially a) 309.53 219.29 T
+3 F
+(cultural) 361.19 219.29 T
+1 F
+( phenomenon.) 392.86 219.29 T
+0.35 (These understandings develop within cultures, and learning) 309.53 202.29 P
+0.39 (them is part of our assimilation and socialisation. Like new) 309.53 191.29 P
+1.07 (members of any culture, new arrivals in our media spaces) 309.53 180.29 P
+0.07 (learn the cultural norms and mores of the media space envi-) 309.53 169.29 P
+0.47 (ronments, as part of their enculturation into the workplaces) 309.53 158.29 P
+-0.22 (and organisations where they are situated. These norms vary) 309.53 147.29 P
+-0.2 (from place to place. For example, Dourish [1993] details the) 309.53 136.29 P
+0.72 (varying views of media space activity in different research) 309.53 125.29 P
+2.17 (environments, and shows how these have influenced the) 309.53 114.29 P
+3.54 (development of the technologies. Similarly, as cultural) 309.53 103.29 P
+FMENDPAGE
+%%EndPage: "4" 4
+%%Page: "5" 5
+595.3 841.9 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+42.65 61.95 551.65 84.95 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+(5) 545.25 78.29 T
+45.65 96.95 549.65 762.95 R
+7 X
+V
+0 X
+-0.44 (understandings drift, change and are forged anew, we see the) 45.65 756.29 P
+(sense of appropriate behaviour change as well.) 45.65 745.29 T
+4.01 (One illustrative example of cultural understandings of) 45.65 728.29 P
+1.48 (appropriate behaviour in media spaces lies in the varying) 45.65 717.29 P
+1.26 (approaches which have arisen around concerns of privacy) 45.65 706.29 P
+(and control.) 45.65 695.29 T
+0 F
+(6.1) 45.65 676.29 T
+(Priv) 70.85 676.29 T
+(ac) 89.55 676.29 T
+(y Concerns in Media Spaces) 100.57 676.29 T
+1 F
+0.6 (Quite rightly, much time and effort, including much of our) 45.65 663.29 P
+2.11 (own, has been devoted to these concerns \050e.g. [Dourish,) 45.65 652.29 P
+1.84 (1991]; [Bellotti and Sellen, 1993]; [Clement, 1994]\051. It\325s) 45.65 641.29 P
+0.85 (important to note, though, that the) 45.65 630.29 P
+3 F
+0.85 (solutions) 189.62 630.29 P
+1 F
+0.85 ( to these prob-) 225.74 630.29 P
+2.58 (lems, which arise) 45.65 619.29 P
+3 F
+2.58 (in situ) 125.6 619.29 P
+1 F
+2.58 ( to address local concerns, are) 152.91 619.29 P
+1.09 (different in every setting [Dourish, 1993]. Concerns about) 45.65 608.29 P
+0.22 (privacy, about the balance between control and availability,) 45.65 597.29 P
+1.1 (and potential approaches to tackling the problems, are not) 45.65 586.29 P
+2.15 (absolute. They arise in a mesh of cultural, personal and) 45.65 575.29 P
+-0.41 (organisational issues in different locations, and so we see the) 45.65 564.29 P
+(nature and scope of solutions vary widely to reflect this.) 45.65 553.29 T
+-0.1 (We don\325t raise this to dismiss concerns with privacy in mul-) 45.65 536.29 P
+-0.49 (timedia environments\321far from it\321or even to classify them) 45.65 525.29 P
+0.3 (as purely \322local\323 problems. Instead, we want to draw atten-) 45.65 514.29 P
+-0.32 (tion to the relationship between ways of acting and behaving) 45.65 503.29 P
+(and the patterns of cultural associations.) 45.65 492.29 T
+-0.14 (The kinds of ideas generally raised in discussions of privacy) 45.65 475.29 P
+1.92 (in media spaces are, themselves, cultural understandings.) 45.65 464.29 P
+0.19 (Privacy has been a major concern for critics of media space) 45.65 453.29 P
+0.89 (and designers of related projects. However, in general, the) 45.65 442.29 P
+-0.21 (debate has not been conducted with a rich view of the mean-) 45.65 431.29 P
+0.82 (ing of privacy. A place-centric view emphasizes important) 45.65 420.29 P
+-0.01 (distinctions: privacy is not the same as private events, nor is) 45.65 409.29 P
+1.5 (it a direct consequence of private places; and in contrast,) 45.65 398.29 P
+1.47 (being seen or even heard is not absolutely and inevitably) 45.65 387.29 P
+(public.) 45.65 376.29 T
+5 9 Q
+(6.1.1) 45.65 359.95 T
+(The Social Construction of Priv) 70.85 359.95 T
+(ac) 204.7 359.95 T
+(y) 214.61 359.95 T
+1 10 Q
+-0.47 (There are many dimensions to the notion of \322privacy\323\321con-) 45.65 347.29 P
+2.41 (venience, turf, control of embarrassment, and control of) 45.65 336.29 P
+1.37 (information. But let us start with the kind of privacy that) 45.65 325.29 P
+1.31 (most people think of first, a relatively recent invention in) 45.65 314.29 P
+0.5 (European cultures. Consider the bedroom. Today, we com-) 45.65 303.29 P
+0.6 (monly think of the bedroom as a private place. We believe) 45.65 292.29 P
+-0.15 (that the activities we associate with it should be visually and) 45.65 281.29 P
+0.7 (acoustically segregated from other people and other activi-) 45.65 270.29 P
+0.18 (ties. The bedroom is a place of intimacy, and is emblematic) 45.65 259.29 P
+-0.22 (of the concept of privacy.) 45.65 248.29 P
+1 8 Q
+-0.18 (1) 147.23 252.29 P
+1 10 Q
+-0.22 ( This was not always so. The bed-) 151.23 248.29 P
+0.68 (room dates from the end of the Middle Ages when Europe) 45.65 237.29 P
+1.2 (was in a mini-ice age. Up until then, people ate and slept) 45.65 226.29 P
+1.56 (together in large groups in a single room. Then someone) 45.65 215.29 P
+-0.54 (invented the bed. It raised bodies off the cold drafty floor and) 45.65 204.29 P
+-0.37 (separated people from one another. Enclosing canopies were) 45.65 193.29 P
+0.02 (added that made tent-like rooms and created separate places) 45.65 182.29 P
+-0.53 (for the now separated sleepers; these tent-like rooms evolved) 45.65 171.29 P
+(into bedrooms.) 45.65 160.29 T
+45.65 126.95 285.77 141.93 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+45.65 126.95 285.77 141.93 R
+7 X
+0 0 0 1 0 0 0 K
+V
+45.65 137.95 189.65 137.95 2 L
+V
+0.5 H
+2 Z
+0 X
+N
+-8.35 24.95 603.65 816.95 C
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+-0.24 (1. Lerup [1987] notes that tele) 45.65 120.95 P
+-0.24 (vision \322soap operas\323 often set action) 153.22 120.95 P
+(in bedrooms when characters share intimate thoughts. The bed-) 45.65 111.95 T
+(room is an icon for the pri) 45.65 102.95 T
+(v) 139.41 102.95 T
+(ate and the personal.) 143.68 102.95 T
+1 10 Q
+0.75 (It is difficult to say whether the concept that is now called) 309.53 756.29 P
+-0.61 (privacy was an unfulfilled desire waiting for these inventions) 309.53 745.29 P
+0.08 (or the by-product of keeping warm and displaying status. In) 309.53 734.29 P
+0.06 (any case, the roots of privacy are in) 309.53 723.29 P
+3 F
+0.06 (physical form) 454.69 723.29 P
+1 F
+0.06 (, not in an) 509.47 723.29 P
+-0.15 (abstract notion of the control of others\325 visual access to one-) 309.53 712.29 P
+0.09 (self and one's property. \050Of course, this is not how we see it) 309.53 701.29 P
+0.01 (today.\051  Privacy is relative, not a set of psychological primi-) 309.53 690.29 P
+0.43 (tives. Technology \050such as walls, doors or permission lists\051) 309.53 679.29 P
+1.24 (is not the only way to create privacy, nor is it enough by) 309.53 668.29 P
+0.69 (itself. Social convention gives meaning to the act of visual) 309.53 657.29 P
+-0.45 (separation. For example, the PARC Media Space is rooted in) 309.53 646.29 P
+-0.17 (the open studio of the architectural office, a place where pri-) 309.53 635.29 P
+1.91 (vacy has a different meaning and is created and used in) 309.53 624.29 P
+0.55 (different ways than in the closed spaces of research offices) 309.53 613.29 P
+3.1 (or the bedrooms of today. The RAVE media space at) 309.53 602.29 P
+-0.54 (EuroPARC emerged with a different set of technological and) 309.53 591.29 P
+0.74 (organisational aesthetics, and manifests a different view of) 309.53 580.29 P
+1.5 (privacy again, rooted in a \322service\323 model rather than an) 309.53 569.29 P
+(\322open access\323 one [Dourish, 1993].) 309.53 558.29 T
+0 F
+(6.2) 309.53 539.29 T
+(Cultural and T) 334.73 539.29 T
+(ec) 401.36 539.29 T
+(hnological Structure) 412.38 539.29 T
+1 F
+2.13 (The identification of \322placeness\323 as a cultural phenome-) 309.53 526.29 P
+-0.33 (non\321or, at least, one rooted in human social action\321results) 309.53 515.29 P
+0.6 (in a critical implication for the design of collaborative sys-) 309.53 504.29 P
+1.75 (tems and technologies. It shifts our focus away from the) 309.53 493.29 P
+-0.57 (technology of place, since that technology\321doors, walls and) 309.53 482.29 P
+0.3 (spatial distance\321only gives rise to \322placeness\323 through the) 309.53 471.29 P
+(way in which it is given social meaning.) 309.53 460.29 T
+0.88 (Office doors in our workplaces are typically left open, but) 309.53 443.29 P
+-0.21 (some doors carry signs to explain that they\325re closed to keep) 309.53 432.29 P
+0.73 (out noise, not visitors. The presence of these signs empha-) 309.53 421.29 P
+1.21 (sises the relationship between technology and social cues.) 309.53 410.29 P
+0.3 (They reinforce the) 309.53 399.29 P
+3 F
+0.3 (social) 386.78 399.29 P
+1 F
+0.3 ( meaning \050availability\051 even in the) 410.67 399.29 P
+1.05 (presence of conflicting) 309.53 388.29 P
+3 F
+1.05 (physical) 406.81 388.29 P
+1 F
+1.05 ( configurations \050the closed) 440.14 388.29 P
+1.74 (door\051. Technological configurations of private places and) 309.53 377.29 P
+1.71 (quiet ones are the same; they are distinguished by social) 309.53 366.29 P
+(action, not spatial structure.) 309.53 355.29 T
+-0.17 (The relationship between space and place is social, not tech-) 309.53 338.29 P
+0.97 (nological. CSCW tools and technologies create) 309.53 327.29 P
+3 F
+0.97 (new) 506.73 327.29 P
+1 F
+0.97 ( social) 522.84 327.29 P
+0.6 (places, based on the ways in which their users ascribe new) 309.53 316.29 P
+-0.53 (social meanings to new technological features. This observa-) 309.53 305.29 P
+2 (tion raises important questions for design. Carrying over) 309.53 294.29 P
+0.74 (technological arrangements which ape the real world, such) 309.53 283.29 P
+1.58 (as spatial organisation, might give us a convenient short-) 309.53 272.29 P
+0.48 (hand for establishing shared social meaning; but is it really) 309.53 261.29 P
+1.49 (the most appropriate means? And, furthermore, doesn\325t it) 309.53 250.29 P
+-0.54 (limit the ways in which individuals and groups can adopt and) 309.53 239.29 P
+1.1 (creatively appropriate the technologies to create their own) 309.53 228.29 P
+(new meanings?) 309.53 217.29 T
+0.43 (In the next two sections, we will explore these questions in) 309.53 200.29 P
+1.13 (more detail. In particular, we will explore the relationship) 309.53 189.29 P
+2.26 (between space and place\321their dependence and interac-) 309.53 178.29 P
+-0.4 (tion\321by looking at two complex forms of places:) 309.53 167.29 P
+3 F
+-0.4 (space-less) 508.55 167.29 P
+(places) 309.53 156.29 T
+1 F
+( and) 335.08 156.29 T
+3 F
+(hybrid physical/virtual spaces) 354.52 156.29 T
+1 F
+(.) 475.07 156.29 T
+0 11 Q
+(7) 309.53 135.62 T
+(Comple) 334.73 135.62 T
+(x Forms: Space-less Places) 374.9 135.62 T
+1 10 Q
+-0.46 (The distinction between \322space\323 and \322place\323 is perhaps most) 309.53 121.29 P
+2.29 (strongly demonstrated by examples of the emergence of) 309.53 110.29 P
+FMENDPAGE
+%%EndPage: "5" 5
+%%Page: "6" 6
+595.3 841.9 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+42.65 61.95 551.65 84.95 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+(6) 545.25 78.29 T
+45.65 96.95 549.65 762.95 R
+7 X
+V
+0 X
+1.27 (place) 45.65 756.29 P
+3 F
+1.27 (without) 70.52 756.29 P
+1 F
+1.27 ( notions of space. Earlier, we introduced the) 100.53 756.29 P
+-0.04 (concept of place as space invested with social meaning. The) 45.65 745.29 P
+2.45 (spaces can be computational, as well as physical. What) 45.65 734.29 P
+1.09 (remains is the tension between connectedness and distinc-) 45.65 723.29 P
+2.55 (tion which leads to placefulness. As our first \322complex) 45.65 712.29 P
+0.76 (form\323, we present two examples in this section of placeful) 45.65 701.29 P
+(collaborative action without a model of physical space.) 45.65 690.29 T
+0 F
+(7.1) 45.65 671.29 T
+(Placeful Discussion without Ph) 70.85 671.29 T
+(ysical Space) 219.02 671.29 T
+1 F
+1.27 (One obvious source of such examples are USENET news) 45.65 658.29 P
+1.44 (groups and Internet mailing lists. The technology of each) 45.65 647.29 P
+1.31 (USENET group is exactly the same, and yet the resultant) 45.65 636.29 P
+-0.48 (groups exhibit very different notions of place. It\325s not simply) 45.65 625.29 P
+2.4 (that they separate discussion into topics, making certain) 45.65 614.29 P
+0.79 (postings appropriate to one group or another; but that they) 45.65 603.29 P
+0.5 (also make distinctions between styles of posting. Neophyte) 45.65 592.29 P
+0.7 (queries may be more or less appropriate, depending on the) 45.65 581.29 P
+-0.62 (culture of the group; so are flames. These styles are relatively) 45.65 570.29 P
+-0.62 (independent of topic. Complaints about spelling or grammat-) 45.65 559.29 P
+6.1 (ical errors are acceptable \050or even encouraged\051 in) 45.65 548.29 P
+6 9 Q
+15.51 (alt.peeves) 45.65 537.29 P
+1 10 Q
+7.18 (, but they would be inappropriate in) 99.65 537.29 P
+6 9 Q
+(comp.protocols.tcp-ip) 45.65 526.29 T
+1 10 Q
+(.) 159.05 526.29 T
+-0.17 (The different groups serve different purposes to overlapping) 45.65 509.29 P
+0.95 (constituencies and communities; and they exhibit different) 45.65 498.29 P
+-0.33 (social norms. They\325re different places. This placeness builds) 45.65 487.29 P
+2.71 (upon the tension between connectedness and distinction) 45.65 476.29 P
+-0.26 (which we raised earlier; but, critically, it emerges) 45.65 465.29 P
+3 F
+-0.26 (without) 244.08 465.29 P
+1 F
+-0.26 ( an) 274.09 465.29 P
+(underlying notion of space.) 45.65 454.29 T
+0 F
+(7.2) 45.65 435.29 T
+(Placeful Na) 70.85 435.29 T
+(vigation without Ph) 124.61 435.29 T
+(ysical Space) 216.64 435.29 T
+1 F
+-0.61 (Dourish and Chalmers [1994] discuss various models of nav-) 45.65 422.29 P
+0.44 (igation through information, and draw distinctions between) 45.65 411.29 P
+-0.53 (\322spatial\323, \322semantic\323 and \322social\323 navigation. Social naviga-) 45.65 400.29 P
+2.04 (tion is navigation through information collections on the) 45.65 389.29 P
+-0.29 (basis of information derived from the activity of others. This) 45.65 378.29 P
+-0.26 (is a particular case which spatially-based models aim to sup-) 45.65 367.29 P
+6.21 (port [Sawyer and Mariani, 1995]; drawing on the) 45.65 356.29 P
+-0.57 (relationship between proximity and activity discussed in sec-) 45.65 345.29 P
+0.43 (tion two, these systems allow users to move to areas where) 45.65 334.29 P
+0.27 (others are clustered, to join the crowd and see what\325s going) 45.65 323.29 P
+1.77 (on. However, as Dourish and Chalmers illustrate, similar) 45.65 312.29 P
+1.33 (patterns of social navigation also occur through \322personal) 45.65 301.29 P
+0.43 (hotlists\323 on the World Wide Web, as well as through inter-) 45.65 290.29 P
+-0.25 (est-matching systems such as Ringo/HOMR and GroupLens) 45.65 279.29 P
+0.47 ([Shardanand and Maes, 1995; Resnick et al., 1994]. Again,) 45.65 268.29 P
+1.23 (this demonstrates that place-based behaviour doesn\325t need) 45.65 257.29 P
+(space to underpin it.) 45.65 246.29 T
+0.76 (The behaviours exhibited here\321varieties in conversational) 45.65 229.29 P
+0.08 (structure, and navigation according to others\325 interests\321are) 45.65 218.29 P
+-0.43 (the same sorts of behaviours which spatial models try to sup-) 45.65 207.29 P
+1.59 (port. However, as in the examples from our media space) 45.65 196.29 P
+1.22 (experiences, we find that these are not spatially-organised) 45.65 185.29 P
+-0.01 (after all; they show people responding to) 45.65 174.29 P
+3 F
+-0.01 (places) 211.37 174.29 P
+1 F
+-0.01 (, not spaces.) 236.91 174.29 P
+0 11 Q
+(8) 45.65 153.62 T
+(Comple) 70.85 153.62 T
+(x Forms: Hybrid Spaces) 111.02 153.62 T
+1 10 Q
+-0.15 (Our second complex form is the hybrids of physical and vir-) 45.65 139.29 P
+-0.53 (tual space which technology can create, and the places which) 45.65 128.29 P
+(emerge.) 45.65 117.29 T
+-0.51 (When we observe the emergence of a sense of place in media) 309.53 756.29 P
+-0.15 (space, a distinction arises between \322spatial\323 features that the) 309.53 745.29 P
+-0.03 (technology might provide\321visual access, proximity, move-) 309.53 734.29 P
+1.14 (ment\321and the place-oriented aspects of interaction which) 309.53 723.29 P
+2.76 (might arise there\321formal and informal discussion, inti-) 309.53 712.29 P
+(macy, a sense of ownership, and so forth.) 309.53 701.29 T
+0.16 (A key feature of interactions in media spaces \050or, more par-) 309.53 684.29 P
+5.14 (ticularly here, interaction over) 309.53 673.29 P
+3 F
+5.14 (particular connections) 453.68 673.29 P
+1 F
+-0.15 (established in media spaces\051 is that they take place in) 309.53 662.29 P
+3 F
+-0.15 (hybrid) 523.54 662.29 P
+-0.23 (spaces.) 309.53 651.29 P
+1 F
+-0.23 (A hybrid space is one which is comprises both phys-) 340.95 651.29 P
+-0.34 (ical and virtual space) 309.53 640.29 P
+3 F
+-0.34 (.) 393.21 640.29 P
+1 F
+-0.34 (These tend to be less common in other) 397.87 640.29 P
+0.48 (related systems. For example, when my avatar enters a vir-) 309.53 629.29 P
+5.1 (tual collaborative environment, then not only is the) 309.53 618.29 P
+-0.01 (environment \050the space the system creates\051 virtual, but what) 309.53 607.29 P
+-0.09 (is) 309.53 596.29 P
+3 F
+-0.09 (projected) 318.61 596.29 P
+1 F
+-0.09 ( into that space \050my avatar\051 is virtual too. On the) 356.38 596.29 P
+-0.15 (other hand, in a media space, while the \322space\323 \050the connec-) 309.53 585.29 P
+0.42 (tion between two people\051 is virtual, the) 309.53 574.29 P
+3 F
+0.42 (projections) 471.32 574.29 P
+1 F
+0.42 ( are not.) 516.32 574.29 P
+-0.36 (What I project into a media space connection is a view of me) 309.53 563.29 P
+0.71 (\050the real me\051 and my office \050a physical space\051. My actions) 309.53 552.29 P
+1.96 (and behaviour in my real space are visible in the media) 309.53 541.29 P
+2.26 (space; but in the virtual system, I act only by remotely) 309.53 530.29 P
+(manipulating my representation.) 309.53 519.29 T
+0.3 (The reason that this distinction between projection and rep-) 309.53 502.29 P
+-0.32 (resentation works is that the media space connection reaches) 309.53 491.29 P
+2.3 (out to encompass everything in front of the camera. So) 309.53 480.29 P
+2.66 (there\325s) 309.53 469.29 P
+3 F
+2.66 (more) 341.89 469.29 P
+1 F
+2.66 ( in the connection than simply the \322virtual) 362.45 469.29 P
+1.56 (space\323 of the two monitors. When two offices are linked) 309.53 458.29 P
+0.42 (together in a media space, then a) 309.53 447.29 P
+3 F
+0.42 (hybrid) 445.77 447.29 P
+1 F
+0.42 ( space is created; it) 471.88 447.29 P
+0.14 (involves not only the virtual space of the media connection,) 309.53 436.29 P
+(but also the real physical space of the two offices.) 309.53 425.29 T
+0 F
+(8.1) 309.53 406.29 T
+(Acting in Hybrid Spaces) 334.73 406.29 T
+1 F
+-0.06 (Dourish et al. [in press] detail a range of experiences arising) 309.53 393.29 P
+1.14 (out of their experiences with very long-term, semi-perma-) 309.53 382.29 P
+0.12 (nent audio and video connections \050\322office-shares\323\051 between) 309.53 371.29 P
+0.2 (particular offices. Since these connections were in place for) 309.53 360.29 P
+1.65 (a long time\321at least two years, day-in and day-out\321the) 309.53 349.29 P
+0.68 (users could observe transformations which the connections) 309.53 338.29 P
+0.08 (introduced, not just in their own behaviour but, critically, in) 309.53 327.29 P
+2.76 (the behaviour of) 309.53 316.29 P
+3 F
+2.76 (other colleagues) 385.85 316.29 P
+1 F
+2.76 ( in organisational and) 454.99 316.29 P
+(physical proximity too.) 309.53 305.29 T
+3.73 (Two examples particularly illustrate the importance of) 309.53 288.29 P
+(hybrid space in these connections.) 309.53 277.29 T
+3 F
+0.09 (Shared Office Etiquette) 309.53 260.29 P
+1 F
+0.09 (. In the first, two office-share partic-) 403.59 260.29 P
+1.81 (ipants observed a \322shared office etiquette\323 arise amongst) 309.53 249.29 P
+0.33 (visitors to their offices. When someone arrived in the door-) 309.53 238.29 P
+0.78 (way or office of one participant to talk to him or her, they) 309.53 227.29 P
+0.48 (would begin their interaction by greeting not only the local) 309.53 216.29 P
+1.26 (participant, but also their) 309.53 205.29 P
+3 F
+1.26 (remote) 417.04 205.29 P
+1 F
+1.26 ( partner, \322present\323 across) 444.81 205.29 P
+2.02 (the audio and video link. In other words, visitors would) 309.53 194.29 P
+0.05 (behave in either office\321a physical space\321as if it were part) 309.53 183.29 P
+-0.17 (of a shared office. Neither physical space was shared by two) 309.53 172.29 P
+2.52 (persons, but the shared place which they occupied, and) 309.53 161.29 P
+0.54 (which was acknowledged by visitors, was formed from the) 309.53 150.29 P
+2.73 (hybrid of physical and virtual space in the office-share) 309.53 139.29 P
+(configuration.) 309.53 128.29 T
+3 F
+-0.1 (Seeing Out the Door) 309.53 111.29 P
+1 F
+-0.1 (. The second example involves a recon-) 391.7 111.29 P
+1.2 (figuration of physical space for the purposes of managing) 309.53 100.29 P
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "6" 6
+%%Page: "7" 7
+595.3 841.9 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+42.65 61.95 551.65 84.95 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+(7) 545.25 78.29 T
+45.65 96.95 549.65 762.95 R
+7 X
+V
+0 X
+0.88 (communication in the hybrid space. When one of the con-) 45.65 756.29 P
+0.45 (nections was first set up, the cameras were pointed directly) 45.65 745.29 P
+0.33 (at the office-sharers, so each participant could see the other) 45.65 734.29 P
+0.16 (and their immediate working area. However, because of the) 45.65 723.29 P
+0.27 (way one office was laid out, one of the cameras was placed) 45.65 712.29 P
+0.55 (on the end of a desk between the office\325s occupant and the) 45.65 701.29 P
+1.55 (door. As a result, the view of that office available in the) 45.65 690.29 P
+-0.21 (media space was rather like the view into the office from the) 45.65 679.29 P
+0.89 (doorway. While this gave the remote participant could see) 45.65 668.29 P
+-0.04 (local office inhabitant, it did not provide a view of the door-) 45.65 657.29 P
+0.43 (way, or into the space beyond which meant that the remote) 45.65 646.29 P
+-0.18 (participant could not see people who arrived in the office, or) 45.65 635.29 P
+0.82 (who passed by outside. This turned out to be an important) 45.65 624.29 P
+(facility.) 45.65 613.29 T
+-0.12 (After a few months, the local inhabitant of this office volun-) 45.65 596.29 P
+0.98 (tarily re-organised it, turning it around 180) 45.65 585.29 P
+7 F
+0.98 (\260) 222.88 585.29 P
+1 F
+0.98 (. This allowed) 226.88 585.29 P
+0.8 (the remote participant to see not only of the office\325s occu-) 45.65 574.29 P
+-0.34 (pant, but also the doorway \050and people standing in it\051 as well) 45.65 563.29 P
+-0.04 (as the public space outside the office. This hugely improved) 45.65 552.29 P
+0.44 (these vital hybrid interactions with office visitors and pass-) 45.65 541.29 P
+4.19 (ers-by \050raising interesting questions of ownership and) 45.65 530.29 P
+(control\051.) 45.65 519.29 T
+0 F
+(8.2) 45.65 500.29 T
+(The Structure of Hybrid Spaces) 70.85 500.29 T
+1 F
+1.04 (The hybrid nature of media space connections is a critical) 45.65 487.29 P
+0.6 (aspect of their use. This is why, for instance, media spaces) 45.65 476.29 P
+2.53 (and collaborative virtual environments do fundamentally) 45.65 465.29 P
+-0.08 (different things. Whereas I must) 45.65 454.29 P
+3 F
+-0.08 (enter) 176.87 454.29 P
+1 F
+-0.08 ( a virtual environment) 197.42 454.29 P
+-0.11 (\050be it a 3-D rendered virtual reality, or a text-based MUD\051, I) 45.65 443.29 P
+1.49 (use the media space to create a new, hybrid space which) 45.65 432.29 P
+3 F
+(includes) 45.65 421.29 T
+1 F
+( real, physical me.) 78.98 421.29 T
+0.34 (One of the curious properties of media space is that a place) 45.65 404.29 P
+-0.03 (can be made of hybrid spaces. Two people can be what they) 45.65 393.29 P
+2.03 (think of as the same place \050like an electronically shared) 45.65 382.29 P
+0.19 (office\051, but will not be in the same physical space,) 45.65 371.29 P
+3 F
+0.19 (nor even) 250.87 371.29 P
+-0.04 (will they be the same hybrid space) 45.65 360.29 P
+1 F
+-0.04 (. My image on your mon-) 183.18 360.29 P
+2.79 (itor does not interact with your image on my monitor,) 45.65 349.29 P
+-0.52 (although we can say the we each of us interact with the other.) 45.65 338.29 P
+0.52 (Each of us is in a separate space; linked, but not shared. In) 45.65 327.29 P
+-0.29 (this section, we will talk in more detail about the structure of) 45.65 316.29 P
+(hybrid spaces, and how to decompose it.) 45.65 305.29 T
+1.17 (It is not only the structure of the space which we have to) 45.65 288.29 P
+0.76 (decompose. It\325s very easy to blindly talk about \322audio and) 45.65 277.29 P
+-0.56 (video\323 in media spaces as if they were equivalent media, per-) 45.65 266.29 P
+0.48 (forming the same sort of function. However, when we take) 45.65 255.29 P
+0.15 (the place-centric view\321and as we have seen, it\325s the place-) 45.65 244.29 P
+1.81 (centric view which affects how people communicate and) 45.65 233.29 P
+0.17 (behave\321then we can see that audio and video actually pro-) 45.65 222.29 P
+(vide very different sorts of functions.) 45.65 211.29 T
+5 9 Q
+(8.2.1) 45.65 194.95 T
+(Vir) 70.85 194.95 T
+(tual Acoustic Spaces) 83.03 194.95 T
+1 10 Q
+0.79 (The critical feature of the \322virtual acoustic space\323 which a) 45.65 182.29 P
+0.57 (media space can create is that it is all-pervasive. It fills the) 45.65 171.29 P
+0.77 (physical space in a way which an image cannot. There are) 45.65 160.29 P
+(two aspects to this.) 45.65 149.29 T
+1.02 (First, audio reaches out to encompass the participants; not) 45.65 132.29 P
+0.23 (just those connected, but those around and passing through.) 45.65 121.29 P
+0.24 (The \322open audio\323 aspect of the long-term media space con-) 45.65 110.29 P
+0.16 (nections described by Dourish et al. was critical to their use) 309.53 756.29 P
+-0.29 (for just this reason, and was a highly significant contribution) 309.53 745.29 P
+3.51 (to what they refer to as \322communal\323 aspects of their) 309.53 734.29 P
+(connection.) 309.53 723.29 T
+0.49 (Second, the audio space is truly shared; we each speak and) 309.53 706.29 P
+-0.09 (hear in the) 309.53 695.29 P
+3 F
+-0.09 (same) 353.98 695.29 P
+1 F
+-0.09 ( audio space. The sound of my voice carries) 374.53 695.29 P
+-0.2 (over the audio connection and invades your space; it doesn\325t) 309.53 684.29 P
+0.36 (stay in a fixed place until you attend to it. The space which) 309.53 673.29 P
+(the audio channel creates is one which we share.) 309.53 662.29 T
+5 9 Q
+(8.2.2) 309.53 645.95 T
+(Vir) 334.73 645.95 T
+(tual Visual Spaces) 346.91 645.95 T
+1 10 Q
+2.15 (In contrast, visual space is not shared, but simply) 309.53 633.29 P
+3 F
+2.15 (made) 527.99 633.29 P
+0.57 (available) 309.53 622.29 P
+1 F
+0.57 (. The image of my office which my camera sends) 346.75 622.29 P
+1.28 (out, and which is displayed on your monitor, remains my) 309.53 611.29 P
+-0.21 (image. It carries with it the context in which it was captured,) 309.53 600.29 P
+0.9 (and at your end, it is framed and bounded by the monitor.) 309.53 589.29 P
+0.43 (You can\325t be in it, or walk around in it. You see me, in my) 309.53 578.29 P
+0.03 (space, and I see you, in yours; but neither of us sees the two) 309.53 567.29 P
+(of us, together, in a shared visual space.) 309.53 556.29 T
+3.36 (This non-shared aspect of visual space is reflected by) 309.53 539.29 P
+1.7 (Gaver\325s [1992] \322affordance\323 analysis of media spaces. A) 309.53 528.29 P
+2.44 (number of the points illustrated there \050and subsequently) 309.53 517.29 P
+1.29 (developed in later design work [Gaver et al., 1995]\051 arise) 309.53 506.29 P
+1.6 (because it is not your space which enters mine, but your) 309.53 495.29 P
+(image.) 309.53 484.29 T
+1.27 (The value and interesting use of media space connections) 309.53 467.29 P
+1.22 (which we have observed lie in the) 309.53 456.29 P
+3 F
+1.22 (balance) 456.67 456.29 P
+1 F
+1.22 ( between these) 488.33 456.29 P
+0.61 (features\321the shared nature of the audio space, the translo-) 309.53 445.29 P
+0.6 (cated nature of the visual space, and the melding of virtual) 309.53 434.29 P
+(and physical space which the media space affords.) 309.53 423.29 T
+-0.45 (We disrupt this balance at our peril. For instance, technology) 309.53 406.29 P
+0.9 (is available to let us digitally process the images from our) 309.53 395.29 P
+1.69 (cameras, and reconstruct them to make it appear that we) 309.53 384.29 P
+0.42 (were sitting across from each other at a virtual \322conference) 309.53 373.29 P
+2.24 (table\323. We would be being presented in a shared visual) 309.53 362.29 P
+0.13 (space. However, this space would belong to neither of us; it) 309.53 351.29 P
+-0.54 (would convey nothing about our current settings and actions;) 309.53 340.29 P
+-0.04 (and would cut out anyone else who happened by in physical) 309.53 329.29 P
+0.09 (space. It would be a very different sort of experience. In the) 309.53 318.29 P
+0.89 (search for realism, the practical everyday value of interac-) 309.53 307.29 P
+-0.23 (tion in the media space\325s hybrid space would have been lost.) 309.53 296.29 P
+0 11 Q
+(9) 309.53 275.62 T
+(Designing Ar) 334.73 275.62 T
+(ound Space and Place) 402.96 275.62 T
+1 10 Q
+-0.35 (As we have gone through this discussion, a number of points) 309.53 261.29 P
+-0.57 (have arisen which are worth collecting together as rubrics for) 309.53 250.29 P
+(design.) 309.53 239.29 T
+3 F
+-0.57 (Spaces are not places) 309.53 222.29 P
+1 F
+-0.57 (. Spaces and places are different things.) 394.76 222.29 P
+-0.47 (We can all think of lifeless spaces in our buildings and cities;) 309.53 211.29 P
+2.45 (spaces that \322don\325t work\323, that have no sense of place) 309.53 200.29 P
+1 8 Q
+1.96 (2) 543.15 204.29 P
+1 10 Q
+2.45 (.) 547.15 200.29 P
+0.9 (Spaces are part of the material out of which places can be) 309.53 189.29 P
+0.44 (built. Dealing with physical structure, topology, orientation) 309.53 178.29 P
+3.32 (and connectedness, spaces offer opportunities and con-) 309.53 167.29 P
+-0.04 (straints. Places, on the other hand, reflect cultural and social) 309.53 156.29 P
+1.55 (understandings. Places can also have temporal properties;) 309.53 145.29 P
+1.56 (the same space can be different places at different times.) 309.53 134.29 P
+309.53 108.95 549.65 123.93 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+309.53 108.95 549.65 123.93 R
+7 X
+0 0 0 1 0 0 0 K
+V
+309.53 119.95 453.53 119.95 2 L
+V
+0.5 H
+2 Z
+0 X
+N
+-8.35 24.95 603.65 816.95 C
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(2. One re) 309.53 102.95 T
+(vie) 342.54 102.95 T
+(wer commented, \322Y) 353.31 102.95 T
+(es! The Stanford quad!\323) 425.14 102.95 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "7" 7
+%%Page: "8" 8
+595.3 841.9 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+42.65 61.95 551.65 84.95 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+(8) 545.25 78.29 T
+45.65 96.95 549.65 762.95 R
+7 X
+V
+0 X
+0.35 (While spaces have up and down, left and right, places have) 45.65 756.29 P
+(yesterday and tomorrow, good and bad.) 45.65 745.29 T
+3 F
+0.81 (Places, not spaces, frame appropriate behaviour) 45.65 728.29 P
+1 F
+0.81 (. Much of) 244.98 728.29 P
+-0.36 (the motivation for spatially-organised collaborative environ-) 45.65 717.29 P
+1.57 (ments is that they can provide the cues which frame and) 45.65 706.29 P
+2.72 (organise appropriate social behaviour in the real world.) 45.65 695.29 P
+1.27 (However, that behaviour is not associated with space, but) 45.65 684.29 P
+-0.57 (with place. A community hall might, on different evenings in) 45.65 673.29 P
+0.19 (a week, be used as a rock venue, a sports arena, and a place) 45.65 662.29 P
+0.6 (of worship. On these different occasions, it\325s not the struc-) 45.65 651.29 P
+0.64 (ture of the) 45.65 640.29 P
+3 F
+0.64 (space) 91.16 640.29 P
+1 F
+0.64 ( which frames people\325s behaviour, but the) 113.93 640.29 P
+3 F
+(place) 45.65 629.29 T
+1 F
+( where they find themselves.) 67.31 629.29 T
+3 F
+1.85 (Places have social meaning) 45.65 612.29 P
+1 F
+1.85 (. The meanings which places) 162.56 612.29 P
+1.1 (carry are social meanings; they are rooted in the practices) 45.65 601.29 P
+1.45 (and understandings of communities. They arise over time) 45.65 590.29 P
+0.37 (through as practices emerge and are transformed within the) 45.65 579.29 P
+-0.38 (groups. This has two consequences. The first is that different) 45.65 568.29 P
+0.7 (groups will have different understandings of similar places) 45.65 557.29 P
+0.6 (and similar concepts, and these will change over time. The) 45.65 546.29 P
+-0.4 (second is that places have to be created, through practice and) 45.65 535.29 P
+0.42 (appropriation, to fit into the culture of the group. Placeness) 45.65 524.29 P
+(can be designed) 45.65 513.29 T
+3 F
+(for) 112.02 513.29 T
+1 F
+(, but it can\325t be designed) 123.69 513.29 T
+3 F
+(in) 224.51 513.29 T
+1 F
+(.) 232.29 513.29 T
+3 F
+0.58 (Different media have different spatial properties) 45.65 496.29 P
+1 F
+0.58 (. The vari-) 242.69 496.29 P
+2.1 (ous media which we might use in creating collaborative) 45.65 485.29 P
+0.16 (environments\321streams of text or graphics, high-quality 3D) 45.65 474.29 P
+-0.3 (images, audio, video, etc.\321exhibit very different properties,) 45.65 463.29 P
+1.41 (and these properties in turn strongly influence patterns of) 45.65 452.29 P
+1.81 (use, adoption and adaptation to media environments. For) 45.65 441.29 P
+1.65 (instance, in the case of media spaces, we illustrated how) 45.65 430.29 P
+1.06 (audio and video embody very different notions of \322reach\323) 45.65 419.29 P
+(and of \322sharing\323.) 45.65 408.29 T
+2.8 (Our basic principle, stated earlier, captures all of these) 45.65 391.29 P
+-0.15 (together, and relates the distinction between place and space) 45.65 380.29 P
+0.23 (to our everyday experience:) 45.65 369.29 P
+3 F
+0.23 (Space is the opportunity; place) 160.42 369.29 P
+(is the understood reality) 45.65 358.29 T
+1 F
+(.) 143.15 358.29 T
+0 F
+(9.1) 45.65 339.29 T
+(The Utility of Space and Place) 70.85 339.29 T
+1 F
+-0.26 (The question we must always ask in thinking about design is) 45.65 326.29 P
+-0.43 (not simply what) 45.65 315.29 P
+3 F
+-0.43 (aspects) 111.31 315.29 P
+1 F
+-0.43 ( of space are being exploited in these) 140.75 315.29 P
+-0.61 (systems, but) 45.65 304.29 P
+3 F
+-0.61 (to what end) 96.37 304.29 P
+1 F
+-0.61 ( are they being used? By way of con-) 141.82 304.29 P
+0.27 (trast, one significant area of research interest around spatial) 45.65 293.29 P
+0.35 (models in interactive systems is to visualise large bodies of) 45.65 282.29 P
+0.69 (information. Information visualisation techniques shift part) 45.65 271.29 P
+1.28 (of the information retrieval task from the cognitive to the) 45.65 260.29 P
+0.34 (perceptual system. Although the popularity of spatial meta-) 45.65 249.29 P
+-0.16 (phors in collaborative environments follows their popularity) 45.65 238.29 P
+-0.01 (in single-user interactive systems, the purposes are very dif-) 45.65 227.29 P
+0.69 (ferent. But we can still ask analogously, \322What is it that is) 45.65 216.29 P
+(being made perceptible in collaborative spatial models?\323) 45.65 205.29 T
+1.48 (Place-making, then, would appear to be a complex enter-) 45.65 188.29 P
+0.96 (prise. It reflects the) 45.65 177.29 P
+3 F
+0.96 (conscious arrangement) 129.18 177.29 P
+1 F
+0.96 ( of elements to) 223.74 177.29 P
+0.7 (create a space that accommodates activity, and \050here is the) 45.65 166.29 P
+-0.6 (hard part\051 the interplay of reflective design and happenstance) 45.65 155.29 P
+0.85 (to give expression to the values of the occupants and their) 45.65 144.29 P
+1.01 (wider community. In other words, as we have observed, a) 45.65 133.29 P
+0.77 (space can only be made a place by its occupants. The best) 45.65 122.29 P
+0.22 (that the designers can do is to put the tools into their hands.) 45.65 111.29 P
+(Trying to do more\321trying to build places\321is not our job.) 45.65 100.29 T
+-0.23 (Let us now take a look at how this is and is not carried out in) 309.53 756.29 P
+0.57 (one kind of collaborative system, and how space and place) 309.53 745.29 P
+(interact.) 309.53 734.29 T
+0 F
+(9.2) 309.53 715.29 T
+(MUDs: Designing with Space and Place) 334.73 715.29 T
+1 F
+-0.18 (Through this paper, we have been talking largely in terms of) 309.53 702.29 P
+2.14 (media spaces. Not only are these the environments with) 309.53 691.29 P
+0.52 (which we are most familiar, but they have also been in use) 309.53 680.29 P
+3.13 (for longer than many other collaborative environments.) 309.53 669.29 P
+0.18 (However, it is instructive to look at another example, to see) 309.53 658.29 P
+0.27 (how the ideas we have been discussing apply. The example) 309.53 647.29 P
+(which we will look at, loosely, is MUDs.) 309.53 636.29 T
+-0.54 (MUDs employ a strong spatial analogy to manage multi-user) 309.53 619.29 P
+-0.36 (interaction. Connected regions \050or \322rooms\323\051 serve as a filter-) 309.53 608.29 P
+3.28 (ing mechanism; my view of the activities currently in) 309.53 597.29 P
+0.42 (progress in the MUD is largely restricted to those activities) 309.53 586.29 P
+-0.17 (in the same room. Different MUDs \050not just different imple-) 309.53 575.29 P
+0.94 (mentations, but different services, run by different people\051) 309.53 564.29 P
+-0.57 (exploit this \322real-world\323 analogy to a greater or lesser extent;) 309.53 553.29 P
+-0.39 (for instance, in some systems, characters can \322teleport\323 from) 309.53 542.29 P
+-0.37 (one room to another, whereas in others, one must walk to the) 309.53 531.29 P
+(destination, passing through the points in between.) 309.53 520.29 T
+1.31 (However, it\325s a curious sense of geography which MUDs) 309.53 503.29 P
+-0.14 (exhibit. They have topology \050connectedness\051 but no orienta-) 309.53 492.29 P
+1.32 (tion; there is generally no real notion of up, down, north,) 309.53 481.29 P
+1.16 (south, back and forward \050except in the names of the exits) 309.53 470.29 P
+0.64 (which link rooms\051. Meantime, most MUDs have no notion) 309.53 459.29 P
+-0.59 (of space within a room; I can\325t be closer to one character than) 309.53 448.29 P
+(another, or hide behind the sofa.) 309.53 437.29 T
+0.11 (So, in fact, MUDs do) 309.53 420.29 P
+3 F
+0.11 (not) 398.12 420.29 P
+1 F
+0.11 ( exhibit the spatially-based control) 410.9 420.29 P
+2.86 (which might seem central to them, and which is often) 309.53 409.29 P
+0.4 (appealed to by developers. The spatial metaphor is actually) 309.53 398.29 P
+1.45 (of much less value in controlling interaction, engagement) 309.53 387.29 P
+3.7 (and so forth than might be imagined. Where present,) 309.53 376.29 P
+0.14 (common MUD facilities like teleporting or inter-room mes-) 309.53 365.29 P
+0.66 (saging undermine it even more. The spatial metaphor\321the) 309.53 354.29 P
+0.75 (connectedness of space, and the) 309.53 343.29 P
+3 F
+0.75 (geography) 443.24 343.29 P
+1 F
+0.75 ( of the MUD\321) 486.01 343.29 P
+(breaks down, and only the places remain.) 309.53 332.29 T
+1.22 (Every MUD has its places\321general gathering places, pri-) 309.53 315.29 P
+5.07 (vate places, homes, etc.\321where the sense of place,) 309.53 304.29 P
+0.11 (established over time, within a community, is used to frame) 309.53 293.29 P
+0.94 (appropriate action. The inappropriate action of new, unen-) 309.53 282.29 P
+4.1 (culturated arrivals \050\322clueless newbies\323\051 only serves to) 309.53 271.29 P
+0.09 (reinforce how much the regular characters know about their) 309.53 260.29 P
+1.71 (social norms. But this has almost nothing to do with the) 309.53 249.29 P
+1.13 (\322geography\323 and the familiar spatial metaphor\321why, if it) 309.53 238.29 P
+0.37 (did, then the clueless newbies should be able to work it out) 309.53 227.29 P
+(right away!) 309.53 216.29 T
+2.6 (MUDs, like more traditional virtual reality systems, are) 309.53 199.29 P
+3 F
+0.1 (immersive) 309.53 188.29 P
+1 F
+0.1 ( environments; users) 350.63 188.29 P
+3 F
+0.1 (enter) 436.21 188.29 P
+1 F
+0.1 ( the MUD, and interact) 456.76 188.29 P
+3 F
+0.69 (in) 309.53 177.29 P
+1 F
+0.69 ( the MUD, rather than using the MUD to link their own,) 317.31 177.29 P
+0.36 (physical worlds in the way that media spaces do. However,) 309.53 166.29 P
+2.09 (in recent experiments, researchers have added audio and) 309.53 155.29 P
+-0.09 (video conferencing facilities to MUDs. Jupiter [Curtis et al.,) 309.53 144.29 P
+0.5 (1995] is a multi-media extension to a traditional text-based) 309.53 133.29 P
+3.73 (MUD. It retains the traditional spatial analogy of the) 309.53 122.29 P
+2.56 (MUD\321objects and users located in rooms, which filter) 309.53 111.29 P
+-0.15 (activity as a whole\321and then adds shared graphical objects,) 309.53 100.29 P
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "8" 8
+%%Page: "9" 9
+595.3 841.9 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+42.65 61.95 551.65 84.95 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+(9) 545.25 78.29 T
+45.65 96.95 549.65 762.95 R
+7 X
+V
+0 X
+0.9 (as well as audio and video streams. Like typed text, audio) 45.65 756.29 P
+1.06 (and video are available on room-by-room basis; each user) 45.65 745.29 P
+(can see and hear others in the same room.) 45.65 734.29 T
+0.09 (However, the result can be quite confusing. Following from) 45.65 717.29 P
+-0.05 (the observations we made in section eight, Jupiter exhibits a) 45.65 706.29 P
+-0.01 (very mixed metaphor. My virtual presence is in one of Jupi-) 45.65 695.29 P
+1.93 (ter\325s virtual rooms, where I share with some other users) 45.65 684.29 P
+0.61 (access to a virtual whiteboard and an acoustic space which) 45.65 673.29 P
+-0.52 (extends into all of our real offices. But at the same time, I can) 45.65 662.29 P
+2.42 (also see representations of these people in their offices,) 45.65 651.29 P
+0.37 (typing at their computers. They seem to be in two places at) 45.65 640.29 P
+-0.09 (once. The information which their video signal) 45.65 629.29 P
+3 F
+-0.09 (projects) 235.57 629.29 P
+1 F
+-0.09 ( into) 267.79 629.29 P
+1.47 (the system denies the metaphor which the system is con-) 45.65 618.29 P
+0.26 (structed to provide. Since that metaphor is what unifies and) 45.65 607.29 P
+(underpins all activity in the MUD, the result is confusing.) 45.65 596.29 T
+0.16 (The analysis of Jupiter in supporting interaction and collab-) 45.65 579.29 P
+1.56 (oration in a large research facility is only just beginning.) 45.65 568.29 P
+-0.05 (However, from our own experiences, we would suggest that) 45.65 557.29 P
+-0.2 (the mixed metaphor results in Jupiter being used much more) 45.65 546.29 P
+0.45 (as a media space than as a MUD, by those who have audio) 45.65 535.29 P
+0.12 (and video connectivity through it. The dissonance of virtual) 45.65 524.29 P
+1.27 (reality and multimedia representations is just too much to) 45.65 513.29 P
+(bear.) 45.65 502.29 T
+0.27 (This reiterates a point we made earlier; that, when we think) 45.65 485.29 P
+1.2 (about the difference between space and place, we can see) 45.65 474.29 P
+-0.38 (that the various media which might be involved in a commu-) 45.65 463.29 P
+1.21 (nication technology play very different roles. When audio) 45.65 452.29 P
+0.27 (and video are added to a textual interface, the result is defi-) 45.65 441.29 P
+1.68 (nitely not the same sort of system with more bandwidth.) 45.65 430.29 P
+0.06 (Instead, the result is a new kind of medium, and so the sorts) 45.65 419.29 P
+4.35 (of behaviours which people will exhibit are changed) 45.65 408.29 P
+(radically.) 45.65 397.29 T
+0 11 Q
+(10) 45.65 376.62 T
+(Conc) 70.85 376.62 T
+(lusions) 98.13 376.62 T
+1 10 Q
+1.78 (What we have pointed to here is the distinction between) 45.65 362.29 P
+0.37 (space and place; and this distinction has important implica-) 45.65 351.29 P
+5.22 (tions for the design and evaluation of collaborative) 45.65 340.29 P
+(computational environments.) 45.65 329.29 T
+0.23 (Spatial models are increasing popularity in the design of all) 45.65 312.29 P
+-0.37 (sorts of collaborative environments. These designs are based) 45.65 301.29 P
+-0.11 (on the assumption that, since many aspects of our behaviour) 45.65 290.29 P
+0.61 (seem to be organised around spatial elements of the every-) 45.65 279.29 P
+3.97 (day world, then we can carry over these patterns of) 45.65 268.29 P
+-0.34 (behaviour to virtual environments by designing them around) 45.65 257.29 P
+2.52 (the same affordances for action and interaction that the) 45.65 246.29 P
+0.75 (everyday world exhibits\321doors, windows, walls, distance,) 45.65 235.29 P
+(proximity or whatever.) 45.65 224.29 T
+0.44 (However, we have argued that, in everyday experience and) 45.65 207.29 P
+0.04 (interaction, it is a sense of) 45.65 196.29 P
+3 F
+0.04 (place) 152.82 196.29 P
+1 F
+0.04 (, rather than the structure of) 174.48 196.29 P
+0.52 (space, which frames our behaviour. Our sense of place is a) 45.65 185.29 P
+0.21 (cultural or communally-held understanding of the appropri-) 45.65 174.29 P
+-0.17 (ateness of styles of behaviour and interaction, which may be) 45.65 163.29 P
+1.01 (organised around spatial features but is, nonetheless, quite) 45.65 152.29 P
+0.51 (separate from them. After all, as we have seen,) 45.65 141.29 P
+3 F
+0.51 (non-spatial) 240.21 141.29 P
+(environments exhibit placeness, too) 45.65 130.29 T
+1 F
+(.) 188.41 130.29 T
+0.62 (The placeness which operates in these non-spatial environ-) 45.65 113.29 P
+2.1 (ments\321and, we would argue, in spatial ones too\321is an) 45.65 102.29 P
+0.36 (evolved set of behaviours rooted in our ability to creatively) 309.53 756.29 P
+0.29 (appropriate aspects of the world, to organise it, and to bend) 309.53 745.29 P
+-0.2 (it to our needs. From this, then, we argue that it is dangerous) 309.53 734.29 P
+0.29 (to confuse the notions space and place. By all means, let us) 309.53 723.29 P
+0.92 (design interfaces based on spatial organisation and all that) 309.53 712.29 P
+1.38 (comes with it; but at the same time, we must be wary of) 309.53 701.29 P
+-0.33 (claims that this will support place-based \322real world\323 behav-) 309.53 690.29 P
+0.12 (iours. In fact, by embedding placeness in spatial metaphors,) 309.53 679.29 P
+1.62 (we can accidentally undermine) 309.53 668.29 P
+3 F
+1.62 (the very thing that makes) 442.63 668.29 P
+0.81 (place work) 309.53 657.29 P
+1 F
+0.81 (\321the shared understandings of appropriate use,) 354.5 657.29 P
+0.05 (and the social interpretation of cues in the physical environ-) 309.53 646.29 P
+0.12 (ment. When my \322virtual door\323 absolutely controls access to) 309.53 635.29 P
+-0.29 (my virtual presence in a media space, then the opportunity is) 309.53 624.29 P
+2.38 (lost for an appropriate social interpretation of a \322closed) 309.53 613.29 P
+0.63 (door\323. My ability to appropriate elements of the world and) 309.53 602.29 P
+-0.07 (turn the into cues for availability disappears. This is the par-) 309.53 591.29 P
+(adox of design around spatial metaphors.) 309.53 580.29 T
+-0.51 (After all, a virtual world filled with virtual offices and virtual) 309.53 563.29 P
+1.59 (desks isn\325t populated by virtual people, but by real ones.) 309.53 552.29 P
+3.09 (Drawing contrasts and analogies between, for example,) 309.53 541.29 P
+2.07 (media spaces and the \322real world\323 is unhelpful, because) 309.53 530.29 P
+0.88 (media spaces) 309.53 519.29 P
+3 F
+0.88 (are) 366.84 519.29 P
+1 F
+0.88 ( the real world. Their inhabitants are real) 380.17 519.29 P
+0.94 (people, engaged in real interactions in the course of doing) 309.53 508.29 P
+0.77 (their real work. And, as such, they will engage in the very) 309.53 497.29 P
+-0.29 (real) 309.53 486.29 P
+3 F
+-0.29 (creation) 326.73 486.29 P
+1 F
+-0.29 ( of forms of activity and work, just as they do in) 360.06 486.29 P
+-0.16 (their everyday physical environments. This is what it\325s criti-) 309.53 475.29 P
+1.31 (cal to design for; and this is what is lost when we fail to) 309.53 464.29 P
+(support the duality of space and place.) 309.53 453.29 T
+0 9 Q
+(Acknowledgments) 309.53 434.95 T
+1 10 Q
+0.24 (We would like to thank the many people who have contrib-) 309.53 421.29 P
+0.88 (uted to the development of these ideas over the years, and) 309.53 410.29 P
+1.65 (have given us valuable feedback on this paper, including) 309.53 399.29 P
+1.25 (Annette Adler, Victoria Bellotti, Sara Bly, Tom Erickson,) 309.53 388.29 P
+6.37 (Bill Gaver, Beki Grinter, Austin Henderson, Allan) 309.53 377.29 P
+(MacLean, Scott Minneman, Vicki O\325Day and Bob Stults.) 309.53 366.29 T
+0 9 Q
+(References) 309.53 347.95 T
+1 10 Q
+2.48 ([Adler and Henderson, 1994] Annette Adler and Austin) 309.53 334.29 P
+-0.6 (Henderson,) 309.53 323.29 P
+3 F
+-0.6 (\322A Room of our Own: Experiences from a Direct) 357.25 323.29 P
+-0.41 (Office-Share\323) 309.53 312.29 P
+1 F
+-0.41 (, Proc. ACM Conference on Human Factors in) 366.19 312.29 P
+(Computing Systems CHI\32594, Boston, Mass., April 1994.) 309.53 301.29 T
+1.98 ([Alexander, 1979] Christopher Alexander,) 309.53 284.29 P
+3 F
+1.98 (\322The Timeless) 489.61 284.29 P
+2.56 (Way of Building\323) 309.53 273.29 P
+1 F
+2.56 (, Oxford University Press, New York,) 385.21 273.29 P
+(1979.) 309.53 262.29 T
+1.45 ([Alexander et al., 1977] Christopher Alexander, Sara Ish-) 309.53 245.29 P
+3.63 (ikawa and Murray Silverstein,) 309.53 234.29 P
+3 F
+3.63 (\322A Pattern Language\323) 447.65 234.29 P
+1 F
+3.63 (,) 547.15 234.29 P
+(Oxford University Press, New York, 1977.) 309.53 223.29 T
+2.4 ([Bellotti and Sellen, 1993] Victoria Bellotti and Abigail) 309.53 206.29 P
+0.02 (Sellen,) 309.53 195.29 P
+3 F
+0.02 (\322Design for Privacy in Ubiquitous Computing Envi-) 339.55 195.29 P
+-0.16 (ronments\323) 309.53 184.29 P
+1 F
+-0.16 (, Proc. Third European Conference on Computer-) 352.31 184.29 P
+2.47 (Supported Cooperative Work ECSCW\32593, Milano, Italy,) 309.53 173.29 P
+(September 13\32017, 1993.) 309.53 162.29 T
+3.36 ([Benford and Fahlen, 1993] Steve Benford and Lenart) 309.53 145.29 P
+1.58 (Fahlen,) 309.53 134.29 P
+3 F
+1.58 (\322A Spatial Model of Interaction in Large Virtual) 343.32 134.29 P
+0.21 (Environments\323) 309.53 123.29 P
+1 F
+0.21 (, Proc. Third European Conference on Com-) 370.64 123.29 P
+2.95 (puter-Supported Cooperative Work ECSCW\32593, Milano,) 309.53 112.29 P
+(Italy, September 13\32017, 1993.) 309.53 101.29 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "9" 9
+%%Page: "10" 10
+595.3 841.9 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+42.65 61.95 551.65 84.95 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+(10) 540.25 78.29 T
+45.65 96.95 549.65 762.95 R
+7 X
+V
+0 X
+2.32 ([Borning and Travers, 1991] Alan Borning and Michael) 45.65 756.29 P
+-0.54 (Travers,) 45.65 745.29 P
+3 F
+-0.54 (\322Two Approaches to Casual Interaction Over Com-) 80.65 745.29 P
+3.11 (puter and Video Networks\323) 45.65 734.29 P
+1 F
+3.11 (, Proc. ACM Conf. Human) 165.27 734.29 P
+-0.14 (Factors in Computing Systems CHI\32591, New Orleans, 1991.) 45.65 723.29 P
+0.01 ([Bly et al., 1993] Sara Bly, Steve Harrison and Susan Irwin,) 45.65 706.29 P
+3 F
+-0.5 (\322Media Spaces: Bringing People Together in a Video, Audio) 45.65 695.29 P
+3.91 (and Computing Environment\323) 45.65 684.29 P
+1 F
+3.91 (, Communications of the) 175.14 684.29 P
+(ACM, 36\0501\051, January 1993.) 45.65 673.29 T
+1.04 ([Buxton, forthcoming] Bill Buxton,) 45.65 656.29 P
+3 F
+1.04 (\322Living in Augmented) 194.8 656.29 P
+0.44 (Reality: Ubiquitous Media and Reactive Environments\323) 45.65 645.29 P
+1 F
+0.44 (, to) 272.55 645.29 P
+0.68 (appear in Finn, Sellen and Wilbur \050eds.\051, \322Video Mediated) 45.65 634.29 P
+(Communication\323, Lawrence Erlbaum.) 45.65 623.29 T
+1.92 ([Carlsson and Hagsand,1993] Christer Carlsson and Olof) 45.65 606.29 P
+0.81 (Hagsand,) 45.65 595.29 P
+3 F
+0.81 (\322DIVE: A Platform for Multi-User Virtual Envi-) 86.45 595.29 P
+(ronments\323,) 45.65 584.29 T
+1 F
+( Computer Graphics, 17\0506\051, pp. 663\320669, 1993.) 90.93 584.29 T
+-0.07 ([Clement, 1994] Andrew Clement,) 45.65 567.29 P
+3 F
+-0.07 (\322Considering Privacy in) 187.02 567.29 P
+2.25 (the Development of Multimedia Communications) 45.65 556.29 P
+1 F
+2.25 (\323,) 251.3 556.29 P
+2.25 (Com-) 262.99 556.29 P
+(puter Supported Cooperative Work, 2\0501\3202\051, 1994.) 45.65 545.29 T
+0.22 ([Curtis and Nichols, 1994] Pavel Curtis and David Nichols,) 45.65 528.29 P
+3 F
+3.7 (\322MUDs Grow Up: Social Virtual Reality in the Real) 45.65 517.29 P
+1.83 (World\323) 45.65 506.29 P
+1 F
+1.83 (, Proc. IEEE Computer Conference, pp. 139\320200,) 76.21 506.29 P
+(January 1994.) 45.65 495.29 T
+0.2 ([Curtis et al., 1995] Pavel Curtis Michael Dixon, Ron Fred-) 45.65 478.29 P
+5.21 (erick, and David Nichols,) 45.65 467.29 P
+3 F
+5.21 (\322The Jupitert audio/video) 171.46 467.29 P
+-0.49 (architecture: secure multimedia in network places\323) 45.65 456.29 P
+1 F
+-0.49 (, Proc. of) 250.1 456.29 P
+-0.49 (the Third ACM International Conference on Multimedia, pp.) 45.65 445.29 P
+(79-90, November 1995.) 45.65 434.29 T
+-0.58 ([Dourish, 1991] Paul Dourish,) 45.65 417.29 P
+3 F
+-0.58 (\322Godard: An Architecture for) 167.23 417.29 P
+-0.01 (A/V Services in a Media Space\323) 45.65 406.29 P
+1 F
+-0.01 (, Technical Report EPC-91-) 174.16 406.29 P
+(134, Rank Xerox EuroPARC, Cambridge, UK, 1991.) 45.65 395.29 T
+1.4 ([Dourish, 1993] Paul Dourish,) 45.65 378.29 P
+3 F
+1.4 (\322Culture and Control in a) 175.14 378.29 P
+2.84 (Media Space\323) 45.65 367.29 P
+1 F
+2.84 (, in Proc. Third European Conference on) 105.98 367.29 P
+2.33 (Computer-Supported Cooperative Work ECSCW93, Mil-) 45.65 356.29 P
+(ano, Italy, September 1993.) 45.65 345.29 T
+1.21 ([Dourish and Chalmers, 1994] Paul Dourish and Matthew) 45.65 328.29 P
+0.97 (Chalmers,) 45.65 317.29 P
+3 F
+0.97 (\322Running out of Space: Navigating in Informa-) 89.95 317.29 P
+0.35 (tion Spaces\323) 45.65 306.29 P
+1 F
+0.35 (, Adjunct Proceedings \050Short Papers\051, HCI\32594,) 97.39 306.29 P
+(Glasgow, August 1994.) 45.65 295.29 T
+0.42 ([Dourish et al., in press] Paul Dourish, Annette Adler, Vic-) 45.65 278.29 P
+0.33 (toria Bellotti and Austin Henderson,) 45.65 267.29 P
+3 F
+0.33 (\322Your Place or Mine?) 195.06 267.29 P
+-0.62 (Learning from Long-Term) 45.65 256.29 P
+-0.62 (Use of Video Communication\323) 151.85 256.29 P
+1 F
+-0.62 (, to) 273.61 256.29 P
+-0.44 (appear in Computer-Supported Cooperative Work: An Inter-) 45.65 245.29 P
+(national Journal.) 45.65 234.29 T
+1.25 ([Fish et al., 1990] Robert Fish, Robert Kraut and Barbara) 45.65 217.29 P
+0.25 (Chalfonte,) 45.65 206.29 P
+3 F
+0.25 (\322The VideoWindow System in Informal Commu-) 90.34 206.29 P
+5.69 (nication\323) 45.65 195.29 P
+1 F
+5.69 (, in Proc. ACM Conf. Computer-Supported) 83.99 195.29 P
+1.78 (Cooperative Work CSCW\32590, Los Angeles, Ca., October) 45.65 184.29 P
+(1990.) 45.65 173.29 T
+-0.6 ([Gaver et al., 1992] Bill Gaver, Tom Moran, Allan MacLean,) 45.65 156.29 P
+0.78 (Lennart L\232vstrand, Paul Dourish, Kathleen Carter and Bill) 45.65 145.29 P
+3.58 (Buxton, \322) 45.65 134.29 P
+3 F
+3.58 (Realising a Video Environment: EuroPARC\325s) 88.12 134.29 P
+0.79 (RAVE System) 45.65 123.29 P
+1 F
+0.79 (\323, in Proc. ACM Conference on Human Fac-) 101.14 123.29 P
+1.26 (tors in Computing Systems CHI \32492, Monterey, Ca., May) 45.65 112.29 P
+(1992.) 45.65 101.29 T
+3.55 ([Gaver, 1992] Bill Gaver,) 309.53 756.29 P
+3 F
+3.55 (\322The Affordances of Media) 429.27 756.29 P
+1.92 (Spaces for Collaboration\323) 309.53 745.29 P
+1 F
+1.92 (, Proc. ACM Conf. Computer-) 420.04 745.29 P
+0.59 (Supported Cooperative Work, Toronto, Canada, November) 309.53 734.29 P
+(1992.) 309.53 723.29 T
+-0.4 ([Gaver et al., 1995] Bill Gaver, Gerda Smets and Kees Over-) 309.53 706.29 P
+1.3 (beeke,) 309.53 695.29 P
+3 F
+1.3 (\322A Virtual Window on Media Space\323) 339.15 695.29 P
+1 F
+1.3 (, Proc. ACM) 495.93 695.29 P
+4 (Conference on Human Factors in Computing Systems) 309.53 684.29 P
+(CHI\32595, Denver, Co., May 1995.) 309.53 673.29 T
+2.33 ([Giddens, 1984] Anthony Giddens,) 309.53 656.29 P
+3 F
+2.33 (\322The Constitution of) 462.18 656.29 P
+(Society\323) 309.53 645.29 T
+1 F
+(, Polity Press, Cambridge, 1984.) 343.97 645.29 T
+-0.42 ([Goffman, 1959] Erving Goffman,) 309.53 628.29 P
+3 F
+-0.42 (\322The Presentation of Self) 448.95 628.29 P
+(in Everyday Life\323) 309.53 617.29 T
+1 F
+(, Penguin, New York, 1959.) 381.19 617.29 T
+2.85 ([Greenhaugh and Benford, 1995] Chris Greenhalgh and) 309.53 600.29 P
+6.25 (Steve Benford,) 309.53 589.29 P
+3 F
+6.25 (\322MASSIVE: A Collaborative Virtual) 384.51 589.29 P
+0.14 (Envoronment for Teleconferencing\323) 309.53 578.29 P
+1 F
+0.14 (, ACM Transactions on) 455.35 578.29 P
+(Computer-Human Interaction, 2\0503\051, pp. 239\320261, 1995.) 309.53 567.29 T
+2.52 ([Harrison et al., forthcoming] Steve Harrison, Sara Bly,) 309.53 550.29 P
+0.99 (Scott Minneman and Susan Irwin,) 309.53 539.29 P
+3 F
+0.99 (\322The Media Space\323) 453.35 539.29 P
+1 F
+0.99 (, to) 535.88 539.29 P
+0.99 (appear in Finn, Sellen and Wilbur \050eds.\051 \322Video Mediated) 309.53 528.29 P
+(Communication\323, Lauwrence Erlbaum.) 309.53 517.29 T
+3.76 ([Lakoff and Johnson, 1980] George Lakoff and Mark) 309.53 500.29 P
+0.85 (Johnson,) 309.53 489.29 P
+3 F
+0.85 (\322Metaphors We Live By\323,) 348.16 489.29 P
+1 F
+0.85 ( University of Chicago) 455.71 489.29 P
+(Press, Chicago, 1980.) 309.53 478.29 T
+0.46 ([Lerup, 1987] Lars Lerup,) 309.53 461.29 P
+3 F
+0.46 (\322Planned Assaults\323) 418.55 461.29 P
+1 F
+0.46 (, MIT Press,) 499.29 461.29 P
+(Cambridge, MA., 1987.) 309.53 450.29 T
+1.97 ([Resnick et al., 1994] Paul Resnick, Neophytos Iacovou,) 309.53 433.29 P
+1.8 (Mitesh Suchak, Peter Bergstrom and John Riedl,) 309.53 422.29 P
+3 F
+1.8 (\322Grou-) 519.65 422.29 P
+0.3 (pLens: An Open Architecture for Collaborative Filtering of) 309.53 411.29 P
+0.31 (Netnews\323) 309.53 400.29 P
+1 F
+0.31 (, Proc. ACM Conference on Computer-Supported) 348.98 400.29 P
+2.22 (Cooperative Work CSCW'94, Chapel Hill, NC., October) 309.53 389.29 P
+(1994.) 309.53 378.29 T
+-0.47 ([Root, 1988] Robert Root, \322) 309.53 361.29 P
+3 F
+-0.47 (Design of a Multi-Media Vehicle) 419.87 361.29 P
+0.41 (for Social Browsing) 309.53 350.29 P
+1 F
+0.41 (\323, Proc. ACM Conf. Computer Support) 390.36 350.29 P
+(for Cooperative Work CSCW \32488, Portland, Oregon, 1988.) 309.53 339.29 T
+-0.4 ([Sawyer and Mariani, 1995] Peter Sawyer and John Mariani,) 309.53 322.29 P
+3 F
+4.3 (\323Database Systems: Challenges and Opportunities for) 309.53 311.29 P
+2.89 (Graphical HCI\323) 309.53 300.29 P
+1 F
+2.89 (, Interacting With Computers, 7\0501\051, pp.) 378.81 300.29 P
+(273\320303, September 1995.) 309.53 289.29 T
+2.76 ([Shardanand and Maes, 1995] Upendra Shardanand and) 309.53 272.29 P
+0.81 (Pattie Maes,) 309.53 261.29 P
+3 F
+0.81 (\323 Social Information Filtering: Algorithms for) 359.77 261.29 P
+1.25 (Automating `Word of Mouth\323) 309.53 250.29 P
+1 F
+1.25 (, Proc. ACM Conference on) 432.45 250.29 P
+2.78 (Human Factors in Computing Systems CHI'95, Denver,) 309.53 239.29 P
+(CO., May 1995.) 309.53 228.29 T
+0.43 ([Stoner, 1991] Jill Stoner,) 309.53 211.29 P
+3 F
+0.43 (\322The House of Montisi\323) 417.36 211.29 P
+1 F
+0.43 (, Places,) 516.17 211.29 P
+(7\0502\051, 1991.) 309.53 200.29 T
+0.54 ([Tuan, 1977] Yi-Fu Tuan, \322) 309.53 183.29 P
+3 F
+0.54 (Space and Place. The Perspec-) 422.79 183.29 P
+5.77 (tive of Experience) 309.53 172.29 P
+1 F
+5.77 (\323, University of Minnesota Press,) 393.26 172.29 P
+(Minneapolis, MN, 1977) 309.53 161.29 T
+2.06 ([Whyte, 1988] William Whyte,) 309.53 144.29 P
+3 F
+2.06 (\322City: Rediscovering the) 445.54 144.29 P
+(Center\323) 309.53 133.29 T
+1 F
+(, Doubleday, New York, 1988.) 342.31 133.29 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "10" 10
+%%Trailer
+%%BoundingBox: 0 0 595.3 841.9
+%%PageOrder: Ascend
+%%Pages: 10
+%%DocumentFonts: Helvetica-Bold
+%%+ Times-Roman
+%%+ Times-Bold
+%%+ Times-Italic
+%%+ Times-BoldItalic
+%%+ Helvetica-BoldOblique
+%%+ Courier
+%%+ Symbol
+%%EOF

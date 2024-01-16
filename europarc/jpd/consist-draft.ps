@@ -1,0 +1,3766 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 4.0, for use with Frame 4.0 products
+% This ps_prolog file is Copyright (c) 1986-1993 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameBuilder and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to True, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (4.0) def 
+/FMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	FMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto
+	show FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(PostScript Lang. Ref. Man., 2nd Ed., H.2.4 says EPS must not call X              )
+	dup dup (X) search pop exch pop exch pop length 
+	4 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+/concatprocs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin 
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/FrameNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		setrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+FMLevel1 not { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} if
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				FMPColor graymode and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not FMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	FMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgrxfer FMLOCAL
+	/orggxfer FMLOCAL
+	/orgbxfer FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/orgrproc FMLOCAL
+	/orggproc FMLOCAL
+	/orgbproc FMLOCAL
+	/organgle FMLOCAL
+	/orgrangle FMLOCAL
+	/orggangle FMLOCAL
+	/orgbangle FMLOCAL
+	/orgfreq FMLOCAL
+	/orgrfreq FMLOCAL
+	/orggfreq FMLOCAL
+	/orgbfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/edown FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /FrameNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	FMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{{1 dict dup /PageSize [paperwidth paperheight]put setpagedevice}stopped
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		 {1 dict dup /ManualFeed manualfeed put setpagedevice } stopped pop }
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			FrameNegative {
+				1 1 4 { 
+					pop { 1 exch sub } concatprocs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		FrameNegative {
+			{ 1 exch sub } concatprocs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/pagesave FMLOCAL
+/orgmatrix FMLOCAL
+/landscape FMLOCAL
+/pwid FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/initmatrix {(initmatrix) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setPatternMode {
+	FMLevel1 {
+		/bwidth  exch def
+		/bpside  exch def
+		/bstring exch def
+		/onbits 0 def  /offbits 0 def
+		freq sangle landscape {90 add} if 
+			{/y exch def
+			 /x exch def
+			 /xindex x 1 add 2 div bpside mul cvi def
+			 /yindex y 1 add 2 div bpside mul cvi def
+			 bstring yindex bwidth mul xindex 8 idiv add get
+			 1 7 xindex 8 mod sub bitshift and 0 ne FrameNegative {not} if
+			 {/onbits  onbits  1 add def 1}
+			 {/offbits offbits 1 add def 0}
+			 ifelse
+			}
+			setscreen
+		offbits offbits onbits add div FrameNegative {1.0 exch sub} if
+		/FrameCurGray exch def
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		FMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode FMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode FMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+	/rad FMLOCAL
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+      dup dup
+      24 eq { pop pop 3 mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+FMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch concatprocs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def
+	FMLevel1 {	
+		colorsetup
+		/is w d wbytes string def
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is w d wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	FMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {ip} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/d 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris} {gis} {bis} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/d 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris gis bis w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(4.0) FMVERSION
+1 1 0 0 595.3 841.9 0 1 13 FMDOCUMENT
+0 0 /Times-Roman FMFONTDEFINE
+1 0 /Helvetica-Bold FMFONTDEFINE
+2 0 /Times-Bold FMFONTDEFINE
+3 0 /Times-Italic FMFONTDEFINE
+4 0 /Courier FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: A4
+%%EndPaperSize
+595.3 841.9 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+42.65 61.95 551.65 84.95 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 10 Q
+0 X
+(1) 545.25 78.29 T
+45.65 96.95 285.77 609.95 R
+7 X
+V
+1 9 Q
+0 X
+(Abstract) 45.65 603.95 T
+0 10 Q
+0.09 (CSCW toolkits are designed to ease development of CSCW) 45.65 588.29 P
+1.31 (applications. They provide common, reusable components) 45.65 577.29 P
+2.39 (for cooperative system design, allowing application pro-) 45.65 566.29 P
+1.62 (grammers to concentrate on the details of their particular) 45.65 555.29 P
+-0.14 (applications. The underlying assumption is that toolkit com-) 45.65 544.29 P
+0.14 (ponents can be designed and implemented independently of) 45.65 533.29 P
+-0.19 (the details of particular applications. However, there is good) 45.65 522.29 P
+(evidence to suggest that this is not true.) 45.65 511.29 T
+-0.05 (This paper presents a new technique which allows program-) 45.65 494.29 P
+2.32 (mers to express application requirements, so that toolkit) 45.65 483.29 P
+0.98 (structures can be adapted to different circumstances. Pros-) 45.65 472.29 P
+0.35 (pero is a toolkit which uses this technique to meet different) 45.65 461.29 P
+(application needs flexibly.) 45.65 450.29 T
+2 F
+1.47 (Keywords) 45.65 433.29 P
+0 F
+1.47 (: application control, CSCW toolkits, Prospero,) 88.98 433.29 P
+(consistency management, consistency guarantees.) 45.65 422.29 T
+1 12 Q
+(1) 45.65 397.95 T
+(Introduction) 70.85 397.95 T
+0 10 Q
+2.34 (CSCW toolkits \050such as Rendezvous [Hill et al., 1994],) 45.65 383.29 P
+0.1 (GroupKit [Roseman and Greenberg, 1996] or Suite [Dewan) 45.65 372.29 P
+-0.1 (and Choudhary, 1992]\051 are systems which make it easier for) 45.65 361.29 P
+0.35 (programmers to develop CSCW applications. They provide) 45.65 350.29 P
+-0.57 (generic, reusable components and behaviours which applica-) 45.65 339.29 P
+4.79 (tion programmers can incorporate into their systems.) 45.65 328.29 P
+-0.16 (Components might include telepointers, shared data objects,) 45.65 317.29 P
+1.1 (or mechanisms to join and leave conferences. Using these) 45.65 306.29 P
+0.26 (components to capture common system elements, program-) 45.65 295.29 P
+0.58 (mers can concentrate on the particular details of their own,) 45.65 284.29 P
+(specific applications.) 45.65 273.29 T
+0.91 (There is a critical assumption which underpins this sort of) 45.65 256.29 P
+0.54 (reuse. It is that the components provided by the toolkit can) 45.65 245.29 P
+1.92 (be designed independently of particular applications, and) 45.65 234.29 P
+-0.48 (can be reused wholesale to meet the different needs of differ-) 45.65 223.29 P
+4.11 (ent applications. However, there is evidence that this) 45.65 212.29 P
+0.81 (assumption is problematic. This evidence suggests that the) 45.65 201.29 P
+3 F
+0.47 (usage patterns) 45.65 190.29 P
+0 F
+0.47 (of CSCW applications depend, in a detailed) 107.69 190.29 P
+2.09 (way, on the specifics of the component design. In other) 45.65 179.29 P
+1.15 (words, the details of toolkit components are as much of a) 45.65 168.29 P
+-0.12 (factor in supporting collaborative behaviour as the details of) 45.65 157.29 P
+0.98 (the application. The independence of toolkit from applica-) 45.65 146.29 P
+(tion is undermined.) 45.65 135.29 T
+2.72 (This relationship, between details of system design and) 45.65 118.29 P
+0.32 (details of use, suggests that we should take a new approach) 45.65 107.29 P
+309.53 95.95 549.65 609.95 R
+7 X
+V
+0 X
+-0.29 (to toolkit design, and this paper will discuss a new technique) 309.53 603.29 P
+1.6 (developed in Prospero, a prototype CSCW toolkits. First,) 309.53 592.29 P
+1.93 (though, we will consider two examples of studies which) 309.53 581.29 P
+(highlight the problem.) 309.53 570.29 T
+1 F
+(1.1) 309.53 549.29 T
+(The Relationship between Design and Use) 334.73 549.29 T
+0 F
+-0.34 (Dourish and Bellotti [1992] describe experimental studies of) 309.53 535.29 P
+3.83 (a collaborative text editor, supporting groups of three) 309.53 524.29 P
+3.55 (authors in brainstorming and design tasks. The editor,) 309.53 513.29 P
+1.27 (ShrEdit [McGuffin and Olson, 1992], gives each author a) 309.53 502.29 P
+2.21 (separate edit point in a synchronously-shared text work-) 309.53 491.29 P
+3.11 (space. Each can move around the document and work) 309.53 480.29 P
+0.81 (independently, although mechanisms are provided for syn-) 309.53 469.29 P
+0.78 (chronising views, tracking others and so forth. An implicit) 309.53 458.29 P
+1.2 (region-locking mechanism helps maintain consistency and) 309.53 447.29 P
+-0.01 (avoid conflicts. Working in a shared data space, authors can) 309.53 436.29 P
+(see the effects of each other\325s work as it is performed.) 309.53 425.29 T
+0.21 (Dourish and Bellotti\325s analysis highlights the collaborators\325) 309.53 408.29 P
+1.04 (continual use of the visualisations of each other\325s work to) 309.53 397.29 P
+1.31 (maintain an ongoing awareness of the work of the group.) 309.53 386.29 P
+-0.26 (This allows them to continually relate their own work to that) 309.53 375.29 P
+0.59 (of others and of the group as a whole, and so achieve their) 309.53 364.29 P
+0.02 (informal \322division of labour\323. Unlike systems using explicit) 309.53 353.29 P
+1.1 (roles or information exchange to manage group behaviour) 309.53 342.29 P
+1.44 (and provide a sense of ongoing activity, ShrEdit\325s shared) 309.53 331.29 P
+1.16 (feedback approach is more open and flexible and leads to) 309.53 320.29 P
+0.75 (much more fluid transitions between forms of working, by) 309.53 309.29 P
+-0.38 (providing a continual sense of both the character and content) 309.53 298.29 P
+2.88 (of other people\325s work. Similar mechanisms have been) 309.53 287.29 P
+-0.61 (shown to operate in real-world collaborations in physical set-) 309.53 276.29 P
+(tings [e.g. Heath and Luff, 1992].) 309.53 265.29 T
+0.65 (Greenberg and Marwood [1994] discuss a range of distrib-) 309.53 248.29 P
+0.43 (uted systems techniques used in CSCW systems to manage) 309.53 237.29 P
+-0.62 (collaborative access to distributed data. CSCW systems must) 309.53 226.29 P
+0.23 (maintain representations of users\325 work which may need be) 309.53 215.29 P
+-0.29 (to be visible or accessible to different users at the same time,) 309.53 204.29 P
+-0.6 (and techniques for managing this are frequently embedded in) 309.53 193.29 P
+5.44 (CSCW toolkits. Greenberg and Marwood show that) 309.53 182.29 P
+2.71 (common mechanisms, such as locking and serialisation,) 309.53 171.29 P
+0.31 (introduce temporal dependencies which restrict the patterns) 309.53 160.29 P
+0.71 (of collaboration in which groups can engage. For instance,) 309.53 149.29 P
+0.23 (the overhead of \322locking\323 data representations can interfere) 309.53 138.29 P
+0.4 (with free-wheeling interaction \050such as brainstorming\051; and) 309.53 127.29 P
+0.79 (the use of \322rollback\323 techniques can actually cause data to) 309.53 116.29 P
+(change under the users\325 feet.) 309.53 105.29 T
+45.65 623.95 549.65 761.95 R
+7 X
+V
+0 20 Q
+0 X
+-0.73 (Consistency Guarantees: Exploiting Application Semantics for) 46.28 748.62 P
+(Consistency Management in a Collaboration T) 88.08 722.62 T
+(oolkit) 460.54 722.62 T
+3 12 Q
+(Paul Dourish) 265.15 689.95 T
+0 F
+(Rank Xerox Research Centre, Cambridge Laboratory \050EuroPARC\051) 136.85 669.95 T
+(and Department of Computer Science, University College, London) 136.84 655.95 T
+3 F
+(dourish@europarc.xerox.com) 225.47 639.95 T
+FMENDPAGE
+%%EndPage: "1" 1
+%%Page: "2" 2
+595.3 841.9 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+42.65 61.95 551.65 84.95 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 10 Q
+0 X
+(2) 545.25 78.29 T
+45.65 96.95 285.77 762.95 R
+7 X
+V
+0 X
+-0.57 (The fundamental point which Greenberg and Marwood point) 45.65 756.29 P
+-0.26 (out is that the \322distributed system\323 elements of collaborative) 45.65 745.29 P
+1.53 (applications, which are often embodied in toolkit compo-) 45.65 734.29 P
+7.48 (nents, cannot be considered independently of the) 45.65 723.29 P
+(interactional ones. They are mutually influential.) 45.65 712.29 T
+1 F
+(1.2) 45.65 691.29 T
+(T) 70.85 691.29 T
+(oolkit Structures and Application Needs) 76.22 691.29 T
+0 F
+0.92 (The studies outlined above illustrate that the activities and) 45.65 677.29 P
+1.51 (interactions of collaborating individuals are organised not) 45.65 666.29 P
+-0.07 (only around the work that they\325re doing, but also around the) 45.65 655.29 P
+0.51 (details of the tools they have for doing that work\321the col-) 45.65 644.29 P
+(laborative technologies which support them.) 45.65 633.29 T
+2.31 (This observation undermines the \322independence assump-) 45.65 616.29 P
+3.39 (tion\323 at the heart of toolkit design. The independence) 45.65 605.29 P
+0.85 (assumption is that the collaborative components which are) 45.65 594.29 P
+0.23 (embodied in a toolkit are independent of the applications in) 45.65 583.29 P
+1.51 (which they will be used. Toolkit designers are concerned) 45.65 572.29 P
+0.57 (with the reusability of their components in a wide range of) 45.65 561.29 P
+0.5 (applications and circumstances. If they provide shared data) 45.65 550.29 P
+0.47 (objects, then they want application programmers to be able) 45.65 539.29 P
+0.85 (to use those in any situation where shared data objects are) 45.65 528.29 P
+1.27 (needed. Unfortunately, we\325ve seen that the details of) 45.65 517.29 P
+3 F
+1.27 (how) 269.1 517.29 P
+0 F
+-0.01 (objects are shared has an impact on the kinds of sharing and) 45.65 506.29 P
+1.09 (collaborative behaviour that takes place. Toolkit designers) 45.65 495.29 P
+1.27 (have to provide sharing mechanisms to make their shared) 45.65 484.29 P
+1.55 (data objects work; but these mechanisms cannot be com-) 45.65 473.29 P
+5.42 (pletely independent of the application\325s requirements) 45.65 462.29 P
+(concerning patterns of interaction.) 45.65 451.29 T
+-0.33 (Prospero is a prototype CSCW toolkit which addresses these) 45.65 434.29 P
+-0.52 (sorts of problems. Most toolkit designs try to exploit the gen-) 45.65 423.29 P
+1.86 (eral applicability of components to a range of situations,) 45.65 412.29 P
+0.95 (leaving application programmers to map application needs) 45.65 401.29 P
+0.68 (onto the general facilities which the toolkit provides. Pros-) 45.65 390.29 P
+4.31 (pero\325s approach is different. Using a recent software) 45.65 379.29 P
+1.2 (abstraction technique called Open Implementation [Kicza-) 45.65 368.29 P
+3.08 (les, 1996], Prospero allows application programmers to) 45.65 357.29 P
+0.38 (tailor the toolkit, and match toolkit facilities onto the needs) 45.65 346.29 P
+(of the application, rather than the other way around.) 45.65 335.29 T
+0.02 (This approach is used to give application programmers con-) 45.65 318.29 P
+-0.04 (trol over a number of different areas of toolkit functionality.) 45.65 307.29 P
+0.46 (This paper describes a mechanism called) 45.65 296.29 P
+3 F
+0.46 (consistency guar-) 214.49 296.29 P
+-0.26 (antees) 45.65 285.29 P
+0 F
+-0.26 ( which Prospero uses to give applications control over) 71.2 285.29 P
+2.85 (the consistency management mechanisms in the toolkit.) 45.65 274.29 P
+0.85 (Consistency mechanisms are the parts of the toolkit which) 45.65 263.29 P
+3.36 (ensure that data representations remain consistent even) 45.65 252.29 P
+-0.14 (though users may attempt to make simultaneous, conflicting) 45.65 241.29 P
+0.42 (changes \050such as when one user changes an object\325s colour) 45.65 230.29 P
+0.38 (to blue, and another changes it to red\051. The goal is to allow) 45.65 219.29 P
+4.19 (the programmer to express aspects of the application) 45.65 208.29 P
+-0.01 (domain, so that the toolkit can manage consistency in a way) 45.65 197.29 P
+5.57 (which is responsive to the needs of the particular) 45.65 186.29 P
+(applications.) 45.65 175.29 T
+-0.57 (The next section outlines some background, and briefly sum-) 45.65 158.29 P
+1.13 (marises how Prospero deals with the distributed data over) 45.65 147.29 P
+0.72 (which consistency mechanisms operate. The section which) 45.65 136.29 P
+0.35 (follows introduces promises and guarantees, the fundamen-) 45.65 125.29 P
+-0.29 (tal mechanisms in the new consistency technique. I will then) 45.65 114.29 P
+1.78 (discuss Prospero\325s mechanisms in comparison with some) 45.65 103.29 P
+309.53 96.95 549.65 762.95 R
+7 X
+V
+0 X
+1.77 (other techniques, before providing examples of how pro-) 309.53 756.29 P
+2.73 (grammers can use these techniques to make the toolkit) 309.53 745.29 P
+(responsive to application requirements.) 309.53 734.29 T
+1 12 Q
+(2) 309.53 709.95 T
+(Divergence in Prospero) 334.73 709.95 T
+0 10 Q
+1.6 (Although this paper concentrates on consistency manage-) 309.53 695.29 P
+0.07 (ment, rather than data distribution, a brief sketch of the data) 309.53 684.29 P
+(management mechanism is necessary here to set the scene) 309.53 673.29 T
+0 8 Q
+(1) 542.25 677.29 T
+0 10 Q
+(.) 546.25 673.29 T
+0.3 (Prospero\325s data distribution strategy is based on) 309.53 656.29 P
+3 F
+0.3 (divergence) 505.78 656.29 P
+0 F
+0.77 ([Dourish, 1995b]. Some approaches \050such as centralisation) 309.53 645.29 P
+-0.44 (or floor control\051 control data flow and management by main-) 309.53 634.29 P
+1.62 (taining a model of one-at-a-time action; that is, only one) 309.53 623.29 P
+1.08 (person can operate over the data at once, and so only one) 309.53 612.29 P
+1.23 (copy of any data item is \322active\323 at a time. In Prospero\325s) 309.53 601.29 P
+0.9 (model, on the other hand, multiple users can act over data) 309.53 590.29 P
+1.79 (items at once. These separate actions can cause different) 309.53 579.29 P
+0.27 (users to have different views of the data; this is) 309.53 568.29 P
+3 F
+0.27 (divergence) 503.28 568.29 P
+0 F
+0.27 (.) 547.15 568.29 P
+3.08 (The complementary operation is the) 309.53 557.29 P
+3 F
+3.08 (synchronisation) 471.85 557.29 P
+0 F
+3.08 ( of) 535.74 557.29 P
+0.3 (these divergent views to re-establish a common view of the) 309.53 546.29 P
+1.13 (data. So data management takes the form of the continual) 309.53 535.29 P
+0.06 (divergence and synchronisation of views of the data. Partic-) 309.53 524.29 P
+1.1 (ular threads of activity which diverge from each other are) 309.53 513.29 P
+(called) 309.53 502.29 T
+3 F
+(streams) 335.91 502.29 T
+0 F
+(.) 367.02 502.29 T
+2.2 (Dourish [1995b] discusses three primary benefits of this) 309.53 485.29 P
+(strategy in a CSCW toolkit.) 309.53 474.29 T
+(1.) 309.53 457.29 T
+0.83 (It can be applied across a range of synchronisation fre-) 323.06 457.29 P
+0.88 (quencies. Frequent synchronisation results in \322synchro-) 323.06 446.29 P
+4.99 (nous\323-style interaction, where group members can) 323.06 435.29 P
+1.65 (observe each other) 323.06 424.29 P
+1.65 (\325) 401.7 424.29 P
+1.65 (s work as it progresses; infrequent) 404.48 424.29 P
+1.84 (synchronisation is more akin to traditional \322asynchro-) 323.06 413.29 P
+(nous\323 application styles.) 323.06 402.29 T
+(2.) 309.53 385.29 T
+2.45 (Since it incorporates a notion of resolvable, simulta-) 323.06 385.29 P
+2.73 (neous work, it provides support for parallel, discon-) 323.06 374.29 P
+5.17 (nected activity\321\322multi-synchronous\323 work. Parallel) 323.06 363.29 P
+0.23 (simultaneous activity is a common style of working, but) 323.06 352.29 P
+-0.01 (traditionally CSCW systems have provided poor support) 323.06 341.29 P
+(for it.) 323.06 330.29 T
+(3.) 309.53 313.29 T
+0.47 (For the same reason, it also supports the sorts of oppor-) 323.06 313.29 P
+-0.2 (tunistic activity in collaborative work which are revealed) 323.06 302.29 P
+-0.05 (by observational studies \050e.g. [Beck and Bellotti, 1993]\051,) 323.06 291.29 P
+0.62 (in which pre-arranged plans of activity and divisions of) 323.06 280.29 P
+3.14 (labour\321where they even exist\321are subject to local) 323.06 269.29 P
+(reor) 323.06 258.29 T
+(ganisation and rearrangement.) 338.98 258.29 T
+1.79 (With that background, we can now focus on consistency) 309.53 245.29 P
+(management in particular.) 309.53 234.29 T
+1 12 Q
+(3) 309.53 209.95 T
+(Constraining Divergence) 334.73 209.95 T
+0 10 Q
+2.47 (In database terms, Prospero\325s divergence/synchronisation) 309.53 195.29 P
+0.54 (strategy is an) 309.53 184.29 P
+3 F
+0.54 (optimistic) 366.41 184.29 P
+0 F
+0.54 ( one. It presumes that simultaneous) 405.86 184.29 P
+-0.46 (actions will probably not result in conflict, but that if conflict) 309.53 173.29 P
+3 F
+0.88 (does) 309.53 162.29 P
+0 F
+0.88 ( occur, things can be sorted out later. Locking, on the) 327.86 162.29 P
+0.2 (other hand, is a) 309.53 151.29 P
+3 F
+0.2 (pessimistic) 373.93 151.29 P
+0 F
+0.2 ( strategy; it presumes that simul-) 417.82 151.29 P
+309.53 119.95 549.65 134.93 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+309.53 119.95 549.65 134.93 R
+7 X
+0 0 0 1 0 0 0 K
+V
+309.53 130.95 453.53 130.95 2 L
+V
+0.5 H
+2 Z
+0 X
+N
+-8.35 24.95 603.65 816.95 C
+0 9 Q
+0 X
+0 0 0 1 0 0 0 K
+-0.12 (1. The reader is referred to [Dourish, 1995a] and [Dourish, 1995b]) 309.53 113.95 P
+(for more information and background on the techniques used.) 309.53 103.95 T
+FMENDPAGE
+%%EndPage: "2" 2
+%%Page: "3" 3
+595.3 841.9 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+42.65 61.95 551.65 84.95 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 10 Q
+0 X
+(3) 545.25 78.29 T
+45.65 96.95 285.77 762.95 R
+7 X
+V
+0 X
+2.42 (taneous operations are likely to lead to conflict, and so) 45.65 756.29 P
+(should be prevented.) 45.65 745.29 T
+0.68 (Pessimistic strategies guarantee the maintenance of consis-) 45.65 728.29 P
+2.4 (tency, since they prevent the simultaneous action which) 45.65 717.29 P
+0.43 (would lead to inconsistency on the first place. On the other) 45.65 706.29 P
+-0.57 (hand, optimistic strategies support more open styles of work-) 45.65 695.29 P
+4.23 (ing. Prospero uses an optimistic strategy because the) 45.65 684.29 P
+1.9 (freedom and flexibility it provides is better suited to the) 45.65 673.29 P
+-0.46 (needs of collaborative work. The price of this freedom is that) 45.65 662.29 P
+5.14 (the toolkit must provide explicit means to maintain) 45.65 651.29 P
+(consistency.) 45.65 640.29 T
+0.63 (The problem is that the divergence model) 45.65 623.29 P
+3 F
+0.63 (per se) 219.18 623.29 P
+0 F
+0.63 ( makes no) 243.96 623.29 P
+0.76 (commitment to the nature or extent of the divergence. The) 45.65 612.29 P
+0.16 (longer two streams of activity remain active but unsynchro-) 45.65 601.29 P
+-0.2 (nised, the greater their potential divergence, and so the more) 45.65 590.29 P
+0.38 (complex it becomes to resolve conflicts at synchronisation-) 45.65 579.29 P
+-0.15 (time. Indeed, there\325s nothing to say that the system will) 45.65 568.29 P
+3 F
+-0.15 (ever) 268.56 568.29 P
+0 F
+0.05 (be able to resolve two arbitrary streams into a single, coher-) 45.65 557.29 P
+4.19 (ent view of the data store. Essentially, unconstrained) 45.65 546.29 P
+-0.34 (divergence leads to arbitrarily complex synchronisation; and) 45.65 535.29 P
+(that can be a practical inconvenience, to say the least.) 45.65 524.29 T
+1 F
+(3.1) 45.65 503.29 T
+(V) 70.85 503.29 T
+(ariable Consistency) 76.97 503.29 T
+0 F
+-0.45 (The first approach used in Prospero is to distinguish between) 45.65 489.29 P
+3 F
+(syntactic) 45.65 478.29 T
+0 F
+( and) 81.2 478.29 T
+3 F
+(semantic) 100.64 478.29 T
+0 F
+( consistency.) 136.19 478.29 T
+0.7 (By \322semantic\323 consistency, I mean that the data store con-) 45.65 461.29 P
+5.06 (tains no inconsistencies from the perspective of the) 45.65 450.29 P
+0.36 (application domain. The data is fit for its intended purpose.) 45.65 439.29 P
+-0.48 (This is the conventional, intuitive form of consistency in col-) 45.65 428.29 P
+2.11 (laborative and distributed systems. Appeal to \322syntactic\323) 45.65 417.29 P
+-0.4 (consistency, on the other hand, allows for semantic inconsis-) 45.65 406.29 P
+0.29 (tencies, but ensures that the data store is structurally sound,) 45.65 395.29 P
+(so that some kind of activity can continue.) 45.65 384.29 T
+2.62 (As an example, consider a multi-user text editor which) 45.65 367.29 P
+-0.05 (attempts to resolve a conflict\321the same paragraph has been) 45.65 356.29 P
+-0.21 (completely rewritten, separately, by two different authors. If) 45.65 345.29 P
+0.7 (the system were to throw away \050say\051 the earlier of the two) 45.65 334.29 P
+1.85 (paragraphs, then it would be preserving semantic consis-) 45.65 323.29 P
+-0.12 (tency \050although the reader should note that consistency does) 45.65 312.29 P
+0.06 (not imply \322correctness\323\051. However, this \322lossy\323 approach is) 45.65 301.29 P
+0.48 (not necessarily the best suited to the needs of collaborating) 45.65 290.29 P
+4.05 (authors, even though the synchronisation procedure is) 45.65 279.29 P
+2.57 (straight-forward. An alternative mechanism would be to) 45.65 268.29 P
+-0.26 (retain) 45.65 257.29 P
+3 F
+-0.26 (both) 70.66 257.29 P
+0 F
+-0.26 ( the paragraphs within a structure which flags this) 88.44 257.29 P
+1.01 (as a conflict which the system cannot resolve\321essentially) 45.65 246.29 P
+1.88 (preserving the text for the authors to sort out later. This) 45.65 235.29 P
+2.48 (approach preserves syntactic \050structural\051 consistency. By) 45.65 224.29 P
+0.66 (only preserving syntactic consistency in some cases, rather) 45.65 213.29 P
+1.19 (than semantic consistency, a divergence-based system can) 45.65 202.29 P
+0.17 (achieve synchronisation more often, and continue operation) 45.65 191.29 P
+2.48 (in the face of potential problems. Consistency from the) 45.65 180.29 P
+0.11 (users\325 perspective is often not the same as consistency from) 45.65 169.29 P
+(the system\325s.) 45.65 158.29 T
+1 F
+(3.2) 45.65 137.29 T
+(Using Application Semantics) 70.85 137.29 T
+0 F
+0.64 (The key observation which lies behind the variable consis-) 45.65 123.29 P
+4.23 (tency approach above is that the toolkit components,) 45.65 112.29 P
+3.4 (themselves, are not the final arbiters of \322consistency\323.) 45.65 101.29 P
+309.53 96.95 549.65 762.95 R
+7 X
+V
+0 X
+0.39 (Instead, the toolkit can focus on making the data consistent) 309.53 756.29 P
+3 F
+0.19 (for the purposes at hand) 309.53 745.29 P
+0 F
+0.19 (. In other words, it is taking advan-) 408.06 745.29 P
+4.18 (tage of details about the application domain and the) 309.53 734.29 P
+(circumstances in which the toolkit is being used.) 309.53 723.29 T
+1.22 (However, while using application-specific synchronisation) 309.53 706.29 P
+0.64 (might) 309.53 695.29 P
+3 F
+0.64 (postpone) 336.01 695.29 P
+0 F
+0.64 ( some of the problems of unbounded diver-) 372.12 695.29 P
+4.33 (gence, the basic problem of unbounded inconsistency) 309.53 684.29 P
+0.58 (remains with us. The same basic technique\321taking advan-) 309.53 673.29 P
+4.11 (tage of application semantics\321can be applied to this) 309.53 662.29 P
+0.26 (problem. Prospero introduces the notion of application-spe-) 309.53 651.29 P
+1.65 (cific consistency guarantees to control for the divergence) 309.53 640.29 P
+0.5 (process using details of particular circumstances. The roots) 309.53 629.29 P
+(of this mechanism lie in the strategies of existing systems.) 309.53 618.29 T
+1 F
+(3.3) 309.53 597.29 T
+(Constraining Divergence with Locks) 334.73 597.29 T
+0 F
+1.78 (The most obvious traditional mechanism for constraining) 309.53 583.29 P
+-0.53 (divergence \050or, more accurately, for avoiding it altogether\051 is) 309.53 572.29 P
+3 F
+0.5 (locking) 309.53 561.29 P
+0 F
+0.5 (. Locking is widely used in current CSCW systems.) 338.97 561.29 P
+0.54 (Implicitly or explicitly, a user obtains a \322lock\323 for some or) 309.53 550.29 P
+0.37 (all of the data store. Since update access is restricted to cli-) 309.53 539.29 P
+-0.05 (ents holding a current lock, the availability of locks controls) 309.53 528.29 P
+0.41 (the emergence of divergence; and since, in typical configu-) 309.53 517.29 P
+0.55 (rations, only one client can hold a lock on a given piece of) 309.53 506.29 P
+0.07 (data at any time, divergence is avoided. This sort of locking) 309.53 495.29 P
+0.66 (behaviour can also be exhibited by systems in which locks) 309.53 484.29 P
+1.1 (don\325t appear explicitly in the interface; floor-control algo-) 309.53 473.29 P
+2.38 (rithms and other forms of asynchronous access are also) 309.53 462.29 P
+(particular cases of the general locking approach.) 309.53 451.29 T
+-0.05 (As outlined earlier, Greenberg and Marwood [1994] discuss) 309.53 434.29 P
+-0.1 (some issues surrounding concurrency control in CSCW sys-) 309.53 423.29 P
+1.93 (tems. Most strategies for managing distributed data have) 309.53 412.29 P
+-0.43 (arisen in arenas such as distributed databases, distributed file) 309.53 401.29 P
+1.16 (systems, etc. Greenberg and Marwood point to a range of) 309.53 390.29 P
+0.3 (ways in which these approaches have interactional implica-) 309.53 379.29 P
+2.01 (tions. Collaborative systems differ from many traditional) 309.53 368.29 P
+0.88 (distributed systems in that) 309.53 357.29 P
+3 F
+0.88 (in CSCW, not only the applica-) 420.27 357.29 P
+1.93 (tion, but also the interface, is distributed) 309.53 346.29 P
+0 F
+1.93 (. The choice of) 483.89 346.29 P
+2.25 (concurrency management strategy can have a significant) 309.53 335.29 P
+0.23 (impact on the styles of interaction which an application can) 309.53 324.29 P
+0.21 (support. One obvious example is the way in which the tem-) 309.53 313.29 P
+1.3 (poral properties of concurrency control strategies, such as) 309.53 302.29 P
+2 (relative execution times of actions over shared data, can) 309.53 291.29 P
+2.3 (interfere with interactional requirements in the interface.) 309.53 280.29 P
+1.09 (Similarly, approaches which apply a post-hoc serialisation) 309.53 269.29 P
+0.7 (on user actions may introduce unexpected interface behav-) 309.53 258.29 P
+(iours \050such as undo-ing actions\051.) 309.53 247.29 T
+-0.29 (Locking is a very general approach. A wide range of locking) 309.53 230.29 P
+-0.23 (strategies have been used in CSCW systems, varying in how) 309.53 219.29 P
+0.42 (the locks are requested, obtained, granted and relinquished,) 309.53 208.29 P
+-0.48 (what kinds of operations require locks, and the granularity of) 309.53 197.29 P
+1.22 (data units controlled by a single lock. However, the basic) 309.53 186.29 P
+1.24 (pattern \050lock-act-release\051 remains the same, and so do the) 309.53 175.29 P
+0.34 (basic problems of locking for CSCW applications. Locking) 309.53 164.29 P
+-0.26 (is a pessimistic concurrency strategy; on the assumption that) 309.53 153.29 P
+0.54 (any conflict could be damaging, it prevents conflict arising) 309.53 142.29 P
+-0.04 (in the first place. Locking restricts activity on the data store,) 309.53 131.29 P
+(and hence restricts the activity of users.) 309.53 120.29 T
+FMENDPAGE
+%%EndPage: "3" 3
+%%Page: "4" 4
+595.3 841.9 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+42.65 61.95 551.65 84.95 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 10 Q
+0 X
+(4) 545.25 78.29 T
+45.65 96.95 285.77 762.95 R
+7 X
+V
+0 X
+-0.14 (In many applications, it\325s quite appropriate to use locks, and) 45.65 756.29 P
+1.34 (to avoid quite strictly the danger of conflict and potential) 45.65 745.29 P
+2 (inconsistency. For applications in which data integrity is) 45.65 734.29 P
+0.44 (critical, and intra-group interactivity low\321such as collabo-) 45.65 723.29 P
+-0.62 (rative software development\321locking strategies \050such as the) 45.65 712.29 P
+-0.33 (check-out model\051 can be valuable, appropriate and effective.) 45.65 701.29 P
+-0.1 (In other applications, though, strict locking mechanisms can) 45.65 690.29 P
+2.68 (interfere with group interaction. Some systems, such as) 45.65 679.29 P
+0.57 (ShrEdit, use) 45.65 668.29 P
+3 F
+0.57 (implicit) 98.18 668.29 P
+0 F
+0.57 ( locks, which are silently obtained and) 128.74 668.29 P
+0.16 (released in the course of editing activity, to reduce the level) 45.65 657.29 P
+-0.01 (of interference and overhead. However, the locking strategy) 45.65 646.29 P
+0.94 (is still visible to the group through the effect it has on the) 45.65 635.29 P
+1.17 (interface, even in cases where working activity would not) 45.65 624.29 P
+2.4 (result in conflict or inconsistency [Dourish and Bellotti,) 45.65 613.29 P
+-0.37 (1992]. In the case of even less structured, free-form data col-) 45.65 602.29 P
+6.61 (laboration such as a shared whiteboard, even the) 45.65 591.29 P
+7.31 (interactional overhead of implicit locking becomes) 45.65 580.29 P
+(unwieldy, and explicit locks are almost unusable.) 45.65 569.29 T
+0.42 (Prospero is a toolkit for creating collaborative applications,) 45.65 552.29 P
+-0.2 (and so it must embody more flexible mechanisms which can) 45.65 541.29 P
+0.48 (be adapted or appropriated for a range of application needs) 45.65 530.29 P
+1.78 (and interactional styles. Clearly, something more flexible) 45.65 519.29 P
+1.62 (than locking\321even when supported by a range of strate-) 45.65 508.29 P
+(gies\321is needed.) 45.65 497.29 T
+1 F
+(3.4) 45.65 476.29 T
+(Promises and Guarantees) 70.85 476.29 T
+0 F
+-0.06 (In an attempt to find a more flexible approach than the strict) 45.65 462.29 P
+0.27 (locking mechanism, and one more attuned to the needs of a) 45.65 451.29 P
+0.38 (CSCW toolkit, our starting point is with a generalisation of) 45.65 440.29 P
+2.88 (the traditional locking process. Locking is essentially a) 45.65 429.29 P
+0.22 (means by which a client) 45.65 418.29 P
+0 8 Q
+0.18 (2) 143.2 422.29 P
+0 10 Q
+0.22 ( receives some guarantee of future) 147.2 418.29 P
+1.38 (consistency \050\322no other user can make changes, so consis-) 45.65 407.29 P
+0.91 (tency will be maintained\323\051 in exchange for a prediction of) 45.65 396.29 P
+0.23 (the client\325s future activity \050\322changes will only be applied to) 45.65 385.29 P
+1.04 (the locked region\323\051. So we state this as the first principle:) 45.65 374.29 P
+3 F
+(locks are guarantees of achievable consistency) 45.65 363.29 T
+0 F
+(.) 233.67 363.29 T
+0.12 (Immediately, this view has a number of interesting implica-) 45.65 346.29 P
+0.54 (tions. First, there\325s clearly a wide range of such guarantees) 45.65 335.29 P
+1.81 (which could be made. Normally, locks are all-or-nothing) 45.65 324.29 P
+-0.17 (guarantees. When we think in terms of guarantees of consis-) 45.65 313.29 P
+-0.37 (tency, then we can consider distinguishing between different) 45.65 302.29 P
+3 F
+1.32 (degrees) 45.65 291.29 P
+0 F
+1.32 ( of consistency, and the fact that a guarantee may) 76.75 291.29 P
+-0.38 (only hold for limited consistency \050in the worst case, perhaps,) 45.65 280.29 P
+-0.39 (just syntactic consistency\051. Determining the achievable level) 45.65 269.29 P
+1 (of consistency is the responsibility of the server, based on) 45.65 258.29 P
+0.77 (currently-issued promises and the information about future) 45.65 247.29 P
+0.02 (activity which the client provides. The nature of these client) 45.65 236.29 P
+0.76 (\322promises\323 will be discussed in more detail later; for now,) 45.65 225.29 P
+0.45 (though, it\325s enough to say that they are characterisations of) 45.65 214.29 P
+0.75 (expected behaviour, such as whether the client will simply) 45.65 203.29 P
+1.35 (read data, write new data but not delete anything current,) 45.65 192.29 P
+-0.6 (delete or modify existing data, and so forth. So, second, these) 45.65 181.29 P
+-0.57 (promises could vary in specificity and detail, just as the guar-) 45.65 170.29 P
+0.05 (antees can vary. Third, and perhaps most importantly, when) 45.65 159.29 P
+1.4 (we think of this exchange as being less absolute than the) 45.65 148.29 P
+45.65 129.95 285.77 144.93 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+45.65 129.95 285.77 144.93 R
+7 X
+0 0 0 1 0 0 0 K
+V
+45.65 140.95 189.65 140.95 2 L
+V
+0.5 H
+2 Z
+0 X
+N
+-8.35 24.95 603.65 816.95 C
+0 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(2. Although I\325ll use the terms) 45.65 123.95 T
+3 F
+(client) 153.89 123.95 T
+0 F
+( and) 173.89 123.95 T
+3 F
+(server) 191.38 123.95 T
+0 F
+(, these mechanisms) 213.52 123.95 T
+(also apply to peer) 45.65 113.95 T
+(-to-peer structures. In fact, Prospero uses a peer) 109.21 113.95 T
+(-) 280.72 113.95 T
+(to-peer model.) 45.65 103.95 T
+309.53 96.95 549.65 762.95 R
+7 X
+V
+0 10 Q
+0 X
+0.58 (strict locking exchange \050an absolute guarantee for an abso-) 309.53 756.29 P
+3.84 (lute promise\051, then it becomes obvious that this is a) 309.53 745.29 P
+-0.57 (negotiation; a client may make increasingly restrictive prom-) 309.53 734.29 P
+3.64 (ises in exchange for increasingly strong guarantees of) 309.53 723.29 P
+0.12 (consistency. The promise/guarantee cycle is the basis of the) 309.53 712.29 P
+(consistency guarantees approach.) 309.53 701.29 T
+-0.19 (This sort of mechanism allows better interleaving of activity) 309.53 684.29 P
+0.46 (than full locks. From the server side, more details of future) 309.53 673.29 P
+1.83 (activity allow better decisions about what actions can be) 309.53 662.29 P
+-0.3 (simultaneously performed by multiple users. From the client) 309.53 651.29 P
+2.56 (side, the ability to accept weaker guarantees than locks) 309.53 640.29 P
+0.92 (would provide may allow activity to proceed where other-) 309.53 629.29 P
+0.61 (wise it would be blocked. This flexible interleaving retains) 309.53 618.29 P
+2.16 (the important) 309.53 607.29 P
+3 F
+2.16 (predictive) 369.96 607.29 P
+0 F
+2.16 ( element of locking\321that is, the) 409.95 607.29 P
+2.84 (client still makes \322up-front\323 promises of future activity) 309.53 596.29 P
+0.19 (which give the server a better picture of the extent of future) 309.53 585.29 P
+(divergence and so enable more informed decision-making.) 309.53 574.29 T
+1.24 (However, this generalisation still suffers one of the major) 309.53 557.29 P
+-0.5 (problems with the locking approach applied to CSCW. Since) 309.53 546.29 P
+1.97 (divergence is still preceded by a description of expected) 309.53 535.29 P
+2.47 (activities, the possibility of opportunistic activity is still) 309.53 524.29 P
+-0.23 (restricted. This was raised earlier as a criticism of traditional) 309.53 513.29 P
+0.12 (locking mechanisms, which interfere with the way in which) 309.53 502.29 P
+0.81 (collaborative work proceeds naturalistically. Obviously we) 309.53 491.29 P
+0.99 (would like to address this problem in our redesign. So we) 309.53 480.29 P
+-0.29 (introduce the second principle:) 309.53 469.29 P
+3 F
+-0.29 (a client can break a promise,) 434.45 469.29 P
+0.52 (in which case the server is no longer held to its guarantee) 309.53 458.29 P
+0 F
+0.52 (.) 547.15 458.29 P
+2.59 (So the characterisation of future activity which a client) 309.53 447.29 P
+1.57 (makes\321its promise\321may not be binding; when the time) 309.53 436.29 P
+1.19 (comes, the client \050or the user\051 may actually do something) 309.53 425.29 P
+0.07 (else. However, in this case, the server can no longer be held) 309.53 414.29 P
+-0.62 (to the guarantee it made of the level of consistency which can) 309.53 403.29 P
+(be achieved.) 309.53 392.29 T
+0.19 (With this second principle in place, the consistency guaran-) 309.53 375.29 P
+8.08 (tee mechanism provides more direct support for) 309.53 364.29 P
+1.72 (opportunistic working styles. Just as in naturalistic work,) 309.53 353.29 P
+0.95 (stepping outside previously-agreed lines is not impossible;) 309.53 342.29 P
+0.3 (but the mechanism provides stronger guarantees when used) 309.53 331.29 P
+0.42 (cooperatively by both client and server. Of course, the user) 309.53 320.29 P
+0.82 (need not \050often, should not\051 be exposed to this complexity) 309.53 309.29 P
+-0.54 (and unpredictability. In a toolkit, these facilities are provided) 309.53 298.29 P
+1.35 (so that they can be appropriately deployed \050or not\051 by an) 309.53 287.29 P
+2.56 (application developer. A developer might choose) 309.53 276.29 P
+3 F
+2.56 (not) 524.03 276.29 P
+0 F
+2.56 ( to) 536.81 276.29 P
+1.23 (exploit the second principle) 309.53 265.29 P
+3 F
+1.23 (in a given application) 427.78 265.29 P
+0 F
+1.23 (, where) 518.98 265.29 P
+1.57 (application requirements or usage patterns would make it) 309.53 254.29 P
+-0.37 (inappropriate. These might include cases where the resulting) 309.53 243.29 P
+0.33 (conflicts may be too difficult to synchronise later, or where) 309.53 232.29 P
+0.33 (loss of integrity in the data-store would be unacceptable. In) 309.53 221.29 P
+-0.29 (other cases, an application developer might want to warn the) 309.53 210.29 P
+1.17 (user when such a situation was likely to occur, so that an) 309.53 199.29 P
+0.48 (informed decision could be made as appropriate to the par-) 309.53 188.29 P
+5.81 (ticular circumstances. The framework supports these) 309.53 177.29 P
+(behaviours, but doesn\325t require them.) 309.53 166.29 T
+1.53 (So, adding consistency guarantees to Prospero provides a) 309.53 149.29 P
+1.97 (way to overcome the problem of unbounded divergence;) 309.53 138.29 P
+1.81 (they act as a curb to Prospero\325s optimism. They provide) 309.53 127.29 P
+-0.18 (some of the predictable consistency which pessmistic strate-) 309.53 116.29 P
+0.77 (gies support, but in a way which is sensitive to patterns of) 309.53 105.29 P
+FMENDPAGE
+%%EndPage: "4" 4
+%%Page: "5" 5
+595.3 841.9 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+42.65 61.95 551.65 84.95 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 10 Q
+0 X
+(5) 545.25 78.29 T
+45.65 96.95 285.77 762.95 R
+7 X
+V
+0 X
+0.16 (collaborative work \050rather than simply distributed systems\051.) 45.65 756.29 P
+0.79 (The examples in section six will show how these potential) 45.65 745.29 P
+(benefits are realised in actual applications.) 45.65 734.29 T
+1 12 Q
+(4) 45.65 709.95 T
+(Related Approaches in Database) 70.85 709.95 T
+(Research) 70.85 695.95 T
+0 10 Q
+1.45 (The variable consistency approach outlined in section 3.1) 45.65 681.29 P
+1.01 (used knowledge of application semantics to specialise and) 45.65 670.29 P
+-0.53 (improve the synchronisation process. Essentially, the consis-) 45.65 659.29 P
+1.13 (tency guarantee mechanism introduced in section 3.4 uses) 45.65 648.29 P
+0.77 (knowledge of application semantics\321and the semantics of) 45.65 637.29 P
+-0.06 (particular operations\321to increase the) 45.65 626.29 P
+3 F
+-0.06 (opportunities) 198.13 626.29 P
+0 F
+-0.06 ( for con-) 251.47 626.29 P
+(currency and parallel activity.) 45.65 615.29 T
+5.03 (Perhaps unsurprisingly, similar approaches have been) 45.65 598.29 P
+2.2 (explored in database design, since database management) 45.65 587.29 P
+-0.4 (systems also involve multi-user activity over shared and per-) 45.65 576.29 P
+0.13 (haps replicated data. Barghouti and Kaiser [1991] provide a) 45.65 565.29 P
+3.32 (comprehensive survey of advanced concurrency control) 45.65 554.29 P
+-0.05 (techniques. However, since databases tend to hide the activ-) 45.65 543.29 P
+2.38 (ities of multiple parties from each other \050preserving the) 45.65 532.29 P
+-0.57 (illusion of sole access to a system\051, the primary \050although not) 45.65 521.29 P
+1.83 (exclusive\051 focus of the database community has been on) 45.65 510.29 P
+1.65 (using concurrency to improve performance rather than to) 45.65 499.29 P
+0.02 (open up data models for collaboration. Two aspects of data-) 45.65 488.29 P
+2.77 (base research are particularly related to the consistency) 45.65 477.29 P
+4.63 (guarantees approach: semantics-based concurrency and) 45.65 466.29 P
+(application-specific conflict resolution.) 45.65 455.29 T
+1 F
+(4.1) 45.65 434.29 T
+(Semantics-Based Concurrency) 70.85 434.29 T
+0 F
+1.41 (Database systems use a transaction model to partition the) 45.65 420.29 P
+7.05 (instruction stream. Transactions provide serialisation) 45.65 409.29 P
+2.76 (\050ordered execution\051 and atomicity \050all-or-nothing execu-) 45.65 398.29 P
+1.9 (tion\051. However, if the system can detect that there is no) 45.65 387.29 P
+2.4 (conflict between two transactions, then it might execute) 45.65 376.29 P
+2.72 (them in parallel or interleaved, without interfering with) 45.65 365.29 P
+1.03 (transactional properties. The interaction-time and response) 45.65 354.29 P
+1.18 (characteristics of database systems are generally such that) 45.65 343.29 P
+-0.13 (delays introduced while calculating appropriate serialisation) 45.65 332.29 P
+1.89 (orders for transaction streams will not have a significant) 45.65 321.29 P
+1.79 (impact on interactive performance. However, shared data) 45.65 310.29 P
+1.42 (stores supporting interactive collaborative systems require) 45.65 299.29 P
+-0.23 (crisp performance, and so it\325s useful to look at how database) 45.65 288.29 P
+0.62 (research has investigated the opportunities to increase con-) 45.65 277.29 P
+(currency in transaction execution.) 45.65 266.29 T
+0.86 (Traditional database systems detect two principal forms of) 45.65 249.29 P
+-0.38 (conflict. A) 45.65 238.29 P
+3 F
+-0.38 (write/write) 90.17 238.29 P
+0 F
+-0.38 ( conflict occurs when two transactions) 134.07 238.29 P
+-0.44 (write to the same location in the database. An ordering has to) 45.65 227.29 P
+0.85 (be established for these transactions to retain the model of) 45.65 216.29 P
+1.78 (atomic, serialised execution. A) 45.65 205.29 P
+3 F
+1.78 (read/write) 178.88 205.29 P
+0 F
+1.78 ( conflict occurs) 220.55 205.29 P
+0.79 (when one transaction writes, and the other reads, the same) 45.65 194.29 P
+-0.62 (data. Inconsistency can result if the read falls before the write) 45.65 183.29 P
+1.92 (during simultaneous execution. If conflicting transactions) 45.65 172.29 P
+-0.21 (are executed concurrently, then the transaction model\325s seri-) 45.65 161.29 P
+0.69 (alisation properties may be lost; so conflicting transactions) 45.65 150.29 P
+(must be executed serially.) 45.65 139.29 T
+-0.18 (However, this is a very expensive way to maintain the trans-) 45.65 122.29 P
+0.94 (action model, since the analysis of conflict is very coarse-) 45.65 111.29 P
+0.79 (grained. In the absence of transaction conflicts, the system) 45.65 100.29 P
+309.53 96.95 549.65 762.95 R
+7 X
+V
+0 X
+-0.07 (can guarantee that the transactions can safely be executed in) 309.53 756.29 P
+0.69 (parallel. On the other hand, the presence of a conflict does) 309.53 745.29 P
+0.85 (not imply that inconsistency) 309.53 734.29 P
+3 F
+0.85 (will) 428.48 734.29 P
+0 F
+0.85 ( result. For example, con-) 443.49 734.29 P
+0.98 (sider a transaction which issues a read request but doesn\325t) 309.53 723.29 P
+0.27 (use that result as part of a later computation \050or does, but is) 309.53 712.29 P
+0.51 (robust to particular changes\051. It could, quite safely, be exe-) 309.53 701.29 P
+0.76 (cuted in parallel with another which writes that same data.) 309.53 690.29 P
+1.72 (However, that would signal a) 309.53 679.29 P
+3 F
+1.72 (read/write) 438.11 679.29 P
+0 F
+1.72 ( conflict and the) 479.78 679.29 P
+1.45 (potential concurrency would be lost. More generally \050and) 309.53 668.29 P
+4.93 (more practically\051, transaction concurrency \050and hence) 309.53 657.29 P
+-0.05 (throughput\051 could be improved with more detailed access to) 309.53 646.29 P
+(transaction semantics, or to application semantics.) 309.53 635.29 T
+0.35 (Approaches of this sort have been explored by a number of) 309.53 618.29 P
+-0.57 (researchers. For instance, Herlihy [1990] exploits the seman-) 309.53 607.29 P
+3.7 (tics of operations over abstract data types to produce) 309.53 596.29 P
+0.1 (validation criteria, which are applied before commit-time to) 309.53 585.29 P
+-0.39 (validate transaction schedules. His approach uses predefined) 309.53 574.29 P
+1.72 (sets of conflicting operations, derived from the data type) 309.53 563.29 P
+1.69 (specifications. Looking at the data type operations which) 309.53 552.29 P
+-0.17 (transactions execute allows a finer-grained view of potential) 309.53 541.29 P
+4.01 (conflicts, and increases concurrency. Farrag and Oszu) 309.53 530.29 P
+0.7 ([1989] exploit operation semantics by introducing a break-) 309.53 519.29 P
+2.25 (point mechanism into transactions, producing transaction) 309.53 508.29 P
+0.87 (schedules in which semantically-safe transaction interleav-) 309.53 497.29 P
+1.9 (ings are allowed. Again, the potential for concurrency is) 309.53 486.29 P
+(increased without disrupting transactional properties.) 309.53 475.29 T
+0.11 (One potential problem with each of these approaches is that) 309.53 458.29 P
+2.14 (they require) 309.53 447.29 P
+3 F
+2.14 (pre-computation) 364.35 447.29 P
+0 F
+2.14 ( of conflicts, compatibilities) 431.01 447.29 P
+1.03 (and safe partial break-points. The implication is that these) 309.53 436.29 P
+0.64 (mechanisms could not be seamlessly integrated into a gen-) 309.53 425.29 P
+1.65 (eral-purpose database management system. However, this) 309.53 414.29 P
+1.02 (doesn\325t pose a problem for using semantically-based tech-) 309.53 403.29 P
+-0.17 (niques in Prospero, since Prospero doesn\325t need to provide a) 309.53 392.29 P
+0.12 (complete general-purpose service independent of any appli-) 309.53 381.29 P
+3.71 (cation. Instead, it provides a framework within which) 309.53 370.29 P
+0.86 (application-specific semantics can be added by application) 309.53 359.29 P
+2.24 (programmers \050rather than being known to the system in) 309.53 348.29 P
+-0.29 (advance\051. Particular behaviours are coded in Prospero in full) 309.53 337.29 P
+0.38 (knowledge of the relevant semantic structure of application) 309.53 326.29 P
+(operations.) 309.53 315.29 T
+1 F
+(4.2) 309.53 294.29 T
+(Application-Speci\336c Con\337ict Resolution) 334.73 294.29 T
+0 F
+-0.25 (A second approach from database research which is relevant) 309.53 280.29 P
+-0.14 (to the consistency guarantees mechanism is the use of appli-) 309.53 269.29 P
+-0.25 (cation-specific conflict resolution. The Bayou system, under) 309.53 258.29 P
+3.59 (development at Xerox PARC, is a replicated database) 309.53 247.29 P
+1.37 (system for mobile computers, which are frequently active) 309.53 236.29 P
+0.3 (but disconnected from their peers. In most systems, discon-) 309.53 225.29 P
+-0.01 (nection is an unusual state, and the systems can normally be) 309.53 214.29 P
+0.18 (assumed to be connected to each other; but in mobile appli-) 309.53 203.29 P
+(cations, disconnection is the rule, rather than the exception.) 309.53 192.29 T
+1.01 (Bayou provides a mechanism by which client applications) 309.53 175.29 P
+1.34 (can become involved in the resolution of database update) 309.53 164.29 P
+1.37 (conflict which can occur with replicated, partially-discon-) 309.53 153.29 P
+4.55 (nected databases [Demers et al., 1994]. Bayou write) 309.53 142.29 P
+4.2 (operations can include) 309.53 131.29 P
+3 F
+4.2 (mergeprocs) 414.61 131.29 P
+0 F
+4.2 (\321segments of code) 461.82 131.29 P
+-0.6 (which are interpreted within the database system and provide) 309.53 120.29 P
+0.64 (application-specific management of conflicts. For instance,) 309.53 109.29 P
+FMENDPAGE
+%%EndPage: "5" 5
+%%Page: "6" 6
+595.3 841.9 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+42.65 61.95 551.65 84.95 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 10 Q
+0 X
+(6) 545.25 78.29 T
+45.65 96.95 285.77 762.95 R
+7 X
+V
+0 X
+2.42 (in a meeting scheduling application, a write \050carrying a) 45.65 756.29 P
+0.37 (record of a scheduled meeting\051 might be accompanied with) 45.65 745.29 P
+-0.54 (code which would shift the meeting to alternative times if the) 45.65 734.29 P
+0.1 (desired meeting slot is already booked. Mergeprocs provide) 45.65 723.29 P
+0.48 (a means for application specifics to be exploited within the) 45.65 712.29 P
+0.82 (general database framework. Bayou also provides \322session) 45.65 701.29 P
+-0.08 (guarantees\323 [Terry et al, 1994] which give applications con-) 45.65 690.29 P
+-0.01 (trol over the degree of consistency they require for effective) 45.65 679.29 P
+1.14 (operation in specific circumstances. Clients can trade data) 45.65 668.29 P
+-0.05 (consistency for the ability to keep operating in disconnected) 45.65 657.29 P
+3.8 (conditions. Both of these techniques are based on an) 45.65 646.29 P
+-0.5 (approach similar to that exploited in Prospero\321allowing cli-) 45.65 635.29 P
+1.82 (ents to become involved in how infrastructure support is) 45.65 624.29 P
+(configured to their particular needs.) 45.65 613.29 T
+0.58 (More generally, one focus of research, particularly in data-) 45.65 596.29 P
+0.63 (bases supporting software development or CAD/CAM, has) 45.65 585.29 P
+0.78 (been on variants of the transaction model supporting long-) 45.65 574.29 P
+0.14 (duration and group transactions \050e.g. [Kaiser, 1994]\051. These) 45.65 563.29 P
+2.21 (are variants which exploit a general style of interaction,) 45.65 552.29 P
+0.03 (rather than the specifics of particular applications; however,) 45.65 541.29 P
+0.23 (they do begin to address the needs of inherent collaborative) 45.65 530.29 P
+(applications.) 45.65 519.29 T
+1 12 Q
+(5) 45.65 494.95 T
+(Encoding Promises and Guarantees) 70.85 494.95 T
+0 10 Q
+0.1 (The use of activity descriptions and consistency guarantees,) 45.65 480.29 P
+3.18 (as outlined above, provides a framework in which the) 45.65 469.29 P
+-0.26 (semantics of applications and their operations can be used to) 45.65 458.29 P
+1.37 (improve concurrency management for collaborative work.) 45.65 447.29 P
+-0.26 (Before we can go on to look at some examples of these tech-) 45.65 436.29 P
+2.57 (niques in use, however, we need to tackle the issue of) 45.65 425.29 P
+-0.29 (representation. What does a programmer see when program-) 45.65 414.29 P
+0.3 (ming with Prospero? How can we represent and encode the) 45.65 403.29 P
+2.25 (semantic properties on which consistency guarantees are) 45.65 392.29 P
+(based?) 45.65 381.29 T
+1 F
+(5.1) 45.65 360.29 T
+(The Programming Interface) 70.85 360.29 T
+0 F
+-0.37 (Prospero is written in Common Lisp. Applications built with) 45.65 346.29 P
+2.87 (Prospero are Lisp programs; Prospero is available as a) 45.65 335.29 P
+0.38 (library of routines which programmers can incorporate into) 45.65 324.29 P
+(their code.) 45.65 313.29 T
+1.65 (Drawing on the Open Implementation structure, Prospero) 45.65 296.29 P
+-0.61 (offers two interfaces to application programmers. The first\321) 45.65 285.29 P
+-0.22 (called the) 45.65 274.29 P
+3 F
+-0.22 (base) 86.31 274.29 P
+0 F
+-0.22 ( interface\321is a traditional library interface. It) 104.64 274.29 P
+0.54 (consists of a set of classes representing the basic structures) 45.65 263.29 P
+0.3 (of the toolkit, such as streams and guarantees, and provides) 45.65 252.29 P
+-0.38 (methods on those classes which encode toolkit functionality.) 45.65 241.29 P
+1.18 (Application programmers make instances of these classes,) 45.65 230.29 P
+0.66 (and call the Prospero functions to manipulate them \050e.g. to) 45.65 219.29 P
+0.29 (add an action to a stream, to synchronise two streams, or to) 45.65 208.29 P
+(perform an application action\051.) 45.65 197.29 T
+0.05 (The second interface is called the) 45.65 180.29 P
+3 F
+0.05 (meta) 181.99 180.29 P
+0 F
+0.05 ( interface. This is the) 201.43 180.29 P
+0.3 (interface which the programmer uses to express application) 45.65 169.29 P
+2.34 (details, and to tailor the toolkit structures to application) 45.65 158.29 P
+-0.43 (needs. This second interface is implemented using a) 45.65 147.29 P
+3 F
+-0.43 (metaob-) 253 147.29 P
+0.92 (ject protocol) 45.65 136.29 P
+0 F
+0.92 ( [Kiczales et al., 1991]. Normally, tailoring is) 97.4 136.29 P
+0.14 (done by specialising Prospero structures and then providing) 45.65 125.29 P
+3.87 (new, tailored methods for the specialised classes. For) 45.65 114.29 P
+0.26 (instance, to change the synchronisation strategy for streams) 45.65 103.29 P
+309.53 96.95 549.65 762.95 R
+7 X
+V
+0 X
+-0.4 (in a particular case, the programmer would create a new type) 309.53 756.29 P
+2.45 (of stream and then associate with it just those methods) 309.53 745.29 P
+1.45 (needed to express the new behaviour. Prospero then inte-) 309.53 734.29 P
+(grates these new mechanisms into its own operation.) 309.53 723.29 T
+0.3 (Unlike the traditional split between \322mechanism\323 and \322pol-) 309.53 706.29 P
+0.1 (icy\323, this approach keeps the encoding of policy at the level) 309.53 695.29 P
+0.82 (of the toolkit, rather than the application. However, it pro-) 309.53 684.29 P
+2.24 (vides the means for programmers to override or modify) 309.53 673.29 P
+-0.07 (elements of the policies which the toolkit uses, and to create) 309.53 662.29 P
+0.7 (new ones. Multiple policies can co-exist in Prospero at the) 309.53 651.29 P
+0.54 (same time. For instance, different types of streams are pre-) 309.53 640.29 P
+1.46 (defined, such as streams which automatically synchronise) 309.53 629.29 P
+0.66 (after some number of operations \050called bounded streams\051,) 309.53 618.29 P
+5.12 (and streams which only synchronise when explicitly) 309.53 607.29 P
+(requested to by the user \050called explicit-synch streams\051.) 309.53 596.29 T
+1.03 (The examples provided in the next section will show how) 309.53 579.29 P
+1.1 (these ideas work in practice. First, though, the rest of this) 309.53 568.29 P
+0.38 (section will outline how Prospero represents the guarantees) 309.53 557.29 P
+-0.16 (and promises on which the consistency mechanism is based.) 309.53 546.29 P
+1 F
+(5.2) 309.53 525.29 T
+(Semantics-Free Semantics) 334.73 525.29 T
+0 F
+0.17 (The primary role of the semantic descriptions which are the) 309.53 511.29 P
+-0.21 (basis of this mechanism is to provide a point of coordination) 309.53 500.29 P
+-0.09 (between the pre-divergence point \050the \322promise\323 phase\051 and) 309.53 489.29 P
+0.37 (the post-divergence point \050\322synchronisation\323\051. The efficacy) 309.53 478.29 P
+0.62 (of the approach is dependent on this coordination\321actions) 309.53 467.29 P
+3.08 (being described and later recognised\321rather than on a) 309.53 456.29 P
+1.84 (detailed, structured semantic account of user-level opera-) 309.53 445.29 P
+0.65 (tions. So while the properties which we would like to base) 309.53 434.29 P
+0.02 (our descriptions on are) 309.53 423.29 P
+3 F
+0.02 (semantic) 403.49 423.29 P
+0 F
+0.02 ( properties, the descriptions) 439.04 423.29 P
+-0.4 (themselves do not have to) 309.53 412.29 P
+3 F
+-0.4 (have) 413.91 412.29 P
+0 F
+-0.4 ( semantics. We need to create) 432.79 412.29 P
+-0.12 (a way of referring to semantic properties, but not a language) 309.53 401.29 P
+-0.35 (of semantics. It\325s enough to be able to distinguish and recog-) 309.53 390.29 P
+2.96 (nise semantic property) 309.53 379.29 P
+4 9 Q
+6.39 (foo) 411.44 379.29 P
+0 10 Q
+2.96 (, without having to give an) 427.64 379.29 P
+(account of what) 309.53 368.29 T
+4 9 Q
+(foo) 375.9 368.29 T
+3 10 Q
+(means) 394.6 368.29 T
+0 F
+(.) 420.15 368.29 T
+0.01 (This simplifies the problem immensely, by turning it from a) 309.53 351.29 P
+3 F
+-0.57 (description) 309.53 340.29 P
+0 F
+-0.57 ( problem into a) 354.53 340.29 P
+3 F
+-0.57 (naming) 415.57 340.29 P
+0 F
+-0.57 ( problem. Since the partic-) 445.57 340.29 P
+1.9 (ular semantic properties which are of value in managing) 309.53 329.29 P
+4.93 (concurrency are entirely application-specific, they are) 309.53 318.29 P
+-0.44 (named\321for the purpose of coordination\321by the application) 309.53 307.29 P
+-0.54 (developer. What\325s required of Prospero, then, is the means to) 309.53 296.29 P
+-0.33 (name them, to associate them with particular operations, and) 309.53 285.29 P
+0.5 (subsequently to recognise them in the process of managing) 309.53 274.29 P
+(promises and synchronising streams.) 309.53 263.29 T
+1 F
+(5.3) 309.53 242.29 T
+(Class-based Encoding) 334.73 242.29 T
+0 F
+2.1 (The mechanism that Prospero uses to accomplish this is) 309.53 228.29 P
+3 F
+-0.26 (class-based encoding) 309.53 217.29 P
+0 F
+-0.26 (. That is, the semantic properties for an) 395.09 217.29 P
+-0.46 (application are named as classes in an object-oriented frame-) 309.53 206.29 P
+2.85 (work. Particular operations are represented explicitly as) 309.53 195.29 P
+-0.47 (command objects [Berlage, 1994]; that is, invocations of any) 309.53 184.29 P
+-0.54 (operation are represented explicitly as objects within the sys-) 309.53 173.29 P
+3.53 (tem. Each instance of a command object represents a) 309.53 162.29 P
+1.93 (particular invocation, along with relevant parameters and) 309.53 151.29 P
+1.25 (contextual information. Command objects multiply inherit) 309.53 140.29 P
+(from the classes which represent their semantic properties.) 309.53 129.29 T
+1.18 (The use of explicit command objects is, in itself, a useful) 309.53 112.29 P
+-0.49 (mechanism for representing sequences of action and arriving) 309.53 101.29 P
+FMENDPAGE
+%%EndPage: "6" 6
+%%Page: "7" 7
+595.3 841.9 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+42.65 61.95 551.65 84.95 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 10 Q
+0 X
+(7) 545.25 78.29 T
+45.65 96.95 285.77 515.95 R
+7 X
+V
+0 X
+2.53 (at appropriate mechanisms for resolving conflicts which) 45.65 509.29 P
+0.09 (might arise; but encoding semantic properties in the inherit-) 45.65 498.29 P
+0.16 (ance structure of the command objects yields two particular) 45.65 487.29 P
+0.54 (benefits for the problems which Prospero needs to address.) 45.65 476.29 P
+-0.46 (First, the mechanism is inherently extensible; the application) 45.65 465.29 P
+0.3 (developer can create new semantic properties from existing) 45.65 454.29 P
+-0.09 (ones within the same mechanism as she uses to create appli-) 45.65 443.29 P
+7.16 (cation structures and objects \050i.e. subclassing and) 45.65 432.29 P
+-0.36 (specialisation\051. Second, class-based encoding allows seman-) 45.65 421.29 P
+-0.5 (tically-related behaviours to be defined in a declarative style.) 45.65 410.29 P
+0.9 (In the application, behaviours related to different semantic) 45.65 399.29 P
+0.62 (properties \050or combinations of them\051 are written separately) 45.65 388.29 P
+-0.17 (as methods specialised on the relevant classes, rather than in) 45.65 377.29 P
+0.86 (a complex, monolithic synchronisation handler. This relies) 45.65 366.29 P
+2.84 (on the object system\325s dynamic dispatch mechanism to) 45.65 355.29 P
+-0.34 (match semantic properties \050classes\051 to associated behaviours) 45.65 344.29 P
+(\050methods\051 for particular command objects.) 45.65 333.29 T
+1 12 Q
+(6) 45.65 308.95 T
+(Using Consistency Guarantees) 70.85 308.95 T
+0 10 Q
+0.29 (To provide a more detailed illustration of the use of consis-) 45.65 294.29 P
+1.18 (tency guarantees in collaborative applications, this section) 45.65 283.29 P
+-0.43 (presents two more extended examples, along with the frame-) 45.65 272.29 P
+-0.41 (work Common Lisp) 45.65 261.29 P
+-0.41 (code which implements them. Since our) 127.27 261.29 P
+0.25 (concern here is with the use of the meta interface to encode) 45.65 250.29 P
+1.93 (application semantics and specialise the toolkit, the code) 45.65 239.29 P
+-0.26 (examples focus on the use of Prospero rather than the design) 45.65 228.29 P
+2.16 (of the applications themselves. The examples show how) 45.65 217.29 P
+-0.49 (application-specific semantic properties can be used) 45.65 206.29 P
+3 F
+-0.49 (within a) 253.75 206.29 P
+-0.25 (toolkit) 45.65 195.29 P
+0 F
+-0.25 ( framework to manage concurrency. Clearly, semanti-) 71.21 195.29 P
+2.43 (cally-informed concurrency control could be hand-coded) 45.65 184.29 P
+0.76 (into applications, on a case-by-case basis; the issue here is) 45.65 173.29 P
+0.58 (the way in which these application-specific features can be) 45.65 162.29 P
+(exploited within a generalised toolkit.) 45.65 151.29 T
+1 F
+(6.1) 45.65 130.29 T
+(A Shared Bibliographical Database) 70.85 130.29 T
+0 F
+-0.47 (A simple example of an application whose collaborative per-) 45.65 116.29 P
+6.7 (formance can be enhanced by exploiting semantic) 45.65 105.29 P
+309.53 96.95 549.65 516.95 R
+7 X
+V
+0 X
+-0.49 (information is a shared database for bibliographical informa-) 309.53 510.29 P
+1.99 (tion. The key property which we want to exploit in this) 309.53 499.29 P
+1.16 (example is that updates to the database are normally non-) 309.53 488.29 P
+0.3 (destructive. In a conventional locking approach, all updates) 309.53 477.29 P
+1.71 (would be seen as equally likely to conflict, and so locks) 309.53 466.29 P
+0.82 (would be used to prevent any simultaneous updates. How-) 309.53 455.29 P
+0.16 (ever, one of the features of this particular application is that) 309.53 444.29 P
+2.13 (most updating is in adding new information, rather than) 309.53 433.29 P
+-0.11 (removing or changing information already present. Simulta-) 309.53 422.29 P
+1.1 (neous appends are much less likely to cause conflicts that) 309.53 411.29 P
+1.44 (simultaneous revisions, and this can be used to specialise) 309.53 400.29 P
+(conflict management in this particular application.) 309.53 389.29 T
+-0.04 (We can take advantage of this feature by introducing a class) 309.53 372.29 P
+-0.25 (of actions which correspond to) 309.53 361.29 P
+3 F
+-0.25 (non-destructive) 434.07 361.29 P
+0 F
+-0.25 ( writes \050those) 496.28 361.29 P
+-0.1 (which add new information, rather than changing anything\051.) 309.53 350.29 P
+3.32 (A standard access mode for the collaborative database) 309.53 339.29 P
+-0.02 (during disconnected operation, then, would be the combina-) 309.53 328.29 P
+3.18 (tion of reads and non-destructive writes, and could be) 309.53 317.29 P
+(encoded in Prospero as shown in figure 1.) 309.53 306.29 T
+-0.48 (So, in the initial code fragment, the editing actions are brack-) 309.53 289.29 P
+0.02 (eted by a request/synchronisation pair. The generic function) 309.53 278.29 P
+4 9 Q
+0.74 (request) 309.53 267.29 P
+0 10 Q
+0.34 ( requests) 347.33 267.29 P
+0 8 Q
+0.28 (3) 382.94 271.29 P
+0 10 Q
+0.34 ( a guarantee for the local data stream on) 386.94 267.29 P
+0.1 (the whole database, specifying that the expected behaviours) 309.53 256.29 P
+0.38 (will be of types) 309.53 245.29 P
+4 9 Q
+0.82 (<read>) 375.49 245.29 P
+0 10 Q
+0.38 ( and) 407.89 245.29 P
+4 9 Q
+0.82 (<safe-write>) 428.1 245.29 P
+0 10 Q
+0.38 ( \050non-destruc-) 492.9 245.29 P
+1.1 (tive writes\051. The guarantee that it receives is later used as) 309.53 234.29 P
+1.72 (part of the synchronisation process, once the edit actions) 309.53 223.29 P
+(have taken place.) 309.53 212.29 T
+0.12 (The rest of the code in figure 1 handles the other side of the) 309.53 195.29 P
+0.68 (transaction\321evaluating the promise and granting the guar-) 309.53 184.29 P
+0.3 (antee. Taking advantage of the specifics of this application,) 309.53 173.29 P
+1.72 (the code can adopt the policy that, like read capabilities,) 309.53 162.29 P
+-0.01 (safe-write capabilities can be granted to multiple clients at a) 309.53 151.29 P
+(time.) 309.53 140.29 T
+309.53 119.95 549.65 134.93 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+309.53 119.95 549.65 134.93 R
+7 X
+0 0 0 1 0 0 0 K
+V
+309.53 130.95 453.53 130.95 2 L
+V
+0.5 H
+2 Z
+0 X
+N
+-8.35 24.95 603.65 816.95 C
+0 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(3. In this example, error conditions\321and in particular) 309.53 113.95 T
+(, the refusal) 503.39 113.95 T
+(of a guarantee\321have been omitted for clarity) 309.53 103.95 T
+(.) 472.9 103.95 T
+45.65 524.95 549.65 762.95 R
+7 X
+V
+50.65 549.95 550.65 759.95 R
+V
+4 F
+0 X
+(\050let \050\050guarantee \050request \050my-stream\051 *bibliodb* <read> <safe-write>\051\051\051) 50.65 753.95 T
+(;; ... editing actions ...) 61.45 742.95 T
+(\050synchronise \050my-stream\051 \050remote-stream\051 guarantee\051\051) 61.45 731.95 T
+(\050defmethod grant-guarantee \050stream object \050operation <safe-write>\051\051) 50.65 714.95 T
+(;; ... ok...) 61.45 703.95 T
+(\050let \050\050guarantee \050construct-guarantee <auto-consistent> stream object\051\051\051) 61.45 692.95 T
+(\050record guarantee *guarantee-table*\051\051\051) 72.25 681.95 T
+(\050defmethod grant-guarantee \050stream object \050operation <write>\051\051) 50.65 664.95 T
+(;; ... restricted ....) 61.45 653.95 T
+(\050if \050granted-entry? <auto-consistent> <write> *guarantee-table*\051) 61.45 642.95 T
+(\050construct-guarantee <refused-guarantee>\051) 83.05 631.95 T
+(\050record \050construct-guarantee <auto-consistent> stream object\051) 72.25 620.95 T
+(*guarantee-table*\051\051\051) 115.45 609.95 T
+(\050defmethod grant-guarantee \050stream object \050operation <read>\051\051) 50.65 592.95 T
+(;; ... ok ...) 61.45 581.95 T
+(\050record \050construct-guarantee <consistent> stream object\051) 61.45 570.95 T
+(*guarantee-table*\051\051) 104.65 559.95 T
+47.65 524.95 550.65 543.95 R
+7 X
+V
+0 10 Q
+0 X
+(Figure 1: Methods defining access to the shared bibliographical database in Prospero.) 47.65 537.29 T
+FMENDPAGE
+%%EndPage: "7" 7
+%%Page: "8" 8
+595.3 841.9 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+42.65 61.95 551.65 84.95 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 10 Q
+0 X
+(8) 545.25 78.29 T
+45.65 96.95 285.77 535.95 R
+7 X
+V
+0 X
+0.52 (Here, we grant guarantees for read operations and for safe-) 45.65 529.29 P
+1.41 (write operations \050although they receive different levels of) 45.65 518.29 P
+1.75 (consistency, which are also class-encoded\051. However, for) 45.65 507.29 P
+1.19 (general write operations, a guarantee is only issued in the) 45.65 496.29 P
+-0.59 (case that no other guarantee has been granted to another writ-) 45.65 485.29 P
+-0.06 (ing client. Guarantees are recorded so that they may be used) 45.65 474.29 P
+-0.12 (as the basis of later decision-making, as well as for synchro-) 45.65 463.29 P
+(nisation purposes later.) 45.65 452.29 T
+0.18 (The use of guarantees as part of the coordination strategy is) 45.65 435.29 P
+1.17 (part of the framework which Prospero provides. What the) 45.65 424.29 P
+0.4 (programmer has done, in this case, is to specialise the tool-) 45.65 413.29 P
+4.95 (kit\325s structures to take account of semantics of the) 45.65 402.29 P
+(application being supported.) 45.65 391.29 T
+1 F
+(6.2) 45.65 370.29 T
+(Collaborative T) 70.85 370.29 T
+(ext Editing) 142.35 370.29 T
+0 F
+-0.12 (The previous example showed the selective granting of con-) 45.65 356.29 P
+1.05 (sistency guarantees based on characterisations of expected) 45.65 345.29 P
+1.49 (behaviour\321the semantics of activity during the period of) 45.65 334.29 P
+3.44 (divergence. This second example illustrates the use of) 45.65 323.29 P
+(semantic properties in synchronisation.) 45.65 312.29 T
+0.02 (Consider a collaborative text editing system in which multi-) 45.65 295.29 P
+-0.36 (ple authors work on a single document, obtaining guarantees) 45.65 284.29 P
+1.54 (at the level of paragraphs or sections. As in the previous) 45.65 273.29 P
+2.95 (example, the guarantees obtained before divergence are) 45.65 262.29 P
+-0.47 (passed along at synchronisation-time. At this point, the guar-) 45.65 251.29 P
+-0.14 (antee must be examined to verify that only promised actions) 45.65 240.29 P
+(were performed.) 45.65 229.29 T
+-0.26 (So there are two cases \050distinguished in figure 2 by the pred-) 45.65 212.29 P
+0.18 (icate) 45.65 201.29 P
+4 9 Q
+0.39 ( valid?) 64.53 201.29 P
+0 10 Q
+0.18 (\051. In the first case, the predicate indicates that) 102.71 201.29 P
+0.73 (the actions performed by the client are indeed those which) 45.65 190.29 P
+0.07 (were given in the promise. The promise has been upheld. In) 45.65 179.29 P
+1.55 (this case, synchronisation should be straightforward since) 45.65 168.29 P
+2.13 (the server was in a position to know what actions were) 45.65 157.29 P
+1.93 (expected beforehand. At this point, then, the type of the) 45.65 146.29 P
+0.44 (stream can be used to determine the appropriate synchroni-) 45.65 135.29 P
+-0.22 (sation method \050discussed in more detail elsewhere [Dourish,) 45.65 124.29 P
+(1995b]\051.) 45.65 113.29 T
+309.53 96.95 549.65 535.95 R
+7 X
+V
+0 X
+0.07 (In the second case, however, the client has broken its prom-) 309.53 529.29 P
+-0.62 (ise. There are various ways in which this situation could have) 309.53 518.29 P
+0.11 (arisen; and, critically, since a number of them are important) 309.53 507.29 P
+0.27 (features of naturalistic work practice, we would like to pro-) 309.53 496.29 P
+(vide as much support for them as possible.) 309.53 485.29 T
+1.16 (To handle this situation, the programmer calls the generic) 309.53 468.29 P
+0.12 (function) 309.53 457.29 P
+4 9 Q
+0.26 (salvage-synchronise) 345.48 457.29 P
+0 10 Q
+0.12 ( to provide fall-back syn-) 448.08 457.29 P
+0.02 (chronisation. In this case, this involves stepping through the) 309.53 446.29 P
+-0.14 (actions attempting to apply them one-by-one. By comparing) 309.53 435.29 P
+0.51 (the classes of the operations \050that is, their semantic charac-) 309.53 424.29 P
+5.1 (terisation\051 with the activities of other streams, their) 309.53 413.29 P
+1.27 (compatibility can be determined. Actions compatible with) 309.53 402.29 P
+3.46 (activities performed \050and guarantees granted\051 since the) 309.53 391.29 P
+0.16 (divergence point can be applied directly; other actions must) 309.53 380.29 P
+(be processed specially.) 309.53 369.29 T
+0.3 (Here there are three different means of applying potentially) 309.53 352.29 P
+-0.23 (conflicting actions locally. In the case of no conflicts we can) 309.53 341.29 P
+0.65 (use) 309.53 330.29 P
+4 9 Q
+1.39 (local-apply-action) 326 330.29 P
+0 10 Q
+0.65 ( which incorporates the remote) 423.2 330.29 P
+1.9 (actions into the local data store. However, there are two) 309.53 319.29 P
+1.68 (forms of potential conflict. The first is where the remote) 309.53 308.29 P
+0.26 (operation conflicts with an action arising in another stream.) 309.53 297.29 P
+0.47 (In this case, the application reverts to syntactic consistency) 309.53 286.29 P
+5.75 (by calling) 309.53 275.29 P
+4 9 Q
+12.43 (syntactic-local-apply-action) 363.26 275.29 P
+0 10 Q
+5.75 (, which) 514.46 275.29 P
+-0.17 (applies the action preserving syntactic, rather than semantic,) 309.53 264.29 P
+0.51 (consistency. In the second case, the remote action conflicts) 309.53 253.29 P
+0.57 (with a guarantee which has since been made to some other) 309.53 242.29 P
+1.96 (stream. In this case, there are clearly various things that) 309.53 231.29 P
+1.69 (could be done; the application developer here chooses to) 309.53 220.29 P
+1.3 (apply the operation tentatively, although it may be neces-) 309.53 209.29 P
+1.03 (sary, later, to undo this and move to syntactic consistency) 309.53 198.29 P
+0.42 (instead. Note that this decision\321to maintain consistency at) 309.53 187.29 P
+-0.26 (the expense of actions under broken promises\321is a decision) 309.53 176.29 P
+2.96 (which the application developer, rather than the toolkit) 309.53 165.29 P
+-0.49 (developer, can make in particular circumstances. The default) 309.53 154.29 P
+1.97 (structures of the toolkit may provide frameworks around) 309.53 143.29 P
+1.87 (such decisions, but they can be revised to suit particular) 309.53 132.29 P
+(application needs.) 309.53 121.29 T
+45.65 544.95 549.65 762.95 R
+7 X
+V
+48.65 565.95 551.65 758.95 R
+V
+4 9 Q
+0 X
+(\050defmethod synchronise \050stream action-list guarantee\051) 48.65 752.95 T
+(\050let \050\050promise \050guarantee-promise \050find-guarantee guarantee\051\051\051\051) 59.45 741.95 T
+(\050if \050valid? action-list \050promise-properties promise\051\051) 70.25 730.95 T
+(\050simple-synchronise stream action-list\051) 91.85 719.95 T
+(\050salvage-synchronise stream action-list\051\051\051\051) 81.05 708.95 T
+(\050defmethod simple-synchronise \050\050stream <stream>\051 action-list\051) 48.65 691.95 T
+(\050dolist \050action action-list\051) 59.45 680.95 T
+(\050synchronise-action stream action *stream*\051\051\051) 70.25 669.95 T
+(\050defmethod salvage-synchronise-action \050\050stream <stream>\051 \050action <editor-action>\051\051) 48.65 652.95 T
+(\050if \050action-conflict? action \050stream-history *stream* :relative-to stream\051\051) 59.45 641.95 T
+(;; ... definite conflict ...) 81.05 630.95 T
+(\050syntactic-local-apply-action action\051) 81.05 619.95 T
+(\050if \050guarantee-conflict? action *guarantee-table*\051) 70.25 608.95 T
+(;; ... potential conflict ...) 91.85 597.95 T
+(\050tentative-local-apply-action action\051) 91.85 586.95 T
+(\050local-apply-action action\051\051\051\051) 81.05 575.95 T
+46.65 544.95 552.65 561.95 R
+7 X
+V
+0 10 Q
+0 X
+(Figure 2: Methods for synchronisation of the collaborative writing example in Prospero.) 46.65 555.29 T
+FMENDPAGE
+%%EndPage: "8" 8
+%%Page: "9" 9
+595.3 841.9 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+42.65 61.95 551.65 84.95 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 10 Q
+0 X
+(9) 545.25 78.29 T
+45.65 96.95 285.77 762.95 R
+7 X
+V
+1 12 Q
+0 X
+(7) 45.65 754.95 T
+(Mechanism and Policy in Open) 70.85 754.95 T
+(Implementations) 70.85 740.95 T
+0 10 Q
+2.24 (The systems community recognises the problems arising) 45.65 726.29 P
+-0.02 (from the commitments which implementations make to par-) 45.65 715.29 P
+4.01 (ticular forms of application. One way to avoid these) 45.65 704.29 P
+0.19 (problems is to \322split mechanism and policy\323. Mechanism is) 45.65 693.29 P
+0.42 (that part of the system which provides basic functional ele-) 45.65 682.29 P
+0.14 (ments; policy is that part which deals with how they will be) 45.65 671.29 P
+(put together and used.) 45.65 660.29 T
+1.04 (Some CSCW systems have adopted the mechanism/policy) 45.65 643.29 P
+0.2 (split. Examples include COLA [Trevor et al., 1995] and the) 45.65 632.29 P
+1.85 (\322open protocols\323 approach in GroupKit. How does Pros-) 45.65 621.29 P
+(pero\325s approach compare with these?) 45.65 610.29 T
+0.99 (A full discussion of the relationship between Open Imple-) 45.65 593.29 P
+1.4 (mentations and split mechanism and policy is beyond the) 45.65 582.29 P
+0.49 (scope of this paper \050but see Kiczales et al., 1991; Kiczales,) 45.65 571.29 P
+(1996\051. However, there are two basic differences.) 45.65 560.29 T
+(1.) 45.65 543.29 T
+-0.01 (In the Open Implementation approach, policy remains in) 59.18 543.29 P
+0.47 (the implementation. Control is available from the appli-) 59.18 532.29 P
+1.19 (cation level, but it is exerted over policy in the imple-) 59.18 521.29 P
+1.46 (mentation. In the mechanism/policy split, on the other) 59.18 510.29 P
+3.22 (hand, policy decisions) 59.18 499.29 P
+3 F
+3.22 (migrate) 160.5 499.29 P
+0 F
+3.22 ( from the lower) 191.61 499.29 P
+3.22 (-level) 263 499.29 P
+(implementation to the application.) 59.18 488.29 T
+(This allows clients to reuse aspects of policy control,) 59.18 473.29 T
+(changing them to their own needs without having to) 59.18 462.29 T
+(rebuild them from scratch.) 59.18 451.29 T
+(2.) 45.65 434.29 T
+1.08 (Analogously) 59.18 434.29 P
+1.08 (, since the policy control is retained in the) 109.64 434.29 P
+0.07 (implementation, the level of abstraction used to manipu-) 59.18 423.29 P
+1.41 (late it is higher \050closer to the application\325) 59.18 412.29 P
+1.41 (s level\051. The) 233.23 412.29 P
+0.18 (system does not have to reveal its basic components, for) 59.18 401.29 P
+0.15 (programmers to put applications together; instead, it can) 59.18 390.29 P
+0.91 (interpret a higher) 59.18 379.29 P
+0.91 (-level modi\336cation interface, and map) 129.67 379.29 P
+1.75 (it onto whatever implementation lies below) 59.18 368.29 P
+1.75 (. This also) 240.88 368.29 P
+2.4 (make the modi\336cation interface itself portable across) 59.18 357.29 P
+(implementations.) 59.18 346.29 T
+1 12 Q
+(8) 45.65 321.95 T
+(Summary and Conclusions) 70.85 321.95 T
+0 10 Q
+1.49 (One of the principal distinctions between CSCW systems) 45.65 307.29 P
+1.25 (and purely distributed systems is the interactional compo-) 45.65 296.29 P
+0.07 (nent. The need to distribute the interface as well as data and) 45.65 285.29 P
+1.81 (application must be taken into account when considering) 45.65 274.29 P
+-0.1 (common distributed system issues such as concurrency con-) 45.65 263.29 P
+1.47 (trol. Traditional algorithms typically maintain consistency) 45.65 252.29 P
+0.1 (by restricting concurrency; however, this approach is unsat-) 45.65 241.29 P
+1.13 (isfactory in general, as it often interferes with the flexible) 45.65 230.29 P
+(management of group activity.) 45.65 219.29 T
+0.85 (The problem is that the mechanisms which are encoded in) 45.65 202.29 P
+2.62 (the software make premature commitments to particular) 45.65 191.29 P
+0.89 (styles of working. This problem compounded in designing) 45.65 180.29 P
+0.75 (toolkits for CSCW, since the \050toolkit\051 mechanisms and the) 45.65 169.29 P
+1.31 (application are designed in isolation. This is not simply a) 45.65 158.29 P
+-0.12 (case of a poorly-designed toolkit. The problem is inevitable,) 45.65 147.29 P
+-0.25 (because providing working software means that decisions of) 45.65 136.29 P
+0.2 (this sort have to be made, one way or another, in the course) 45.65 125.29 P
+(of implementation.) 45.65 114.29 T
+309.53 96.95 549.65 762.95 R
+7 X
+V
+0 X
+-0.31 (What we have observed here is that the semantics of specific) 309.53 756.29 P
+0.22 (applications can be exploited to increase concurrency while) 309.53 745.29 P
+2.34 (maintaining adequate consistency in a collaborative data) 309.53 734.29 P
+0.15 (store. By looking in detail at the semantic properties of par-) 309.53 723.29 P
+1.07 (ticular actions in a CSCW system, we can find operations) 309.53 712.29 P
+-0.32 (which can be performed in parallel without leading to incon-) 309.53 701.29 P
+1.41 (sistency. This approach has been exploited in Prospero, a) 309.53 690.29 P
+1.04 (toolkit for collaborative applications which uses metalevel) 309.53 679.29 P
+0.99 (techniques to allow application developers to reach in and) 309.53 668.29 P
+2.84 (tailor toolkit structures and behaviours to the particular) 309.53 657.29 P
+-0.22 (needs of applications. The use of explicit semantic represen-) 309.53 646.29 P
+1.65 (tations to tie toolkit-level consistency management to the) 309.53 635.29 P
+1.55 (specifics of application functionality is one aspect of this) 309.53 624.29 P
+(use.) 309.53 613.29 T
+-0.05 (This paper has introduced the notion of) 309.53 596.29 P
+3 F
+-0.05 (consistency guaran-) 468.88 596.29 P
+2.77 (tees) 309.53 585.29 P
+0 F
+2.77 ( as a technique to increase the effectiveness of the) 325.08 585.29 P
+0.98 (explicit semantics approach. Essentially, consistency guar-) 309.53 574.29 P
+2.25 (antees generalise locks, regarding them as guarantees of) 309.53 563.29 P
+1.85 (some level of achievable consistency. This more flexible) 309.53 552.29 P
+2.81 (interpretation allows applications to balance freedom of) 309.53 541.29 P
+-0.4 (action against eventual consistency as appropriate to the par-) 309.53 530.29 P
+-0.12 (ticular circumstances of use. In addition, by allowing clients) 309.53 519.29 P
+1.9 (to break their promises of future activity \050and hence not) 309.53 508.29 P
+0.14 (holding the server to its guarantee of later consistency\051, and) 309.53 497.29 P
+1.47 (by falling back to a model of syntactic consistency when) 309.53 486.29 P
+0.18 (necessary, we can support opportunistic work without com-) 309.53 475.29 P
+-0.21 (pletely abandoning the synchronisation of parallel activities.) 309.53 464.29 P
+0.94 (Prospero provides a framework in which application func-) 309.53 447.29 P
+1.41 (tionality and semantics can be integrated directly into the) 309.53 436.29 P
+-0.24 (toolkit. The result is a level of flexibility beyond that obtain-) 309.53 425.29 P
+-0.57 (able with traditional toolkits, in which application details can) 309.53 414.29 P
+1.43 (play no part in the operation of toolkit mechanisms. This) 309.53 403.29 P
+0.87 (flexibility takes two forms. The first is that the toolkit can) 309.53 392.29 P
+0.09 (efficiently support a wider range of applications than would) 309.53 381.29 P
+0.27 (otherwise be the case, since the toolkit structures can them-) 309.53 370.29 P
+-0.29 (selves be specialised and adapted to new circumstances. The) 309.53 359.29 P
+0.67 (second is that applications can be used more flexibly since) 309.53 348.29 P
+0.65 (they more directly accommodate a range of working styles) 309.53 337.29 P
+(and interactional requirements.) 309.53 326.29 T
+0.3 (In developing collaborative applications it\325s critical that we) 309.53 309.29 P
+0.87 (understand the interactions between notionally \322low-level\323) 309.53 298.29 P
+0.93 (issues such as distributed data management and notionally) 309.53 287.29 P
+0.22 (\322high-level\323 issues such as individual interaction and group) 309.53 276.29 P
+0.95 (activity. Such understandings must, in turn, lead to frame-) 309.53 265.29 P
+-0.29 (works in which they can be applied broadly, rather than only) 309.53 254.29 P
+0.3 (in specific, hand-coded applications. Prospero is an attempt) 309.53 243.29 P
+1.41 (to tackle just these issues and create a framework for the) 309.53 232.29 P
+(holistic design of collaborative applications.) 309.53 221.29 T
+1 9 Q
+(Acknowledgments) 309.53 202.95 T
+0 10 Q
+-0.5 (Dik Bentley, Jon Crowcroft, John Lamping, Ellen Siegel and) 309.53 187.29 P
+-0.26 (Doug Terry made valuable contributions to the development) 309.53 176.29 P
+(of these ideas and their presentation here.) 309.53 165.29 T
+1 9 Q
+(References) 309.53 146.95 T
+0 10 Q
+2.56 ([Barghouti and Kaiser, 1991] Naser Barghouti and Gail) 309.53 131.29 P
+4.92 (Kaiser,) 309.53 120.29 P
+3 F
+4.92 (\322Concurrency Control in Advanced Database) 345.55 120.29 P
+FMENDPAGE
+%%EndPage: "9" 9
+%%Page: "10" 10
+595.3 841.9 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+42.65 61.95 551.65 84.95 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 10 Q
+0 X
+(10) 540.25 78.29 T
+45.65 96.95 285.77 762.95 R
+7 X
+V
+3 F
+0 X
+1.22 (Applications\323) 45.65 756.29 P
+0 F
+1.22 (, ACM Computing Surveys, 23\0503\051, pp. 269\320) 101.77 756.29 P
+(317, September 1991.) 45.65 745.29 T
+0.92 ([Beck and Bellotti, 1993] Eevi Beck and Victoria Bellotti,) 45.65 728.29 P
+3 F
+11.28 (\322Informed Opportunism as Strategy: Supporting) 45.65 717.29 P
+1.07 (Coordination in Distributed Collaborative Writing\323) 45.65 706.29 P
+0 F
+1.07 (, Proc.) 258.86 706.29 P
+7.26 (Third European Conference on Computer-Supported) 45.65 695.29 P
+2.14 (Cooperative Work ECSCW\32593, Milano, Italy, September) 45.65 684.29 P
+(13\32017, 1993.) 45.65 673.29 T
+4.93 ([Berlage, 1994] Thomas Berlage,) 45.65 656.29 P
+3 F
+4.93 (\322A Selective Undo) 201.47 656.29 P
+5.39 (Mechanism for Graphical User Interfaces Based on) 45.65 645.29 P
+4.14 (Command Objects\323) 45.65 634.29 P
+0 F
+4.14 (, ACM Transactions on Computer-) 129.51 634.29 P
+(Human Interaction, 1\0503\051, pp. 269\320294, September 1994.) 45.65 623.29 T
+1.51 ([Demers et al, 1994] Alan Demers, Karin Petersen, Mike) 45.65 606.29 P
+1.22 (Spreitzer, Doug Terry, Marvin Theimer and Brent Welch,) 45.65 595.29 P
+3 F
+0.14 (\322The Bayou Architecture: Support for Data Sharing among) 45.65 584.29 P
+3.07 (Mobile Users\323) 45.65 573.29 P
+0 F
+3.07 (, Proc. First IEEE Workshop on Mobile) 108.44 573.29 P
+7.41 (Computing Systems and Applications, Santa Cruz,) 45.65 562.29 P
+(California, Dec 8\3209, 1994.) 45.65 551.29 T
+2.09 ([Dewan and Choudhary, 1992] Prasun Dewan and Rajiv) 45.65 534.29 P
+2.57 (Choudhary,) 45.65 523.29 P
+3 F
+2.57 (\322A High-Level and Flexible Framework for) 97.66 523.29 P
+11.49 (Implementing Multiuser User Interfaces\323) 45.65 512.29 P
+0 F
+11.49 (, ACM) 246.49 512.29 P
+1.04 (Transactions on Information Systems, 10\0504\051, pp. 345\320380,) 45.65 501.29 P
+(October 1992.) 45.65 490.29 T
+1.78 ([Dourish, 1995a] Paul Dourish,) 45.65 473.29 P
+3 F
+1.78 (\322Developing a Reflective) 181.11 473.29 P
+2.11 (Model of Collaborative Systems\323) 45.65 462.29 P
+0 F
+2.11 (, ACM Transactions on) 185.57 462.29 P
+-0.53 (Computer-Human Interaction, 2\0501\051, pp. 40\32063, March 1995.) 45.65 451.29 P
+0.64 ([Dourish, 1995b] Paul Dourish,) 45.65 434.29 P
+3 F
+0.64 (\322The Parting of the Ways:) 177.09 434.29 P
+1.31 (Divergence, Data Management and Collaborative Work\323) 45.65 423.29 P
+0 F
+1.31 (,) 283.27 423.29 P
+7.61 (Proc. European Conference on Computer-Supported) 45.65 412.29 P
+7.05 (Cooperative Work ECSCW\32595, Stockholm, Sweden,) 45.65 401.29 P
+(September 1995.) 45.65 390.29 T
+2.8 ([Dourish and Bellotti, 1992] Paul Dourish and Victoria) 45.65 373.29 P
+5.62 (Bellotti,) 45.65 362.29 P
+3 F
+5.62 (\322Awareness and Coordination in a Shared) 86.28 362.29 P
+6.42 (Workspace\323) 45.65 351.29 P
+0 F
+6.42 (, Proc. ACM Conference on Computer-) 95.64 351.29 P
+0.7 (Supported Cooperative Work CSCW\32592, Toronto, Canada,) 45.65 340.29 P
+(November 1992.) 45.65 329.29 T
+0.67 ([Farrag and Ozsu, 1989] Abdel Aziz Farrag and M. Tamer) 45.65 312.29 P
+3.86 (Ozsu,) 45.65 301.29 P
+3 F
+3.86 (\322Using Semantic Knowledge of Transactions to) 75.06 301.29 P
+2.48 (Increase Concurrency\323) 45.65 290.29 P
+0 F
+2.48 (, ACM Transactions on Database) 142.83 290.29 P
+(Systems, 14\0504\051, pp. 503\320525, December 1989.) 45.65 279.29 T
+-0.13 ([Greenberg and Marwood, 1994] Saul Greenberg and David) 45.65 262.29 P
+-0.02 (Marwood,) 45.65 251.29 P
+3 F
+-0.02 (\322Real-Time Groupware as a Distributed System:) 89.5 251.29 P
+0.22 (Concurrency Control and its Effect on the Interface\323) 45.65 240.29 P
+0 F
+0.22 (, Proc.) 259.71 240.29 P
+4.48 (ACM Conference on Computer-Supported Cooperative) 45.65 229.29 P
+3.22 (Work CSCW\32594, Chapel Hill, North Carolina, October) 45.65 218.29 P
+(1994.) 45.65 207.29 T
+2.73 ([Heath and Luff, 1992] Christian Heath and Paul Luff,) 45.65 190.29 P
+3 F
+4.74 (\324\324Collaboration and Control: Crisis Management and) 45.65 179.29 P
+4.86 (Multimedia Technology in London Underground Line) 45.65 168.29 P
+0.97 (Control Rooms\325\325) 45.65 157.29 P
+0 F
+0.97 (, Computer Supported Cooperative Work,) 114.12 157.29 P
+(1\0501\3202\051, pp. 69\32095, 1992) 45.65 146.29 T
+4.08 ([Herlihy, 1990] Maurice Herlihy,) 45.65 129.29 P
+3 F
+4.08 (\322Apologizing Versus) 198.06 129.29 P
+3.08 (Asking Permission: Optimistic Concurrency Control for) 45.65 118.29 P
+309.53 96.95 549.65 762.95 R
+7 X
+V
+0 X
+3.22 (Abstract Data Types\323) 309.53 756.29 P
+0 F
+3.22 (, ACM Transactions on Database) 403.74 756.29 P
+(Systems, 15\0501\051, pp. 96\320124, March 1990.) 309.53 745.29 T
+1.56 ([Hill et al., 1994] Ralph Hill, Tom Brinck, Steve Rohall,) 309.53 728.29 P
+4.7 (John Patterson and Wayne Wilner,) 309.53 717.29 P
+3 F
+4.7 (\322The Rendezvous) 474.68 717.29 P
+1.58 (Architecture and Language for Multi-User Applications\323) 309.53 706.29 P
+0 F
+1.58 (,) 547.15 706.29 P
+1.2 (ACM Transactions on Computer-Human Interaction, 1\0502\051,) 309.53 695.29 P
+(pp. 81\320125, June 1994.) 309.53 684.29 T
+0.86 ([Kaiser, 1994] Gail Kaiser,) 309.53 667.29 P
+3 F
+0.86 ( \322Cooperative Transactions for) 420.68 667.29 P
+2.48 (Multi-User Environments\323) 309.53 656.29 P
+0 F
+2.48 (, in Won Kim \050ed.\051, \322Modern) 420.06 656.29 P
+0.59 (Database Management: The Object Model, Interoperability) 309.53 645.29 P
+(and Beyond\323, ACM Press, New York, 1994.) 309.53 634.29 T
+0.62 ([Kiczales, 1996] Gregor Kiczales,) 309.53 617.29 P
+3 F
+0.62 (\322Beyond the Black Box:) 450.86 617.29 P
+1.04 (Open Implementation\323) 309.53 606.29 P
+0 F
+1.04 (, IEEE Software, pp. 6\32011, January) 403.06 606.29 P
+(1996.) 309.53 595.29 T
+-0.41 ([Kizcales et al., 1991] Gregor Kiczales, Jim des Rivi\217res and) 309.53 578.29 P
+0.16 (Daniel Bobrow, \322) 309.53 567.29 P
+3 F
+0.16 (The Art of the Metaobject Protocol) 380.66 567.29 P
+0 F
+0.16 (\323, MIT) 521.72 567.29 P
+(Press, Cambridge, Mass., 1991.) 309.53 556.29 T
+3.2 ([McGuffin and Olson, 1992] Lola McGuffin and Gary) 309.53 539.29 P
+0.02 (Olson,) 309.53 528.29 P
+3 F
+0.02 (\322ShrEdit: A Shared Electronic Workspace\323) 338.44 528.29 P
+0 F
+0.02 (, CSMIL) 514.07 528.29 P
+7.7 (Technical Report, Cognitive Science and Machine) 309.53 517.29 P
+(Intelligence Laboratory, University of Michigan, 1992.) 309.53 506.29 T
+1.21 ([Roseman and Greenberg, 1993] Mark Roseman and Saul) 309.53 489.29 P
+1.58 (Greenberg,) 309.53 478.29 P
+3 F
+1.58 (\322Building Flexible Groupware Through Open) 358.31 478.29 P
+1.97 (Protocols\323) 309.53 467.29 P
+0 F
+1.97 (, in Proc. ACM Conference on Organisational) 353.98 467.29 P
+0.86 (Computing Systems COOCS\32593, Milpetas, Ca., November) 309.53 456.29 P
+(1\3204, 1993.) 309.53 445.29 T
+1.21 ([Roseman and Greenberg, 1996] Mark Roseman and Saul) 309.53 428.29 P
+-0.59 (Greenberg,) 309.53 417.29 P
+3 F
+-0.59 (\322Building Real-Time Groupware with GroupKit,) 356.14 417.29 P
+1.73 (a Groupware Toolkit\323,) 309.53 406.29 P
+0 F
+1.73 ( ACM Transactions on Computer-) 405.51 406.29 P
+(Human Interaction, 3\0501\051, March 1996.) 309.53 395.29 T
+3.95 ([Terry et al, 1994] Doug Terry, Alan Demers, Karin) 309.53 378.29 P
+-0.29 (Petersen, Mike Spreitzer, Marvin Theimer and Brent Welch,) 309.53 367.29 P
+3 F
+3.86 (\322Session Guarantees for Weakly Consistent Replicated) 309.53 356.29 P
+4.01 (Data\323) 309.53 345.29 P
+0 F
+4.01 (, Proc. International Conference on Parallel and) 335.09 345.29 P
+0.14 (Distributed Information Systems, Austin, Texas, September) 309.53 334.29 P
+(1994.) 309.53 323.29 T
+2.14 ([Trevor et al., 1995] Jonathan Trevor, Tom Rodden and) 309.53 306.29 P
+-0.11 (Gordon Blair,) 309.53 295.29 P
+3 F
+-0.11 (\322COLA: A Lightweight Platform for CSCW\323) 367.37 295.29 P
+0 F
+-0.11 (,) 547.15 295.29 P
+2.06 (Computer Supported Cooperative Work, 3, pp. 197\320224,) 309.53 284.29 P
+(1995.) 309.53 273.29 T
+FMENDPAGE
+%%EndPage: "10" 10
+%%Trailer
+%%BoundingBox: 0 0 595.3 841.9
+%%PageOrder: Ascend
+%%Pages: 10
+%%DocumentFonts: Times-Roman
+%%+ Helvetica-Bold
+%%+ Times-Bold
+%%+ Times-Italic
+%%+ Courier
+%%EOF

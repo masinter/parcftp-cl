@@ -1,0 +1,4038 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 4.0, for use with Frame 4.0 products
+% This ps_prolog file is Copyright (c) 1986-1993 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameBuilder and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to True, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (4.0) def 
+/FMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	FMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto
+	show FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(PostScript Lang. Ref. Man., 2nd Ed., H.2.4 says EPS must not call X              )
+	dup dup (X) search pop exch pop exch pop length 
+	4 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+/concatprocs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin 
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/FrameNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		setrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+FMLevel1 not { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} if
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				FMPColor graymode and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not FMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	FMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgrxfer FMLOCAL
+	/orggxfer FMLOCAL
+	/orgbxfer FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/orgrproc FMLOCAL
+	/orggproc FMLOCAL
+	/orgbproc FMLOCAL
+	/organgle FMLOCAL
+	/orgrangle FMLOCAL
+	/orggangle FMLOCAL
+	/orgbangle FMLOCAL
+	/orgfreq FMLOCAL
+	/orgrfreq FMLOCAL
+	/orggfreq FMLOCAL
+	/orgbfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/edown FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /FrameNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	FMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{{1 dict dup /PageSize [paperwidth paperheight]put setpagedevice}stopped
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		 {1 dict dup /ManualFeed manualfeed put setpagedevice } stopped pop }
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			FrameNegative {
+				1 1 4 { 
+					pop { 1 exch sub } concatprocs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		FrameNegative {
+			{ 1 exch sub } concatprocs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/pagesave FMLOCAL
+/orgmatrix FMLOCAL
+/landscape FMLOCAL
+/pwid FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/initmatrix {(initmatrix) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setPatternMode {
+	FMLevel1 {
+		/bwidth  exch def
+		/bpside  exch def
+		/bstring exch def
+		/onbits 0 def  /offbits 0 def
+		freq sangle landscape {90 add} if 
+			{/y exch def
+			 /x exch def
+			 /xindex x 1 add 2 div bpside mul cvi def
+			 /yindex y 1 add 2 div bpside mul cvi def
+			 bstring yindex bwidth mul xindex 8 idiv add get
+			 1 7 xindex 8 mod sub bitshift and 0 ne FrameNegative {not} if
+			 {/onbits  onbits  1 add def 1}
+			 {/offbits offbits 1 add def 0}
+			 ifelse
+			}
+			setscreen
+		offbits offbits onbits add div FrameNegative {1.0 exch sub} if
+		/FrameCurGray exch def
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		FMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode FMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode FMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+	/rad FMLOCAL
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+      dup dup
+      24 eq { pop pop 3 mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+FMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch concatprocs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def
+	FMLevel1 {	
+		colorsetup
+		/is w d wbytes string def
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is w d wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	FMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {ip} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/d 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris} {gis} {bis} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/d 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris gis bis w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(4.0) FMVERSION
+1 1 0 0 612 792 0 1 15 FMDOCUMENT
+0 0 /Helvetica-Bold FMFONTDEFINE
+1 0 /Times-Roman FMFONTDEFINE
+2 0 /Times-Italic FMFONTDEFINE
+3 0 /Palatino-BoldItalic FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+51 37 560 60 R
+7 X
+0 0 0 1 0 0 0 K
+V
+54 72 294.12 565 R
+V
+0 9 Q
+0 X
+(Abstract) 54 559 T
+1 10 Q
+1.41 (A clear tension exists between the traditional process-ori-) 54 543.33 P
+6.81 (ented view of interface design and the emerging) 54 531.33 P
+3.25 (improvisation-oriented view of interface activity, which) 54 519.33 P
+0.67 (arises particularly from sociological investigations of com-) 54 507.33 P
+3.83 (puter-based work. This paper attempts to address this) 54 495.33 P
+0.57 (disparity and begin to bridge the gap, focussing on techno-) 54 483.33 P
+0.05 (logical foundations and implications, in a way which makes) 54 471.33 P
+-0.34 (the insights of sociological investigations \322real\323 in computa-) 54 459.33 P
+(tional design.) 54 447.33 T
+-0.15 (It presents a novel approach to interface architectures, based) 54 429.33 P
+1.65 (on the use of explicit, causally-connected self-representa-) 54 417.33 P
+4.62 (tions in computational systems. These are treated as) 54 405.33 P
+1.1 (\322accounts\323 which systems offer of their own activity. The) 54 393.33 P
+-0.2 (paper traces some of the consequences of this approach both) 54 381.33 P
+4.08 (for system design and interaction, and shows how it) 54 369.33 P
+0.09 (addresses current problems in the design of flexible interac-) 54 357.33 P
+(tive systems.) 54 345.33 T
+0 12 Q
+(1) 54 316 T
+(Introduction) 79.2 316 T
+1 10 Q
+0.16 (Over the past ten years or so, the performance of computer-) 54 295.33 P
+-0.33 (based work has increasingly become a focus of investigation) 54 283.33 P
+2.9 (for social scientists. Studies such as those of Suchman) 54 271.33 P
+-0.09 ([1987] or Heath and Luff [1992] examine work-at-the-inter-) 54 259.33 P
+2.66 (face with the same sorts of techniques and orientations) 54 247.33 P
+1.6 (which are applied to other forms of work, looking at the) 54 235.33 P
+0.16 (wider social and organisational settings in which such work) 54 223.33 P
+1.38 (takes place, and the methods by which work is organised) 54 211.33 P
+1.45 (moment-to-moment. We might expect that studies from a) 54 199.33 P
+0.98 (sociological or anthropological perspective would comple-) 54 187.33 P
+2.71 (ment those from more psychological or system-oriented) 54 175.33 P
+0.34 (standpoints. Instead, however, a tension has arisen between) 54 163.33 P
+0.99 (the general tenor of their conclusions and more traditional) 54 151.33 P
+(views of interfaces and interface design.) 54 139.33 T
+0.85 (The traditional view of interface work is strongly) 54 121.33 P
+2 F
+0.85 (process-) 260.24 121.33 P
+-0.01 (based) 54 109.33 P
+1 F
+-0.01 (. From this perspective, the function of the interface is) 77.33 109.33 P
+1.21 (to guide the user through the regularised, well-understood) 54 97.33 P
+-0.29 (sequence of actions by which some goal is reached. This tra-) 54 85.33 P
+317.88 71 558 566 R
+7 X
+V
+0 X
+2.38 (ditional view structures the way in which interfaces are) 317.88 559.33 P
+-0.29 (designed, evaluated and studied. Indeed, the regularisation it) 317.88 547.33 P
+-0.49 (embodies extends to interface design methodologies and for-) 317.88 535.33 P
+0.22 (malisms, and can be seen, for example, in the use of formal) 317.88 523.33 P
+-0.29 (\322automata\323 structures in the description of interface activity,) 317.88 511.33 P
+(from Statecharts to workflow graphs.) 317.88 499.33 T
+-0.29 (The alternative view, which arises from sociological investi-) 317.88 481.33 P
+-0.44 (gations such as those cited above, is at odds with this process) 317.88 469.33 P
+1.41 (orientation. Instead, it focuses on work as the improvised) 317.88 457.33 P
+-0.37 (management of local contingencies, and emphasises the way) 317.88 445.33 P
+1.9 (in which regularisations in the conduct of activity at the) 317.88 433.33 P
+0.86 (interface arise out of individual moment-to-moment action) 317.88 421.33 P
+0.09 (\050rather than the other way around\051. In this view, work is not) 317.88 409.33 P
+-0.57 (so much \322performed\323 as) 317.88 397.33 P
+2 F
+-0.57 (achieved) 415.56 397.33 P
+1 F
+-0.57 ( through improvisation and) 451.1 397.33 P
+(local decision-making.) 317.88 385.33 T
+0.89 (Clearly, there is a tension between these two perspectives;) 317.88 367.33 P
+1.33 (and this tension becomes particularly prominent when we) 317.88 355.33 P
+1.13 (attempt to relate the findings \050or even simply the tone\051 of) 317.88 343.33 P
+0.58 (sociological investigations to the needs of interface design.) 317.88 331.33 P
+0.42 (In this paper, my concern is to address this disparity and to) 317.88 319.33 P
+-0.02 (discuss a model of design which sits more comfortably with) 317.88 307.33 P
+0.22 (these investigations of improvised work. Our starting point,) 317.88 295.33 P
+(then, is the contrast between process and improvisation.) 317.88 283.33 T
+0 F
+(1.1) 317.88 253.33 T
+(Improvisation and Resources) 343.08 253.33 T
+1 F
+2.08 (In trying to understand how a view of improvised work) 317.88 237.33 P
+1.93 (relates to the needs of system design, we might start by) 317.88 225.33 P
+-0.29 (trying to consider the \322process\323 of improvisation itself. How) 317.88 213.33 P
+0.14 (does this process proceed, and how is it managed? Unfortu-) 317.88 201.33 P
+0.86 (nately, these questions are unwieldy and ill-formed. Long-) 317.88 189.33 P
+0.37 (term ethnographic investigations of system use seek to find) 317.88 177.33 P
+2.8 (detailed answers in very specific situation so we could) 317.88 165.33 P
+-0.04 (scarcely expect to set down general answers here. However,) 317.88 153.33 P
+0.96 (we can step back from the detailed descriptions and try to) 317.88 141.33 P
+-0.04 (draw out some general issues from the broad sweep of these) 317.88 129.33 P
+(investigations.) 317.88 117.33 T
+0.85 (Our starting point, then, is the view that the actions which) 317.88 99.33 P
+-0.5 (constitute work at the interface are locally organised; indeed,) 317.88 87.33 P
+0.3 (the work process as a whole emerges from this sequence of) 317.88 75.33 P
+54 584 558 737 R
+7 X
+V
+1 22 Q
+0 X
+(Accounting for System Behaviour:) 152.32 722.33 T
+1 20 Q
+(Representation, Re\337ection and Resourceful Action) 102.42 694.33 T
+1 12 Q
+(Paul Dourish) 274.5 655 T
+(Rank Xerox Research Centre, Cambridge Lab \050EuroPARC\051) 162.53 635 T
+(and Department of Computer Science, University College, London) 145.19 621 T
+2 F
+(dourish@europarc.xerox.com) 233.83 601 T
+54 43 558 60 R
+7 X
+V
+2 10 Q
+0 X
+(Appears in Proc. of Computers in Context \32495, Aarhus, Denmark, August 1995) 54 53.33 T
+1 F
+(.) 369.82 53.33 T
+FMENDPAGE
+%%EndPage: "1" 1
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+51 37 560 60 R
+7 X
+0 0 0 1 0 0 0 K
+V
+54 72 294.12 738 R
+V
+1 10 Q
+0 X
+-0.46 (locally improvised actions. If our goal is to support this char-) 54 731.33 P
+1.38 (acter of work, then a critical focus of design must be the) 54 719.33 P
+-0.19 (provision of the information or) 54 707.33 P
+2 F
+-0.19 (resources) 179.43 707.33 P
+1 F
+-0.19 ( which support and) 218.31 707.33 P
+0.18 (inform the decision-making process, rather than the formal-) 54 695.33 P
+(isation and encoding of the process itself.) 54 683.33 T
+-0.44 (This notion of design around resources reflects a concern not) 54 665.33 P
+0.01 (simply with the) 54 653.33 P
+2 F
+0.01 (how) 118.77 653.33 P
+1 F
+0.01 ( we go about system design\321such as is) 135.44 653.33 P
+0.03 (a central concern of Participatory Design, for example\321but) 54 641.33 P
+-0.29 (with the) 54 629.33 P
+2 F
+-0.29 (artifacts) 88.42 629.33 P
+1 F
+-0.29 ( of that design process. It suggests a change) 121.76 629.33 P
+-0.17 (in the structure of computational systems we build, and later) 54 617.33 P
+-0.32 (I will introduce a model of computation which provides sup-) 54 605.33 P
+0.1 (port for this form of design. The principle of explicit design) 54 593.33 P
+4.94 (around resources for local decision-making has been) 54 581.33 P
+3.78 (observed elsewhere \050e.g. [Dourish and Bellotti, 1992];) 54 569.33 P
+2.76 ([Dourish, 1993]; [Robinson, 1993]\051, but here I want to) 54 557.33 P
+1.72 (explore it more explicitly, and follow through the conse-) 54 545.33 P
+(quences for the interactive systems we design.) 54 533.33 T
+0.96 (It would be foolish to imagine that the design process can) 54 515.33 P
+0.16 (capture) 54 503.33 P
+2 F
+0.16 (all) 86.09 503.33 P
+1 F
+0.16 ( the relevant information which informs and sup-) 96.65 503.33 P
+1.05 (ports the improvisation of computer-based work. Even for) 54 491.33 P
+0.01 (this most restricted domain, this would be not only impossi-) 54 479.33 P
+-0.02 (ble, but wrong-headed. The factors underlying such situated) 54 467.33 P
+-0.38 (activity are unbounded, and derive not only from the system,) 54 455.33 P
+0.37 (but also from knowledge of social and organisational situa-) 54 443.33 P
+1.16 (tions, from ongoing interactions with others, and so forth.) 54 431.33 P
+1.1 (Rather, what is proposed here is a model of design which) 54 419.33 P
+-0.2 (reveals some information which may be of value; and which) 54 407.33 P
+0.49 (is sensitive to the improvised character of use. So there are) 54 395.33 P
+2.07 (various reasonable questions we) 54 383.33 P
+2 F
+2.07 (can) 193.91 383.33 P
+1 F
+2.07 ( ask. What kinds of) 208.35 383.33 P
+0.6 (information can systems provide which may be of value in) 54 371.33 P
+0.53 (supporting improvisation in various contexts? What does it) 54 359.33 P
+0.48 (mean to take this as a focus of system design? How deep a) 54 347.33 P
+(change to our model of systems is implied?) 54 335.33 T
+-0.43 (I will begin by looking at important factors which shape how) 54 317.33 P
+-0.05 (people interact with systems, and in particular, how systems) 54 305.33 P
+0.57 (present models of their operation. I will then go on to con-) 54 293.33 P
+-0.01 (sider the status of such models in existing systems, and how) 54 281.33 P
+-0.6 (we can exploit them to bridge between the conclusions of use) 54 269.33 P
+(analysis and the needs of system design.) 54 257.33 T
+0 12 Q
+(2) 54 228 T
+(Operation and State) 79.2 228 T
+1 10 Q
+-0.32 (When an individual uses a computer system to achieve some) 54 207.33 P
+-0.18 (work, it is clear that an important resource in the improvised) 54 195.33 P
+-0.63 (accomplishment of their activity is their belief about the) 54 183.33 P
+2 F
+-0.63 (state) 275.23 183.33 P
+1 F
+1.48 (of the system. What is it doing? How much has it done?) 54 171.33 P
+0.63 (What will it do next? These questions are based on system) 54 159.33 P
+-0.32 (state, and shape the sequential organisation of action, but the) 54 147.33 P
+-0.23 (state information itself is not intrinsically valuable. A user is) 54 135.33 P
+0.86 (generally engaged in accomplishing some other work with) 54 123.33 P
+1.56 (the system, rather than performing a detailed study of its) 54 111.33 P
+0.51 (behaviour; and so what\325s really important to the user is the) 54 99.33 P
+2 F
+0.13 (relationship) 54 87.33 P
+1 F
+0.13 ( between the state of the system and the state of) 102.34 87.33 P
+0.04 (the work which the user is trying to accomplish. When such) 54 75.33 P
+317.88 72 558 738 R
+7 X
+V
+0 X
+-0.09 (a relationship can be established, then information about the) 317.88 731.33 P
+0.68 (state of the system can be used to understand and organise) 317.88 719.33 P
+(on-going working activity.) 317.88 707.33 T
+3.63 (Relevant state information is readily apparent in most) 317.88 689.33 P
+0.02 (devices which we deal with day to day. Visual access, oper-) 317.88 677.33 P
+6.97 (ating noises and observable behaviour all provide) 317.88 665.33 P
+3.95 (information about the system\325s state from moment to) 317.88 653.33 P
+0.13 (moment; we can see and hear information about the state of) 317.88 641.33 P
+1.44 (devices and mechanisms which we might want to use. In) 317.88 629.33 P
+0.78 (saying that, though, it\325s important to recognise the distinc-) 317.88 617.33 P
+-0.12 (tion between what we see and hear, and what we understand) 317.88 605.33 P
+2.66 (about device state. On their own, the various resources) 317.88 593.33 P
+0.57 (accessible to use aren\325t of much use; some other context is) 317.88 581.33 P
+(needed before they become meaningful.) 317.88 569.33 T
+0.82 (In particular, a user\325s view of the relationship between the) 317.88 551.33 P
+0.66 (state of the system and the state of the activity is rooted in) 317.88 539.33 P
+2.26 (some belief\321however incomplete, inaccurate or naive\321) 317.88 527.33 P
+1.93 (about) 317.88 515.33 P
+2 F
+1.93 (how the system works) 344.53 515.33 P
+1 F
+1.93 (. This is true for all devices) 437.26 515.33 P
+-0.32 (which mediate or support our activity. For instance, the vari-) 317.88 503.33 P
+-0.37 (ety of resources which support the activity of driving a car\321) 317.88 491.33 P
+0.29 (such as the sound of the engine and the feel of the clutch\321) 317.88 479.33 P
+0.6 (are useful only within the context of some model of how a) 317.88 467.33 P
+0.49 (car works, or at least simple understandings such as that of) 317.88 455.33 P
+2.07 (the relationship between engine pitch and the rev count.) 317.88 443.33 P
+0.42 (Such an understanding allows a user \050or driver\051 to interpret) 317.88 431.33 P
+0.2 (not only the information, but also its consequences for their) 317.88 419.33 P
+0.22 (activity. By the same token, activity \050particularly \322situated\323) 317.88 407.33 P
+0.23 (activity\051 is organised around, and depends upon, these sorts) 317.88 395.33 P
+0.71 (of understandings; they allow us to mediate between ques-) 317.88 383.33 P
+-0.5 (tions like, \322what is the system doing?\323, \322what do I want to do) 317.88 371.33 P
+(next?\323, and \322how should I go about it?\323.) 317.88 359.33 T
+-0.37 (Where do such understandings come from? Obviously, there) 317.88 341.33 P
+1.41 (are many sources; and so everybody\325s understandings are) 317.88 329.33 P
+1.23 (highly personalised. One of the most important sources is) 317.88 317.33 P
+0.89 (our own everyday experiences, and the general pictures of) 317.88 305.33 P
+-0.21 (structure and causality which we build up as a result of daily) 317.88 293.33 P
+0.47 (interactions with all sorts of devices. Other sources include) 317.88 281.33 P
+-0.25 (the experiences of others, related through stories, advice and) 317.88 269.33 P
+-0.53 (anecdotes; whole others again come from more formal learn-) 317.88 257.33 P
+1.6 (ing and instruction procedures\321courses, manuals, and so) 317.88 245.33 P
+-0.61 (forth. One other important source is essentially) 317.88 233.33 P
+2 F
+-0.61 (cultural) 504.11 233.33 P
+1 F
+-0.61 (\321the) 535.78 233.33 P
+2.31 (everyday understandings of devices which we gain as a) 317.88 221.33 P
+1.25 (result of living in a world of Euclidean space, Newtonian) 317.88 209.33 P
+(mechanics and the internal combustion engine.) 317.88 197.33 T
+0.16 (Clearly, however, one of the most important components of) 317.88 179.33 P
+-0.02 (this understanding is the) 317.88 167.33 P
+2 F
+-0.02 (story the system tells about itself) 417.81 167.33 P
+1 F
+-0.02 (\321) 548 167.33 P
+0.29 (its presentation of its own operation and state \050and the rela-) 317.88 155.33 P
+4.01 (tionship between the two\051. Certain aspects of such a) 317.88 143.33 P
+0.27 (presentation are explicit, being part of the way in which we) 317.88 131.33 P
+0.88 (might interact with a device; others may be more implicit,) 317.88 119.33 P
+-0.23 (such as the noises which devices make in operation. Explicit) 317.88 107.33 P
+(or implicit, though, they all contribute to the story.) 317.88 95.33 T
+FMENDPAGE
+%%EndPage: "2" 2
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+51 37 560 60 R
+7 X
+0 0 0 1 0 0 0 K
+V
+54 72 294.12 738 R
+V
+1 10 Q
+0 X
+0.48 (However, computational \322devices\323 \050software systems\051 tend) 54 731.33 P
+0.02 (not to be physically embodied\321a printer is embodied, but a) 54 719.33 P
+0.06 (network filesystem is not) 54 707.33 P
+1 8 Q
+0.05 (1) 155.02 711.33 P
+1 10 Q
+0.06 (. So the presentation of this infor-) 159.02 707.33 P
+0.85 (mation\321the story that the system tells about itself\321arises) 54 695.33 P
+0.13 (primarily at the user interface) 54 683.33 P
+1 8 Q
+0.11 (2) 172.83 687.33 P
+1 10 Q
+0.13 (. Aspects of the interface and) 176.83 683.33 P
+0.67 (the way it behaves are suggestive of the system\325s capabili-) 54 671.33 P
+-0.01 (ties, and of the sorts of temporal or causal constraints acting) 54 659.33 P
+-0.21 (on it. Along with all the other factors cited above, these con-) 54 647.33 P
+3.44 (tribute to the understanding the user builds up of the) 54 635.33 P
+0.85 (systems\325s operation and the relationship of its components) 54 623.33 P
+0.93 (and activity to the work the user is attempting to perform.) 54 611.33 P
+1.23 (Again, this presentation has both explicit aspects \050) 54 599.33 P
+2 F
+1.23 (e.g.) 263.73 599.33 P
+1 F
+1.23 (the) 281.9 599.33 P
+0.03 (iconic representations in direct manipulation interfaces\051 and) 54 587.33 P
+1.75 (implicit ones \050) 54 575.33 P
+2 F
+1.75 (e.g.) 115.29 575.33 P
+1 F
+1.75 ( the dynamic or temporal properties of) 129.73 575.33 P
+(interactions\051.) 54 563.33 T
+0.68 (Although the implications are much broader, the work dis-) 54 545.33 P
+1.84 (cussed in this paper is focussed very specifically on this) 54 533.33 P
+1.13 (issue\321how a system presents a story about its actions. In) 54 521.33 P
+1.38 (particular, I will be concerned with the way in which the) 54 509.33 P
+2.2 (interface represents and conveys this information. Tradi-) 54 497.33 P
+6.33 (tional interfaces may work hard to convey useful) 54 485.33 P
+-0.49 (information about ongoing action; however, since traditional) 54 473.33 P
+-0.46 (interface design is so heavily organised around the \322process\323) 54 461.33 P
+0.12 (model, this doesn\325t address the problem of directly support-) 54 449.33 P
+0.39 (ing the improvised nature of working activity. Here, then, I) 54 437.33 P
+0.11 (will focus particularly on the implications of telling a richer) 54 425.33 P
+-0.57 (story at the interface, and doing so precisely to move towards) 54 413.33 P
+0.37 (a model of design motivated primarily by situated accounts) 54 401.33 P
+(of everyday activity.) 54 389.33 T
+0.22 (Before considering how systems might embody and manip-) 54 371.33 P
+1.49 (ulate such \322stories\323, I will first discuss how they arise in) 54 359.33 P
+(traditional systems.) 54 347.33 T
+0 12 Q
+(3) 54 318 T
+(Connection and Disconnection) 79.2 318 T
+1 10 Q
+-0.34 (Given the importance of this aspect of the interface, we must) 54 297.33 P
+1.51 (ask, what is the relationship between the presentation the) 54 285.33 P
+-0.26 (interface offers and the) 54 273.33 P
+2 F
+-0.26 (actual) 147.93 273.33 P
+1 F
+-0.26 ( operation of the system? How) 172.93 273.33 P
+2.07 (is this relationship structured, and how is it maintained?) 54 261.33 P
+-0.07 (These are important questions, and they lead us to identify a) 54 249.33 P
+3.08 (problem in maintaining this relationship\321a problem of) 54 237.33 P
+2 F
+(connection) 54 225.33 T
+1 F
+(.) 97.88 225.33 T
+0.11 (The issue here is not how information about system activity) 54 207.33 P
+-0.15 (should be presented to the user, but rather, how the interface) 54 195.33 P
+0.88 (component can find out what\325s going on in the first place.) 54 183.33 P
+-0.32 (There are essentially two ways that an interface can discover) 54 171.33 P
+0.14 (information about the activity of underlying system compo-) 54 159.33 P
+0.52 (nents. The first is that it may be constructed with a built-in) 54 147.33 P
+54 118 294.12 132.98 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+54 118 294.12 132.98 R
+7 X
+0 0 0 1 0 0 0 K
+V
+54 129 198 129 2 L
+V
+0.5 H
+2 Z
+0 X
+N
+0 0 612 792 C
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(1. Or rather) 54 112 T
+(, the embodiment is generally not a part of the user) 95.37 112 T
+(\325) 278.93 112 T
+(s) 281.43 112 T
+(world.) 54 102 T
+-0.39 (2. Note the familiar corollary\321that any aspect of the system which) 54 89 P
+(reveals information) 54 79 T
+2 F
+(is) 126.49 79 T
+1 F
+( part of the interface.) 132.49 79 T
+317.88 72 558 738 R
+7 X
+V
+1 10 Q
+0 X
+-0.12 (\322understanding\323 of the way in which the underlying compo-) 317.88 731.33 P
+1.85 (nents operate. Since the interface software is constructed) 317.88 719.33 P
+-0.38 (with information about the semantics and the structure of the) 317.88 707.33 P
+0.66 (other system components to which it provides a user inter-) 317.88 695.33 P
+0.74 (face, it can accurately present a view of their operation. In) 317.88 683.33 P
+0.85 (view of the strong connection between the application and) 317.88 671.33 P
+1.1 (interface, I\325ll call this the) 317.88 659.33 P
+2 F
+1.1 (connected) 426.68 659.33 P
+1 F
+1.1 ( strategy. The second,) 467.22 659.33 P
+2 F
+0.66 (disconnected) 317.88 647.33 P
+1 F
+0.66 ( strategy is perhaps more common in modern,) 370.09 647.33 P
+2.1 (\322open\323 systems. In this approach, the interface has little) 317.88 635.33 P
+0.1 (understanding of the workings of other system components,) 317.88 623.33 P
+-0.5 (which may actually have been created later than the interface) 317.88 611.33 P
+0.7 (itself, and so it must infer aspects of application behaviour) 317.88 599.33 P
+2.2 (from lower-level information \050network and disk activity,) 317.88 587.33 P
+0.54 (memory usage,) 317.88 575.33 P
+2 F
+0.54 (etc.) 382.55 575.33 P
+1 F
+0.54 (\051. Essentially, it) 396.71 575.33 P
+2 F
+0.54 (interprets) 463.6 575.33 P
+1 F
+0.54 ( this informa-) 502.49 575.33 P
+0.23 (tion according to some set of conventions about application) 317.88 563.33 P
+0.94 (structure and behaviour; perhaps the conventions that sup-) 317.88 551.33 P
+(port a particular interface metaphor.) 317.88 539.33 T
+2.28 (However, there are serious problems with each of these) 317.88 521.33 P
+1.02 (approaches. The connected approach is the more accurate,) 317.88 509.33 P
+2.21 (since it gives interfaces direct access to the structure of) 317.88 497.33 P
+3.42 (underlying components and applications. However, this) 317.88 485.33 P
+-0.26 (accuracy is bought at the expense of modularity and extensi-) 317.88 473.33 P
+0.14 (bility. Modularity is broken because there are now a variety) 317.88 461.33 P
+1.89 (of complex semantic relationships between details of the) 317.88 449.33 P
+-0.05 (interface behaviour and details of the application behaviour.) 317.88 437.33 P
+0.82 (The two are linked by a web of complex interconnections,) 317.88 425.33 P
+0.23 (making it very difficult to change one without necessitating) 317.88 413.33 P
+-0.23 (changing the other. This is regarded as bad practice; but per-) 317.88 401.33 P
+0.47 (haps, if it were the only problem, it would just be the price) 317.88 389.33 P
+-0.18 (we have to pay for effective interface design. Unfortunately,) 317.88 377.33 P
+-0.4 (it\325s not the only problem. Perhaps more critically,) 317.88 365.33 P
+2 F
+-0.4 (extensibil-) 516.34 365.33 P
+2.69 (ity) 317.88 353.33 P
+1 F
+2.69 ( is also broken. Because of the complex relationship) 327.88 353.33 P
+0.11 (between interface and application, a new application cannot) 317.88 341.33 P
+0.94 (be added later once the interface structure is in place. The) 317.88 329.33 P
+-0.57 (interface and application cannot be designed in isolation, and) 317.88 317.33 P
+0.42 (so a new application cannot be added without changing the) 317.88 305.33 P
+-0.57 (internals of the interface software. The result is that this solu-) 317.88 293.33 P
+-0.22 (tion is simply inappropriate for generic interfaces, toolboxes) 317.88 281.33 P
+0.08 (and libraries, which provide standard interface functionality) 317.88 269.33 P
+(to a range of applications.) 317.88 257.33 T
+0.11 (So what of the disconnected approach? The problem here is) 317.88 239.33 P
+1.68 (that, while it is modular and extensible, it is not reliably) 317.88 227.33 P
+1.37 (accurate. The relationship between the low-level informa-) 317.88 215.33 P
+2.83 (tion it uses and the higher-level inferences it makes is) 317.88 203.33 P
+-0.53 (complex and imprecise. Also, there are problems of synchro-) 317.88 191.33 P
+1.05 (nisation. Because the representations of activity which the) 317.88 179.33 P
+1.74 (disconnected approach manipulates are implicit, its infer-) 317.88 167.33 P
+1.06 (ences can be consistent with the available information but) 317.88 155.33 P
+1.72 (out-of-step with the actual behaviour of the system. This) 317.88 143.33 P
+2.24 (approach, then, is largely heuristic; and so it\325s accuracy) 317.88 131.33 P
+(cannot be relied upon, particularly for detailed information.) 317.88 119.33 T
+-0.6 (Essentially, the connected approach is) 317.88 101.33 P
+2 F
+-0.6 (too) 469.83 101.33 P
+1 F
+-0.6 ( connected, and the) 482.61 101.33 P
+(disconnected approach is) 317.88 89.33 T
+2 F
+(too) 420.91 89.33 T
+1 F
+( disconnected.) 433.69 89.33 T
+FMENDPAGE
+%%EndPage: "3" 3
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+51 37 560 60 R
+7 X
+0 0 0 1 0 0 0 K
+V
+54 72 294.12 549 R
+V
+0 10 Q
+0 X
+(3.1) 54 542.33 T
+(Example: Duplex Copying) 79.2 542.33 T
+1 F
+0.8 (Let\325s pause to consider an example as a way of grounding) 54 526.33 P
+-0.26 (this problem. Imagine a digital photocopier. It offers various) 54 514.33 P
+0.3 (familiar system services\321such as copying, scanning, print-) 54 502.33 P
+6.25 (ing, faxing\321as well as other computationally-based) 54 490.33 P
+1.25 (functions, such as image analysis, storage/retrieval and so) 54 478.33 P
+-0.04 (forth. A generic user interface system provides the means to) 54 466.33 P
+2.96 (control these various services, perhaps remotely over a) 54 454.33 P
+(network.) 54 442.33 T
+-0.26 (Somebody wishes to use the copying service to copy a paper) 54 424.33 P
+1.62 (document. The paper document is 20 pages long, printed) 54 412.33 P
+-0.17 (double-sided \050) 54 400.33 P
+2 F
+-0.17 (i.e.) 111.32 400.33 P
+1 F
+-0.17 ( 10 sheets\051, and the user requests 6 double-) 123.54 400.33 P
+-0.51 (sided \050\322duplex\323\051 copies. Half way through the job, the copier) 54 388.33 P
+(runs out of paper and halts.) 54 376.33 T
+0.09 (What state is the machine in? How many copies has it com-) 54 358.33 P
+0.54 (pleted? Has it made 3 complete copies of the document, or) 54 346.33 P
+1.16 (has it made 6 half-copies? The answer isn\325t clear; in fact,) 54 334.33 P
+0.02 (since copiers work in different ways, it could well be either.) 54 322.33 P
+-0.25 (However, the critical question is here concerns the interface,) 54 310.33 P
+1.56 (not the copier) 54 298.33 P
+2 F
+1.56 (per se) 116.18 298.33 P
+1 F
+1.56 (. How does the interface component) 141.9 298.33 P
+0.43 (react to this situation? What does it tell the user is the state) 54 286.33 P
+-0.54 (of the device? And, given that this is a generic interface com-) 54 274.33 P
+0.7 (ponent which was constructed separately from the copier\325s) 54 262.33 P
+-0.29 (other services, how does the interface component even) 54 250.33 P
+2 F
+-0.29 (know) 273.01 250.33 P
+1 F
+(what to tell the user, or how to find out the state?) 54 238.33 T
+-0.45 (This situation doesn\325t simply arise from \322exceptional\323 cases,) 54 220.33 P
+0.85 (such as empty paper trays, paper jams and the like. It also) 54 208.33 P
+-0.59 (occurs at any point at which the user has to make an) 54 196.33 P
+2 F
+-0.59 (informed) 258.01 196.33 P
+0.6 (judgement) 54 184.33 P
+1 F
+0.6 ( about what to do next, such as whether to inter-) 95.66 184.33 P
+2.57 (rupt the job to allow someone else to use the machine) 54 172.33 P
+0.02 (urgently, whether it\325s worth stopping to adjust copy quality,) 54 160.33 P
+1.53 (and so forth. Even the decision to go and use a different) 54 148.33 P
+3.08 (copier requires an assessment of the current machine\325s) 54 136.33 P
+0.68 (behaviour. What these situations have in common with the) 54 124.33 P
+0.8 (exception case of an empty paper tray is that, as users, we) 54 112.33 P
+0.32 (must rely on the interface to support and inform our action,) 54 100.33 P
+-0.12 (even when we find ourselves stepping outside the routinised) 54 88.33 P
+0.03 (\322process\323 which the interface embodies. When the interface) 54 76.33 P
+317.88 72 558 549 R
+7 X
+V
+0 X
+0.85 (presents system activity purely in terms of the routine\321or) 317.88 542.33 P
+-0.39 (when its connection to the underlying system service gives it) 317.88 530.33 P
+-0.61 (no more information than that\321then we encounter the famil-) 317.88 518.33 P
+4.56 (iar tension between technological rigidity and human) 317.88 506.33 P
+(flexibility.) 317.88 494.33 T
+0 12 Q
+(4) 317.88 465 T
+(Open Implementations) 343.08 465 T
+1 10 Q
+-0.17 (A potential solution to this general problem is to be found in) 317.88 444.33 P
+1.57 (another area of computer science where similar problems) 317.88 432.33 P
+3.27 (with the mappings between high-level descriptions and) 317.88 420.33 P
+-0.48 (lower-level actions have arisen.) 317.88 408.33 P
+2 F
+-0.48 (Open implementations) 445.09 408.33 P
+1 F
+-0.48 ( [Kic-) 534.88 408.33 P
+0.05 (zales, 1992] arose originally as an approach to the design of) 317.88 396.33 P
+-0.3 (programming languages, balancing elegance and descriptive) 317.88 384.33 P
+-0.37 (power in the language against efficiency over a range of spe-) 317.88 372.33 P
+-0.06 (cific implementations. More generally, however, it has been) 317.88 360.33 P
+-0.15 (applied to a range of areas of system architecture and design) 317.88 348.33 P
+0.26 (which share a range of common problems, focussed around) 317.88 336.33 P
+(the issue of) 317.88 324.33 T
+2 F
+(abstraction.) 365.93 324.33 T
+1 F
+2.52 (Traditionally, the notion of abstraction, as derived from) 317.88 306.33 P
+-0.01 (mathematics, has been one of the most powerful tools in the) 317.88 294.33 P
+1.22 (creation of software systems. The \322black box\323 abstraction) 317.88 282.33 P
+1.25 (\050as illustrated in figure 1a\051) 317.88 270.33 P
+2 F
+1.25 (encapsulates) 432.74 270.33 P
+1 F
+1.25 ( certain structures) 484.4 270.33 P
+1.2 (and behaviours and makes them available to other system) 317.88 258.33 P
+-0.06 (components through an) 317.88 246.33 P
+2 F
+-0.06 (abstraction barrier) 414.08 246.33 P
+1 F
+-0.06 (. The barrier iso-) 490.98 246.33 P
+4.82 (lates the) 317.88 234.33 P
+2 F
+4.82 (implementation) 363.08 234.33 P
+1 F
+4.82 ( of the abstraction from the) 425.3 234.33 P
+-0.02 (components which use it \050its) 317.88 222.33 P
+2 F
+-0.02 (clients) 434.74 222.33 P
+1 F
+-0.02 (\051. This separation serves) 460.85 222.33 P
+1.03 (two functions. First, it makes it possible to reuse software) 317.88 210.33 P
+0.71 (components without having to understand all the details of) 317.88 198.33 P
+-0.15 (their construction. Since the developer of the client software) 317.88 186.33 P
+0.67 (need only understand how to use the abstraction which the) 317.88 174.33 P
+-0.24 (software presents in order to make use of it, much larger and) 317.88 162.33 P
+0.57 (more complex software systems can be built by combining) 317.88 150.33 P
+0.34 (and reusing component modules. Abstraction aids the) 317.88 138.33 P
+2 F
+0.34 (man-) 537.45 138.33 P
+1.75 (ageability) 317.88 126.33 P
+1 F
+1.75 ( of large problems. Second, it allows the client) 357.88 126.33 P
+-0.14 (software to be independent of the details of the abstraction\325s) 317.88 114.33 P
+0.26 (implementation. Since the client refers only to the elements) 317.88 102.33 P
+-0.23 (of the abstraction itself, rather than to elements of the imple-) 317.88 90.33 P
+1.05 (mentation, any implementation which accords to the same) 317.88 78.33 P
+53.38 558 557.38 738 R
+7 X
+V
+145.2 610.6 246 648.4 R
+3 X
+V
+0.5 H
+2 Z
+0 X
+N
+152.01 672.31 157.8 692.5 163.59 672.31 157.8 672.31 4 Y
+V
+157.8 654.7 157.8 672.31 2 L
+3 H
+N
+227.61 672.31 233.4 692.5 239.19 672.31 233.4 672.31 4 Y
+V
+233.4 654.7 233.4 672.31 2 L
+N
+202.41 672.31 208.2 692.5 213.99 672.31 208.2 672.31 4 Y
+V
+208.2 654.7 208.2 672.31 2 L
+N
+145.2 654.7 246 654.7 2 L
+N
+145.2 692.5 246 724 R
+0.5 H
+N
+327 610.6 427.8 648.4 R
+N
+409.41 672.31 415.2 692.5 420.99 672.31 415.2 672.31 4 Y
+V
+415.2 654.7 415.2 672.31 2 L
+3 H
+N
+384.21 672.31 390 692.5 395.79 672.31 390 672.31 4 Y
+V
+390 654.7 390 672.31 2 L
+N
+370.59 674.89 364.8 654.7 359.01 674.89 364.8 674.89 4 Y
+V
+364.8 690.83 364.8 674.89 2 L
+N
+333.81 672.31 339.6 692.5 345.39 672.31 339.6 672.31 4 Y
+V
+339.6 654.7 339.6 672.31 2 L
+N
+327 654.7 427.8 654.7 2 L
+N
+440.4 648.4 440.4 610.6 2 L
+N
+0.5 H
+90 450 4.2 4.55 350.1 631.25 A
+90 450 4.2 4.55 366.2 620.75 A
+90 450 4.2 4.55 374.6 636.15 A
+90 450 4.2 4.55 413.1 636.15 A
+389.65 614.1 407.85 621.8 R
+N
+414.15 631.6 404.35 621.8 2 L
+N
+379.15 635.1 408.69 635.1 2 L
+N
+354.65 632.3 370.75 635.8 2 L
+N
+373.44 631.75 368.65 624.6 2 L
+N
+353.95 628.1 363.75 623.9 2 L
+N
+377.69 632.75 395.95 621.8 2 L
+N
+458.73 651.87 440.17 642.1 450.73 660.22 454.73 656.05 4 Y
+V
+454.77 656.04 M
+ 458.68 667.54 454.43 682.84 445.15 692.11 D
+ 441.27 695.98 436.36 704.28 427.8 705.1 D
+3 H
+N
+442.78 700.73 429.54 717 449.39 710.22 446.08 705.48 4 Y
+V
+440.4 623.2 M
+ 464.64 628.88 472.15 655.37 466.3 677.1 D
+ 463.07 689.09 455.22 698.1 446.13 705.47 D
+N
+327 692.5 427.8 724 R
+0.5 H
+N
+1 11 Q
+(a.) 192 589 T
+(b.) 372 589 T
+102 558 507 580 R
+7 X
+V
+1 9 Q
+0 X
+(FIGURE 1: \050a\051 Clients interaction with traditional black-box abstractions through standard abstraction barriers.) 102 574 T
+(\050b\051 Open implementations also reveal inherent structure.) 102 565 T
+187.92 674.89 182.13 654.7 176.34 674.89 182.13 674.89 4 Y
+V
+182.13 690.83 182.13 674.89 2 L
+3 H
+N
+1 8 Q
+(abstraction) 271.17 669.9 T
+(barrier) 276.34 662.73 T
+258.92 659.22 247.22 656.57 255.74 665.02 257.33 662.12 4 Y
+V
+269.37 668.71 257.34 662.11 2 L
+0.5 H
+N
+317.06 663.95 324.36 654.43 313.12 658.64 315.09 661.29 4 Y
+V
+305.08 668.71 315.1 661.29 2 L
+N
+(client) 278.47 722.02 T
+316.45 714.82 325.79 707.29 313.88 708.73 315.16 711.77 4 Y
+V
+296.88 719.5 315.17 711.77 2 L
+N
+259.15 709.26 247.22 708 256.67 715.4 257.91 712.33 4 Y
+V
+275.63 719.5 257.92 712.33 2 L
+N
+(revealed) 274.37 626.93 T
+(structure) 274.37 620.71 T
+329.8 630.6 341.51 628 330.2 624 330 627.3 4 Y
+V
+303.8 625.71 330 627.3 2 L
+N
+(\322meta-level\323) 461.51 613 T
+(interface) 467.23 605 T
+450.85 607.53 439.5 611.43 451.19 614.14 451.02 610.83 4 Y
+V
+464.37 610.14 451.03 610.83 2 L
+N
+(requests and) 266.88 698.87 T
+(responses) 270.63 692 T
+320.06 687.83 327.36 678.3 316.12 682.51 318.09 685.17 4 Y
+V
+308.08 692.59 318.1 685.17 2 L
+N
+255.27 681.61 243.75 678.25 251.74 687.21 253.5 684.41 4 Y
+V
+267.5 693.25 253.5 684.41 2 L
+N
+FMENDPAGE
+%%EndPage: "4" 4
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+51 37 560 60 R
+7 X
+0 0 0 1 0 0 0 K
+V
+54 72 294.12 738 R
+V
+1 10 Q
+0 X
+3.21 (abstraction could be used. So, as long as well-defined) 54 731.33 P
+0.58 (abstractions are the only point of contact between software) 54 719.33 P
+0.64 (modules, new pieces of software can be substituted for old) 54 707.33 P
+0.65 (ones, and so systems can be maintained and improved in a) 54 695.33 P
+0.3 (reliable, modular way. Abstraction gives us a way of defin-) 54 683.33 P
+(ing and managing) 54 671.33 T
+2 F
+(equivalence) 128.16 671.33 T
+1 F
+(.) 175.92 671.33 T
+-0.08 (This model of abstraction is based on one fundamental prin-) 54 653.33 P
+0.71 (ciple: that, as long as the abstraction offered by a software) 54 641.33 P
+2.07 (module is accurately maintained, the details of how that) 54 629.33 P
+1.54 (abstraction is implemented) 54 617.33 P
+2 F
+1.54 (do not matter) 168.9 617.33 P
+1 F
+1.54 ( to other system) 225.88 617.33 P
+0.95 (components. Indeed, by this principle, they) 54 605.33 P
+2 F
+0.95 (should) 234.99 605.33 P
+1 F
+0.95 ( be hid-) 261.66 605.33 P
+7.42 (den, to encourage independence between modules.) 54 593.33 P
+0.18 (However, this assumption is becoming increasingly open to) 54 581.33 P
+-0.29 (question. The problem is that the abstractions we use in soft-) 54 569.33 P
+6.41 (ware engineering are not the pure abstractions of) 54 557.33 P
+0.44 (mathematics. Instead, they are simply the) 54 545.33 P
+2 F
+0.44 (visible aspects of) 224.92 545.33 P
+1.46 (underlying implementations) 54 533.33 P
+1 F
+1.46 (; and, like icebergs floating in) 167.4 533.33 P
+-0.33 (the sea, the structure of what lies hidden below is just as crit-) 54 521.33 P
+-0.49 (ical to how we should treat them as the visible aspects above.) 54 509.33 P
+1.49 (The structure of the implementation has important conse-) 54 497.33 P
+-0.34 (quences for the way in which clients will use the abstraction.) 54 485.33 P
+2.16 (What\325s more, aspects of the implementation will always) 54 473.33 P
+-0.61 (show through the abstraction barrier, revealing themselves in) 54 461.33 P
+0.07 (size limitations, performance limitations and dynamic prop-) 54 449.33 P
+(erties of the module.) 54 437.33 T
+1.1 (The open implementation approach is shown in figure 1b.) 54 419.33 P
+0.27 (Here, a system provides not only a standard interface to the) 54 407.33 P
+1.21 (abstract structures and behaviours offered by this module,) 54 395.33 P
+0.13 (but also a separate interface to the) 54 383.33 P
+2 F
+0.13 (inherent structure) 193.47 383.33 P
+1 F
+0.13 ( of that) 265.53 383.33 P
+0.39 (module. This interface allows clients to view aspects of the) 54 371.33 P
+-0.02 (structure \050) 54 359.33 P
+2 F
+-0.02 (introspection) 94.8 359.33 P
+1 F
+-0.02 (\051 but also, crucially, to make modifi-) 147.58 359.33 P
+1.09 (cations \050) 54 347.33 P
+2 F
+1.09 (intercession) 89.25 347.33 P
+1 F
+1.09 (\051; to \322reach in\323 to the implementation) 137.58 347.33 P
+-0.54 (and adapt it to the needs of specific clients. It provides access) 54 335.33 P
+-0.09 (to a computational \322meta-level\323, which talks not about what) 54 323.33 P
+-0.01 (the system does, but about how it does it. This approach has) 54 311.33 P
+-0.37 (been fruitfully applied to a range of areas of system develop-) 54 299.33 P
+2.41 (ment, including the design of the Common Lisp Object) 54 287.33 P
+0.26 (System [Bobrow) 54 275.33 P
+2 F
+0.26 (et al) 124.52 275.33 P
+1 F
+0.26 (, 1988] and the Silica window system) 142.28 275.33 P
+1.22 ([Rao, 1991]. A full treatment of the technical aspects and) 54 263.33 P
+0.23 (consequences of this approach is too long to present here\321) 54 251.33 P
+1.6 (the interested reader is referred to Kiczales) 54 239.33 P
+2 F
+1.6 (et al.) 239.27 239.33 P
+1 F
+1.6 ( [1991].) 260.86 239.33 P
+(However, certain aspects are worth discussion here.) 54 227.33 T
+2.05 (The essence of this approach is) 54 209.33 P
+2 F
+2.05 (computational reflection) 193.46 209.33 P
+1 F
+0.68 ([Smith, 1982]\321the notion that a system maintains and has) 54 197.33 P
+0.33 (access to a representation of its own behaviour. The crucial) 54 185.33 P
+1.55 (element of such reflective representations is that they are) 54 173.33 P
+2 F
+1.89 (causally connected) 54 161.33 P
+1 F
+1.89 ( to the behaviour they describe. Thus,) 132.26 161.33 P
+0.41 (changes in the system are reflected in changes in the repre-) 54 149.33 P
+-0.01 (sentation; and, critically, the behaviour of the system can be) 54 137.33 P
+(changed by making changes to the representation.) 54 125.33 T
+-0.04 (At the same time as we introduce these ideas, it is important) 54 107.33 P
+0.43 (to retain various important properties of the existing notion) 54 95.33 P
+3.7 (of abstraction, principally the conceptual simplification) 54 83.33 P
+317.88 72 558 738 R
+7 X
+V
+0 X
+1.29 (which it provides \050the manageability principle\051. There are) 317.88 731.33 P
+0.35 (two ways in which this is achieved in an open implementa-) 317.88 719.33 P
+-0.23 (tion. First, a standard or default interface is provided; that is,) 317.88 707.33 P
+0.86 (the interface to the meta-level representation) 317.88 695.33 P
+2 F
+0.86 (augments) 504.09 695.33 P
+1 F
+0.86 ( the) 542.42 695.33 P
+0.7 (traditional abstraction barrier, rather than replacing it. Sec-) 317.88 683.33 P
+1.16 (ond, the view into the implementation reveals its) 317.88 671.33 P
+2 F
+1.16 (inherent) 524.67 671.33 P
+1 F
+1.17 (structure, rather than the details of a specific implementa-) 317.88 659.33 P
+-0.29 (tion. It does not simply provide a set of \322hooks\323 directly into) 317.88 647.33 P
+1.72 (the implementation; that would both constrain the imple-) 317.88 635.33 P
+2.95 (mentor of the abstraction and require too much of the) 317.88 623.33 P
+0.16 (implementor of the client. Instead, it provides a rationalised) 317.88 611.33 P
+-0.15 (model of the inherent behaviour of a system offering its par-) 317.88 599.33 P
+-0.12 (ticular functionality. Clearly, this view of what is \322inherent\323) 317.88 587.33 P
+0.38 (is a normative one; typically, it is conditioned by an under-) 317.88 575.33 P
+0.85 (standing of the specific failings of standard abstractions in) 317.88 563.33 P
+0.4 (some particular domain. I will return to this issue later. For) 317.88 551.33 P
+-0.38 (the moment, though, I will consider how this revised view of) 317.88 539.33 P
+1.63 (abstraction can be used to solve the sorts of problems in) 317.88 527.33 P
+(interface structure which were raised earlier.) 317.88 515.33 T
+0 12 Q
+(5) 317.88 486 T
+(Accounting for System Action) 343.08 486 T
+1 10 Q
+0.78 (Just as open implementations address problems of connec-) 317.88 465.33 P
+2.62 (tion between system components, we can use the same) 317.88 453.33 P
+2.25 (approach to address the \322interface connection\323 problems) 317.88 441.33 P
+1.07 (related earlier. So consider an alternative view of an open) 317.88 429.33 P
+0.94 (implementation\325s reflective self-representation. Consider it) 317.88 417.33 P
+1.18 (as an \322account\323 which a system or module presents of its) 317.88 405.33 P
+2.6 (own activity. A self-representation, it is generated from) 317.88 393.33 P
+-0.15 (within the component, rather than being imposed or inferred) 317.88 381.33 P
+1.58 (from outside; reflective, it not only reliably describes the) 317.88 369.33 P
+0.05 (state of the system at any given point, but is also a means to) 317.88 357.33 P
+(affect that state and control the system\325s behaviour.) 317.88 345.33 T
+0.38 (Such an account has a number of important properties. It is) 317.88 327.33 P
+1.7 (an) 317.88 315.33 P
+2 F
+1.7 (explicit) 331.52 315.33 P
+1 F
+1.7 ( representation\321that is, computationally extant) 360.96 315.33 P
+-0.63 (and manipulable within the system. It is, crucially,) 317.88 303.33 P
+2 F
+-0.63 (part of the) 517.58 303.33 P
+0.15 (system) 317.88 291.33 P
+1 F
+0.15 (, rather than simply being a story we might tell about) 344.54 291.33 P
+0.57 (the system from outside, or a view we might impose on its) 317.88 279.33 P
+-0.37 (actions. It is a) 317.88 267.33 P
+2 F
+-0.37 (behavioural) 374.43 267.33 P
+1 F
+-0.37 ( model, rather than simply a struc-) 422.76 267.33 P
+-0.27 (tural one; that is, it tells us how the system acts, dealing with) 317.88 255.33 P
+1.23 (issues of causality, connection and temporal relationships,) 317.88 243.33 P
+2.1 (rather than just how the system\325s elements are statically) 317.88 231.33 P
+0.3 (related to each other. However, the account itself has struc-) 317.88 219.33 P
+0.74 (tural properties, based on defined patterns of \050behavioural\051) 317.88 207.33 P
+0.94 (relationships between the components of the account \050per-) 317.88 195.33 P
+-0.64 (haps relationships such as) 317.88 183.33 P
+2 F
+-0.64 (precedes) 421.42 183.33 P
+1 F
+-0.64 (,) 456.96 183.33 P
+2 F
+-0.64 (controls) 461.32 183.33 P
+1 F
+-0.64 (,) 494.1 183.33 P
+2 F
+-0.64 (invokes) 498.46 183.33 P
+1 F
+-0.64 (, and so) 528.45 183.33 P
+(forth\051.) 317.88 171.33 T
+5.02 (Most importantly, we place this requirement on the) 317.88 153.33 P
+2.31 (account\321that it \322accounts for\323 the externally-observable) 317.88 141.33 P
+2.69 (states of the system which presents it. The behavioural) 317.88 129.33 P
+2.03 (description which the system provides should be able to) 317.88 117.33 P
+-0.29 (explain how an externally-observable state came about. This) 317.88 105.33 P
+0.68 (critical feature has various implications, which will be dis-) 317.88 93.33 P
+FMENDPAGE
+%%EndPage: "5" 5
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+51 37 560 60 R
+7 X
+0 0 0 1 0 0 0 K
+V
+54 72 294.12 738 R
+V
+1 10 Q
+0 X
+2.14 (cussed shortly. First, however, let\325s return to the duplex) 54 731.33 P
+(photocopying example.) 54 719.33 T
+0 F
+(5.1) 54 689.33 T
+(Accounting for Duplex Copying) 79.2 689.33 T
+1 F
+0.27 (If we adopt this notion of \322accounts\323, then the copy service) 54 673.33 P
+2.16 (\050which provides copying functionality in the copier, and) 54 661.33 P
+1.33 (which lies below the interface component alongside other) 54 649.33 P
+-0.17 (system services\051 provides not only a set of entry points to its) 54 637.33 P
+3.44 (functionality\321the traditional abstraction interface, often) 54 625.33 P
+-0.34 (called an \322Application Programming Interface\323 or API\321but) 54 613.33 P
+0.82 (also an account, a structured description of its own behav-) 54 601.33 P
+2.49 (iour. The API describes \322what the service can do\323; the) 54 589.33 P
+0.57 (account describes \322how the service goes about doing it\323. It) 54 577.33 P
+0.61 (describes, at some level, the sequence of actions which the) 54 565.33 P
+1.73 (service will perform\321or, more accurately, a sequence of) 54 553.33 P
+0.49 (actions which) 54 541.33 P
+2 F
+0.49 (accounts for the externally-observable states) 112.75 541.33 P
+1.05 (of the system) 54 529.33 P
+1 F
+1.05 (. So, if the interface has access to details not) 107.76 529.33 P
+0.14 (only of the functionality offered by the copying service, but) 54 517.33 P
+0.19 (also an account of how it operates in terms of page copying) 54 505.33 P
+0.82 (sequences and paper movement, then it can provide a user) 54 493.33 P
+0.13 (with appropriate information on the state of the service as it) 54 481.33 P
+-0.01 (acts, and continuation or recovery procedures should it fail.) 54 469.33 P
+6.55 (So, this notion of reflective self-representations as) 54 451.33 P
+0.17 (\322accounts\323 provides a solution to the problems raised in the) 54 439.33 P
+0.75 (duplex copying example. More importantly, in doing so, it) 54 427.33 P
+0.17 (also provides a solution to the connection problem raised in) 54 415.33 P
+-0.07 (section 3. The interface module does not have to) 54 403.33 P
+2 F
+-0.07 (infer) 250.03 403.33 P
+1 F
+-0.07 ( activ-) 268.92 403.33 P
+2.36 (ity information \050as was necessary with the disconnected) 54 391.33 P
+0.14 (interface strategy\051. Instead, it can present information about) 54 379.33 P
+1.73 (the system accurately because the information it presents) 54 367.33 P
+0.21 (comes directly from the underlying components themselves) 54 355.33 P
+-0.17 (\050where it is causally connected to their actual behaviour\051. At) 54 343.33 P
+-0.43 (the same time, information about the structure and semantics) 54 331.33 P
+0.79 (of those components is not tacitly encoded in the interface) 54 319.33 P
+3.04 (module \050as it was in the connected interface strategy\051.) 54 307.33 P
+1.13 (Instead, this information is explicitly made available from) 54 295.33 P
+-0.5 (the components themselves. It is manifested in accounts they) 54 283.33 P
+1.32 (offer of their actions which the interface module can use,) 54 271.33 P
+1.09 (preserving the modularity and extensibility properties of a) 54 259.33 P
+3.25 (disconnected implementation. This balance between the) 54 247.33 P
+4.87 (connected and disconnected approaches is maintained) 54 235.33 P
+0.93 (through the two critical aspects of the reflective approach:) 54 223.33 P
+2 F
+(explicit representations) 54 211.33 T
+1 F
+( and) 148.16 211.33 T
+2 F
+(causal connection) 167.6 211.33 T
+1 F
+(.) 240.09 211.33 T
+-0.32 (To understand the ways in which accounts can support inter-) 54 193.33 P
+1.93 (face activity, we first have to look in more detail at the) 54 181.33 P
+(properties of accounts themselves.) 54 169.33 T
+0 12 Q
+(6) 54 140 T
+(Exploring Accounts) 79.2 140 T
+1 10 Q
+0.98 (Accounts and reflective self-representations are essentially) 54 119.33 P
+1.02 (the same thing; my use of the term \322accounts\323 connotes a) 54 107.33 P
+1.01 (particular perspective on their value and use. By the same) 54 95.33 P
+0.1 (token, the properties of reflective representations also apply) 54 83.33 P
+317.88 72 558 738 R
+7 X
+V
+0 X
+-0.38 (to accounts; but they may have particular consequences for a) 317.88 731.33 P
+(use-oriented view.) 317.88 719.33 T
+-0.01 (One important issue raised in the description of open imple-) 317.88 701.33 P
+-0.33 (mentations was that they reveal aspects of) 317.88 689.33 P
+2 F
+-0.33 (inherent structure) 486.39 689.33 P
+1 F
+1.1 (rather than the details of specific implementations. Just as) 317.88 677.33 P
+1.41 (that was critical to retaining the conceptual simplification) 317.88 665.33 P
+0.32 (and separation which is so valuable in abstraction, it is also) 317.88 653.33 P
+0.09 (critical to the value of accounts. After all, there is little ben-) 317.88 641.33 P
+-0.26 (efit in separating two system components if each is forced to) 317.88 629.33 P
+1.35 (understand every detail of the other to use it. Instead, we) 317.88 617.33 P
+-0.19 (exploit the system\325s inherent structure and present a rationa-) 317.88 605.33 P
+2.8 (lised view of the behaviour of a module. The inherent) 317.88 593.33 P
+-0.09 (structure captures elements such as the relationship between) 317.88 581.33 P
+0.3 (the components presented at the abstraction barrier; aspects) 317.88 569.33 P
+1.28 (which are implied by the existence of those elements and) 317.88 557.33 P
+0.47 (their roles in the abstract behaviour described. The account) 317.88 545.33 P
+0.23 (stands in a two-way semantic relationship to the implemen-) 317.88 533.33 P
+5.02 (tation itself; this much is guaranteed by the causal) 317.88 521.33 P
+0.89 (connection. But that relationship is not a direct one-to-one) 317.88 509.33 P
+1.25 (mapping between the elements of the implementation and) 317.88 497.33 P
+1.6 (the elements of the account. We can perhaps think of an) 317.88 485.33 P
+0.08 (account as being a particular) 317.88 473.33 P
+2 F
+0.08 (registration) 435.17 473.33 P
+1 8 Q
+0.06 (3) 482.39 477.33 P
+1 10 Q
+0.08 ( of the implemen-) 486.39 473.33 P
+0.92 (tation; a view of the implementation which reveals certain) 317.88 461.33 P
+-0.34 (aspects, hides others, and highlights and emphasises particu-) 317.88 449.33 P
+(lar relationships for some specific purpose.) 317.88 437.33 T
+0.29 (So the account need not be \322true\323 in an absolute sense; it is) 317.88 419.33 P
+1.32 (accurate or precise for the purposes of some specific use.) 317.88 407.33 P
+-0.06 (Indeed, it is possible that the system will have to go to some) 317.88 395.33 P
+0.6 (lengths to maintain the validity of the account in particular) 317.88 383.33 P
+2.58 (circumstances. Imagine, for instance, that the \322copying\323) 317.88 371.33 P
+-0.01 (account of section 5.1 presented, for simplification, a model) 317.88 359.33 P
+0.13 (of operation in which only one page was being processed at) 317.88 347.33 P
+-0.14 (any moment. However, during normal operation, the system) 317.88 335.33 P
+-0.08 (might actually work on several pages at once\321indeed, even) 317.88 323.33 P
+1.28 (fairly simple copiers typically do this in order to increase) 317.88 311.33 P
+-0.07 (throughput. This would be perfectly valid) 317.88 299.33 P
+2 F
+-0.07 (as long as) 486.62 299.33 P
+1 F
+-0.07 ( for any) 527.04 299.33 P
+1.85 (observable intermediate state\321that is, any point where a) 317.88 287.33 P
+-0.16 (user \050or user interface\051 might intervene in the process, either) 317.88 275.33 P
+-0.14 (through choice or necessity\321the system can put itself into a) 317.88 263.33 P
+1.24 (state which is accounted for purely in terms of the model) 317.88 251.33 P
+(offered.) 317.88 239.33 T
+-0.43 (Naturally, this begs the question: what states are observable?) 317.88 221.33 P
+-0.22 (There is no absolute answer to this question; not only does it) 317.88 209.33 P
+1.56 (depend on the structure of an implementation, but it also) 317.88 197.33 P
+-0.4 (depends on the) 317.88 185.33 P
+2 F
+-0.4 (needs) 379.17 185.33 P
+1 F
+-0.4 ( of the user in some particular situation.) 401.94 185.33 P
+0.17 (This reflects a tension in the account between) 317.88 173.33 P
+2 F
+0.17 (accuracy) 504.23 173.33 P
+1 F
+0.17 ( and) 540.89 173.33 P
+2 F
+-0.43 (precision) 317.88 161.33 P
+1 F
+-0.43 (. The account must, at all times, be accurate; that is,) 355.1 161.33 P
+1.38 (in its own terms, it must correctly represent the state and) 317.88 149.33 P
+1.69 (behaviour of the system. However, this accuracy may be) 317.88 137.33 P
+0.45 (achieved by relaxing its precision, the level of detail which) 317.88 125.33 P
+317.88 105 558 119.98 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+317.88 105 558 119.98 R
+7 X
+0 0 0 1 0 0 0 K
+V
+317.88 116 461.88 116 2 L
+V
+0.5 H
+2 Z
+0 X
+N
+0 0 612 792 C
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+-0.37 (3. My use of this term, and the \337exibility it implies, draws on Brian) 317.88 99 P
+(Smith\325) 317.88 89 T
+(s treatment of representation, and especially computational) 341.89 89 T
+(representation. [Smith,) 317.88 79 T
+2 F
+(forthcoming) 402.37 79 T
+1 F
+(].) 446.37 79 T
+FMENDPAGE
+%%EndPage: "6" 6
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+51 37 560 60 R
+7 X
+0 0 0 1 0 0 0 K
+V
+54 72 294.12 738 R
+V
+1 10 Q
+0 X
+0.5 (the account provides. Relaxing precision allows the system) 54 731.33 P
+0.76 (more flexibility in the way it operates. The invariant prop-) 54 719.33 P
+-0.43 (erty, though, is that of) 54 707.33 P
+2 F
+-0.43 (accountability) 142.68 707.33 P
+1 F
+-0.43 (; that the system be able) 199.9 707.33 P
+0.73 (to account for its actions in terms of the account, or that it) 54 695.33 P
+-0.15 (should be able to offer an account which is not incompatible) 54 683.33 P
+1.18 (with previously offered accounts. In these terms, account-) 54 671.33 P
+0.32 (ability is essentially a form of) 54 659.33 P
+2 F
+0.32 (constructed consistency) 177.61 659.33 P
+1 F
+0.32 (. It is) 273.19 659.33 P
+-0.02 (this notion of accountability, based in the direct relationship) 54 647.33 P
+0.82 (between action and representation, which is at the heart of) 54 635.33 P
+-0.22 (this proposal, and which distinguishes accounts from simply) 54 623.33 P
+(simulations.) 54 611.33 T
+-0.02 (However, accountability is by no means the only significant) 54 593.33 P
+2.33 (property which deserves discussion here. Another set of) 54 581.33 P
+1.13 (properties revolve around the fact that accounts are inher-) 54 569.33 P
+2.64 (ently) 54 557.33 P
+2 F
+2.64 (partial) 79.14 557.33 P
+1 F
+2.64 (. An account selectively presents and hides) 106.37 557.33 P
+3.67 (particular aspects of a system and its implementation.) 54 545.33 P
+-0.32 (Indeed, the account is) 54 533.33 P
+2 F
+-0.32 (crafted) 142.42 533.33 P
+1 F
+-0.32 ( for specific purposes and uses.) 170.75 533.33 P
+0.9 (By implication, then, it is also) 54 521.33 P
+2 F
+0.9 (variable) 182.2 521.33 P
+1 F
+0.9 (; the level of detail) 215.53 521.33 P
+0.86 (and structure is dependent on particular circumstances and) 54 509.33 P
+-0.61 (needs, as well as the state of the system itself at the time. This) 54 497.33 P
+-0.25 (is another area where the balance between accuracy and pre-) 54 485.33 P
+-0.62 (cision becomes significant. This variability must also depend) 54 473.33 P
+1.19 (on the recipient of the account, which is) 54 461.33 P
+2 F
+1.19 (directed) 226 461.33 P
+1 F
+1.19 ( towards) 258.77 461.33 P
+0.37 (specific other entities, be they system components or users.) 54 449.33 P
+1.07 (The whole range of ways in which accounts are only par-) 54 437.33 P
+-0.49 (tially complete and are designed for particular circumstances) 54 425.33 P
+0.96 (\050in a way which reflects the balance of needs between the) 54 413.33 P
+0.3 (producer and receiver of the account\051 is reflected in the use) 54 401.33 P
+0.71 (of the term \322account\323. Included in this is the principle that) 54 389.33 P
+1.16 (variability is dynamic; the account is the means by which) 54 377.33 P
+-0.21 (structure and information can be gradually revealed, accord-) 54 365.33 P
+1.86 (ing to circumstances. To draw further on the metaphoric) 54 353.33 P
+0.02 (structure of this proposal, these properties can be thought of) 54 341.33 P
+0.23 (as embodying properties similar to those of the term) 54 329.33 P
+2 F
+0.23 (recipi-) 267.46 329.33 P
+0.64 (ent design) 54 317.33 P
+1 F
+0.64 ( in conversation analysis; the crafting of specific) 95.47 317.33 P
+-0.47 (utterances for a particular recipient or audience. This level of) 54 305.33 P
+1.17 (specificity also emphasises that accounts are) 54 293.33 P
+2 F
+1.17 (available for) 241.56 293.33 P
+2.21 (exploration) 54 281.33 P
+1 F
+2.21 (, rather than being the primary interface to a) 100.11 281.33 P
+1.15 (system component. We don\325t have to deal in terms of the) 54 269.33 P
+-0.07 (account at all times, but we can make appeal to it in order to) 54 257.33 P
+(understand, rationalise or explain other behaviour.) 54 245.33 T
+-0.4 (There is one final property which is important here. Again as) 54 227.33 P
+1.65 (derived from reflective self-representations, an account is) 54 215.33 P
+2 F
+1.44 (causally connected) 54 203.33 P
+1 F
+1.44 ( to the behaviour it describes. It is not) 131.81 203.33 P
+-0.2 (simply \322offered up\323 as a disconnected \322story\323 about the sys-) 54 191.33 P
+3.38 (tem\325s action, but stands in a causal relationship to it.) 54 179.33 P
+0.19 (Changes in the system are reflected in changes in the repre-) 54 167.33 P
+0.05 (sentation, and vice versa. The critical consequence of this is) 54 155.33 P
+1.88 (that the account is computationally) 54 143.33 P
+2 F
+1.88 (effective) 205.88 143.33 P
+1 F
+1.88 (\321an account) 239.2 143.33 P
+0.26 (provides the means not only to describe behaviour, but also) 54 131.33 P
+-0.24 (to control it. The link between the account and the activity is) 54 119.33 P
+-0.09 (bidirectional. The account is a means to make modifications) 54 107.33 P
+-0.26 (to the way in which the system works\321it provides the terms) 54 95.33 P
+-0.01 (and the structure in which such modifications are described.) 54 83.33 P
+317.88 72 558 738 R
+7 X
+V
+0 X
+1.45 (Indeed, the structure of the account clearly constrains the) 317.88 731.33 P
+0.26 (sorts of modifications which are allowed, whether these are) 317.88 719.33 P
+1.19 (changes to the action of the system itself, or\321more com-) 317.88 707.33 P
+7.7 (monly, perhaps\321are manipulations of the internal) 317.88 695.33 P
+(processing of specific jobs in progress.) 317.88 683.33 T
+0 12 Q
+(7) 317.88 654 T
+(Accounts and Users) 343.08 654 T
+1 10 Q
+0.05 (Previous sections used an example of a duplex copying task) 317.88 633.33 P
+0.3 (as an illustration of the value of an account-based approach) 317.88 621.33 P
+0.34 (to system architecture. The copying example illustrates one) 317.88 609.33 P
+2.24 (way of using these representations. At the system level,) 317.88 597.33 P
+1.33 (accounts can provide a critical channel of communication) 317.88 585.33 P
+1.13 (between system components or modules, and in particular) 317.88 573.33 P
+-0.54 (offer a solution to the problem of connection in generic inter-) 317.88 561.33 P
+2.36 (faces. This use of accounts is derived directly from the) 317.88 549.33 P
+-0.01 (general perspective of open implementations, and the use of) 317.88 537.33 P
+-0.57 (causally-connected self-representations to address failures in) 317.88 525.33 P
+-0.33 (the notion of \322abstraction\323 in software engineering. As such,) 317.88 513.33 P
+0.46 (this use of accounts focuses on issues in the architecture of) 317.88 501.33 P
+(interactive systems.) 317.88 489.33 T
+0.88 (However, it\325s interesting to examine a more radical use of) 317.88 471.33 P
+1.6 (accounts\321their use at the) 317.88 459.33 P
+2 F
+1.6 (user level) 430.37 459.33 P
+1 F
+1.6 (. The goal here is to) 470.57 459.33 P
+-0.19 (address more directly the disparity which was highlighted in) 317.88 447.33 P
+2.2 (the introduction, between the improvised, resource-based) 317.88 435.33 P
+-0.05 (nature of working and the process-driven aspect of interface) 317.88 423.33 P
+0.26 (design. The accounts model is an attempt to address this by) 317.88 411.33 P
+1.32 (thinking of computational representations as resources for) 317.88 399.33 P
+2.38 (action. On the one hand, the account mechanism builds) 317.88 387.33 P
+-0.26 (directly on the importance of the \322stories systems tell\323 about) 317.88 375.33 P
+1.25 (their activity; and on the other, the causal connection and) 317.88 363.33 P
+-0.06 (principle of accountability \050or constructed consistency\051 sup-) 317.88 351.33 P
+7.48 (ports the variability of use. Accounts provide a) 317.88 339.33 P
+(computational basis for artful action.) 317.88 327.33 T
+0 F
+(7.1) 317.88 297.33 T
+(Example: File Copying) 343.08 297.33 T
+1 F
+2.26 (Let\325s consider a second example\321a real-world interface) 317.88 281.33 P
+2.55 (problem with its origins in a breakdown of abstraction.) 317.88 269.33 P
+-0.6 (Imagine copying a file between two volumes \050say, two disks\051) 317.88 257.33 P
+-0.6 (under a graphical file system interface. You specify the name) 317.88 245.33 P
+0.29 (of the file to be copied and the name of the destination file;) 317.88 233.33 P
+0.55 (you start the copy and a \322percentage done\323 indicator \050PDI\051) 317.88 221.33 P
+0.55 (appears to show you how much of the copy has been com-) 317.88 209.33 P
+-0.4 (pleted. This generally works pretty well, especially when the) 317.88 197.33 P
+0.45 (two volumes are both connected to your own machine. But) 317.88 185.33 P
+0.16 (consider another case, which isn\325t so uncommon. You want) 317.88 173.33 P
+0.38 (to copy a file from a local volume to a remote volume on a) 317.88 161.33 P
+0.11 (nearby fileserver over a network. This time, when you copy) 317.88 149.33 P
+1.68 (the file, the PDB appears and fills up to 40% before the) 317.88 137.33 P
+1.23 (system fails, saying \322remote volume unavailable\323. What\325s) 317.88 125.33 P
+-0.4 (happened? Was 40% of the file copied? Did all of the file get) 317.88 113.33 P
+1.27 (40% there? Most likely, none of the file ever reached the) 317.88 101.33 P
+-0.29 (remote volume; instead, 40% of it was) 317.88 89.33 P
+2 F
+-0.29 (read) 472.5 89.33 P
+1 F
+-0.29 ( on the local disk) 490.83 89.33 P
+0.95 (before the machine ever tried to reach the remote volume.) 317.88 77.33 P
+FMENDPAGE
+%%EndPage: "7" 7
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+51 37 560 60 R
+7 X
+0 0 0 1 0 0 0 K
+V
+54 72 294.12 576 R
+V
+1 10 Q
+0 X
+0.21 (What\325s more, there\325s no way to tell) 54 569.33 P
+2 F
+0.21 (how) 199.33 569.33 P
+1 F
+0.21 ( the remote volume) 216 569.33 P
+0.38 (is unavailable; on some systems, this might even mean you) 54 557.33 P
+-0.37 (don\325t have your network cable plugged in \050and so the remote) 54 545.33 P
+2.45 (volume was) 54 533.33 P
+2 F
+2.45 (never) 109.45 533.33 P
+1 F
+2.45 ( available\051. Finally, a failure like this) 131.66 533.33 P
+0.88 (makes you wonder... just what\325s the PDI telling you when) 54 521.33 P
+(things) 54 509.33 T
+2 F
+(are) 80.95 509.33 T
+1 F
+( working?) 94.28 509.33 T
+-0.33 (In general, there\325s simply no way to see at which point in the) 54 491.33 P
+0.13 (copy failure occurred, since the interface presents no notion) 54 479.33 P
+-0.26 (of the structure or breakdown of behaviour and functionality) 54 467.33 P
+0.71 (that\325s involved. In fact, the notion of a partially-completed) 54 455.33 P
+0.45 (copy makes little sense when offered in the interface, since) 54 443.33 P
+1.84 (the interface doesn\325t offer terms in which to think about) 54 431.33 P
+0.67 (what\325s going on. What does it mean when the copy is par-) 54 419.33 P
+-0.29 (tially completed, and when the PDI indicates there\325s more to) 54 407.33 P
+(do?) 54 395.33 T
+1.51 (We can begin to address this problem by looking for the) 54 377.33 P
+0.68 (inherent structure of the example. There are various places) 54 365.33 P
+-0.54 (where data can reside\321let\325s call these) 54 353.33 P
+2 F
+-0.54 (data buckets) 206.85 353.33 P
+1 F
+-0.54 (. Some of) 256.58 353.33 P
+0.92 (them, perhaps, are files; others may be areas of temporary) 54 341.33 P
+-0.12 (storage. The network itself, for instance, is a data bucket but) 54 329.33 P
+1.32 (not a file. In addition, there are caches, network interface) 54 317.33 P
+-0.48 (buffers, and so on. The details are not important; they\325re spe-) 54 305.33 P
+1.85 (cific elements of an implementation, rather than inherent) 54 293.33 P
+1.19 (features. The essential point is simply that there are some) 54 281.33 P
+0.46 (number of these data buckets; that some are files and some) 54 269.33 P
+0.29 (are not; and that the process of copying a file involves con-) 54 257.33 P
+0.29 (necting a series of them together to get data from one place) 54 245.33 P
+0.41 (to another. So we end up with a structure rather like that in) 54 233.33 P
+(figure 2.) 54 221.33 T
+2.99 (In this figure, we see a set of data buckets connected) 54 203.33 P
+1.75 (together, indicating the flow of data between two points.) 54 191.33 P
+0.68 (Some of these buckets \050the end points\051 are files; they exist) 54 179.33 P
+0.4 (independently of the particular copy operation, and are dis-) 54 167.33 P
+5.09 (tinguished with names) 54 155.33 P
+1 8 Q
+4.07 (4) 154.17 159.33 P
+1 10 Q
+5.09 (. The other data buckets are) 158.17 155.33 P
+0.75 (temporary intermediate ones. The flow of data through the) 54 143.33 P
+54 125 294.12 139.98 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+54 125 294.12 139.98 R
+7 X
+0 0 0 1 0 0 0 K
+V
+54 136 198 136 2 L
+V
+0.5 H
+2 Z
+0 X
+N
+0 0 612 792 C
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+-0.2 (4. In fact, naming is a separate issue in the account which a system) 54 119 P
+(provides; in this example, its relevance is that the source point) 54 109 T
+-0.07 (named is a \336le, whereas the end point is given a name) 54 99 P
+2 F
+-0.07 (befor) 249.41 99 P
+-0.07 (e) 268.08 99 P
+1 F
+-0.07 ( a \336le) 272.07 99 P
+(exists there. However) 54 89 T
+(, the issue of naming is not discussed in this) 131.87 89 T
+(example.) 54 79 T
+317.88 72 558 576 R
+7 X
+V
+1 10 Q
+0 X
+-0.38 (system is determined by the strategies used at the connection) 317.88 569.33 P
+0.55 (points between the data buckets. There are a wide range of) 317.88 557.33 P
+(mechanisms which could be used:) 317.88 545.33 T
+(\245) 317.88 527.33 T
+2.39 (the) 331.42 527.33 P
+2 F
+2.39 (\337ush on over\337ow) 348.52 527.33 P
+1 F
+2.39 ( strategy) 421.63 527.33 P
+2.39 (. A bucket accumulates) 457.53 527.33 P
+-0.08 (data until it\325) 331.42 515.33 P
+-0.08 (s full; at that point, all the data in that bucket) 379.6 515.33 P
+(is \322\337ushed\323 into the next bucket;) 331.42 503.33 T
+(\245) 317.88 485.33 T
+1.44 (the) 331.42 485.33 P
+2 F
+1.44 (trickle on over\337ow) 347.57 485.33 P
+1 F
+1.44 ( strategy) 425.43 485.33 P
+1.44 (. A bucket accumulates) 460.38 485.33 P
+0.63 (data until it\325) 331.42 473.33 P
+0.63 (s full; at that point, new incoming data dis-) 381.02 473.33 P
+(places equal amounts of old data into the next bucket;) 331.42 461.33 T
+(\245) 317.88 443.33 T
+-0.15 (the) 331.42 443.33 P
+2 F
+-0.15 (chunking on over\337ow) 345.98 443.33 P
+1 F
+-0.15 (strategy) 434.13 443.33 P
+-0.15 (. A bucket accumulates) 465.14 443.33 P
+0.02 (data until it\325) 331.42 431.33 P
+0.02 (s full; at that point, a \336xed amount of data \050a) 379.79 431.33 P
+(\322chunk\323\051 is \337ushed to the next buf) 331.42 419.33 T
+(fer to make space;) 469 419.33 T
+(\245) 317.88 401.33 T
+2.15 (the) 331.42 401.33 P
+2 F
+2.15 (explicit \337ush) 348.29 401.33 P
+1 F
+2.15 ( strategy) 401.27 401.33 P
+2.15 (. A bucket accumulates data) 436.93 401.33 P
+(until it is explicitly told to \337ush it all to the next bucket.) 331.42 389.33 T
+-0.47 (This is by no means intended to be an exhaustive list. Rather,) 317.88 373.33 P
+0.13 (it is intended to illustrate the wide range of strategies which) 317.88 361.33 P
+0.32 (could be used. It can be seen that the choice of strategies at) 317.88 349.33 P
+1.55 (each point\321and there may be different strategies at each) 317.88 337.33 P
+1.28 (point\321characterises the flow of data from one end to the) 317.88 325.33 P
+(other.) 317.88 313.33 T
+-0.07 (We can map this inherent structure onto various specific sit-) 317.88 295.33 P
+-0.09 (uations, such as the case of networked file copying. There is) 317.88 283.33 P
+0.47 (some number of data buckets, corresponding to the various) 317.88 271.33 P
+1.65 (relevant entities in the system. Entities might include the) 317.88 259.33 P
+-0.37 (files themselves, the filesystem cache, the network interface,) 317.88 247.33 P
+1.29 (the network itself, and so on. The precise set of elements) 317.88 235.33 P
+-0.43 (involved is not directly important; the inherent structure, and) 317.88 223.33 P
+0.14 (its relation to the implementation, is of much greater signif-) 317.88 211.33 P
+-0.29 (icance, and the existence of a bucket is often more important) 317.88 199.33 P
+0.4 (than its identity. When the particular configuration in some) 317.88 187.33 P
+0.33 (given situation is available for exploration, we can begin to) 317.88 175.33 P
+0.34 (answer questions about the interface and system behaviour.) 317.88 163.33 P
+-0.56 (Just as the set of flow strategies characterises the flow of data) 317.88 151.33 P
+-0.14 (through the system as a whole, so the flow can be controlled) 317.88 139.33 P
+0.3 (through the selection of strategies; and the behaviour of the) 317.88 127.33 P
+0.4 (percentage-done indictor is connected to \050characterised and) 317.88 115.33 P
+3.94 (controlled by\051 the point in this sequence where it is) 317.88 103.33 P
+0.02 (\322attached\323. Should it be attached towards the left-hand side,) 317.88 91.33 P
+-0.54 (for instance, then it will tend to reflect only the local process-) 317.88 79.33 P
+54 585 558 738 R
+7 X
+V
+203.89 636.64 232.69 679.84 R
+3 X
+V
+0.5 H
+2 Z
+0 X
+N
+376.69 636.64 405.49 679.84 R
+N
+261.49 636.64 290.29 679.84 R
+N
+319.09 636.64 347.89 679.84 R
+N
+90 450 18 10.8 164.29 661.84 A
+90 450 18 10.8 452.29 661.84 A
+235.07 701.54 247.09 701.44 236.84 695.16 235.95 698.35 4 Y
+V
+121.03 180 21.6 21.6 247.09 679.84 A
+268.79 691.86 268.69 679.84 262.4 690.09 265.6 690.97 4 Y
+V
+31.03 90 21.6 21.6 247.09 679.84 A
+292.67 701.54 304.69 701.44 294.44 695.16 293.55 698.35 4 Y
+V
+121.03 180 21.6 21.6 304.69 679.84 A
+326.39 691.86 326.29 679.84 320 690.09 323.2 690.97 4 Y
+V
+31.03 90 21.6 21.6 304.69 679.84 A
+350.27 701.54 362.29 701.44 352.04 695.16 351.15 698.35 4 Y
+V
+121.03 180 21.6 21.6 362.29 679.84 A
+383.99 691.86 383.89 679.84 377.6 690.09 380.79 690.97 4 Y
+V
+31.03 90 21.6 21.6 362.29 679.84 A
+177.35 700.58 189.49 701.44 179.65 694.28 178.5 697.43 4 Y
+V
+120.6 180 21.6 28.8 189.49 672.64 A
+211.19 691.86 211.09 679.84 204.81 690.09 208 690.97 4 Y
+V
+31.03 90 21.6 21.6 189.49 679.84 A
+407.86 701.54 419.88 701.44 409.64 695.16 408.75 698.35 4 Y
+V
+121.03 180 21.6 21.6 419.89 679.84 A
+449.55 685.08 448.69 672.64 442.83 683.65 446.19 684.36 4 Y
+V
+24.02 90 28.8 28.8 419.89 672.64 A
+261.49 636.64 290.29 658.24 R
+3 X
+V
+0 X
+N
+319.09 636.64 347.89 651.04 R
+3 X
+V
+0 X
+N
+3 H
+3 X
+90 450 10.8 11.6 308.29 697.04 A
+3 14 Q
+0 X
+(Name) 130.19 716.67 T
+(Name) 464.16 716.67 T
+469.53 679.98 462.53 670.24 463.3 682.22 466.42 681.1 4 Y
+V
+470.72 702.9 477.73 712.64 476.95 700.67 473.83 701.78 4 Y
+V
+466.43 681.1 473.85 701.78 2 L
+0.5 H
+0 Z
+N
+143.49 699.04 143.34 711.04 149.82 700.94 146.66 699.99 4 Y
+V
+155.2 683.04 155.34 671.04 148.86 681.14 152.03 682.09 4 Y
+V
+146.66 699.99 152.03 682.09 2 L
+N
+3 H
+2 Z
+3 X
+90 450 10.8 11.6 471.49 692.24 A
+108 585 504 618.83 R
+7 X
+V
+1 9 Q
+0 X
+(FIGURE 2: A structural model of the \336le copying example in terms of data buckets and the connections) 108 612.83 T
+-0.14 (between them. Connections between elements of this model are the points at which strategies and policies can) 108 603.83 P
+(be identi\336ed.) 108 594.83 T
+(\337ow strategy) 243 722 T
+(name mapping) 401.33 720.33 T
+289.73 715.48 299.49 708.5 287.52 709.24 288.62 712.36 4 Y
+V
+269.43 719.18 288.63 712.36 2 L
+0.5 H
+N
+453.41 710.72 463 703.5 451.05 704.54 452.23 707.63 4 Y
+V
+434.26 714.51 452.23 707.63 2 L
+N
+(strategy) 403.55 712.95 T
+FMENDPAGE
+%%EndPage: "8" 8
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+51 37 560 60 R
+7 X
+0 0 0 1 0 0 0 K
+V
+54 72 294.12 738 R
+V
+1 10 Q
+0 X
+0.33 (ing of data\321not its transmission across the network, which) 54 731.33 P
+0.16 (is often of greater importance to the user, and which caused) 54 719.33 P
+-0.27 (the failure in the case we were considering) 54 707.33 P
+1 8 Q
+-0.22 (5) 222.9 711.33 P
+1 10 Q
+-0.27 (. However, with-) 226.9 707.33 P
+1.65 (out any terms of reference, it isn\325t possible to talk about) 54 695.33 P
+-0.6 (\322where\323 the indicator is attached\321far less to move it around.) 54 683.33 P
+-0.01 (When needed, then, the account provides these terms of ref-) 54 671.33 P
+1.41 (erence; an explicit structure within which specific actions) 54 659.33 P
+2.13 (can be explained, and their consequences explored. This) 54 647.33 P
+0.53 (structure\321one within which exploration and improvisation) 54 635.33 P
+-0.34 (can be supported\321is not supported by traditional interactive) 54 623.33 P
+0.68 (software structures which make details inaccessible behind) 54 611.33 P
+(abstraction barriers.) 54 599.33 T
+0.79 (The basic problem reflected in this example arises directly) 54 581.33 P
+0.16 (from the traditional view of abstraction discussed in section) 54 569.33 P
+0.07 (4\321in this case, the use of abstraction inside the file system.) 54 557.33 P
+2.05 (It arises because file system operations are characterised) 54 545.33 P
+0.54 (purely in terms of) 54 533.33 P
+2 F
+0.54 (read) 130.05 533.33 P
+1 F
+0.54 ( and) 148.38 533.33 P
+2 F
+0.54 (write) 168.9 533.33 P
+1 F
+0.54 ( operations. This takes no) 189.46 533.33 P
+0.65 (account of whether the operations are performed locally or) 54 521.33 P
+-0.1 (remotely, and the consequences of such features for the way) 54 509.33 P
+1.31 (in which the interface should behave. The abstraction has) 54 497.33 P
+-0.35 (hidden the details from higher levels of the system, but those) 54 485.33 P
+(details turn out to be crucial to our interactions) 54 473.33 T
+1 8 Q
+(6) 241.2 477.33 T
+1 10 Q
+(.) 245.2 473.33 T
+0.85 (This example illustrates a number of general points on the) 54 455.33 P
+0.92 (nature and use of accounts. First, consider the relationship) 54 443.33 P
+0.76 (between the model and the system itself. The model arises) 54 431.33 P
+0.64 (from the structure of the system; but it is also) 54 419.33 P
+2 F
+0.64 (embodied in) 244.32 419.33 P
+1 F
+0.67 (the system. It is not imposed from outside. It is general, in) 54 407.33 P
+-0.21 (that it does not reflect the details of a particular implementa-) 54 395.33 P
+1.71 (tion, but rather reflects the inherent structure of all \050or a) 54 383.33 P
+0.26 (range of\051 implementations. It is a gloss for the implementa-) 54 371.33 P
+-0.06 (tion, explicitly revealing and hiding certain features deemed) 54 359.33 P
+(\322relevant\323.) 54 347.33 T
+0.9 (Second, consider the relationship between the account and) 54 329.33 P
+2.48 (the activity. The causal relationship renders the account) 54 317.33 P
+0.85 (\322true\323 for external observation; because it is of the system) 54 305.33 P
+1.5 (itself, rather than simply of an interface or other external) 54 293.33 P
+2.24 (component, it is reliable in its relationship to the actual) 54 281.33 P
+1.07 (behaviour represented. However, the level of detail it pre-) 54 269.33 P
+1.1 (sents reflects the balance between accuracy and precision;) 54 257.33 P
+-0.1 (while it accurately accounts for the behaviour of the system,) 54 245.33 P
+0.8 (it only reveals as much as is necessary for some particular) 54 233.33 P
+-0.61 (purpose\321in this case, explaining the curious \32240% complete) 54 221.33 P
+(then 100% failure\323 behaviour.) 54 209.33 T
+2.8 (Third, consider the importance of explicit references to) 54 191.33 P
+-0.21 (\322strategies\323. Strategies\321normally implicit in the creation of) 54 179.33 P
+54 158 294.12 172.98 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+54 158 294.12 172.98 R
+7 X
+0 0 0 1 0 0 0 K
+V
+54 169 198 169 2 L
+V
+0.5 H
+2 Z
+0 X
+N
+0 0 612 792 C
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(5. Note a second extremely confusing\321and potentially danger-) 54 152 T
+(ous\321failure which can result here. The PDB can indicate 100%) 54 142 T
+(copied, before the remote volume complains that it\325) 54 132 T
+(s full after) 239.98 132 T
+(writing only 40% of the \336le. Which report should be trusted?) 54 122 T
+(6. In fact, problems of this sort can be seen in a wide range of sys-) 54 109 T
+(tems where network \336lestores have been grafted on within the) 54 99 T
+(abstractions designed for local \336lestores, because \322you needn\325) 54 89 T
+(t) 277.79 89 T
+(worry if the \336le is local or remote\323.) 54 79 T
+317.88 72 558 738 R
+7 X
+V
+1 10 Q
+0 X
+0.61 (a piece of software\321are) 317.88 731.33 P
+2 F
+0.61 (reified) 420.82 731.33 P
+1 F
+0.61 ( or rendered explicit in this) 446.93 731.33 P
+-0.29 (model. This accords to a general principle in the engineering) 317.88 719.33 P
+-0.12 (of large, flexible software systems, the separation of) 317.88 707.33 P
+2 F
+-0.12 (mecha-) 528.57 707.33 P
+0.99 (nism) 317.88 695.33 P
+1 F
+0.99 ( \050the means for accomplishing action\051 and) 336.77 695.33 P
+2 F
+0.99 (policy) 514.52 695.33 P
+1 F
+0.99 ( \050the) 538.96 695.33 P
+0.65 (means of deciding what action is appropriate\051. However, it) 317.88 683.33 P
+-0.6 (also extends this model, since policies are given as structured) 317.88 671.33 P
+0.89 (behavioural models. This means that the system can break) 317.88 659.33 P
+-0.07 (down and \322reason about\323 a policy. An account is not simply) 317.88 647.33 P
+0.06 (a name for a way of doing something, but describes the pat-) 317.88 635.33 P
+1.65 (tern of relationship between its constituent activities; and) 317.88 623.33 P
+(this is critical to the way it\325s used.) 317.88 611.33 T
+0 12 Q
+(8) 317.88 582 T
+(Perspectives and Current W) 343.08 582 T
+(ork) 502.91 582 T
+1 10 Q
+0.01 (This paper has used some simple examples to show the way) 317.88 561.33 P
+0.46 (in which accounts can be used to solve problems in system) 317.88 549.33 P
+-0.57 (interaction. In particular, these problems have arisen because) 317.88 537.33 P
+1.41 (traditional notions of representation in computational sys-) 317.88 525.33 P
+5.93 (tems provide poor support for the management of) 317.88 513.33 P
+1.41 (contingencies that arise in the course of conducting some) 317.88 501.33 P
+0.26 (activity. Whether we look at the interactions of people with) 317.88 489.33 P
+0.7 (systems or of system components with each other, we find) 317.88 477.33 P
+0.92 (problems which arise from the way in which conventional) 317.88 465.33 P
+(models of abstraction break down.) 317.88 453.33 T
+0.16 (It\325s important to recognise that a reflective representation is) 317.88 435.33 P
+1.53 (still a representation; it is still a normative description of) 317.88 423.33 P
+-0.09 (some system. An account is a designed artifact, and it incor-) 317.88 411.33 P
+1.06 (porates a set of assumptions and expectations about usage) 317.88 399.33 P
+0.82 (patterns in exactly the same way as other artifacts do. The) 317.88 387.33 P
+0.24 (key difference, though, is in the way in which the represen-) 317.88 375.33 P
+0.77 (tation is related to the system or activity it represents. In a) 317.88 363.33 P
+-0.5 (conventional system, not only is the representation of system) 317.88 351.33 P
+0.43 (action partial, but so is the way in which the representation) 317.88 339.33 P
+0.48 (and action are connected. In effect, this constrains not only) 317.88 327.33 P
+-0.29 (the information which the representation can reveal, but also) 317.88 315.33 P
+(the ways in which the representation can be used.) 317.88 303.33 T
+-0.06 (The account mechanism addresses this relationship between) 317.88 285.33 P
+-0.37 (representations and the behaviours they represent, and opens) 317.88 273.33 P
+0.1 (up the way in which these representations can be used. This) 317.88 261.33 P
+1.96 (is one step on a path towards a model of computational) 317.88 249.33 P
+1.79 (design which is rooted firmly in studies of the nature of) 317.88 237.33 P
+3.11 (working activity, and in attempting to understand their) 317.88 225.33 P
+0.76 (implications not only for the way in which design is done,) 317.88 213.33 P
+0.99 (but also for the nature of the artifacts which are designed.) 317.88 201.33 P
+-0.32 (The reflective approach is also being employed in the design) 317.88 189.33 P
+2.76 (of Prospero, a toolkit for CSCW applications [Dourish,) 317.88 177.33 P
+(1995].) 317.88 165.33 T
+1.48 (Ongoing activities focus on other issues arising from this) 317.88 147.33 P
+0.38 (model of representation and interaction. For instance, noth-) 317.88 135.33 P
+1.02 (ing has been said here of the issues surrounding where an) 317.88 123.33 P
+0.86 (account originates. Like the structure of the account, these) 317.88 111.33 P
+-0.14 (might also have their origins in understandings of how users) 317.88 99.33 P
+0.05 (approach, use and understand systems. In the case of photo-) 317.88 87.33 P
+2.61 (copying, we should perhaps look to a notion of \322naive) 317.88 75.33 P
+FMENDPAGE
+%%EndPage: "9" 9
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+51 37 560 60 R
+7 X
+0 0 0 1 0 0 0 K
+V
+54 72 294.12 738 R
+V
+1 10 Q
+0 X
+-0.19 (xerography\323 as providing a starting point for our description) 54 731.33 P
+2.69 (of how systems operate. The case of hybrid electronic/) 54 719.33 P
+1.97 (mechanical systems, such as photocopiers, is particularly) 54 707.33 P
+0.91 (interesting because of their embodied nature. Photocopiers) 54 695.33 P
+0.38 (make noises, produce output, and occasionally exhort users) 54 683.33 P
+0.85 (to open them up and muck around inside; a computational) 54 671.33 P
+-0.19 (account is no use at all if it is directly belied by the clear and) 54 659.33 P
+(obvious path of paper through a machine.) 54 647.33 T
+-0.47 (It\325s critical, though, to recognise and maintain the distinction) 54 629.33 P
+-0.09 (between accounts and mental models of device behaviour\321) 54 617.33 P
+-0.14 (the kinds of understandings of the world which people bring) 54 605.33 P
+0.3 (to bear when interacting with systems and devices. Clearly,) 54 593.33 P
+-0.44 (the two are strongly related. However, they exist on different) 54 581.33 P
+-0.04 (sides of the interface. We distinguish between an) 54 569.33 P
+2 F
+-0.04 (account of) 252.22 569.33 P
+1.69 (system behaviour) 54 557.33 P
+1 F
+1.69 ( as offered by a system, and the) 125.39 557.33 P
+2 F
+1.69 (under-) 267.46 557.33 P
+0.33 (standing of system behaviour) 54 545.33 P
+1 F
+0.33 ( formed by a user in response.) 171.92 545.33 P
+4.07 (Accounts are explicit technological artifacts\321computa-) 54 533.33 P
+4.19 (tional representations which stand in special semantic) 54 521.33 P
+(relationships to the systems they describe.) 54 509.33 T
+0 12 Q
+(9) 54 480 T
+(Summary and Conclusions) 79.2 480 T
+1 10 Q
+0.94 (There is a tension between the traditional process-oriented) 54 459.33 P
+1.26 (view of user interfaces and interaction\321interfaces as cur-) 54 447.33 P
+2.59 (rently designed\321and the view of interface work as the) 54 435.33 P
+0.09 (locally-improvised management to contingencies which has) 54 423.33 P
+-0.46 (been emerging particularly over the past ten years or so. This) 54 411.33 P
+0.4 (tension becomes particularly troublesome when we attempt) 54 399.33 P
+-0.26 (to incorporate some of the insights of sociological investiga-) 54 387.33 P
+0.51 (tions into system design. I have argued that addressing this) 54 375.33 P
+0.18 (problem means not only rethinking the way in which we go) 54 363.33 P
+0.1 (about systems design, but also a new approach to the nature) 54 351.33 P
+1.28 (of the systems which we design. In taking a focus on the) 54 339.33 P
+0.26 (resources which support improvised work at the interface, I) 54 327.33 P
+-0.39 (have been concerned here with how users understand system) 54 315.33 P
+1.87 (activity, and in particular with the way that systems and) 54 303.33 P
+1.51 (devices find and present such information. This reveals a) 54 291.33 P
+0.62 (problem in the structure of interactive systems\321a problem) 54 279.33 P
+(of) 54 267.33 T
+2 F
+(connection) 64.83 267.33 T
+1 F
+( between system components.) 108.71 267.33 T
+0.87 (Accounts are causally-connected representations of system) 54 249.33 P
+-0.63 (action which systems offer as explications of their own activ-) 54 237.33 P
+2.68 (ity. They are inherently partial and variable, selectively) 54 225.33 P
+0.71 (highlighting and hiding aspects of the inherent structure of) 54 213.33 P
+0.91 (the systems they represent, but, being views of the system) 54 201.33 P
+-0.29 (from within rather than without, they are reliable representa-) 54 189.33 P
+-0.18 (tions of ongoing activity. A system is held accountable to its) 54 177.33 P
+0.68 (account; that is, the account must adequately \322explain\323 the) 54 165.33 P
+(observable states of the system which offered it.) 54 153.33 T
+0.75 (This is an attempt, then, to look at the balance in interface) 54 135.33 P
+0.2 (design between) 54 123.33 P
+2 F
+0.2 (abstraction) 118.83 123.33 P
+1 F
+0.2 ( and) 164.39 123.33 P
+2 F
+0.2 (detail) 184.23 123.33 P
+1 F
+0.2 (; on the one hand, the) 207.01 123.33 P
+0.64 (abstraction and generalisation which is inherent in the pro-) 54 111.33 P
+1.65 (cess of software construction, and on the other hand, the) 54 99.33 P
+1.88 (detailed moment-to-moment activity which makes up the) 54 87.33 P
+-0.31 (work at the interface. The hope is that accounts, as described) 54 75.33 P
+317.88 72 558 738 R
+7 X
+V
+0 X
+0.76 (here, provide a means by which users can more accurately) 317.88 731.33 P
+-0.15 (match the functionality of a system or device to the immedi-) 317.88 719.33 P
+1.65 (ate requirements of the practical accomplishment of their) 317.88 707.33 P
+0.18 (work; and more generally that they point the way towards a) 317.88 695.33 P
+2.06 (deeper relationship between the insights of observational) 317.88 683.33 P
+(analysis and the practice of systems design.) 317.88 671.33 T
+0 9 Q
+(Acknowledgments) 317.88 648 T
+1 10 Q
+0.23 (Many colleagues have contributed to these ideas and to this) 317.88 632.33 P
+0.61 (presentation of them. I am particularly indebted to Annette) 317.88 620.33 P
+0.47 (Adler and Austin Henderson, who helped me start thinking) 317.88 608.33 P
+0.85 (about these issues in the first place, and to Bob Anderson,) 317.88 596.33 P
+-0.12 (Graham Button, Beki Grinter, Brian Smith and Randy Trigg) 317.88 584.33 P
+1.3 (for comments, inspiration and help in the development of) 317.88 572.33 P
+(this paper.) 317.88 560.33 T
+0 9 Q
+(References) 317.88 537 T
+1 F
+1.11 ([Bobrow) 317.88 522 P
+2 F
+1.11 (et al) 353.24 522 P
+1 F
+1.11 (, 1988] Daniel Bobrow, Linda Demichiel, Richard) 370.1 522 P
+4.6 (Gabriel, Sonya Keene, Gregor Kiczales and David Moon,) 317.88 512 P
+-0.41 (\322) 317.88 502 P
+2 F
+-0.41 (Common Lisp Object System Specification) 321.88 502 P
+1 F
+-0.41 (\323, X3J13 Document 88-) 473.24 502 P
+(002R, June 1988.) 317.88 492 T
+1.27 ([Dourish and Bellotti, 1992] Paul Dourish and Victoria Bellotti,) 317.88 477 P
+-0.3 (\322) 317.88 467 P
+2 F
+-0.3 (Awareness and Coordination in Shared Workspaces) 321.88 467 P
+1 F
+-0.3 (\323, Proc. ACM) 508.61 467 P
+2.48 (Conference on Computer-Supported Cooperative Work CSCW) 317.88 457 P
+(\32492, Toronto, Canada, November 1992.) 317.88 447 T
+0.99 ([Dourish, 1993] Paul Dourish,) 317.88 432 P
+2 F
+0.99 (\322Culture and Control in a Media) 433.31 432 P
+-0.31 (Space\323) 317.88 422 P
+1 F
+-0.31 (, Proc. Third European Conference on Computer-Supported) 344.38 422 P
+(Cooperative Work ECSCW93, Milano, Italy, September 1993.) 317.88 412 T
+0.39 ([Dourish, 1995] Paul Dourish,) 317.88 397 P
+2 F
+0.39 ( \322Developing a Reflective Model of) 428.3 397 P
+0.43 (Collaborative Systems\323) 317.88 387 P
+1 F
+0.43 (, ACM Transactions on Computer-Human) 404.06 387 P
+(Interaction, 2\0501\051, 40\32063, March 1995.) 317.88 377 T
+-0.48 ([Heath and Luff, 1992] Christian Heath and Paul Luff,) 317.88 362 P
+2 F
+-0.48 (\322System Use) 512.24 362 P
+4.09 (and Social Organisation\323) 317.88 352 P
+1 F
+4.09 (, in Button \050ed.\051, \322Technology in) 419.57 352 P
+1.56 (Working Order: Studies of Work, Interaction and Technology\323,) 317.88 342 P
+(Routledge, 1992.) 317.88 332 T
+-0.38 ([Kizcales) 317.88 317 P
+2 F
+-0.38 (et al) 353.73 317 P
+1 F
+-0.38 (, 1991] Gregor Kiczales, Jim des Rivi\217res and Daniel) 369.1 317 P
+3.49 (Bobrow, \322) 317.88 307 P
+2 F
+3.49 (The Art of the Metaobject Protocol) 358.86 307 P
+1 F
+3.49 (\323, MIT Press,) 502.54 307 P
+(Cambridge, Mass., 1991.) 317.88 297 T
+2.52 ([Kiczales, 1992] Gregor Kiczales, \322) 317.88 282 P
+2 F
+2.52 (Towards a New Model of) 456.91 282 P
+-0.52 (Abstaction in Software Engineering) 317.88 272 P
+1 F
+-0.52 (\323, Proc. IMSA\32592 Workshop on) 445.08 272 P
+(Reflection and Metalevel Architectures, Tokyo, Nov 4\3207, 1992.) 317.88 262 T
+-0.34 ([Rao, 1991] Ramana Rao,) 317.88 247 P
+2 F
+-0.34 (\322Implementational Reflection in Silica\323) 412.51 247 P
+1 F
+-0.34 (,) 555.75 247 P
+3.43 (Proc. European Conference on Object-Oriented Programming) 317.88 237 P
+(ECOOP\32591, Geneva, Switzerland, July 1991.) 317.88 227 T
+2.94 ([Robinson, 1993] Mike Robinson,) 317.88 212 P
+2 F
+2.94 (\322Design for Unanticipated) 455.13 212 P
+0.94 (Use\323) 317.88 202 P
+1 F
+0.94 (, Proc. Third European Conference on Computer-Supported) 336.88 202 P
+(Cooperative Work ECSCW93, Milano, Italy, September 1993.) 317.88 192 T
+3.58 ([Smith, 1982] Brian Smith, \322) 317.88 177 P
+2 F
+3.58 (Reflection and Semantics in a) 436.7 177 P
+2.07 (Procedural Language) 317.88 167 P
+1 F
+2.07 (\323, MIT Laboratory for Computer Science) 399.19 167 P
+(Report MIT-TR-272, 1982.) 317.88 157 T
+1.48 ([Smith,) 317.88 142 P
+2 F
+1.48 (forthcoming) 348.37 142 P
+1 F
+1.48 (] Brian Smith,) 392.37 142 P
+2 F
+1.48 (\322On the Origin of Objects\323) 450.32 142 P
+1 F
+1.48 (,) 555.75 142 P
+(MIT Press, Cambridge, Mass.,) 317.88 132 T
+2 F
+(forthcoming.) 430.37 132 T
+1 F
+-0.48 ([Suchman, 1987] Lucy Suchman,) 317.88 117 P
+2 F
+-0.48 (\322Plans and Situated Actions: The) 438.93 117 P
+8.35 (problem of human-machine communication\323) 317.88 107 P
+1 F
+8.35 (, Cambridge) 505.16 107 P
+(University Press, Cambridge, UK, 1987.) 317.88 97 T
+FMENDPAGE
+%%EndPage: "10" 10
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%PageOrder: Ascend
+%%Pages: 10
+%%DocumentFonts: Helvetica-Bold
+%%+ Times-Roman
+%%+ Times-Italic
+%%+ Palatino-BoldItalic
+%%EOF

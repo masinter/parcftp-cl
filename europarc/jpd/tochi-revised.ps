@@ -1,0 +1,5421 @@
+%!
+%%BoundingBox: 0 0 612 792
+%%Pages: 20 1
+%%DocumentFonts: Times-Roman
+%%+ Times-Italic
+%%+ Courier
+%%+ Times-Bold
+%%EndComments
+%
+% FrameMaker PostScript Prolog 3.0, for use with FrameMaker 3.0
+% Copyright (c) 1986,87,89,90,91 by Frame Technology Corporation.
+% All rights reserved.
+%
+% Known Problems:
+%	Due to bugs in Transcript, the 'PS-Adobe-' is omitted from line 1
+/FMversion (3.0) def 
+% Set up Color vs. Black-and-White
+	/FMPrintInColor systemdict /colorimage known
+		systemdict /currentcolortransfer known or def
+% Uncomment this line to force b&w on color printer
+%   /FMPrintInColor false def
+/FrameDict 195 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} def
+	} if
+/FMVERSION {
+	FMversion ne {
+		/Times-Roman findfont 18 scalefont setfont
+		100 100 moveto
+		(FrameMaker version does not match postscript_prolog!)
+		dup =
+		show showpage
+		} if
+	} def 
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/organgle FMLOCAL
+	/orgfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne dup {setmanualfeed} if
+	/manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	/yscale exch def
+	/xscale exch def
+	currenttransfer cvlit /orgxfer exch def
+	currentscreen cvlit /orgproc exch def
+	/organgle exch def /orgfreq exch def
+	setpapername 
+	manualfeed {true} {papersize} ifelse 
+	{manualpapersize} {false} ifelse 
+	{desperatepapersize} if
+	end 
+	} def 
+	/pagesave FMLOCAL
+	/orgmatrix FMLOCAL
+	/landscape FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch neg translate pop 
+		}
+		{pop pop}
+		ifelse
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+	} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin
+	array /fillvals exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fy translate 
+	rotate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	} bind def
+/FMENDEPSF {
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	/FMdicttop countdictstack 1 add def 
+	statusdict begin stopped end 
+	countdictstack -1 FMdicttop {pop end} for 
+	} def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped pop 
+		end
+		} if
+	} def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+/freq dpi 18.75 div 8 div round dup 0 eq {pop 1} if 8 mul dpi exch div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setpattern {
+	 /bwidth  exch def
+	 /bpside  exch def
+	 /bstring exch def
+	 /onbits 0 def  /offbits 0 def
+	 freq sangle landscape {90 add} if 
+		{/y exch def
+		 /x exch def
+		 /xindex x 1 add 2 div bpside mul cvi def
+		 /yindex y 1 add 2 div bpside mul cvi def
+		 bstring yindex bwidth mul xindex 8 idiv add get
+		 1 7 xindex 8 mod sub bitshift and 0 ne
+		 {/onbits  onbits  1 add def 1}
+		 {/offbits offbits 1 add def 0}
+		 ifelse
+		}
+		setscreen
+	 {} settransfer
+	 offbits offbits onbits add div FMsetgray
+	/graymode false def
+	} bind def
+/grayness {
+	FMsetgray
+	graymode not {
+		/graymode true def
+		orgxfer cvx settransfer
+		orgfreq organgle orgproc cvx setscreen
+		} if
+	} bind def
+	/HUE FMLOCAL
+	/SAT FMLOCAL
+	/BRIGHT FMLOCAL
+	/Colors FMLOCAL
+FMPrintInColor 
+	
+	{
+	/HUE 0 def
+	/SAT 0 def
+	/BRIGHT 0 def
+	% array of arrays Hue and Sat values for the separations [HUE BRIGHT]
+	/Colors   
+	[[0    0  ]    % black
+	 [0    0  ]    % white
+	 [0.00 1.0]    % red
+	 [0.37 1.0]    % green
+	 [0.60 1.0]    % blue
+	 [0.50 1.0]    % cyan
+	 [0.83 1.0]    % magenta
+	 [0.16 1.0]    % comment / yellow
+	 ] def
+      
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPCOLORc { 
+		BITMAPTRUECOLORc } def
+	/K { 
+		Colors exch get dup
+		0 get /HUE exch store 
+		1 get /BRIGHT exch store
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} def
+	/FMsetgray { 
+		/SAT exch 1.0 exch sub store 
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} bind def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/FMsetgray {setgray} bind def
+	/K { 
+		pop
+		} def
+	}
+ifelse
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setpattern} 
+	{grayness}
+	ifelse
+	} bind def
+/V { 
+	gsave eofill grestore
+	} bind def
+/N { 
+	stroke
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+	/rad FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	newpath
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rad arcto
+	x2 y2 x2 y1 rad arcto
+	x2 y1 x1 y1 rad arcto
+	x1 y1 x1 y2 rad arcto
+	closepath
+	16 {pop} repeat
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath fill
+	grestore
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	stroke
+	grestore
+	} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 4 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+	dup 
+	8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+	/proc1 FMLOCAL
+	/proc2 FMLOCAL
+	/newproc FMLOCAL
+/Fmcc {
+    /proc2 exch cvlit def
+    /proc1 exch cvlit def
+    /newproc proc1 length proc2 length add array def
+    newproc 0 proc1 putinterval
+    newproc proc1 length proc2 putinterval
+    newproc cvx
+} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch Fmcc settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	colorsetup
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	colorsetup
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} {is} {is} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip} {gip} {bip} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip gip bip w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+%%EndProlog
+%%BeginSetup
+(3.0) FMVERSION
+1 1 612 792 0 1 15 FMDOCUMENT
+0 0 /Times-Roman FMFONTDEFINE
+1 0 /Times-Italic FMFONTDEFINE
+2 0 /Courier FMFONTDEFINE
+3 0 /Times-Bold FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 .1 FMFILL
+2 .3 FMFILL
+3 .5 FMFILL
+4 .7 FMFILL
+5 .9 FMFILL
+6 .97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 .9 FMFILL
+18 .7 FMFILL
+19 .5 FMFILL
+20 .3 FMFILL
+21 .1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+72 36 540 54 R
+7 X
+0 K
+V
+0 18 Q
+0 X
+(Developing A Reflective Model of Collaborative Systems) 97.14 708 T
+0 12 Q
+( Paul Dourish) 273.02 678 T
+(Rank Xerox Research Centre\321Cambridge Laboratory \050EuroPARC\051) 142.29 656 T
+(61 Regent Street, Cambridge, CB2 1AB, United Kingdom) 166.08 642 T
+1 F
+(and) 297.01 628 T
+0 F
+(Dept. of Computer Science, University College, London) 170.59 614 T
+2 F
+(dourish@europarc.xerox.com) 212.45 592 T
+3 14 Q
+(Abstract) 72 550.67 T
+0 11 Q
+-0.32 (Recent years have seen a shift in perception of the nature of HCI and interactive systems. As interface work) 72 526.67 P
+0.02 (has increasingly become a focus of attention for the social sciences, we have expanded our appreciation of) 72 512.67 P
+(the importance of issues such as work practice, adaptation and evolution in interactive systems.) 72 498.67 T
+-0.29 (The reorientation in our view of interactive systems has been accompanied by a call for a new model of) 90 484.67 P
+0.46 (design centred around user needs and participation. This paper argues that a new process of design is not) 72 470.67 P
+0.01 (enough, and that the new view necessitates a similar reorientation in the) 72 456.67 P
+1 F
+0.01 (structure) 391.01 456.67 P
+0 F
+0.01 ( of the systems we build.) 430.69 456.67 P
+-0.33 (It outlines some requirements for systems which support a deeper conception of interaction, and argues that) 72 442.67 P
+0.73 (the traditional system design techniques are not suited to creating such systems. Finally, using examples) 72 428.67 P
+-0.44 (from ongoing work in the design of an open toolkit for collaborative applications, it illustrates how the prin-) 72 414.67 P
+-0.42 (ciples of computational reflection and metaobject protocols can lead us towards a new model based on open) 72 400.67 P
+(abstraction which holds great promise in addressing these issues.) 72 386.67 T
+2.58 (Categories and Subject Descriptors: C.2.4 [) 72 366.67 P
+3 F
+2.58 (Computer-Communication Networks) 275.62 366.67 P
+0 F
+2.58 (]: Distributed Sys-) 453.66 366.67 P
+0.9 (tems\321) 72 352.67 P
+1 F
+0.9 (distributed applications) 103.74 352.67 P
+0 F
+0.9 (; D.2.2 [) 209.33 352.67 P
+3 F
+0.9 (Software Engineering) 247.75 352.67 P
+0 F
+0.9 (]: Tools and Techniques\321) 350.87 352.67 P
+1 F
+0.9 (user interfaces) 471.05 352.67 P
+0 F
+0.9 (;) 536.95 352.67 P
+(D.2.10 [) 72 338.67 T
+3 F
+(Software Engineering) 108.31 338.67 T
+0 F
+(]: Design\321) 210.54 338.67 T
+1 F
+(methodologies) 262.11 338.67 T
+0 F
+(; H.1.10 [) 326.19 338.67 T
+3 F
+(Models and Principles) 368.3 338.67 T
+0 F
+(]: General.) 472.68 338.67 T
+(General Terms:) 72 318.67 T
+(Design) 143.39 318.67 T
+3 F
+(.) 174.51 318.67 T
+0 F
+0.85 (Addition Key Words and Phrases) 72 298.67 P
+3 F
+0.85 (:) 222.47 298.67 P
+0 F
+0.85 ( Collaborative applications, system architecture, computational reflec-) 226.13 298.67 P
+(tion, metaobject protocol, open implementations.) 72 284.67 T
+3 16 Q
+(1) 72 251.33 T
+(Introduction) 93.6 251.33 T
+0 11 Q
+0.51 (The last ten years or so have seen a remarkable shift in perspectives on the design, evaluation and use of) 72 224.67 P
+0.13 (interactive systems. The field of HCI has moved from being a relatively minor component of software en-) 72 210.67 P
+-0.17 (gineering to being the focus of attention for researchers from a variety of disciplines, including psychology) 72 196.67 P
+-0.33 (and social science. Studies and investigations from these perspectives have led to a gradual evolution in our) 72 182.67 P
+1 (conception of \322the interface\323 and of computer-based work in general. As a result, HCI has increasingly) 72 168.67 P
+0.16 (come to concern itself not just with the) 72 154.67 P
+1 F
+0.16 (mechanism) 247.2 154.67 P
+0 F
+0.16 ( of the interface, but with a range of related issues con-) 296.63 154.67 P
+(cerning the context in which interactive systems are used.) 72 140.67 T
+3 14 Q
+(1.1) 72 112.67 T
+(Studies of Work at the Interface) 100.8 112.67 T
+0 11 Q
+-0.04 (To ground discussion of this new view of interactive systems development, I will discuss three areas of re-) 72 90.67 P
+0.65 (search which have informed it: the customisation of interactive systems; their embedding within a social) 72 76.67 P
+FMENDPAGE
+%%EndPage: "1" 2
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+72 36 540 54 R
+7 X
+0 K
+V
+0 11 Q
+0 X
+(organisation; and the co-adaptation of systems and work practices.) 72 712.67 T
+3 12 Q
+(1.1.1) 72 686 T
+(Customisation) 108 686 T
+0 11 Q
+0.43 (Customisation and adaptation of computer systems have been studied in a variety of contexts. Trigg) 72 666.67 P
+1 F
+0.43 (et al) 520.34 666.67 P
+0 F
+0.65 ([1987] studied adaptation in the Notecards hypertext system. They described four aspects of adaptability) 72 652.67 P
+0.68 (which could allow a tool to be used in different application areas by users with different working styles.) 72 638.67 P
+0.05 (These were:) 72 624.67 P
+1 F
+0.05 (flexibility) 128.23 624.67 P
+0 F
+0.05 ( \050providing generic, reusable objects and behaviours\051;) 169.74 624.67 P
+1 F
+0.05 (parameterisability) 409.3 624.67 P
+0 F
+0.05 ( \050offering a) 490.48 624.67 P
+-0.01 (range of alternative behaviours that users could select\051;) 72 610.67 P
+1 F
+-0.01 (integrability) 317.26 610.67 P
+0 F
+-0.01 (\050linking with other applications in the) 374.32 610.67 P
+0.41 (environment\051; and) 72 596.67 P
+1 F
+0.41 (tailorability) 156.42 596.67 P
+0 F
+0.41 ( \050allowing users to make changes to the system itself\051. Their work showed) 208.93 596.67 P
+0.52 (how an adaptable system could be applied widely, essentially serving as an infrastructure within which a) 72 582.67 P
+(variety of information management applications could be generated.) 72 568.67 T
+1.3 (MacLean) 90 554.67 P
+1 F
+1.3 (et al) 135.53 554.67 P
+0 F
+1.3 ( [1990] were also concerned with customisation in the Buttons systems. Buttons are) 156.06 554.67 P
+-0.05 (graphical on-screen objects which encapsulate behaviour; they can be incorporated into on-line documents) 72 540.67 P
+0.62 (and sent through electronic mail. Buttons support multiple levels of customisation. At the simplest level,) 72 526.67 P
+-0.48 (their name, placement or graphical appearance can be customised. More advanced users can change explicit) 72 512.67 P
+-0.46 (parameters to customise them for particular needs; and more radical changes in their behaviour can be made) 72 498.67 P
+0.05 (by modifying the Lisp code that they contain. Buttons were designed around these levels of tailorability to) 72 484.67 P
+-0.5 (flatten the learning curve for interactive systems. Establishing a \322tailoring culture\323, in which customisations) 72 470.67 P
+(are encouraged and shared, was also crucial to the investigation.) 72 456.67 T
+-0.12 (Sharing customisations \050and customisation activity\051 has been a focus of attention for other researchers.) 90 442.67 P
+-0.25 (Mackay [1990b; 1991] studied the patterns of sharing customisations \050in the form of configuration files, ei-) 72 428.67 P
+0.47 (ther in whole or in part\051 in technical organisations. She found that a remarkable amount of customisation) 72 414.67 P
+-0.57 (was performed \050or shared\051 in groups rather than being a private activity\321even when the software being cus-) 72 400.67 P
+0.16 (tomised was single-user. Nardi and Miller [1991] showed that similar collaborative activity goes on in the) 72 386.67 P
+(notionally \322single-user\323 activity of programming and debugging spreadsheets.) 72 372.67 T
+-0.57 (Customisation is clearly a widespread and important phenomenon. The studies highlight the importance) 90 358.67 P
+(of designing systems with an understanding of how such flexibility can be harnessed and exploited.) 72 344.67 T
+3 12 Q
+(1.1.2) 72 318 T
+(Social Aspects of System Use) 108 318 T
+0 11 Q
+-0.15 (Ethnographic studies of work practice and technology have pointed to the strong social elements present in) 72 298.67 P
+-0.23 (apparently individual use of technology. Heath and Luff [1991], studying the activities in a control room of) 72 284.67 P
+0.32 (London\325s underground transport system, observed a range of complex practices employed by the control-) 72 270.67 P
+-0 (lers. In particular, they showed how controllers would) 72 256.67 P
+1 F
+-0 (peripherally monitor) 312.4 256.67 P
+0 F
+-0 ( each other\325s activities in order) 404.25 256.67 P
+-0.29 (to coordinate their own actions with those of their colleagues. Heath and Luff further observed that individ-) 72 242.67 P
+0.4 (uals would quietly offer commentaries on their own activities, specifically so that these might be used by) 72 228.67 P
+-0.29 (colleagues in their own work. Others uses of peripheral monitoring and anticipation in similar settings have) 72 214.67 P
+(been observed by Filippi and Theureau [1993] and Suchman [1992].) 72 200.67 T
+-0.2 (Harper) 90 186.67 P
+1 F
+-0.2 (et al) 123.04 186.67 P
+0 F
+-0.2 ( [1991] studied a different setting\321in this case, the control rooms of air traffic control cen-) 142.07 186.67 P
+-0.26 (tres. Again, they observed that apparently individualistic activity is frequently designed to facilitate coordi-) 72 172.67 P
+0.36 (nation between individuals. Their investigations pointed to the role that physical artefacts can play in this) 72 158.67 P
+-0.44 (process. The \322flight strips\323\321used by air traffic controllers to record details of flights currently in their man-) 72 144.67 P
+-0.45 (aged air space\321are notionally designed to record information for an individual. However, practices emerge) 72 130.67 P
+(around such artefacts in which they become the focus of coordination activity.) 72 116.67 T
+0.15 (Suchman [1987] discussed these issues more generally, concentrating in particular on the situatedness) 90 102.67 P
+-0.29 (of technology and the use of technology. Technological interactions are embedded within social and organ-) 72 88.67 P
+FMENDPAGE
+%%EndPage: "2" 3
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+72 36 540 54 R
+7 X
+0 K
+V
+0 11 Q
+0 X
+0.6 (isational situations, and their influence must be taken into account when attempting to analyse or predict) 72 712.67 P
+-0.67 (aspects of system interaction. These studies all call into question the extent to which interactions and activity) 72 698.67 P
+-0.14 (can be predicted from an external viewpoint; and yet such predictions are at the basis of the traditional sys-) 72 684.67 P
+(tem development approach.) 72 670.67 T
+3 12 Q
+(1.1.3) 72 644 T
+(Coadaptation of Systems and Practices) 108 644 T
+0 11 Q
+0.3 (The third aspect, drawing together elements from the previous two, concerns the longer-term mutual evo-) 72 624.67 P
+0.52 (lution of systems and work practices. Mackay [1990a] presented a variety of case studies illustrating this) 72 610.67 P
+0.76 (pattern, some of which were discussed above. Perhaps of most interest here is one study on Information) 72 596.67 P
+-0.33 (Lens [Malone et al. 1988; Mackay 1989]. Lens is a system designed to filter and sort electronic mail. Inves-) 72 582.67 P
+0.26 (tigations of use revealed that users adapted\321or even) 72 568.67 P
+1 F
+0.26 (subverted) 309 568.67 P
+0 F
+0.26 (\321features of Information Lens to match it) 351.71 568.67 P
+0.59 (to their working styles. This in turn led to a change in the development strategy, which incorporated and) 72 554.67 P
+0.26 (developed the mechanisms that the users had created. This is a spiralling process, based on the mutual in-) 72 540.67 P
+(teraction of system development and patterns of use\321in Mackay\325s terms, a) 72 526.67 T
+1 F
+(coadaptive) 406.41 526.67 T
+0 F
+(phenomenon.) 457.37 526.67 T
+0.67 (Echoes of this unanticipated interaction between technology and working practice are to be found in) 90 512.67 P
+0.32 (Sproull and Kiesler\325s [1991] work on the organisational impacts of electronic communication. Such tech-) 72 498.67 P
+0.59 (nologies are often construed as \322electronic office memos\323, and subject to the same rules and procedures.) 72 484.67 P
+0.58 (However, the experience is typically that aspects of electronic mail\321in particular, rapid turn-around and) 72 470.67 P
+0.36 (the emergence of self-organising interest groups\321results in a very different pattern of use, often much to) 72 456.67 P
+-0 (the surprise of the organisation. As patterns become better established, they affect the further development) 72 442.67 P
+(of the technology, and so the coadaptive spiral continues.) 72 428.67 T
+3 14 Q
+(1.2) 72 400.67 T
+(A Revised View of Interactive Systems) 100.8 400.67 T
+0 11 Q
+-0.09 (There is a set of general issues underlying the particular concerns raised in all these studies. Together, they) 72 378.67 P
+0.67 (form part of wider reappraisal of the nature of computer-based work. They encourage us to look beyond) 72 364.67 P
+0.12 (widget design in understanding interactive systems. For instance, focussing on the development of the no-) 72 350.67 P
+0.5 (tion of user interface, Grudin [1993] has shown how it extends beyond the computer itself, incorporating) 72 336.67 P
+-0.49 (the wider social and organisation issues arising from the use of computer systems. Elsewhere [Grudin 1990]) 72 322.67 P
+0.24 (he has placed these developments within a historical framework of changing concerns in interface design.) 72 308.67 P
+-0.31 (At the micro-level, these sentiments are echoed by Bowers and Rodden [1993], who found the same factors) 72 294.67 P
+0.06 (at work in a very specific setting\321the installation of a large network of CSCW systems in a particular ob-) 72 280.67 P
+(servation.) 72 266.67 T
+0.4 (Studies of customisation, of the social nature of computer-based work, and of the coevolution of sys-) 90 252.67 P
+-0.67 (tems and work practices, all address issues in the organisation of computer-based work practices. They high-) 72 238.67 P
+-0.38 (light the strong relationship between these practices and the social organisation of work generally. Comput-) 72 224.67 P
+-0.45 (er-based work is highly socially organised. As a result, these studies place an emphasis on variability in use;) 72 210.67 P
+0.23 (they point out the complexity of the relationship between the general pattern of use and the details of par-) 72 196.67 P
+(ticular activities.) 72 182.67 T
+0.61 (It is not surprising, then, that studies such as these should result in a reorientation of our view of the) 90 168.67 P
+0.63 (fundamental nature of interactive systems; a reorientation which takes into account this expanded under-) 72 154.67 P
+-0.18 (standing of computer usage. Indeed, such a reorientation has been taking place. It moves away from a view) 72 140.67 P
+0.22 (of systems as fixed, \322black-box\323 artifacts which could be objectively studied and assessed, towards a new) 72 126.67 P
+-0.06 (view of \322systems-in-use\323 which acknowledges the influence of these other elements. In the new view, sys-) 72 112.67 P
+-0.61 (tems are) 72 98.67 P
+1 F
+-0.61 (situated) 110.43 98.67 P
+0 F
+-0.61 (within particular organisations and practices; they are) 147.36 98.67 P
+1 F
+-0.61 (dynamic) 381.36 98.67 P
+0 F
+-0.61 (, placing greater importance) 418.58 98.67 P
+0.46 (in the study of patterns of use and the cycle of software adoption; and they) 72 84.67 P
+1 F
+0.46 (evolve) 409.27 84.67 P
+0 F
+0.46 (, with specific working) 437.33 84.67 P
+FMENDPAGE
+%%EndPage: "3" 4
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+72 36 540 54 R
+7 X
+0 K
+V
+0 11 Q
+0 X
+0.32 (practices and behaviours emerging around the interactive system, while at the same time the system itself) 72 712.67 P
+0.3 (is tailored to particular working styles. In other words, systems must be able to support the variability ex-) 72 698.67 P
+(posed by investigations like those discussed above.) 72 684.67 T
+0.34 (This shift in perspectives has largely addressed interactive systems) 90 670.67 P
+1 F
+0.34 (as they appear to the user) 389.33 670.67 P
+0 F
+0.34 (, in par-) 504.85 670.67 P
+-0.02 (ticular settings. Indeed, it has been part of a general trend towards participative or user-centred approaches) 72 656.67 P
+0.06 (to system building. However, it raises other important issues, particularly for the designers and implemen-) 72 642.67 P
+(tors of interactive systems; issues which reach below the interface.) 72 628.67 T
+-0.19 (In this paper, I want to concentrate on the) 90 614.67 P
+1 F
+-0.19 (structure) 273.75 614.67 P
+0 F
+-0.19 ( of the systems we create. I believe that the implica-) 313.42 614.67 P
+-0.6 (tions of our reconception of HCI forces us to reconsider our notions of system-building. This means changes) 72 600.67 P
+-0.01 (not only to the) 72 586.67 P
+1 F
+-0.01 (process) 138.51 586.67 P
+0 F
+-0.01 ( of design, but also\321critically\321to the) 172.07 586.67 P
+1 F
+-0.01 (artefacts) 343.84 586.67 P
+0 F
+-0.01 ( of design. In particular, I will show) 382.29 586.67 P
+0.67 (how fundamental mechanisms that we use in constructing software systems do not support the design of) 72 572.67 P
+-0 (interactive systems which change and evolve. Drawing from work done in other areas of systems develop-) 72 558.67 P
+-0.09 (ment, I will show how the principles of) 72 544.67 P
+1 F
+-0.09 (computational reflection) 246.74 544.67 P
+0 F
+-0.09 ( lead to a more open model of systems de-) 354.99 544.67 P
+-0.2 (velopment, with revisability as a key element. Using examples from ongoing work in the design of an open) 72 530.67 P
+(CSCW toolkit, I will illustrate how this approach tackles a number of existing flexibility problems.) 72 516.67 T
+-0.08 (Our starting point for this investigation, then, is a question\321what does the shift in our view of interac-) 90 502.67 P
+(tive systems imply for the nature of the systems that we design?) 72 488.67 T
+3 16 Q
+(2) 72 455.33 T
+(Implications for Interactive Systems Design) 93.6 455.33 T
+0 11 Q
+-0.14 (Our increasing appreciation of the issues discussed above has been accompanied by a call for a form of de-) 72 428.67 P
+0.64 (sign which is more sensitive to them\321a form of design oriented specifically around user needs and user) 72 414.67 P
+-0.43 (involvement \050see, for example, [Norman and Draper 1986; Ehn 1988;B\277dker and Gr\277nb\276k 1991]\051. Follow-) 72 400.67 P
+-0.57 (ing on from this, Grudin [1991] has highlighted conflicts between the \322user-centred\323 approach to design and) 72 386.67 P
+(the traditional systems development process.) 72 372.67 T
+-0.07 (Taking this as a starting point, I want to explore how we can construct systems which support the sorts) 90 358.67 P
+-0.31 (of practices outlined above. Principally, this involves looking at technical implications of the new approach) 72 344.67 P
+0.42 (for interactive systems, and then working towards an architectural model which addresses them. So if we) 72 330.67 P
+0.15 (generalise some aspects of the \322systems-in-use\323 perspective, we can identify two sets of consequences for) 72 316.67 P
+(their design, concerned with the cycle of design, and creating evolving systems.) 72 302.67 T
+3 14 Q
+(2.1) 72 274.67 T
+(The Cycle of Design) 100.8 274.67 T
+0 11 Q
+-0.29 (The first of these is a reconsideration of the cycle of design. In the traditional \322waterfall\323 model of software) 72 252.67 P
+-0.08 (engineering [Royce 1970], the \322design\323 of the system happens at a fixed point\321after specification and be-) 72 238.67 P
+0.32 (fore implementation. More recent models, such as those of Boehm [1988] or Booch [1991], adopt a more) 72 224.67 P
+1.11 (iterative, prototype-based approach. Here, \322design\323 is distributed more evenly through the development) 72 210.67 P
+(process, not concentrated in one place.) 72 196.67 T
+-0 (Despite their differences, there is at least one point of fundamental agreement among all these models.) 90 182.67 P
+0.06 (They state that, at some point, a product is) 72 168.67 P
+1 F
+0.06 (delivered) 261.42 168.67 P
+0 F
+0.06 ( to a user community; at which point, for that revision) 302.3 168.67 P
+(of the software, the design process is over.) 72 154.67 T
+-0.45 (This is an assumption that we must reconsider in the light of the \322systems-in-use\323 model. When we take) 90 140.67 P
+0.18 (this perspective, we are forced to ask questions such as: \322When does design happen?\323; \322Who does the de-) 72 126.67 P
+0.3 (sign?\323; and \322When does it stop?\323. When we look at an interactive system as an evolving artifact in use, it) 72 112.67 P
+-0.33 (follows that the process of design does) 72 98.67 P
+1 F
+-0.33 (not) 242.73 98.67 P
+0 F
+-0.33 ( end with the delivery of the system to some community of users.) 256.77 98.67 P
+-0.12 (Instead, it continues as they use and adapt the system. This leads to a second and more focussed set of con-) 72 84.67 P
+FMENDPAGE
+%%EndPage: "4" 5
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+72 36 540 54 R
+7 X
+0 K
+V
+0 11 Q
+0 X
+(cerns for system developers, looking at how systems are structured, constructed and delivered.) 72 712.67 T
+3 14 Q
+(2.2) 72 684.67 T
+(Creating Evolving Systems) 100.8 684.67 T
+0 11 Q
+-0.24 (The developer of an interactive system must not only be concerned with the traditional issues of system de-) 72 662.67 P
+-0.11 (sign, but also with the issues of providing a system which is amenable to evolution and adaptation. We can) 72 648.67 P
+(focus on three particular aspects of this problem:) 72 634.67 T
+(1.) 72 614.67 T
+1 F
+0.01 (Open infrastructures) 86.4 614.67 P
+0 F
+0.01 (. From the perspective of systems-in-use, we begin to see delivered systems as not) 178.27 614.67 P
+0.37 (being closed and static, but rather as infrastructures for further specialisation, refinement and end-user) 86.4 600.67 P
+0.64 (design. They provide a framework within which users can change and adapt the basic system to their) 86.4 586.67 P
+-0.05 (own patterns of usage. The system developer is concerned with appropriate openness within the system) 86.4 572.67 P
+-0.27 (and ensuring that it lends itself to these adaptations. \050The nature of \322appropriateness\323 will be considered) 86.4 558.67 P
+-0.08 (in more depth later; for the moment, we can consider \322appropriate\323 as being \322lending itself to appropri-) 86.4 544.67 P
+-0.16 (ation\323.\051 In addition, extending the model of customisation, we must consider the ways in which the sys-) 86.4 530.67 P
+0.31 (tem can lend itself to customisation of) 86.4 516.67 P
+1 F
+0.31 (function) 259.19 516.67 P
+0 F
+0.31 ( \050the \322semantics\323 of manipulating information in an in-) 295.2 516.67 P
+(teractive system\051 as well as) 86.4 502.67 T
+1 F
+(presentation) 209.36 502.67 T
+0 F
+(\050surface-level issues of views and interaction\051.) 267.04 502.67 T
+(2.) 72 482.67 T
+1 F
+-0.37 (Dynamic and reactive systems) 86.4 482.67 P
+0 F
+-0.37 (. When we think of user behaviour changing over time, then we must con-) 218.62 482.67 P
+-0.4 (sider how the interactive system will support and respond to these changes. From this point of view, sys-) 86.4 468.67 P
+-0.64 (tems need to be designed to dynamically react to patterns of use and activity. The system\325s response must) 86.4 454.67 P
+0.23 (be situated in the same sense as is the user\325s activity. User\325s needs are highly dependent on many con-) 86.4 440.67 P
+0.72 (textual factors, such as patterns of activity and changes in configuration. Similarly, system behaviour) 86.4 426.67 P
+(should react to contexts of use.) 86.4 412.67 T
+(3.) 72 392.67 T
+1 F
+0.06 (Adaptive and evolving systems) 86.4 392.67 P
+0 F
+0.06 (. In addition to the \322immediate\323 view of system reactivity, the developer) 221.13 392.67 P
+-0.05 (must also be concerned with the longer-term view of the evolution of the system. Research on customi-) 86.4 378.67 P
+-0.65 (sation and coadaptivity shows that this evolution has its roots in the social aspects of work and is enabled,) 86.4 364.67 P
+-0.01 (in part, through the sharing of customisations. This implies that it is important to address issues such as) 86.4 350.67 P
+-0.37 (the nature of the customisation mechanisms, and the means by which they can be distributed, shared and) 86.4 336.67 P
+(themselves evolve over time\321support for Maclean et al.\325s \322tailoring culture\323.) 86.4 322.67 T
+-0.25 (\322Tailoring\323 in this context does not just imply the ability to make changes. It is also crucial that changes) 86.4 304.67 P
+-0.14 (and adaptations be separated from core functionality in a principled way, while maintaining the \322reach\323) 86.4 290.67 P
+0.18 (of tailorability into that core. This separation is crucial if tailorings and adaptations are to be transport-) 86.4 276.67 P
+-0.52 (able, not just from person to person, but also across software releases. As software product cycles shrink,) 86.4 262.67 P
+-0.24 (it is essential that users can rely on this. Without such a separation, a user is unlikely to make the invest-) 86.4 248.67 P
+-0.08 (ment of time and effort which tailoring involves, since the effects will be lost with the next software re-) 86.4 234.67 P
+(lease.) 86.4 220.67 T
+0.76 (The issue for system designers, then, is to develop a set of techniques for constructing software systems) 72 200.67 P
+-0.58 (which enable the distribution of the design phase throughout the whole lifecycle of a system, and which sup-) 72 186.67 P
+-0.33 (port software adaptation and evolution. This is a significant departure from the traditional focus of software) 72 172.67 P
+-0.64 (design, a focus on developing fixed algorithms which manipulate models of the application domain. Instead,) 72 158.67 P
+-0.05 (it focuses on the way in which such models might be constructed and manipulated\321a meta-level problem,) 72 144.67 P
+(one step removed from the application domain itself.) 72 130.67 T
+FMENDPAGE
+%%EndPage: "5" 6
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+72 36 540 54 R
+7 X
+0 K
+V
+3 16 Q
+0 X
+(3) 72 709.33 T
+(Reflection and Open Abstraction) 93.6 709.33 T
+0 11 Q
+-0.35 (This view has developed from ongoing work in the design of systems for Computer-Supported Cooperative) 72 682.67 P
+-0.49 (Work \050CSCW\051. CSCW systems, by their nature, have very strong requirements for flexibility and openness.) 72 668.67 P
+-0.39 (Customisation may be performed not only by users but by groups as a whole, and even a single group might) 72 654.67 P
+0.12 (employ a wide variety of working styles in the course of their work. These factors bring the system devel-) 72 640.67 P
+-0.59 (oper face-to-face with the issues of reactivity and adaptability. These problems are magnified for developers) 72 626.67 P
+-0.57 (of) 72 612.67 P
+1 F
+-0.57 (generic) 83.32 612.67 P
+-0.57 (toolkits) 118.44 612.67 P
+0 F
+-0.57 (. These are used to generate a variety of CSCW applications, which may embody different) 150.8 612.67 P
+0.17 (models of collaboration. As a result, a major goal of my work has also been to provide the application de-) 72 598.67 P
+-0.18 (veloper with sufficient flexibility to create a range of application styles. Reflecting the shift in design focus) 72 584.67 P
+0.21 (outlined above, the emphasis here is on a framework in which mechanisms and interactional styles can be) 72 570.67 P
+1 F
+0.06 (created) 72 556.67 P
+0 F
+0.06 (, rather than the traditional approach of providing a selection of mechanisms from which particular) 104.95 556.67 P
+(components can be) 72 542.67 T
+1 F
+(selected) 158.96 542.67 T
+0 F
+(.) 194.34 542.67 T
+1.59 (The systems approach that I am developing is based on the principles of) 90 528.67 P
+1 F
+1.59 (computational reflection) 430.08 528.67 P
+0 F
+-0.09 (\050[Smith 1982; Maes 1987]\051, and in particular the) 72 514.67 P
+1 F
+-0.09 (metaobject protocol) 287.66 514.67 P
+0 F
+-0.09 ([Kiczales et al. 1991]. This approach) 378.42 514.67 P
+-0.51 (is a crucial stepping-stone towards the goals of flexible design which were outlined above. It provides a way) 72 500.67 P
+0.82 (of incorporating the flexibility we need not only into the design process, but into the) 72 486.67 P
+1 F
+0.82 (artefacts of design) 457.18 486.67 P
+0 F
+-0.01 (themselves; it is fundamentally about systems which are open to explicit change and adaptation. It\325s worth) 72 472.67 P
+-0.13 (taking some time, then, to look at the mechanics of reflection, and the way it establishes a link between ge-) 72 458.67 P
+(neric models of system action and the performance of that action.) 72 444.67 T
+-0.42 (In the rest of this section, I will outline the reflective approach, show how it has been developed into the) 90 430.67 P
+0.12 (metaobject protocol and illustrate how such a protocol can be used in a particular case \050representation in a) 72 416.67 P
+-0.29 (programming language\051. I will show how it can be further generalised into the notion of an) 72 402.67 P
+1 F
+-0.29 (open implemen-) 469.81 402.67 P
+(tation) 72 388.67 T
+0 F
+(, and then return to look at the design issues in interactive systems.) 97.64 388.67 T
+3 14 Q
+(3.1) 72 360.67 T
+(Computational Reflection and Metaobject Protocols) 100.8 360.67 T
+0 11 Q
+-0.19 (Computational reflection is the principle that a computational system can embody, within itself, a model of) 72 338.67 P
+-0 (its own behaviour \050a self-representation\051 which is) 72 324.67 P
+1 F
+-0 (causally connected) 292.57 324.67 P
+0 F
+-0 ( to that behaviour. Causal connection) 376.47 324.67 P
+0.03 (implies that the representation not only describes, but also controls, the behaviour of the system. First, this) 72 310.67 P
+0.46 (results in systems which can examine their own behaviour through examination of the model; the system) 72 296.67 P
+-0.49 (can \322reason\323 about its own activity. Second, such systems can make changes to the model and hence change) 72 282.67 P
+-0.36 (their own behaviour. Essentially, in addition to the traditional \322base-level\323 computation which concerns the) 72 268.67 P
+1.09 (system\325s application domain, reflection enables \322meta-level\323 computation, which concerns the system\325s) 72 254.67 P
+(own manipulation and execution of base-level concepts.) 72 240.67 T
+-0.27 (This principle was originally demonstrated as part of the execution model of 3-Lisp, a reflective dialect) 90 226.67 P
+0.54 (of the Lisp programming language. 3-Lisp\325s reflective facilities were realised by giving the language ex-) 72 212.67 P
+0.44 (plicit access to its own interpreter \050the program controlling its behaviour\051 [des Rivi\217res and Smith 1984].) 72 198.67 P
+-0.03 (By looking at the interpreter structures, 3-Lisp programs could examine their own execution states. For in-) 72 184.67 P
+-0 (stance, a program could look at the function call sequence recorded in the interpreter\325s data structures, and) 72 170.67 P
+-0.15 (so ask questions like, \322how was this function arrived at?\323. Further, by making changes to those same struc-) 72 156.67 P
+-0.14 (tures, programs could alter future behaviour; for instance, modifications to the processing of binding struc-) 72 142.67 P
+0.25 (tures would allow programs to change the ways in which values were associated with variables. Since the) 72 128.67 P
+-0.18 (interpreter structures represent a program\325s execution, providing access gave 3-Lisp programs the facilities) 72 114.67 P
+(to reason about and control their own behaviour.) 72 100.67 T
+-0.31 (More recently, the principles embodied in 3-Lisp\325s reflective model have been combined with the tech-) 90 86.67 P
+FMENDPAGE
+%%EndPage: "6" 7
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+72 36 540 54 R
+7 X
+0 K
+V
+0 11 Q
+0 X
+-0.39 (niques of object-oriented programming to yield the metaobject protocol. The metaobject protocol embodies) 72 712.67 P
+-0.06 (a reflective self-representation in the structures of object-oriented programming. The self-representation in) 72 698.67 P
+-0.33 (a metaobject protocol-based system is less explicit than that of 3-Lisp. Much of the representation is encod-) 72 684.67 P
+-0.25 (ed in the object-oriented structure. Access to the representation, and manipulation of it, is provided through) 72 670.67 P
+0.35 (the object system, using the standard techniques of object-oriented programming \050subclassing, specialisa-) 72 656.67 P
+-0.13 (tion, overloading,) 72 642.67 P
+1 F
+-0.13 (etc.) 152.31 642.67 P
+0 F
+-0.13 (\051. \050An example, to illustrate the mechanics of modifying system behaviour in a meta-) 167.87 642.67 P
+(object protocol, is provided below.\051) 72 628.67 T
+0.28 (The first full metaobject protocol \050or MOP\051 was developed within the definition of the Common Lisp) 90 614.67 P
+-0.34 (Object System \050CLOS\051 [Bobrow et al. 1988; Bobrow et al. 1993) 72 597.6 P
+0 9 Q
+-0.28 (1) 351.78 602 P
+0 11 Q
+-0.34 (]. The CLOS MOP creates a reflective ob-) 356.27 597.6 P
+0.11 (ject system, using its own object mechanisms to create an object-oriented representation of its behaviour) 72 580.53 P
+0 9 Q
+0.09 (2) 532.76 584.93 P
+0 11 Q
+0.11 (.) 537.25 580.53 P
+-0.55 (The reflective model can be changed through standard object-oriented techniques, just like any other object-) 72 566.53 P
+-0.47 (oriented definition. This allows application programmers to adapt the object system semantics for particular) 72 552.53 P
+0.44 (needs; perhaps for efficiency on particular platforms, compatibility with other systems, or specialised be-) 72 538.53 P
+(haviours which enable the development of specialised applications.) 72 524.53 T
+3 14 Q
+(3.2) 72 496.53 T
+(Using The CLOS MOP) 100.8 496.53 T
+0 11 Q
+-0.02 (To explain the CLOS MOP a little more concretely, I will present an example in which an application pro-) 72 474.53 P
+0.06 (grammer can revise design decisions in the implemented language. This particular example focuses on the) 72 460.53 P
+(issue of \322instance representation\323 in the implementation, but it is illustrative of the general approach.) 72 446.53 T
+0.25 (In an object-oriented programming language such as CLOS, the implementor must design a represen-) 90 432.53 P
+-0.63 (tation for instances \050objects) 72 415.47 P
+0 9 Q
+-0.51 (3) 191.26 419.87 P
+0 11 Q
+-0.63 (\051, which will record such properties as the identity of the instance and the values) 195.75 415.47 P
+0.6 (of its slots A simple and obvious mechanism might be to allocate enough memory for all of the instance) 72 401.47 P
+0.66 (slots, define that to be the size of an instance of that particular class, and then compile slot references in) 72 387.47 P
+(programs into the appropriately-valued offsets into the instance body.) 72 373.47 T
+0.23 (This is shown in figure 1a; the positions of the slots \050) 90 359.47 P
+2 F
+0.55 (x) 325.97 359.47 P
+0 F
+0.23 ( and) 332.57 359.47 P
+2 F
+0.55 (y) 354.38 359.47 P
+0 F
+0.23 (\051 are well-known, and so references to) 360.97 359.47 P
+2 F
+0.55 (y) 533.41 359.47 P
+0 F
+-0.25 (can always be compiled as references to the address of the object plus the size of slot) 72 345.47 P
+2 F
+-0.61 (x) 443.9 345.47 P
+0 F
+-0.25 (. This representation) 450.49 345.47 P
+-0.26 (is efficient for many applications which might be built with the programming language, and it lets the com-) 72 331.47 P
+(piler generate fast code for slot access.) 72 317.47 T
+-0.35 (However, there are application programs which are not well served by this representation. For instance,) 90 303.47 P
+-0.43 (consider a knowledge-based application. The application programmer might wish to define a class referring) 72 289.47 P
+0.3 (to people. The class might have very many slots \050many hundreds or more\051, referring to various properties) 72 275.47 P
+-0.2 (that individuals might have. However, any given instance of that class would perhaps define and use only a) 72 261.47 P
+1.39 (few of them. In this case, the simple representation outlined above\321which allocates memory for slots) 72 247.47 P
+1 F
+-0.64 (whether or not) 72 233.47 P
+0 F
+-0.64 ( they hold values\321would be inappropriate. Instead, the application programmer would prefer) 135.42 233.47 P
+-0.27 (a mechanism which only allocates space when the slot was assigned a value\321perhaps one based on a look-) 72 219.47 P
+0.52 (up table for each instance. Figure 1b illustrates this alternative representation, where each instance main-) 72 205.47 P
+(tains pointers only to the slots which actually have values.) 72 191.47 T
+1.45 (In traditional languages, an implementation\325s choice of representation scheme is hidden and fixed.) 90 177.47 P
+0.4 (Since it is hidden, the programmer becomes aware of it only indirectly\321) 72 163.47 P
+1 F
+0.4 (e.g.) 397.37 163.47 P
+0 F
+0.4 ( through its effect on perfor-) 413.23 163.47 P
+72 144 540 159 C
+72 150 216 150 2 L
+0.5 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 10 Q
+0 X
+0 K
+0.38 (1. Since then, metaobject protocols have been incorporated into related languages, such as EuLisp [Bretthauer et al.) 72 137.33 P
+(1992] and Dylan [Shalit 1992]) 80.64 125.33 T
+(2. In other words, CLOS is not only reflective, but also) 72 113.33 T
+1 F
+(meta-circular) 294.64 113.33 T
+0 F
+( \050defined in itself\051.) 349.6 113.33 T
+0.11 (3. Throughout this paper, I will use CLOS terminology for object-oriented concepts. Individual objects are) 72 101.33 P
+1 F
+0.11 (instances) 502.8 101.33 P
+0 F
+0.04 (of) 80.64 89.33 P
+1 F
+0.04 (classes) 91.5 89.33 P
+0 F
+0.04 (. Each instance contains a number of defined variables called) 119.82 89.33 P
+1 F
+0.04 (slots) 366.93 89.33 P
+0 F
+0.04 (. Class-specific behaviours are defined) 385.26 89.33 P
+(as) 80.64 77.33 T
+1 F
+(methods) 91.46 77.33 T
+0 F
+(, grouped together into) 124.78 77.33 T
+1 F
+(generic functions) 218.32 77.33 T
+0 F
+( which define the patterns of interaction.) 287.45 77.33 T
+FMENDPAGE
+%%EndPage: "7" 8
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+72 36 540 54 R
+7 X
+0 K
+V
+0 11 Q
+0 X
+-0.54 (mance in particular cases. Since it is fixed, the programmer cannot use high-level information about the pro-) 72 368.72 P
+-0.29 (gram\325s behaviour to inform implementation decisions. Instead he or she has to write code so that it suits the) 72 354.72 P
+-0.2 (decisions already made by the implementor\321what Kiczales [1992] refers to as \322) 72 340.72 P
+1 F
+-0.2 (coding between the lines) 424.65 340.72 P
+0 F
+-0.2 (\323.) 532.38 340.72 P
+0.72 (In a MOP-based language, however, the application programmer can) 90 326.72 P
+1 F
+0.72 (revise) 402.47 326.72 P
+0 F
+0.72 ( the decisions of the lan-) 428.7 326.72 P
+0.47 (guage implementor\321in this case, by changing the representation model used. This is done through tradi-) 72 312.72 P
+0.14 (tional object-oriented techniques; in fact, the programming of the CLOS MOP is performed in CLOS. For) 72 298.72 P
+(this example, the mechanism would be roughly as follows:) 72 284.72 T
+(1.) 72 264.72 T
+-0.56 (There is a class, called) 86.4 264.72 P
+2 F
+-1.34 (standard-class) 185.51 264.72 P
+0 F
+-0.56 (, of which normal user-defined classes are instances.) 277.8 264.72 P
+2 F
+-1.34 (Stan-) 507.04 264.72 P
+(dard-class) 86.4 250.72 T
+0 F
+( is known as the) 152.32 250.72 T
+1 F
+(metaclass) 225.86 250.72 T
+0 F
+( of such classes\321a metaclass is the class of a class.) 269.19 250.72 T
+(2.) 72 230.72 T
+-0.11 (The metaobject protocol defines generic functions for classes, including the functions implementing in-) 86.4 230.72 P
+0.05 (stance allocation and slot lookup. Methods for these operations specialise on) 86.4 216.72 P
+2 F
+0.13 (standard-class) 426.3 216.72 P
+0 F
+0.05 (, and) 518.59 216.72 P
+(hence are applied to its instances \050normal classes\051.) 86.4 202.72 T
+(3.) 72 182.72 T
+0.04 (A new metaclass, embodying the new instance representation such as the sparse table-driven approach,) 86.4 182.72 P
+(is defined as a subclass of) 86.4 168.72 T
+2 F
+(standard-class) 202.95 168.72 T
+0 F
+(. Call this) 295.24 168.72 T
+2 F
+(sparse-class) 340.42 168.72 T
+0 F
+(.) 419.52 168.72 T
+(4.) 72 148.72 T
+-0.47 (Since) 86.4 148.72 P
+2 F
+-1.13 (sparse-class) 113.09 148.72 P
+0 F
+-0.47 ( is a subclass of) 192.19 148.72 P
+2 F
+-1.13 ( standard-class) 259.27 148.72 P
+0 F
+-0.47 (, it) 357.02 148.72 P
+-0.47 (inherits the same methods for instance) 373.61 148.72 P
+-0.42 (allocation and slot lookup as) 86.4 134.72 P
+2 F
+-1 (standard-class) 212.79 134.72 P
+0 F
+-0.42 (. However, we can define new, more specific methods) 305.07 134.72 P
+(which will override the existing ones and apply only to instances of) 86.4 120.72 T
+2 F
+(sparse-class) 386.05 120.72 T
+0 F
+(.) 465.15 120.72 T
+(5.) 72 100.72 T
+0.68 (The applications programmer can now define new methods for) 86.4 100.72 P
+2 F
+1.63 (allocate-instance) 371.67 100.72 P
+0 F
+0.68 ( \050the generic) 483.73 100.72 P
+-0.57 (function for creating instance representations\051 and) 86.4 86.72 P
+2 F
+-1.37 (slot-value-using-class) 306.32 86.72 P
+0 F
+-0.57 (\050for looking up slot) 456.56 86.72 P
+72 72 540 720 C
+78.77 376.06 533.23 720 C
+78.77 387 528.77 711 R
+7 X
+0 K
+V
+0 X
+0 78.77 387 -78.77 -387 450 324 BEGINPRINTCODE
+%!
+%%Creator: idraw
+%%DocumentFonts: Helvetica
+%%Pages: 1
+%%BoundingBox: 65 4 382 321
+%%EndComments
+
+%%BeginIdrawPrologue
+/arrowhead {
+0 begin
+transform originalCTM itransform
+/taily exch def
+/tailx exch def
+transform originalCTM itransform
+/tipy exch def
+/tipx exch def
+/dy tipy taily sub def
+/dx tipx tailx sub def
+/angle dx 0 ne dy 0 ne or { dy dx atan } { 90 } ifelse def
+gsave
+originalCTM setmatrix
+tipx tipy translate
+angle rotate
+newpath
+arrowHeight neg arrowWidth 2 div moveto
+0 0 lineto
+arrowHeight neg arrowWidth 2 div neg lineto
+patternNone not {
+originalCTM setmatrix
+/padtip arrowHeight 2 exp 0.25 arrowWidth 2 exp mul add sqrt brushWidth mul
+arrowWidth div def
+/padtail brushWidth 2 div def
+tipx tipy translate
+angle rotate
+padtip 0 translate
+arrowHeight padtip add padtail add arrowHeight div dup scale
+arrowheadpath
+ifill
+} if
+brushNone not {
+originalCTM setmatrix
+tipx tipy translate
+angle rotate
+arrowheadpath
+istroke
+} if
+grestore
+end
+} dup 0 9 dict put def
+
+/arrowheadpath {
+newpath
+arrowHeight neg arrowWidth 2 div moveto
+0 0 lineto
+arrowHeight neg arrowWidth 2 div neg lineto
+} def
+
+/leftarrow {
+0 begin
+y exch get /taily exch def
+x exch get /tailx exch def
+y exch get /tipy exch def
+x exch get /tipx exch def
+brushLeftArrow { tipx tipy tailx taily arrowhead } if
+end
+} dup 0 4 dict put def
+
+/rightarrow {
+0 begin
+y exch get /tipy exch def
+x exch get /tipx exch def
+y exch get /taily exch def
+x exch get /tailx exch def
+brushRightArrow { tipx tipy tailx taily arrowhead } if
+end
+} dup 0 4 dict put def
+
+%%EndIdrawPrologue
+
+/arrowHeight 12 def
+/arrowWidth 6 def
+
+/IdrawDict 51 dict def
+IdrawDict begin
+
+/reencodeISO {
+dup dup findfont dup length dict begin
+{ 1 index /FID ne { def }{ pop pop } ifelse } forall
+/Encoding ISOLatin1Encoding def
+currentdict end definefont
+} def
+
+/ISOLatin1Encoding [
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/space/exclam/quotedbl/numbersign/dollar/percent/ampersand/quoteright
+/parenleft/parenright/asterisk/plus/comma/minus/period/slash
+/zero/one/two/three/four/five/six/seven/eight/nine/colon/semicolon
+/less/equal/greater/question/at/A/B/C/D/E/F/G/H/I/J/K/L/M/N
+/O/P/Q/R/S/T/U/V/W/X/Y/Z/bracketleft/backslash/bracketright
+/asciicircum/underscore/quoteleft/a/b/c/d/e/f/g/h/i/j/k/l/m
+/n/o/p/q/r/s/t/u/v/w/x/y/z/braceleft/bar/braceright/asciitilde
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/dotlessi/grave/acute/circumflex/tilde/macron/breve
+/dotaccent/dieresis/.notdef/ring/cedilla/.notdef/hungarumlaut
+/ogonek/caron/space/exclamdown/cent/sterling/currency/yen/brokenbar
+/section/dieresis/copyright/ordfeminine/guillemotleft/logicalnot
+/hyphen/registered/macron/degree/plusminus/twosuperior/threesuperior
+/acute/mu/paragraph/periodcentered/cedilla/onesuperior/ordmasculine
+/guillemotright/onequarter/onehalf/threequarters/questiondown
+/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla
+/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex
+/Idieresis/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis
+/multiply/Oslash/Ugrave/Uacute/Ucircumflex/Udieresis/Yacute
+/Thorn/germandbls/agrave/aacute/acircumflex/atilde/adieresis
+/aring/ae/ccedilla/egrave/eacute/ecircumflex/edieresis/igrave
+/iacute/icircumflex/idieresis/eth/ntilde/ograve/oacute/ocircumflex
+/otilde/odieresis/divide/oslash/ugrave/uacute/ucircumflex/udieresis
+/yacute/thorn/ydieresis
+] def
+/Helvetica reencodeISO def
+
+/none null def
+/numGraphicParameters 17 def
+/stringLimit 65535 def
+
+/Begin {
+save
+numGraphicParameters dict begin
+} def
+
+/End {
+end
+restore
+} def
+
+/SetB {
+dup type /nulltype eq {
+pop
+false /brushRightArrow idef
+false /brushLeftArrow idef
+true /brushNone idef
+} {
+/brushDashOffset idef
+/brushDashArray idef
+0 ne /brushRightArrow idef
+0 ne /brushLeftArrow idef
+/brushWidth idef
+false /brushNone idef
+} ifelse
+} def
+
+/SetCFg {
+/fgblue idef
+/fggreen idef
+/fgred idef
+} def
+
+/SetCBg {
+/bgblue idef
+/bggreen idef
+/bgred idef
+} def
+
+/SetF {
+/printSize idef
+/printFont idef
+} def
+
+/SetP {
+dup type /nulltype eq {
+pop true /patternNone idef
+} {
+dup -1 eq {
+/patternGrayLevel idef
+/patternString idef
+} {
+/patternGrayLevel idef
+} ifelse
+false /patternNone idef
+} ifelse
+} def
+
+/BSpl {
+0 begin
+storexyn
+newpath
+n 1 gt {
+0 0 0 0 0 0 1 1 true subspline
+n 2 gt {
+0 0 0 0 1 1 2 2 false subspline
+1 1 n 3 sub {
+/i exch def
+i 1 sub dup i dup i 1 add dup i 2 add dup false subspline
+} for
+n 3 sub dup n 2 sub dup n 1 sub dup 2 copy false subspline
+} if
+n 2 sub dup n 1 sub dup 2 copy 2 copy false subspline
+patternNone not brushLeftArrow not brushRightArrow not and and { ifill } if
+brushNone not { istroke } if
+0 0 1 1 leftarrow
+n 2 sub dup n 1 sub dup rightarrow
+} if
+end
+} dup 0 4 dict put def
+
+/Circ {
+newpath
+0 360 arc
+patternNone not { ifill } if
+brushNone not { istroke } if
+} def
+
+/CBSpl {
+0 begin
+dup 2 gt {
+storexyn
+newpath
+n 1 sub dup 0 0 1 1 2 2 true subspline
+1 1 n 3 sub {
+/i exch def
+i 1 sub dup i dup i 1 add dup i 2 add dup false subspline
+} for
+n 3 sub dup n 2 sub dup n 1 sub dup 0 0 false subspline
+n 2 sub dup n 1 sub dup 0 0 1 1 false subspline
+patternNone not { ifill } if
+brushNone not { istroke } if
+} {
+Poly
+} ifelse
+end
+} dup 0 4 dict put def
+
+/Elli {
+0 begin
+newpath
+4 2 roll
+translate
+scale
+0 0 1 0 360 arc
+patternNone not { ifill } if
+brushNone not { istroke } if
+end
+} dup 0 1 dict put def
+
+/Line {
+0 begin
+2 storexyn
+newpath
+x 0 get y 0 get moveto
+x 1 get y 1 get lineto
+brushNone not { istroke } if
+0 0 1 1 leftarrow
+0 0 1 1 rightarrow
+end
+} dup 0 4 dict put def
+
+/MLine {
+0 begin
+storexyn
+newpath
+n 1 gt {
+x 0 get y 0 get moveto
+1 1 n 1 sub {
+/i exch def
+x i get y i get lineto
+} for
+patternNone not brushLeftArrow not brushRightArrow not and and { ifill } if
+brushNone not { istroke } if
+0 0 1 1 leftarrow
+n 2 sub dup n 1 sub dup rightarrow
+} if
+end
+} dup 0 4 dict put def
+
+/Poly {
+3 1 roll
+newpath
+moveto
+-1 add
+{ lineto } repeat
+closepath
+patternNone not { ifill } if
+brushNone not { istroke } if
+} def
+
+/Rect {
+0 begin
+/t exch def
+/r exch def
+/b exch def
+/l exch def
+newpath
+l b moveto
+l t lineto
+r t lineto
+r b lineto
+closepath
+patternNone not { ifill } if
+brushNone not { istroke } if
+end
+} dup 0 4 dict put def
+
+/Text {
+ishow
+} def
+
+/idef {
+dup where { pop pop pop } { exch def } ifelse
+} def
+
+/ifill {
+0 begin
+gsave
+patternGrayLevel -1 ne {
+fgred bgred fgred sub patternGrayLevel mul add
+fggreen bggreen fggreen sub patternGrayLevel mul add
+fgblue bgblue fgblue sub patternGrayLevel mul add setrgbcolor
+eofill
+} {
+eoclip
+originalCTM setmatrix
+pathbbox /t exch def /r exch def /b exch def /l exch def
+/w r l sub ceiling cvi def
+/h t b sub ceiling cvi def
+/imageByteWidth w 8 div ceiling cvi def
+/imageHeight h def
+bgred bggreen bgblue setrgbcolor
+eofill
+fgred fggreen fgblue setrgbcolor
+w 0 gt h 0 gt and {
+l w add b translate w neg h scale
+w h true [w 0 0 h neg 0 h] { patternproc } imagemask
+} if
+} ifelse
+grestore
+end
+} dup 0 8 dict put def
+
+/istroke {
+gsave
+brushDashOffset -1 eq {
+[] 0 setdash
+1 setgray
+} {
+brushDashArray brushDashOffset setdash
+fgred fggreen fgblue setrgbcolor
+} ifelse
+brushWidth setlinewidth
+originalCTM setmatrix
+stroke
+grestore
+} def
+
+/ishow {
+0 begin
+gsave
+fgred fggreen fgblue setrgbcolor
+/fontDict printFont printSize scalefont dup setfont def
+/descender fontDict begin 0 [FontBBox] 1 get FontMatrix end
+transform exch pop def
+/vertoffset 1 printSize sub descender sub def {
+0 vertoffset moveto show
+/vertoffset vertoffset printSize sub def
+} forall
+grestore
+end
+} dup 0 3 dict put def
+/patternproc {
+0 begin
+/patternByteLength patternString length def
+/patternHeight patternByteLength 8 mul sqrt cvi def
+/patternWidth patternHeight def
+/patternByteWidth patternWidth 8 idiv def
+/imageByteMaxLength imageByteWidth imageHeight mul
+stringLimit patternByteWidth sub min def
+/imageMaxHeight imageByteMaxLength imageByteWidth idiv patternHeight idiv
+patternHeight mul patternHeight max def
+/imageHeight imageHeight imageMaxHeight sub store
+/imageString imageByteWidth imageMaxHeight mul patternByteWidth add string def
+0 1 imageMaxHeight 1 sub {
+/y exch def
+/patternRow y patternByteWidth mul patternByteLength mod def
+/patternRowString patternString patternRow patternByteWidth getinterval def
+/imageRow y imageByteWidth mul def
+0 patternByteWidth imageByteWidth 1 sub {
+/x exch def
+imageString imageRow x add patternRowString putinterval
+} for
+} for
+imageString
+end
+} dup 0 12 dict put def
+
+/min {
+dup 3 2 roll dup 4 3 roll lt { exch } if pop
+} def
+
+/max {
+dup 3 2 roll dup 4 3 roll gt { exch } if pop
+} def
+
+/midpoint {
+0 begin
+/y1 exch def
+/x1 exch def
+/y0 exch def
+/x0 exch def
+x0 x1 add 2 div
+y0 y1 add 2 div
+end
+} dup 0 4 dict put def
+
+/thirdpoint {
+0 begin
+/y1 exch def
+/x1 exch def
+/y0 exch def
+/x0 exch def
+x0 2 mul x1 add 3 div
+y0 2 mul y1 add 3 div
+end
+} dup 0 4 dict put def
+
+/subspline {
+0 begin
+/movetoNeeded exch def
+y exch get /y3 exch def
+x exch get /x3 exch def
+y exch get /y2 exch def
+x exch get /x2 exch def
+y exch get /y1 exch def
+x exch get /x1 exch def
+y exch get /y0 exch def
+x exch get /x0 exch def
+x1 y1 x2 y2 thirdpoint
+/p1y exch def
+/p1x exch def
+x2 y2 x1 y1 thirdpoint
+/p2y exch def
+/p2x exch def
+x1 y1 x0 y0 thirdpoint
+p1x p1y midpoint
+/p0y exch def
+/p0x exch def
+x2 y2 x3 y3 thirdpoint
+p2x p2y midpoint
+/p3y exch def
+/p3x exch def
+movetoNeeded { p0x p0y moveto } if
+p1x p1y p2x p2y p3x p3y curveto
+end
+} dup 0 17 dict put def
+
+/storexyn {
+/n exch def
+/y n array def
+/x n array def
+n 1 sub -1 0 {
+/i exch def
+y i 3 2 roll put
+x i 3 2 roll put
+} for
+} def
+
+/SSten {
+fgred fggreen fgblue setrgbcolor
+dup true exch 1 0 0 -1 0 6 -1 roll matrix astore
+} def
+
+/FSten {
+dup 3 -1 roll dup 4 1 roll exch
+newpath
+0 0 moveto
+dup 0 exch lineto
+exch dup 3 1 roll exch lineto
+0 lineto
+closepath
+bgred bggreen bgblue setrgbcolor
+eofill
+SSten
+} def
+
+/Rast {
+exch dup 3 1 roll 1 0 0 -1 0 6 -1 roll matrix astore
+} def
+
+%%EndProlog
+
+%I Idraw 10 Grid 8 8 
+
+%%Page: 1 1
+
+Begin
+%I b u
+%I cfg u
+%I cbg u
+%I f u
+%I p u
+%I t
+[ 0.796717 0 0 0.796717 0 0 ] concat
+/originalCTM matrix currentmatrix def
+
+Begin %I Text
+%I cfg Black
+0 0 0 SetCFg
+%I f -*-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*
+Helvetica 12 SetF
+%I t
+[ 0.950016 0 0 0.950016 86.0392 288.852 ] concat
+%I
+[
+(Figure 1a: In a packed representation, each data value is held within the)
+(object at a fixed and well-known position.)
+] Text
+End
+
+Begin %I Text
+%I cfg Black
+0 0 0 SetCFg
+%I f -*-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*
+Helvetica 12 SetF
+%I t
+[ 0.950016 0 0 0.950016 84.6972 30.0976 ] concat
+%I
+[
+(Figure 1b: In a sparse representation, each object contains a table which)
+(associates assigned slots with pointers to the data they contain.)
+] Text
+End
+
+Begin %I Pict
+%I b u
+%I cfg u
+%I cbg u
+%I f u
+%I p u
+%I t
+[ 1 0 0 1 1.66153 -49.8462 ] concat
+
+Begin %I Rect
+%I b 65535
+2 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1.57849 0 0 1.57849 -204.824 -447.543 ] concat
+%I
+251 553 298 569 Rect
+End
+
+Begin %I Line
+%I b 65535
+1 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1.57849 0 0 1.57849 -204.824 -447.543 ] concat
+%I
+273 568 273 554 Line
+%I 0.5
+End
+
+Begin %I Rect
+%I b 65535
+2 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1.57849 0 0 1.57849 -95.9085 -449.121 ] concat
+%I
+251 553 298 569 Rect
+End
+
+Begin %I Line
+%I b 65535
+1 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1.57849 0 0 1.57849 -95.9085 -449.121 ] concat
+%I
+273 568 273 554 Line
+%I 0.5
+End
+
+Begin %I Rect
+%I b 65535
+2 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1.57849 0 0 1.57849 -204.825 -496.476 ] concat
+%I
+251 553 298 569 Rect
+End
+
+Begin %I Line
+%I b 65535
+1 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1.57849 0 0 1.57849 -204.825 -496.476 ] concat
+%I
+273 568 273 554 Line
+%I 0.5
+End
+
+Begin %I Text
+%I cfg Black
+0 0 0 SetCFg
+%I f -*-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*
+Helvetica 12 SetF
+%I t
+[ 1 0 0 1 203.662 443.015 ] concat
+%I
+[
+(x)
+] Text
+End
+
+Begin %I Text
+%I cfg Black
+0 0 0 SetCFg
+%I f -*-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*
+Helvetica 12 SetF
+%I t
+[ 1 0 0 1 243 443.015 ] concat
+%I
+[
+(y)
+] Text
+End
+
+Begin %I Text
+%I cfg Black
+0 0 0 SetCFg
+%I f -*-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*
+Helvetica 12 SetF
+%I t
+[ 1 0 0 1 313.492 440.846 ] concat
+%I
+[
+(x)
+] Text
+End
+
+Begin %I Text
+%I cfg Black
+0 0 0 SetCFg
+%I f -*-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*
+Helvetica 12 SetF
+%I t
+[ 1 0 0 1 350 442.015 ] concat
+%I
+[
+(y)
+] Text
+End
+
+Begin %I Text
+%I cfg Black
+0 0 0 SetCFg
+%I f -*-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*
+Helvetica 12 SetF
+%I t
+[ 1 0 0 1 203.323 394.662 ] concat
+%I
+[
+(x)
+] Text
+End
+
+Begin %I Text
+%I cfg Black
+0 0 0 SetCFg
+%I f -*-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*
+Helvetica 12 SetF
+%I t
+[ 1 0 0 1 241.831 393.508 ] concat
+%I
+[
+(y)
+] Text
+End
+
+End %I eop
+
+Begin %I Pict
+%I b u
+%I cfg u
+%I cbg u
+%I f u
+%I p u
+%I t
+[ 1 0 0 1 -1.66154 -21.6 ] concat
+
+Begin %I Rect
+%I b 65535
+2 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 0.950016 0 0 0.950016 87.3934 -157.971 ] concat
+%I
+291 395 326 425 Rect
+End
+
+Begin %I Rect
+%I b 65535
+2 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 0.950016 0 0 0.950016 80.3633 -228.989 ] concat
+%I
+291 395 326 425 Rect
+End
+
+Begin %I Rect
+%I b 65535
+2 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 0.950016 0 0 0.950016 65.8793 -287.364 ] concat
+%I
+291 395 326 425 Rect
+End
+
+Begin %I Pict
+%I b u
+%I cfg u
+%I cbg u
+%I f u
+%I p u
+%I t
+[ 0.950016 0 0 0.950016 -3.29653 -350.006 ] concat
+
+Begin %I Rect
+%I b 65535
+2 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1.66154 0 0 1.66154 -235.938 -376.339 ] concat
+%I
+251 553 298 569 Rect
+End
+
+Begin %I Line
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1.66154 0 0 1.66154 -219.323 -376.339 ] concat
+%I
+273 568 273 554 Line
+%I 0.5
+End
+
+End %I eop
+
+Begin %I Pict
+%I b u
+%I cfg u
+%I cbg u
+%I f u
+%I p u
+%I t
+[ 0.950016 0 0 0.950016 -3.29653 -376.841 ] concat
+
+Begin %I Rect
+%I b 65535
+2 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1.66154 0 0 1.66154 -235.938 -376.339 ] concat
+%I
+251 553 298 569 Rect
+End
+
+Begin %I Line
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1.66154 0 0 1.66154 -219.323 -376.339 ] concat
+%I
+273 568 273 554 Line
+%I 0.5
+End
+
+End %I eop
+
+Begin %I Pict
+%I b u
+%I cfg u
+%I cbg u
+%I f u
+%I p u
+%I t
+[ 0.950016 0 0 0.950016 -3.29653 -403.675 ] concat
+
+Begin %I Rect
+%I b 65535
+2 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1.66154 0 0 1.66154 -235.938 -376.339 ] concat
+%I
+251 553 298 569 Rect
+End
+
+Begin %I Line
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1.66154 0 0 1.66154 -219.323 -376.339 ] concat
+%I
+273 568 273 554 Line
+%I 0.5
+End
+
+End %I eop
+
+Begin %I BSpl
+%I b 65535
+1 0 1 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1.57849 0 0 1.57849 -121.683 -297.127 ] concat
+%I 4
+222 302
+257 304
+287 333
+306 337
+4 BSpl
+%I 0.5
+End
+
+Begin %I BSpl
+%I b 65535
+1 0 1 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1.57849 0 0 1.57849 -121.683 -297.127 ] concat
+%I 3
+225 285
+260 283
+301 292
+3 BSpl
+%I 0.5
+End
+
+Begin %I BSpl
+%I b 65535
+1 0 1 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1.57849 0 0 1.57849 -121.683 -297.127 ] concat
+%I 4
+225 266
+253 266
+279 252
+293 253
+4 BSpl
+%I 0.5
+End
+
+Begin %I Text
+%I cfg Black
+0 0 0 SetCFg
+%I f -*-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*
+Helvetica 12 SetF
+%I t
+[ 1 0 0 1 175.677 183.015 ] concat
+%I
+[
+(age)
+] Text
+End
+
+Begin %I Text
+%I cfg Black
+0 0 0 SetCFg
+%I f -*-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*
+Helvetica 12 SetF
+%I t
+[ 1 0 0 1 174 157 ] concat
+%I
+[
+(weight)
+] Text
+End
+
+Begin %I Text
+%I cfg Black
+0 0 0 SetCFg
+%I f -*-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*
+Helvetica 12 SetF
+%I t
+[ 1 0 0 1 173 129 ] concat
+%I
+[
+(height)
+] Text
+End
+
+Begin %I Line
+%I b 65520
+2 0 0 [12 4] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 0.830769 -0 -0 0.830769 117.138 -59.8154 ] concat
+%I
+150 203 150 173 Line
+%I 1
+End
+
+Begin %I Line
+%I b 65520
+2 0 0 [12 4] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 0.830769 -0 -0 0.830769 44.8615 -61.4769 ] concat
+%I
+150 203 150 173 Line
+%I 1
+End
+
+End %I eop
+
+End %I eop
+
+showpage
+
+%%Trailer
+
+end
+
+
+
+ENDPRINTCODE
+72 72 540 720 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "8" 9
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+72 36 540 54 R
+7 X
+0 K
+V
+0 11 Q
+0 X
+0.19 (values\051 specifically for instances of) 86.4 712.67 P
+2 F
+0.45 (sparse-class) 245.69 712.67 P
+0 F
+0.19 (. These implement the new, sparse slot represen-) 324.79 712.67 P
+(tation.) 86.4 698.67 T
+(6.) 72 678.67 T
+0.87 (The programmer can now create classes \050like) 86.4 678.67 P
+2 F
+2.08 (person) 294.11 678.67 P
+0 F
+0.87 (\051 which have) 333.67 678.67 P
+2 F
+2.08 (sparse-class) 395.76 678.67 P
+0 F
+0.87 ( as their meta-) 474.86 678.67 P
+1.21 (class. These classes will inherit their class-like behaviour from) 86.4 664.67 P
+2 F
+2.9 (sparse-class) 375.53 664.67 P
+0 F
+1.21 ( and hence use the) 454.63 664.67 P
+(sparse, table-driven instance representation scheme.) 86.4 650.67 T
+0.57 (So, in this example, the programmer has used knowledge of the requirements of a specific application to) 72 630.67 P
+0.02 (revise implementation decisions. The revision was performed by using the system\325s reflective model of its) 72 616.67 P
+-0.39 (own behaviour. New, specialised behaviours were associated with a subclass of one of the system\325s internal) 72 602.67 P
+0.3 (classes. Since the MOP guarantees the use of generic functions to implement internal behaviours, this ap-) 72 588.67 P
+-0.17 (proach can be used to redirect the object system\325s behaviour; and since it exploits the polymorphism of ob-) 72 574.67 P
+1.26 (ject-oriented programming techniques, the new behaviour applies only to the objects we specify \050those) 72 560.67 P
+0.07 (whose metaclass is) 72 546.67 P
+2 F
+0.17 (sparse-class) 158.57 546.67 P
+0 F
+0.07 (\051. Without this facility, it would have been necessary to write the ap-) 237.67 546.67 P
+-0.12 (plication\325s code in a convoluted way, to live with inefficient performance, or to abandon this particular ob-) 72 532.67 P
+-0.33 (ject system altogether. So there are benefits both to the application developer\321who can tailor the system to) 72 518.67 P
+0.26 (the needs of a particular application\321and to the language implementor\321who can design a language with) 72 504.67 P
+(much wider applicability than traditional ones.) 72 490.67 T
+-0.19 (By defining CLOS\325s behaviour in terms of the metaobject protocol, the developers of the language had) 90 476.67 P
+-0.04 (the means to make their language open and adaptable. They avoided a traditional problem within language) 72 462.67 P
+-0.06 (and toolkit design\321a premature commitment forced upon system designers in making implementation de-) 72 448.67 P
+0.3 (cisions which limit the choices open to the later users of that system. Instead, the system specifies default) 72 434.67 P
+-0.61 (behaviours, the base-level behaviours of the object system \050or whatever\051; but it also provides the mechanism) 72 420.67 P
+(by which those behaviours can be revised to make them more appropriate in particular circumstances.) 72 406.67 T
+-0.52 (The result, of course, is that the designers of a MOP-based system have a much less specific idea of how) 90 392.67 P
+0.61 (their system will be used. Through default behaviours, they specify a particular system, which should be) 72 378.67 P
+0.3 (generally useful; but, through the generic behaviours of the metaobject protocol, they define a framework) 72 364.67 P
+(within which users can create their own customised systems. This is a complex, two-level design task.) 72 350.67 T
+3 14 Q
+(3.3) 72 322.67 T
+(Extending the MOP Approach) 100.8 322.67 T
+0 11 Q
+-0.17 (The examples of reflective systems given above have concentrated on programming languages \0503-Lisp and) 72 300.67 P
+0.32 (CLOS\051. Indeed the primary use of reflective techniques to date has been to provide flexible semantics for) 72 286.67 P
+-0.35 (programming languages. However, we have seen that the essence of the reflective approach is closely relat-) 72 272.67 P
+-0.23 (ed to the problems of openness and adaptability which were discussed for interactive systems design. So, is) 72 258.67 P
+(it possible that we could adapt reflective techniques for use in other areas?) 72 244.67 T
+-0.43 (There are examples which show that we can. One starting point would be Silica [Rao 1991], a reflective) 90 230.67 P
+0.44 (window system which forms the basis of the Common Lisp Interface Manager \050CLIM\051. Silica provides a) 72 216.67 P
+-0.49 (basic window system infrastructure for generating graphical, windowing applications. However, it also pro-) 72 202.67 P
+-0.38 (vides a set of metalevel abstractions which can be used by application developers to) 72 188.67 P
+1 F
+-0.38 (reach into) 438.31 188.67 P
+0 F
+-0.38 ( the window-) 482.79 188.67 P
+0.18 (ing infrastructure and tailor it to the needs of specific applications, much as we saw with CLOS. In Silica,) 72 174.67 P
+-0.19 (the metalevel interface is defined in terms of) 72 160.67 P
+1 F
+-0.19 (metaobjects) 269.44 160.67 P
+0 F
+-0.19 ( \050windows and window components\051 and the) 321.92 160.67 P
+1 F
+-0.19 (con-) 520.48 160.67 P
+-0.48 (tracts) 72 146.67 P
+0 F
+-0.48 ( between them. Contracts manage the relationships between system components; they deal with issues) 97.03 146.67 P
+-0.33 (such as geometry management, window \322stacking\323, refreshing and so forth. The metalevel interface is used) 72 132.67 P
+0.11 (to avoid the same sorts of problems which motivated the CLOS metaobject protocol\321that is, situations in) 72 118.67 P
+0.6 (which implementation decisions in the \050window system\051 infrastructure limit its applicability to particular) 72 104.67 P
+(situations.) 72 90.67 T
+-0.53 (Silica represents a new departure in our discussion of reflective systems. Unlike 3-Lisp or CLOS, which) 90 76.67 P
+FMENDPAGE
+%%EndPage: "9" 10
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+72 36 540 54 R
+7 X
+0 K
+V
+0 11 Q
+0 X
+0.04 (are general-purpose programming languages, Silica cannot be defined) 72 712.67 P
+1 F
+0.04 (in its own terms) 382.62 712.67 P
+0 F
+0.04 (\321a window system) 452.64 712.67 P
+-0.51 (does not provide a language which can be used to construct window systems. CLOS and 3-Lisp are) 72 698.67 P
+1 F
+-0.51 (metacir-) 502.78 698.67 P
+0.22 (cular) 72 684.67 P
+0 F
+0.22 (, whereas Silica is not. So Rao\325s notion of) 95.19 684.67 P
+1 F
+0.22 (implementational reflection) 284.2 684.67 P
+0 F
+0.22 (, as embodied in Silica, shows) 406.17 684.67 P
+-0.45 (how we can apply reflective techniques to a much wider range of application areas than we have seen so far.) 72 670.67 P
+-0.55 (Some more recent work, arising from the metaobject protocol experiences, has opened out these notions) 90 656.67 P
+0.21 (into a more general means of providing a system\325s clients with control over the abstractions that they use.) 72 642.67 P
+0.51 (Kiczales [1992] presents metaobject protocols as one technique which can be used to realise) 72 628.67 P
+1 F
+0.51 (open imple-) 487.32 628.67 P
+0.16 (mentations) 72 614.67 P
+0 F
+0.16 (\321system implementations which augment traditional abstraction barriers with) 120.22 614.67 P
+1 F
+0.16 (modification in-) 469.34 614.67 P
+0.34 (terfaces) 72 600.67 P
+0 F
+0.34 (, allowing higher-level users to \322reach in\323 and make appropriate changes. It is an approach which) 106.78 600.67 P
+-0.27 (can be applied to a wide range of problems arising in areas where infrastructures must support a wide range) 72 586.67 P
+-0.31 (of applications. Kiczales also introduces the complementary notion of) 72 572.67 P
+1 F
+-0.31 (open behaviour) 379.22 572.67 P
+0 F
+-0.31 (, in which it is the se-) 447.56 572.67 P
+0.32 (mantics, rather than the implementation, which are open to change from the higher levels. An example of) 72 558.67 P
+-0.64 (this, again in the CLOS domain, is PCLOS [Paepcke 1988]. PCLOS exploits metalevel hooks into the mech-) 72 544.67 P
+-0.09 (anisms by which objects are created, accessed and destroyed, and so creates a) 72 530.67 P
+1 F
+-0.09 (persistent) 414.65 530.67 P
+0 F
+-0.09 ( version of the lan-) 457.37 530.67 P
+0.98 (guage which maps objects onto long-term storage in a database. Here, it is the) 72 516.67 P
+1 F
+0.98 (behaviour) 431.16 516.67 P
+0 F
+0.98 ( of the system) 475.71 516.67 P
+(which has been extended, rather than the implementation for particular applications or platforms.) 72 502.67 T
+0.58 (These notions are very general. While they originate in work on programming language design, they) 90 488.67 P
+0.47 (point to the application of reflective techniques in a much wider range of software application areas\321in-) 72 474.67 P
+(cluding the domain of interactive systems.) 72 460.67 T
+3 16 Q
+(4) 72 427.33 T
+(A Reflective Toolkit for CSCW Design) 93.6 427.33 T
+0 11 Q
+0.02 (The approach to system architecture that I have presented here results from my current work on the design) 72 400.67 P
+0.01 (of Prospero, a flexible toolkit for CSCW systems. Individual CSCW applications need to be flexible along) 72 386.67 P
+0.56 (various dimensions. First, they must be) 72 372.67 P
+1 F
+0.56 (statically) 250.54 372.67 P
+0 F
+0.56 ( flexible, such as in terms of customisation to particular) 290.83 372.67 P
+-0.47 (individual or group practices or working styles \050explored in more detail by Greenberg [1991]\051. Second, they) 72 358.67 P
+0.21 (must be) 72 344.67 P
+1 F
+0.21 (dynamically) 109.64 344.67 P
+0 F
+0.21 ( flexible, in response to changes in group behaviour in the course of specific collabo-) 163.35 344.67 P
+0.75 (rations or even specific collaborative sessions. Third, they must be) 72 330.67 P
+1 F
+0.75 (implementationally) 374.82 330.67 P
+0 F
+0.75 ( flexible, as infra-) 459.66 330.67 P
+0.17 (structural and interoperative requirements change. At the same time, a toolkit needs to provide developers) 72 316.67 P
+0.57 (with sufficient flexibility to generate applications for a wide range of groups, applications and usage set-) 72 302.67 P
+(tings.) 72 288.67 T
+0.55 (Just as most programming languages fix the implementations of the language\325s abstractions, existing) 90 274.67 P
+0.61 (CSCW toolkits such as GroupKit [Roseman and Greenberg 1992] or MMConf [Crowley et al. 1990] are) 72 260.67 P
+0.28 (forced, through their structure, to impose fixed models of their abstractions, such as distributed data man-) 72 246.67 P
+0.15 (agement. This follows directly from the traditional structuring techniques in software development, which) 72 232.67 P
+-0.22 (hide implementation details behind abstraction barriers, out of reach of the applications developer. There is) 72 218.67 P
+-0.13 (clearly value to this approach. In particular, it isolates the applications developer from toolkit concerns, fo-) 72 204.67 P
+-0 (cussing attention on those areas specific to the application. The cost is that the range of applications which) 72 190.67 P
+-0.25 (can be developed within the toolkit is greatly restricted, since the implementation decisions within the tool-) 72 176.67 P
+-0.6 (kit constrain the kinds of interactions which can be supported in applications. The very isolation that toolkits) 72 162.67 P
+-0.59 (provide prevents the developer from using high-level information about the application to inform lower-lev-) 72 148.67 P
+(el decisions where appropriate.) 72 134.67 T
+1.24 (My current work uses reflective techniques to address these problems. Structuring a CSCW toolkit) 90 120.67 P
+0.22 (around a metaobject protocol allows us to tackle two issues. First, as well as providing default behaviours) 72 106.67 P
+0.28 (which specify the natural behaviour of the system, it gives programmers the opportunity to) 72 92.67 P
+1 F
+0.28 (specialise) 477.78 92.67 P
+0 F
+0.28 ( and) 521.11 92.67 P
+1 F
+0.28 (refine) 72 78.67 P
+0 F
+0.28 ( the generic framework in the toolkit. This means that the toolkit can be used to provide customised) 97.63 78.67 P
+FMENDPAGE
+%%EndPage: "10" 11
+%%Page: "11" 11
+612 792 0 FMBEGINPAGE
+72 36 540 54 R
+7 X
+0 K
+V
+0 11 Q
+0 X
+0.3 (support for particular situations and applications. Second, the self-representation is present in the applica-) 72 712.67 P
+-0.62 (tions at run-time. This allows appropriately-written programs to respond dynamically and adaptively as they) 72 698.67 P
+(are used.) 72 684.67 T
+-0.08 (This section outlines the way in which the reflective approach is applied in the CSCW domain. Taking) 90 670.67 P
+-0.16 (a very high-level description of generic application behaviour, it shows that, in areas of concern for CSCW) 72 656.67 P
+(application developers, a variety of strategies can be supported within a single metalevel framework.) 72 642.67 T
+3 14 Q
+(4.1) 72 614.67 T
+(Using Reflection in CSCW Design) 100.8 614.67 T
+0 11 Q
+-0.17 (To apply reflection to the design of a CSCW toolkit, we must \322open up\323 the implementation. This involves) 72 592.67 P
+-0.03 (specifying the generic behaviours which underlie the system\325s operation, and the generic entities on which) 72 578.67 P
+0.32 (these behaviours act. Providing explicit access to these generic behaviours allows the toolkit user \050) 72 564.67 P
+1 F
+0.32 (i.e.) 510.08 564.67 P
+0 F
+0.32 ( the) 523.51 564.67 P
+-0.42 (programmer\051 to specialise them for particular situations. These generic behaviours can be broken down into) 72 550.67 P
+(sub-protocols, or specific areas of responsibility.) 72 536.67 T
+-0.33 (Clearly, there are a huge number of potential areas of responsibility within the toolkit. One of the major) 90 522.67 P
+0.33 (issues in MOP design is the identification of a particular set of concerns that the design should address in) 72 508.67 P
+0.39 (order to create a system which is flexible but manageable. We do this by looking at the particular experi-) 72 494.67 P
+0.2 (ences of developers building both applications and toolkits for cooperative systems. We can see a number) 72 480.67 P
+0.59 (of issues which are embedded in the design of the infrastructure and yet have strong implications for the) 72 466.67 P
+(kinds of applications which can be supported\321 areas which are candidates for this approach.) 72 452.67 T
+0.35 (Currently, my work concentrates on three main areas: the management of user data distributed across) 90 438.67 P
+-0.68 (time and space; mechanisms for managing conflict in user interactions; and control over the linkage between) 72 424.67 P
+0.49 (the components of multiple users\325 interfaces. For each area, the approach is fundamentally the same, and) 72 410.67 P
+-0.07 (involves specifying generic behaviour. This is defined in terms of generic function invocations on metaob-) 72 396.67 P
+-0.09 (jects, or explicit representations of the system\325s behaviour. These generic behaviours can be specialised by) 72 382.67 P
+-0.08 (application developers through incremental modifications to the representations and the actions over them.) 72 368.67 P
+0.02 (Before looking at the use of reflective techniques in these areas, it\325s necessary to lay down some high-) 90 354.67 P
+0.03 (level structure which relates them. A full description of the approach used in Prospero is beyond the scope) 72 340.67 P
+0.32 (of this paper, and so a simplified account is presented here; the interested reader is referred to other treat-) 72 326.67 P
+(ments \050) 72 312.67 T
+1 F
+(e.g.) 104.65 312.67 T
+0 F
+([Dourish 1994]\051.) 123.26 312.67 T
+0.87 (Consider a system which operates in terms of generic edit operations applied to shared objects. The) 90 298.67 P
+(most general layer of functionality is provided by the function) 72 281.6 T
+0 9 Q
+(1) 345.1 286 T
+0 11 Q
+(:) 349.59 281.6 T
+2 10 Q
+(\050edit-object object user editop\051 -> state-marker) 108 264.27 T
+2 11 Q
+-0.91 (Object) 72 245.6 P
+0 F
+-0.38 ( is a local reference to a globally shared object in the collaborative workspace;) 111.55 245.6 P
+2 F
+-0.91 (user) 453.45 245.6 P
+0 F
+-0.38 ( is a represen-) 479.82 245.6 P
+0.02 (tation of the user performing the operation; and) 72 231.6 P
+2 F
+0.05 (editop) 283.33 231.6 P
+0 F
+0.02 ( is an encoding of the operation being performed.) 322.88 231.6 P
+0.02 (The generic function) 72 217.6 P
+2 F
+0.05 (edit-object) 166.34 217.6 P
+0 F
+0.02 ( applies an edit operation to an object, and returns) 238.85 217.6 P
+2 F
+0.05 (state-marker) 460.9 217.6 P
+0 F
+(which describes the new state. It is implemented in terms of a number of lower-level generic functions:) 72 203.6 T
+2 10 Q
+(\050find-object object\051 -> shobject) 108 186.27 T
+(\050lock-object shobject user editop\051 -> lockid) 108 170.27 T
+(\050apply-edit shobject user editop\051 -> change-marker) 108 154.27 T
+(\050propagate change-marker lockid\051 -> state-marker) 108 138.27 T
+0 11 Q
+0.59 (These functions perform the component operations of) 72 119.6 P
+2 F
+1.41 (edit-object) 315.03 119.6 P
+0 F
+0.59 (: mapping from local objects, pre-) 387.54 119.6 P
+72 96 540 111 C
+72 102 216 102 2 L
+0.5 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 10 Q
+0 X
+0 K
+-0.08 (1. Functions are given here in the format used by the Lisp programming language; the first term is the function name,) 72 89.33 P
+(and subsequent terms name arguments to the function.) 80.64 77.33 T
+FMENDPAGE
+%%EndPage: "11" 12
+%%Page: "12" 12
+612 792 0 FMBEGINPAGE
+72 36 540 54 R
+7 X
+0 K
+V
+0 11 Q
+0 X
+-0.61 (sented within the interface, to object components of the shared workspace; obtaining access to those objects;) 72 712.67 P
+-0.25 (applying changes; and then propagating those changes more widely and releasing the lock. We use change-) 72 698.67 P
+0.5 (markers and state-markers as encapsulations of the state of the system at various points. Change-markers) 72 684.67 P
+0.28 (record edits made which have not yet been committed; state-markers checkpoint global status. The model) 72 670.67 P
+0.5 (presented by this protocol uses these for synchronisation, as it presents a view of edit changes being per-) 72 656.67 P
+-0.56 (formed locally; however, as long as it is true to this generic model, implementations may behave differently.) 72 642.67 P
+0.53 (Having set up this general framework, we can now investigate how system variability in the areas of) 90 628.67 P
+(data distribution, conflict management and interface linkage can be managed.) 72 614.67 T
+3 12 Q
+(4.1.1) 72 588 T
+(Data Distribution) 108 588 T
+0 11 Q
+0.05 (The issue of data distribution has been a bone of contention within the CSCW implementation community) 72 568.67 P
+-0.21 (for some time. The term \322data distribution\323 covers mechanisms by which the system manages the user data) 72 554.67 P
+-0.39 (storage and manipulation. This data may be replicated or distributed across multiple computers, but the sys-) 72 540.67 P
+0.35 (tem must present a view of a single, coherent data store. Systems such as MMConf [Crowley et al. 1990]) 72 526.67 P
+0.66 (take a) 72 512.67 P
+1 F
+0.66 (fully replicated) 102 512.67 P
+0 F
+0.66 ( approach in which each participant in a conference has a private copy of the data.) 169.49 512.67 P
+-0.46 (Others, such as Rapport [Ahuja et al. 1990], use) 72 498.67 P
+1 F
+-0.46 (centralised) 281.45 498.67 P
+0 F
+-0.46 ( architectures, which concentrate data at a single) 330.27 498.67 P
+-0.24 (point in the network. Greenberg et al.) 72 484.67 P
+-0.24 ([1992] have argued in favour of) 237.85 484.67 P
+1 F
+-0.24 (hybrid) 379.21 484.67 P
+0 F
+-0.24 (systems which combine these) 410.41 484.67 P
+0.03 (approaches. Each of these solutions\321replicated, centralised or hybrid\321makes some trade-off between ef-) 72 470.67 P
+(ficiency and complexity when they are the only approach taken by a particular toolkit.) 72 456.67 T
+-0.08 (It seems clear that there can be no solution which is appropriate in every case. Not only are there occa-) 90 442.67 P
+0.65 (sions where any of the centralised, replicated or hybrid approaches are appropriate, but further, there are) 72 428.67 P
+0.56 (times when we might need) 72 414.67 P
+1 F
+0.56 (others) 195.34 414.67 P
+0 F
+0.56 (. For instance, consider) 222.8 414.67 P
+1 F
+0.56 (disconnected) 330.01 414.67 P
+0 F
+0.56 ( systems in which some interfaces) 387.37 414.67 P
+0.48 (involved in the collaboration are not permanently connected to the others, or situations in which network) 72 400.67 P
+0.83 (latency is high and intra-group interaction low. Here it might be useful to adopt) 72 386.67 P
+1 F
+0.83 (migratory) 435.42 386.67 P
+0 F
+0.83 ( mechanisms,) 479.36 386.67 P
+-0.16 (which allow data objects to move from one node to another in the network. Migration isn\325t a separate strat-) 72 372.67 P
+-0.13 (egy in itself; it can be combined with any of the other three basic techniques. Other approaches can be pos-) 72 358.67 P
+0.12 (ited which will be particularly appropriate for other situations, and we need to be able to express this vari-) 72 344.67 P
+(ability in the toolkit.) 72 330.67 T
+0.3 (Perhaps more importantly, the data distribution approach adopted by a toolkit or application can have) 90 316.67 P
+-0.23 (important consequences for the appearance, functionality and usability of the application. The use of a cen-) 72 302.67 P
+0.68 (tralised data store, for instance, can negatively affect the response time of the system; while the use of a) 72 288.67 P
+-0.25 (replicated approach has implications for the maintenance of data consistency. This is at odds with the tradi-) 72 274.67 P
+0.11 (tional view that such factors as data distribution are sufficiently \322low-level\323 that they can be safely encap-) 72 260.67 P
+(sulated and hidden behind an abstraction barrier) 72 243.6 T
+0 9 Q
+(1) 283.14 248 T
+0 11 Q
+(.) 287.63 243.6 T
+-0.38 (Rather than make these decisions up-front, we can take the reflective approach. Within a toolkit, we not) 90 229.6 P
+-0.63 (only provide some default mechanism for managing data within a multi-user system, but we also give access) 72 215.6 P
+-0.07 (to the mechanism by which data distribution is accomplished. This allows programmers, who may find the) 72 201.6 P
+-0.52 (default behaviour inappropriate in their case \050) 72 187.6 P
+1 F
+-0.52 (e.g.) 269.66 187.6 P
+0 F
+-0.52 ( because of the network topology they are using\051, to \322reach) 285.52 187.6 P
+(in\323 to the toolkit and provide new mechanisms to be used in their applications.) 72 173.6 T
+-0.05 (The sample subprotocol outlined above manages data distribution largely through the) 90 159.6 P
+2 F
+-0.13 (find-object) 467.49 159.6 P
+0 F
+-0.05 (and) 72 145.6 P
+2 F
+-0.11 (propagate) 90.57 145.6 P
+0 F
+-0.05 (mechanisms, which isolate the location and distribution details from the details of actu-) 156.37 145.6 P
+0.31 (ally making changes to the objects. Using) 72 131.6 P
+2 F
+0.74 (find-object) 260.3 131.6 P
+0 F
+0.31 (, we can encode new mechanisms for mapping) 332.81 131.6 P
+-0.3 (between interface objects and the underlying shared data. For instance, in a centralised system,) 72 117.6 P
+2 F
+-0.73 (find-ob-) 487.27 117.6 P
+72 96 540 111 C
+72 102 216 102 2 L
+0.5 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 10 Q
+0 X
+0 K
+0.18 (1. The interaction between the distributed data management and the issue of synchrony of interaction is also critical,) 72 89.33 P
+(but merits a longer investigation than can be presented here.) 80.64 77.33 T
+FMENDPAGE
+%%EndPage: "12" 13
+%%Page: "13" 13
+612 792 0 FMBEGINPAGE
+72 36 540 54 R
+7 X
+0 K
+V
+2 11 Q
+0 X
+3.48 (ject) 72 712.67 P
+0 F
+1.45 ( will always return a pointer to the central object store, and) 98.37 712.67 P
+2 F
+3.48 (propagate) 377.23 712.67 P
+0 F
+1.45 ( will return the locally) 436.56 712.67 P
+0.12 (changed object to the server. On the other hand, in a fully replicated system, the shared object reference is) 72 698.67 P
+0.23 (always local, and more complicated methods on) 72 684.67 P
+2 F
+0.56 (propagate) 287.83 684.67 P
+0 F
+0.23 (will allow changes to be synchronised ap-) 354.31 684.67 P
+0.74 (propriately. It is important to note, though, that this approach does not merely provide a switch between) 72 670.67 P
+-0.33 (these two modes. Instead, it provides a framework in which) 72 656.67 P
+1 F
+-0.33 (new solutions) 333.58 656.67 P
+0 F
+-0.33 ( can be devised. The generality of) 393.38 656.67 P
+2 F
+-1 (find-object) 72 642.67 P
+0 F
+-0.42 ( and) 144.51 642.67 P
+2 F
+-1 (propagate) 165.04 642.67 P
+0 F
+-0.42 ( allows many alternatives, including hybrid and migratory systems, to be) 224.36 642.67 P
+(created.) 72 628.67 T
+-0.33 (Since the representations are available at run-time, rather than simply when the system is defined, other) 90 614.67 P
+0.16 (opportunities present themselves. We can amend the data distribution mechanism using a dynamic model,) 72 600.67 P
+-0.09 (which would allow distribution strategies to be changed in the course of an on-going collaborative session.) 72 586.67 P
+-0.05 (This allows an application to adapt to the needs of the group as they arise. For instance, consider two users) 72 572.67 P
+0.07 (sharing a \322scrawl\323-style whiteboard application, connected on the same ethernet segment. Since their con-) 72 558.67 P
+-0.56 (nection has fairly low round-trip packet times and high data integrity, the system requirements for data man-) 72 544.67 P
+0.21 (agement are fairly minimal; a centralised approach is probably entirely adequate. However, things change) 72 530.67 P
+0.17 (if a third user joins their conference from some distance, connected via a much slower dial-up line. In this) 72 516.67 P
+-0.24 (situation, a centralised approach is no longer appropriate, since the bandwidth of the link to the third user is) 72 502.67 P
+-0.32 (not sufficient to support a network interaction with a data server for each action at the interface. The system) 72 488.67 P
+0.22 (must switch, at run-time, from one algorithm to another\321from a centralised to a replicated data represen-) 72 474.67 P
+-0.07 (tation. A reflective approach provides the potential for multiple behaviours within the same generic frame-) 72 460.67 P
+0.14 (work, thus supporting this form of dynamic adaptation. If distribution is associated with an object through) 72 446.67 P
+0.11 (a mixin) 72 429.6 P
+0 9 Q
+0.09 (1) 105.38 434 P
+0 11 Q
+0.11 ( class, then changing the class of the object will result in the dynamic switch to a different behav-) 109.87 429.6 P
+(iour.) 72 415.6 T
+0.26 (The reflective approach provides a framework within which new mechanisms can be defined, and the) 90 401.6 P
+-0.1 (means to attach use mechanisms selectively in different parts of the system. This gives three principal ben-) 72 387.6 P
+0.5 (efits which would not be available with traditional solutions. First, the application developer is no longer) 72 373.6 P
+0.35 (constrained by decisions within the toolkit, but is free to adapt the toolkit mechanisms to the needs of the) 72 359.6 P
+0.34 (application. Second, the toolkit developer no longer needs to \322second guess\323 the specific needs of the de-) 72 345.6 P
+-0.48 (veloper, or restrict applicability of the toolkit to a subset of potential applications. Third, using the reflective) 72 331.6 P
+0.34 (model at run-time allows applications to respond dynamically to their environments and the requirements) 72 317.6 P
+0.34 (of particular situations, all within a single coherent framework. We will see this pattern of benefits repeat) 72 303.6 P
+(itself in other areas where we apply computational reflection to toolkit design.) 72 289.6 T
+3 12 Q
+(4.1.2) 72 262.93 T
+(Conflict Management) 108 262.93 T
+0 11 Q
+0.35 (An important area of concern for collaborative applications is the management, or avoidance, of conflicts) 72 243.6 P
+0.61 (within the shared workspace. A conflict might occur, for instance, when two users apply a change to the) 72 229.6 P
+0.41 (same object at once. Various techniques have been employed to deal with this sort of situation, including) 72 215.6 P
+0.6 (floor control, exclusion and locking. Some systems, such as ShrEdit [McGuffin and Olson 1992], \322lock\323) 72 201.6 P
+-0.08 (regions of the shared workspace, preventing simultaneous updates since only one user can hold a lock on a) 72 187.6 P
+0.5 (region at any given time. Others, such as GROVE [Ellis and Gibbs 1989], use an algorithm which \322fixes) 72 173.6 P
+(up\323 conflicts afterwards, in effect imposing a post-hoc serialisation on the changes that users make.) 72 159.6 T
+-0.02 (The essence of conflict management strategies is that the system be able to provide guarantees that us-) 90 145.6 P
+-0.36 (ers\325 changes to the data will not lead to a loss of synchronisation or data integrity. Prospero exploits explicit) 72 131.6 P
+0.4 (representations of such guarantees; this approach is explored in more detail in [Dourish 1994]. In this ac-) 72 117.6 P
+72 96 540 111 C
+72 102 216 102 2 L
+0.5 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 10 Q
+0 X
+0 K
+0.18 (1. A) 72 89.33 P
+1 F
+0.18 (mixin) 92.06 89.33 P
+0 F
+0.18 ( class is one which can be added to other classes in order to bring some new behaviour, orthogonal to that) 114.27 89.33 P
+(defined in the base classes.) 80.64 77.33 T
+FMENDPAGE
+%%EndPage: "13" 14
+%%Page: "14" 14
+612 792 0 FMBEGINPAGE
+72 36 540 54 R
+7 X
+0 K
+V
+0 11 Q
+0 X
+(count, however, I will focus solely on systems providing rapid access to a single thread of control.) 72 712.67 T
+-0.65 (Even if we choose a simple approach such as locking, then we have to consider the impact that particular) 90 698.67 P
+-0.07 (locking mechanisms, defined within the toolkit, might have on higher-level usage issues. For instance, in a) 72 684.67 P
+0.48 (collaborative system supporting free-form sketching or brainstorming, the emphasis is probably on unen-) 72 670.67 P
+0.02 (cumbered access to the shared work surface. If each user had to explicitly request and explicitly relinquish) 72 656.67 P
+-0.18 (locks on the data or control of the floor, the overhead would be too high and the progress of work would be) 72 642.67 P
+0.21 (severely disrupted. A looser form of control would be needed. On the other hand, looser control would be) 72 628.67 P
+-0.16 (inappropriate in systems where data integrity must be rigorously maintained and controlled. In a collabora-) 72 614.67 P
+-0.15 (tive software engineering application, or a multi-user CAD system which generates control instructions for) 72 600.67 P
+-0.31 (a milling machine, data errors due to unchecked conflicts could be potentially disastrous, and a much stron-) 72 586.67 P
+0.11 (ger and more explicit form of locking would be required. Neither approach satisfies the needs of a generic) 72 572.67 P
+(toolkit.) 72 558.67 T
+-0.39 (Addressing these problems in a reflective toolkit, we attempt to provide a metalevel interface which de-) 90 544.67 P
+0.69 (fines the generic operations involved in requesting, obtaining and releasing locks. In the simple protocol) 72 530.67 P
+-0.4 (outlined at the start of section 4, we focus on the call to) 72 516.67 P
+2 F
+-0.95 (lock-object) 312.77 516.67 P
+0 F
+-0.4 (, and the implicit) 385.28 516.67 P
+2 F
+-0.95 (release-lock) 460.9 516.67 P
+0 F
+-0.01 (called from) 72 502.67 P
+2 F
+-0.03 (propagate) 125.06 502.67 P
+0 F
+-0.01 (. As before, the protocol itself does not) 184.39 502.67 P
+1 F
+-0.01 (embody) 358.22 502.67 P
+0 F
+-0.01 ( a locking policy. Instead, it deals) 392.38 502.67 P
+0.53 (with a procedure by which locks are obtained, and a facility for creating and installing new mechanisms.) 72 488.67 P
+0.44 (The generic function specifies that, as well as the object to be locked, the function arguments include the) 72 474.67 P
+0.57 (user requesting the lock and the type of operation to be performed. The system can take this information) 72 460.67 P
+-0 (into account when selecting the locking mechanism. So, different locking strategies may apply to different) 72 446.67 P
+0.34 (users or activities, and for different sorts of objects within the same system. The implementor can rely on) 72 432.67 P
+-0.21 (the object system\325s generic dispatch mechanism to dynamically select the appropriate locking implementa-) 72 418.67 P
+0.15 (tion. So the programmer can not only tailor locking strategies to particular applications, but can also build) 72 404.67 P
+(systems in which the locking mechanisms used rely on specific details of the user or object involved.) 72 390.67 T
+0.57 (The basic mechanism is sufficiently open that a wide range of locking strategies can be defined. Not) 90 376.67 P
+-0.04 (only will it allow the implementation of standard strong and weak locks, but also multi-way locks \050held by) 72 362.67 P
+0.2 (multiple people at once\051, tickle locks \050which, when idle, may be implicitly reassigned to other users when) 72 348.67 P
+0.57 (they perform an operation\051 and so on. Indeed, we can reproduce schemes such as GROVE\325s dOPT algo-) 72 334.67 P
+0.69 (rithm, in which explicit locks are not used at all, by making) 72 320.67 P
+2 F
+1.65 (lock-object) 344.52 320.67 P
+0 F
+0.69 ( to construct an appropriate) 417.03 320.67 P
+-0.28 (\322state vector\323. This will be distributed by the call to) 72 306.67 P
+2 F
+-0.68 (propagate) 299.55 306.67 P
+0 F
+-0.28 (, so that other nodes can use this informa-) 358.88 306.67 P
+0.19 (tion to resolve ambiguities arising out of conflicting or mis-ordered operations. In this case, we regard the) 72 292.67 P
+-0.25 (dOPT state vector as an implicit \322lock\323, in the sense that it is an object which will allow conflict resolution.) 72 278.67 P
+0.22 (In other words, the same basic mechanism can be used to encode a form of conflict management which is) 72 264.67 P
+(hardly \322lock-based\323 at all.) 72 250.67 T
+3 12 Q
+(4.1.3) 72 224 T
+(Interface Linkage) 108 224 T
+0 11 Q
+-0.31 (One of the most obvious differences between CSCW systems is the level at which they \322link\323 interface fea-) 72 204.67 P
+-0.59 (tures. Linkage determines the level of control that users have over the way their own interfaces appear, with-) 72 190.67 P
+0.16 (out affecting other users of the same collaborative application. The grossest level of linkage is screen-rep-) 72 176.67 P
+0.34 (lication, as used for example in Timbuktu [Faralon 1987]. Screen linkage means that all users see exactly) 72 162.67 P
+-0.18 (the same thing on their screens. Shared X systems [Garfinkel et al. 1989] link interfaces at the level of) 72 148.67 P
+1 F
+-0.18 (win-) 520.47 148.67 P
+0.14 (dows) 72 134.67 P
+0 F
+0.14 (; users share the contents of a window, while their screens may show other, independent applications) 94.59 134.67 P
+0.01 (and window placement can vary from person to person. Many explicit multi-user tools such as ShrEdit are) 72 120.67 P
+-0.32 (much looser, and will replicate only the data) 72 103.6 P
+0 9 Q
+-0.26 (1) 265.05 108 P
+0 11 Q
+-0.32 (. Here, users may have different views of the data, and may be) 269.55 103.6 P
+-0.54 (provided with individual edit cursors. Within this class of systems, there are further differences in what each) 72 89.6 P
+FMENDPAGE
+%%EndPage: "14" 15
+%%Page: "15" 15
+612 792 0 FMBEGINPAGE
+72 36 540 54 R
+7 X
+0 K
+V
+0 11 Q
+0 X
+(user can see of the other\325s interfaces.) 72 451.67 T
+0.07 (While many systems separate users and isolate their interfaces, research on groups interacting through) 90 437.67 P
+1.12 (synchronously shared systems has shown how low-level cues can be used by collaborators to create an) 72 423.67 P
+0.37 (awareness of the activity and progress of the group as a whole [Dourish and Bellotti 1992]. Recent work,) 72 409.67 P
+0.28 (such as that of Dewan and Choudhary [1991] or Haake and Wilson [1992], has looked at the provision of) 72 395.67 P
+0.07 (switchable linkage states, in which users can choose how much their interfaces will mirror each other\325s. A) 72 381.67 P
+(similar two-mode switching facility was available in rIBIS [Rein and Ellis 1991].) 72 367.67 T
+0.61 (Once again, we can see the requirements for flexibility within applications and toolkits, and that this) 90 353.67 P
+0.14 (flexibility can have a dynamic component. The non-dynamic aspect is the same now-familiar toolkit-level) 72 339.67 P
+-0.49 (problem; that different applications require different linkage strategies, and so a generic toolkit must be able) 72 325.67 P
+-0.26 (to support a range of linkage options. Dewan\325s work with Suite, or Haake and Wilson\325s with SEPIA, tackle) 72 311.67 P
+0.16 (just this problem, as well as addressing the dynamic problem of switching between these different linkage) 72 297.67 P
+1.42 (modes during a collaborative session. However, both systems provide flexible linking through specific) 72 283.67 P
+-0.33 (\322modes\323, which pre-define linkage strategies. This only addresses part of the problem. What if different us-) 72 269.67 P
+0.28 (ers or groups require different linkage strategies, or some situation calls for a strategy which has not been) 72 255.67 P
+0.16 (predefined? There are no options while remaining within these frameworks. While clearly the goal here is) 72 241.67 P
+0.01 (to provide flexibility, it is flexibility within the constraints of the set of needs anticipated by the toolkit de-) 72 227.67 P
+(signer. While these mechanisms are) 72 213.67 T
+1 F
+(parameterised) 232.49 213.67 T
+0 F
+(, they are not) 295.96 213.67 T
+1 F
+(open) 356.06 213.67 T
+0 F
+(.) 377.42 213.67 T
+-0.23 (The approach taken in Prospero is to make aspects of interface components into shared objects, exactly) 90 199.67 P
+0.23 (like workspace data objects. This is illustrated in figure 2. In this way, components such as menus, button) 72 185.67 P
+0.76 (states and cursor positions, are subject to the mechanisms outlined earlier for dynamic distribution algo-) 72 171.67 P
+0.02 (rithms. The same mechanisms which maintain consistency between workspace objects can be used to syn-) 72 157.67 P
+(chronise interfaces.) 72 143.67 T
+-0.14 (The result is that the same flexibility which can be applied to distributed data management also applies) 90 129.67 P
+72 108 540 123 C
+72 114 216 114 2 L
+0.5 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 10 Q
+0 X
+0 K
+-0.03 (1. Note that our concern here is with replication of interface features, rather than with the underlying data representa-) 72 101.33 P
+-0.02 (tions discussed earlier. So, in these systems, it is only the data which is guaranteed to be consistently replicated) 80.64 89.33 P
+1 F
+-0.02 (be-) 527.24 89.33 P
+(tween interfaces) 80.64 77.33 T
+0 F
+(.) 145.87 77.33 T
+72 72 540 720 C
+73.12 459 538.88 720 C
+71.99 459 539.99 720 R
+7 X
+0 K
+V
+0 X
+0 71.99 459 -71.99 -459 468 261 BEGINPRINTCODE
+%!
+%%Creator: idraw
+%%DocumentFonts: Helvetica
+%%Pages: 1
+%%BoundingBox: 16 17 398 653
+%%EndComments
+
+%%BeginIdrawPrologue
+/arrowhead {
+0 begin
+transform originalCTM itransform
+/taily exch def
+/tailx exch def
+transform originalCTM itransform
+/tipy exch def
+/tipx exch def
+/dy tipy taily sub def
+/dx tipx tailx sub def
+/angle dx 0 ne dy 0 ne or { dy dx atan } { 90 } ifelse def
+gsave
+originalCTM setmatrix
+tipx tipy translate
+angle rotate
+newpath
+arrowHeight neg arrowWidth 2 div moveto
+0 0 lineto
+arrowHeight neg arrowWidth 2 div neg lineto
+patternNone not {
+originalCTM setmatrix
+/padtip arrowHeight 2 exp 0.25 arrowWidth 2 exp mul add sqrt brushWidth mul
+arrowWidth div def
+/padtail brushWidth 2 div def
+tipx tipy translate
+angle rotate
+padtip 0 translate
+arrowHeight padtip add padtail add arrowHeight div dup scale
+arrowheadpath
+ifill
+} if
+brushNone not {
+originalCTM setmatrix
+tipx tipy translate
+angle rotate
+arrowheadpath
+istroke
+} if
+grestore
+end
+} dup 0 9 dict put def
+
+/arrowheadpath {
+newpath
+arrowHeight neg arrowWidth 2 div moveto
+0 0 lineto
+arrowHeight neg arrowWidth 2 div neg lineto
+} def
+
+/leftarrow {
+0 begin
+y exch get /taily exch def
+x exch get /tailx exch def
+y exch get /tipy exch def
+x exch get /tipx exch def
+brushLeftArrow { tipx tipy tailx taily arrowhead } if
+end
+} dup 0 4 dict put def
+
+/rightarrow {
+0 begin
+y exch get /tipy exch def
+x exch get /tipx exch def
+y exch get /taily exch def
+x exch get /tailx exch def
+brushRightArrow { tipx tipy tailx taily arrowhead } if
+end
+} dup 0 4 dict put def
+
+%%EndIdrawPrologue
+
+/arrowHeight 12 def
+/arrowWidth 6 def
+
+/IdrawDict 51 dict def
+IdrawDict begin
+
+/reencodeISO {
+dup dup findfont dup length dict begin
+{ 1 index /FID ne { def }{ pop pop } ifelse } forall
+/Encoding ISOLatin1Encoding def
+currentdict end definefont
+} def
+
+/ISOLatin1Encoding [
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/space/exclam/quotedbl/numbersign/dollar/percent/ampersand/quoteright
+/parenleft/parenright/asterisk/plus/comma/minus/period/slash
+/zero/one/two/three/four/five/six/seven/eight/nine/colon/semicolon
+/less/equal/greater/question/at/A/B/C/D/E/F/G/H/I/J/K/L/M/N
+/O/P/Q/R/S/T/U/V/W/X/Y/Z/bracketleft/backslash/bracketright
+/asciicircum/underscore/quoteleft/a/b/c/d/e/f/g/h/i/j/k/l/m
+/n/o/p/q/r/s/t/u/v/w/x/y/z/braceleft/bar/braceright/asciitilde
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/dotlessi/grave/acute/circumflex/tilde/macron/breve
+/dotaccent/dieresis/.notdef/ring/cedilla/.notdef/hungarumlaut
+/ogonek/caron/space/exclamdown/cent/sterling/currency/yen/brokenbar
+/section/dieresis/copyright/ordfeminine/guillemotleft/logicalnot
+/hyphen/registered/macron/degree/plusminus/twosuperior/threesuperior
+/acute/mu/paragraph/periodcentered/cedilla/onesuperior/ordmasculine
+/guillemotright/onequarter/onehalf/threequarters/questiondown
+/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla
+/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex
+/Idieresis/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis
+/multiply/Oslash/Ugrave/Uacute/Ucircumflex/Udieresis/Yacute
+/Thorn/germandbls/agrave/aacute/acircumflex/atilde/adieresis
+/aring/ae/ccedilla/egrave/eacute/ecircumflex/edieresis/igrave
+/iacute/icircumflex/idieresis/eth/ntilde/ograve/oacute/ocircumflex
+/otilde/odieresis/divide/oslash/ugrave/uacute/ucircumflex/udieresis
+/yacute/thorn/ydieresis
+] def
+/Helvetica reencodeISO def
+
+/none null def
+/numGraphicParameters 17 def
+/stringLimit 65535 def
+
+/Begin {
+save
+numGraphicParameters dict begin
+} def
+
+/End {
+end
+restore
+} def
+
+/SetB {
+dup type /nulltype eq {
+pop
+false /brushRightArrow idef
+false /brushLeftArrow idef
+true /brushNone idef
+} {
+/brushDashOffset idef
+/brushDashArray idef
+0 ne /brushRightArrow idef
+0 ne /brushLeftArrow idef
+/brushWidth idef
+false /brushNone idef
+} ifelse
+} def
+
+/SetCFg {
+/fgblue idef
+/fggreen idef
+/fgred idef
+} def
+
+/SetCBg {
+/bgblue idef
+/bggreen idef
+/bgred idef
+} def
+
+/SetF {
+/printSize idef
+/printFont idef
+} def
+
+/SetP {
+dup type /nulltype eq {
+pop true /patternNone idef
+} {
+dup -1 eq {
+/patternGrayLevel idef
+/patternString idef
+} {
+/patternGrayLevel idef
+} ifelse
+false /patternNone idef
+} ifelse
+} def
+
+/BSpl {
+0 begin
+storexyn
+newpath
+n 1 gt {
+0 0 0 0 0 0 1 1 true subspline
+n 2 gt {
+0 0 0 0 1 1 2 2 false subspline
+1 1 n 3 sub {
+/i exch def
+i 1 sub dup i dup i 1 add dup i 2 add dup false subspline
+} for
+n 3 sub dup n 2 sub dup n 1 sub dup 2 copy false subspline
+} if
+n 2 sub dup n 1 sub dup 2 copy 2 copy false subspline
+patternNone not brushLeftArrow not brushRightArrow not and and { ifill } if
+brushNone not { istroke } if
+0 0 1 1 leftarrow
+n 2 sub dup n 1 sub dup rightarrow
+} if
+end
+} dup 0 4 dict put def
+
+/Circ {
+newpath
+0 360 arc
+patternNone not { ifill } if
+brushNone not { istroke } if
+} def
+
+/CBSpl {
+0 begin
+dup 2 gt {
+storexyn
+newpath
+n 1 sub dup 0 0 1 1 2 2 true subspline
+1 1 n 3 sub {
+/i exch def
+i 1 sub dup i dup i 1 add dup i 2 add dup false subspline
+} for
+n 3 sub dup n 2 sub dup n 1 sub dup 0 0 false subspline
+n 2 sub dup n 1 sub dup 0 0 1 1 false subspline
+patternNone not { ifill } if
+brushNone not { istroke } if
+} {
+Poly
+} ifelse
+end
+} dup 0 4 dict put def
+
+/Elli {
+0 begin
+newpath
+4 2 roll
+translate
+scale
+0 0 1 0 360 arc
+patternNone not { ifill } if
+brushNone not { istroke } if
+end
+} dup 0 1 dict put def
+
+/Line {
+0 begin
+2 storexyn
+newpath
+x 0 get y 0 get moveto
+x 1 get y 1 get lineto
+brushNone not { istroke } if
+0 0 1 1 leftarrow
+0 0 1 1 rightarrow
+end
+} dup 0 4 dict put def
+
+/MLine {
+0 begin
+storexyn
+newpath
+n 1 gt {
+x 0 get y 0 get moveto
+1 1 n 1 sub {
+/i exch def
+x i get y i get lineto
+} for
+patternNone not brushLeftArrow not brushRightArrow not and and { ifill } if
+brushNone not { istroke } if
+0 0 1 1 leftarrow
+n 2 sub dup n 1 sub dup rightarrow
+} if
+end
+} dup 0 4 dict put def
+
+/Poly {
+3 1 roll
+newpath
+moveto
+-1 add
+{ lineto } repeat
+closepath
+patternNone not { ifill } if
+brushNone not { istroke } if
+} def
+
+/Rect {
+0 begin
+/t exch def
+/r exch def
+/b exch def
+/l exch def
+newpath
+l b moveto
+l t lineto
+r t lineto
+r b lineto
+closepath
+patternNone not { ifill } if
+brushNone not { istroke } if
+end
+} dup 0 4 dict put def
+
+/Text {
+ishow
+} def
+
+/idef {
+dup where { pop pop pop } { exch def } ifelse
+} def
+
+/ifill {
+0 begin
+gsave
+patternGrayLevel -1 ne {
+fgred bgred fgred sub patternGrayLevel mul add
+fggreen bggreen fggreen sub patternGrayLevel mul add
+fgblue bgblue fgblue sub patternGrayLevel mul add setrgbcolor
+eofill
+} {
+eoclip
+originalCTM setmatrix
+pathbbox /t exch def /r exch def /b exch def /l exch def
+/w r l sub ceiling cvi def
+/h t b sub ceiling cvi def
+/imageByteWidth w 8 div ceiling cvi def
+/imageHeight h def
+bgred bggreen bgblue setrgbcolor
+eofill
+fgred fggreen fgblue setrgbcolor
+w 0 gt h 0 gt and {
+l w add b translate w neg h scale
+w h true [w 0 0 h neg 0 h] { patternproc } imagemask
+} if
+} ifelse
+grestore
+end
+} dup 0 8 dict put def
+
+/istroke {
+gsave
+brushDashOffset -1 eq {
+[] 0 setdash
+1 setgray
+} {
+brushDashArray brushDashOffset setdash
+fgred fggreen fgblue setrgbcolor
+} ifelse
+brushWidth setlinewidth
+originalCTM setmatrix
+stroke
+grestore
+} def
+
+/ishow {
+0 begin
+gsave
+fgred fggreen fgblue setrgbcolor
+/fontDict printFont printSize scalefont dup setfont def
+/descender fontDict begin 0 [FontBBox] 1 get FontMatrix end
+transform exch pop def
+/vertoffset 1 printSize sub descender sub def {
+0 vertoffset moveto show
+/vertoffset vertoffset printSize sub def
+} forall
+grestore
+end
+} dup 0 3 dict put def
+/patternproc {
+0 begin
+/patternByteLength patternString length def
+/patternHeight patternByteLength 8 mul sqrt cvi def
+/patternWidth patternHeight def
+/patternByteWidth patternWidth 8 idiv def
+/imageByteMaxLength imageByteWidth imageHeight mul
+stringLimit patternByteWidth sub min def
+/imageMaxHeight imageByteMaxLength imageByteWidth idiv patternHeight idiv
+patternHeight mul patternHeight max def
+/imageHeight imageHeight imageMaxHeight sub store
+/imageString imageByteWidth imageMaxHeight mul patternByteWidth add string def
+0 1 imageMaxHeight 1 sub {
+/y exch def
+/patternRow y patternByteWidth mul patternByteLength mod def
+/patternRowString patternString patternRow patternByteWidth getinterval def
+/imageRow y imageByteWidth mul def
+0 patternByteWidth imageByteWidth 1 sub {
+/x exch def
+imageString imageRow x add patternRowString putinterval
+} for
+} for
+imageString
+end
+} dup 0 12 dict put def
+
+/min {
+dup 3 2 roll dup 4 3 roll lt { exch } if pop
+} def
+
+/max {
+dup 3 2 roll dup 4 3 roll gt { exch } if pop
+} def
+
+/midpoint {
+0 begin
+/y1 exch def
+/x1 exch def
+/y0 exch def
+/x0 exch def
+x0 x1 add 2 div
+y0 y1 add 2 div
+end
+} dup 0 4 dict put def
+
+/thirdpoint {
+0 begin
+/y1 exch def
+/x1 exch def
+/y0 exch def
+/x0 exch def
+x0 2 mul x1 add 3 div
+y0 2 mul y1 add 3 div
+end
+} dup 0 4 dict put def
+
+/subspline {
+0 begin
+/movetoNeeded exch def
+y exch get /y3 exch def
+x exch get /x3 exch def
+y exch get /y2 exch def
+x exch get /x2 exch def
+y exch get /y1 exch def
+x exch get /x1 exch def
+y exch get /y0 exch def
+x exch get /x0 exch def
+x1 y1 x2 y2 thirdpoint
+/p1y exch def
+/p1x exch def
+x2 y2 x1 y1 thirdpoint
+/p2y exch def
+/p2x exch def
+x1 y1 x0 y0 thirdpoint
+p1x p1y midpoint
+/p0y exch def
+/p0x exch def
+x2 y2 x3 y3 thirdpoint
+p2x p2y midpoint
+/p3y exch def
+/p3x exch def
+movetoNeeded { p0x p0y moveto } if
+p1x p1y p2x p2y p3x p3y curveto
+end
+} dup 0 17 dict put def
+
+/storexyn {
+/n exch def
+/y n array def
+/x n array def
+n 1 sub -1 0 {
+/i exch def
+y i 3 2 roll put
+x i 3 2 roll put
+} for
+} def
+
+/SSten {
+fgred fggreen fgblue setrgbcolor
+dup true exch 1 0 0 -1 0 6 -1 roll matrix astore
+} def
+
+/FSten {
+dup 3 -1 roll dup 4 1 roll exch
+newpath
+0 0 moveto
+dup 0 exch lineto
+exch dup 3 1 roll exch lineto
+0 lineto
+closepath
+bgred bggreen bgblue setrgbcolor
+eofill
+SSten
+} def
+
+/Rast {
+exch dup 3 1 roll 1 0 0 -1 0 6 -1 roll matrix astore
+} def
+
+%%EndProlog
+
+%I Idraw 10 Grid 8 8 
+
+%%Page: 1 1
+
+Begin
+%I b u
+%I cfg u
+%I cbg u
+%I f u
+%I p u
+%I t
+[ 0.661888 0 0 0.661888 0 0 ] concat
+/originalCTM matrix currentmatrix def
+
+Begin %I Rect
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+0 SetP
+%I t
+[ 0.5 -0 -0 0.5 169 661 ] concat
+%I
+219 646 220 646 Rect
+End
+
+Begin %I Pict
+%I b u
+%I cfg u
+%I cbg u
+%I f u
+%I p u
+%I t
+[ 0.786528 0 0 0.786528 -70.0671 -291.058 ] concat
+
+Begin %I CBSpl
+%I b 65535
+2 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1 -0 -0 1 284 439 ] concat
+%I 6
+100 181
+189 244
+444 142
+379 20
+106 30
+84 139
+6 CBSpl
+End
+
+Begin %I Pict
+%I b u
+%I cfg u
+%I cbg u
+%I f u
+%I p u
+%I t
+[ 1 0 0 1 442 -178 ] concat
+
+Begin %I Rect
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1 -0 -0 1 184 263 ] concat
+%I
+31 554 147 630 Rect
+End
+
+Begin %I Rect
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1 -0 -0 1 184 263 ] concat
+%I
+35 569 130 617 Rect
+End
+
+Begin %I Rect
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1 -0 -0 1 184 263 ] concat
+%I
+35 559 129 565 Rect
+End
+
+Begin %I Rect
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 0.5 -0 -0 0.5 171.5 661.5 ] concat
+%I
+293 342 304 438 Rect
+End
+
+Begin %I Rect
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+0 SetP
+%I t
+[ 0.5 -0 -0 0.5 169 661 ] concat
+%I
+119 325 166 332 Rect
+End
+
+Begin %I Rect
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+0 SetP
+%I t
+[ 0.5 -0 -0 0.5 169 661 ] concat
+%I
+301 385 306 420 Rect
+End
+
+Begin %I Elli
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 -0 -0 0.5 169 661 ] concat
+%I
+136 406 8 6 Elli
+End
+
+Begin %I Elli
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 -0 -0 0.5 172 652.5 ] concat
+%I
+202 387 17 17 Elli
+End
+
+Begin %I Elli
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 -0 -0 0.5 169 661 ] concat
+%I
+253 417 6 10 Elli
+End
+
+Begin %I Line
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 -0 -0 0.5 169 661 ] concat
+%I
+144 405 246 416 Line
+%I 2
+End
+
+Begin %I Line
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 -0 -0 0.5 169 661 ] concat
+%I
+250 407 223 376 Line
+%I 2
+End
+
+Begin %I Line
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 -0 -0 0.5 169 661 ] concat
+%I
+191 372 140 400 Line
+%I 2
+End
+
+End %I eop
+
+Begin %I Pict
+%I b u
+%I cfg u
+%I cbg u
+%I f u
+%I p u
+%I t
+[ 1 0 0 1 225 -69 ] concat
+
+Begin %I Rect
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1 -0 -0 1 184 263 ] concat
+%I
+31 554 147 630 Rect
+End
+
+Begin %I Rect
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1 -0 -0 1 184 263 ] concat
+%I
+35 569 130 617 Rect
+End
+
+Begin %I Rect
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1 -0 -0 1 184 263 ] concat
+%I
+35 559 129 565 Rect
+End
+
+Begin %I Rect
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 0.5 -0 -0 0.5 171.5 661.5 ] concat
+%I
+293 342 304 438 Rect
+End
+
+Begin %I Rect
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+0 SetP
+%I t
+[ 0.5 -0 -0 0.5 169 661 ] concat
+%I
+119 325 166 332 Rect
+End
+
+Begin %I Rect
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+0 SetP
+%I t
+[ 0.5 -0 -0 0.5 169 661 ] concat
+%I
+301 385 306 420 Rect
+End
+
+Begin %I Elli
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 -0 -0 0.5 169 661 ] concat
+%I
+136 406 8 6 Elli
+End
+
+Begin %I Elli
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 -0 -0 0.5 172 652.5 ] concat
+%I
+202 387 17 17 Elli
+End
+
+Begin %I Elli
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 -0 -0 0.5 169 661 ] concat
+%I
+253 417 6 10 Elli
+End
+
+Begin %I Line
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 -0 -0 0.5 169 661 ] concat
+%I
+144 405 246 416 Line
+%I 2
+End
+
+Begin %I Line
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 -0 -0 0.5 169 661 ] concat
+%I
+250 407 223 376 Line
+%I 2
+End
+
+Begin %I Line
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 -0 -0 0.5 169 661 ] concat
+%I
+191 372 140 400 Line
+%I 2
+End
+
+End %I eop
+
+Begin %I Pict
+%I b u
+%I cfg u
+%I cbg u
+%I f u
+%I p u
+%I t
+[ 1 0 0 1 -2 -128 ] concat
+
+Begin %I Rect
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1 0 0 1 153 169 ] concat
+%I
+31 554 147 630 Rect
+End
+
+Begin %I Rect
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1 0 0 1 153 169 ] concat
+%I
+35 569 130 617 Rect
+End
+
+Begin %I Pict
+%I b u
+%I cfg u
+%I cbg u
+%I f u
+%I p u
+%I t u
+
+Begin %I Rect
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1 0 0 1 153 169 ] concat
+%I
+35 559 129 565 Rect
+End
+
+Begin %I Rect
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+0 SetP
+%I t
+[ 0.5 0 0 0.5 138 567 ] concat
+%I
+119 325 166 332 Rect
+End
+
+End %I eop
+
+Begin %I Pict
+%I b u
+%I cfg u
+%I cbg u
+%I f u
+%I p u
+%I t u
+
+Begin %I Rect
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 0.5 0 0 0.5 140.5 567.5 ] concat
+%I
+293 342 304 438 Rect
+End
+
+Begin %I Rect
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+0 SetP
+%I t
+[ 0.5 0 0 0.5 138 567 ] concat
+%I
+301 385 306 420 Rect
+End
+
+End %I eop
+
+Begin %I Pict
+%I b u
+%I cfg u
+%I cbg u
+%I f u
+%I p u
+%I t u
+
+Begin %I Elli
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 0 0 0.5 138 567 ] concat
+%I
+136 406 8 6 Elli
+End
+
+Begin %I Elli
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 0 0 0.5 141 558.5 ] concat
+%I
+202 387 17 17 Elli
+End
+
+Begin %I Elli
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 0 0 0.5 138 567 ] concat
+%I
+253 417 6 10 Elli
+End
+
+Begin %I Line
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 0 0 0.5 138 567 ] concat
+%I
+144 405 246 416 Line
+%I 2
+End
+
+Begin %I Line
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 0 0 0.5 138 567 ] concat
+%I
+250 407 223 376 Line
+%I 2
+End
+
+Begin %I Line
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 0 0 0.5 138 567 ] concat
+%I
+191 372 140 400 Line
+%I 2
+End
+
+End %I eop
+
+End %I eop
+
+Begin %I Pict
+%I b u
+%I cfg u
+%I cbg u
+%I f u
+%I p u
+%I t
+[ 1 0 0 1 259 -189 ] concat
+
+Begin %I Elli
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 0 0 0.5 138 567 ] concat
+%I
+136 406 8 6 Elli
+End
+
+Begin %I Elli
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 0 0 0.5 141 558.5 ] concat
+%I
+202 387 17 17 Elli
+End
+
+Begin %I Elli
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 0 0 0.5 138 567 ] concat
+%I
+253 417 6 10 Elli
+End
+
+Begin %I Line
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 0 0 0.5 138 567 ] concat
+%I
+144 405 246 416 Line
+%I 2
+End
+
+Begin %I Line
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 0 0 0.5 138 567 ] concat
+%I
+250 407 223 376 Line
+%I 2
+End
+
+Begin %I Line
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 0.5 0 0 0.5 138 567 ] concat
+%I
+191 372 140 400 Line
+%I 2
+End
+
+End %I eop
+
+Begin %I Pict
+%I b u
+%I cfg u
+%I cbg u
+%I f u
+%I p u
+%I t
+[ 1 0 0 1 328 -200 ] concat
+
+Begin %I Rect
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 0.5 0 0 0.5 140.5 567.5 ] concat
+%I
+293 342 304 438 Rect
+End
+
+Begin %I Rect
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+0 SetP
+%I t
+[ 0.5 0 0 0.5 138 567 ] concat
+%I
+301 385 306 420 Rect
+End
+
+End %I eop
+
+Begin %I Pict
+%I b u
+%I cfg u
+%I cbg u
+%I f u
+%I p u
+%I t
+[ 1 0 0 1 309 -232 ] concat
+
+Begin %I Rect
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+none SetP %I p n
+%I t
+[ 1 0 0 1 153 169 ] concat
+%I
+35 559 129 565 Rect
+End
+
+Begin %I Rect
+%I b 65535
+0 0 0 [] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+0 SetP
+%I t
+[ 0.5 0 0 0.5 138 567 ] concat
+%I
+119 325 166 332 Rect
+End
+
+End %I eop
+
+Begin %I Line
+%I b 65520
+1 0 1 [12 4] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 1 -0 -0 1 127 316.5 ] concat
+%I
+371 267 356 464 Line
+%I 1
+End
+
+Begin %I Line
+%I b 65520
+1 0 1 [12 4] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 1 -0 -0 1 127 316.5 ] concat
+%I
+374 270 561 361 Line
+%I 1
+End
+
+Begin %I Line
+%I b 65520
+1 0 1 [12 4] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 1 -0 -0 1 127 316.5 ] concat
+%I
+371 270 131 319 Line
+%I 1
+End
+
+Begin %I Line
+%I b 65520
+1 0 1 [12 4] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 1 -0 -0 1 127 316.5 ] concat
+%I
+495 244 631 344 Line
+%I 1
+End
+
+Begin %I Line
+%I b 65520
+1 0 1 [12 4] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 1 -0 -0 1 127 316.5 ] concat
+%I
+491 270 421 445 Line
+%I 1
+End
+
+Begin %I Line
+%I b 65520
+1 0 1 [12 4] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 1 -0 -0 1 127 316.5 ] concat
+%I
+488 264 167 331 Line
+%I 1
+End
+
+Begin %I Line
+%I b 65520
+1 0 1 [12 4] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 1 -0 -0 1 127 316.5 ] concat
+%I
+369 184 155 284 Line
+%I 1
+End
+
+Begin %I Line
+%I b 65520
+1 0 1 [12 4] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 1 -0 -0 1 127 316.5 ] concat
+%I
+466 185 583 326 Line
+%I 1
+End
+
+Begin %I Line
+%I b 65520
+1 0 1 [12 4] 0 SetB
+%I cfg Black
+0 0 0 SetCFg
+%I cbg White
+1 1 1 SetCBg
+%I p
+1 SetP
+%I t
+[ 1 -0 -0 1 127 316.5 ] concat
+%I
+449 186 393 435 Line
+%I 1
+End
+
+End %I eop
+
+Begin %I Text
+%I cfg Black
+0 0 0 SetCFg
+%I f -*-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*
+Helvetica 12 SetF
+%I t
+[ 1 0 0 1 28 41 ] concat
+%I
+[
+(Figure 2: Not only data objects, but also interface components, can be part of the shared workspace.)
+] Text
+End
+
+End %I eop
+
+showpage
+
+%%Trailer
+
+end
+
+
+
+ENDPRINTCODE
+72 72 540 720 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "15" 16
+%%Page: "16" 16
+612 792 0 FMBEGINPAGE
+72 36 540 54 R
+7 X
+0 K
+V
+0 11 Q
+0 X
+-0.35 (to interface management. Interface components can be explicitly shared, causing that aspect of interfaces to) 72 712.67 P
+0.03 (be linked; or they can be separated and broadcast, allowing each individual control while being able to see) 72 698.67 P
+-0.66 (other\325s states; or they can be private, in which case other users cannot see them. In addition, another property) 72 684.67 P
+0.3 (they have in common with shared data objects is that they can be moved into and out of the shared work-) 72 670.67 P
+-0.13 (space in the course of a collaboration. This means that the linked aspects of the users\325 interfaces can be dy-) 72 656.67 P
+(namically controlled and adjusted as the collaboration continues) 72 642.67 T
+3 16 Q
+(5) 72 609.33 T
+(Reflection and Adaptive Computation) 93.6 609.33 T
+0 11 Q
+-0.21 (In this paper, I have mainly been concerned with the use of computational reflection and related techniques) 72 582.67 P
+0.93 (as ways of opening up implementations and providing flexibility. The techniques I have discussed have) 72 568.67 P
+0.86 (been developed primarily in the domain of programming language design. Recently, similar issues have) 72 554.67 P
+0.03 (come to prominence in a number of other areas. Various radical solutions have been adopted which go be-) 72 540.67 P
+0.28 (yond the traditional separation of \322mechanism and policy\323; and often, these address issues very similar to) 72 526.67 P
+(those discussed here within the context of CSCW.) 72 512.67 T
+0.41 (The design of communication protocols on data networks has traditionally been based on a \322layered\323) 90 498.67 P
+0.69 (approach. This form of design is exemplified by the seven-layer ISO protocol stack [Zimmerman 1980].) 72 484.67 P
+-0.61 (End-to-end communication requirements are broken down into different areas of responsibility, such as data) 72 470.67 P
+1.55 (representation conversion, direct host-to-host communication, inter-network communication and so on.) 72 456.67 P
+-0.48 (Each component is encapsulated in a layer and, on a given machine, each layer interacts only with the layers) 72 442.67 P
+-0.06 (directly above and below it. More recently, however, the need to handle interactive multimedia traffic, and) 72 428.67 P
+0.34 (issues arising in the design of protocols for gigabit networks, have resulted in a breakdown in this model.) 72 414.67 P
+-0.36 (In its place, a flatter approach is emerging in which more of the traffic management is controlled) 72 400.67 P
+1 F
+-0.36 (directly by) 493.68 400.67 P
+0.18 (the application) 72 386.67 P
+0 F
+0.18 (, rather than being hidden in the network software. O\325Malley and Peterson [1992] have de-) 138.4 386.67 P
+-0.18 (scribed a model in which the application can compose kernel-internal microprotocols into larger units opti-) 72 372.67 P
+0.42 (mised for their particular requirements. Clark and Tennenhouse [1990] propose the concept of) 72 358.67 P
+1 F
+0.42 (Integrated) 494.23 358.67 P
+-0.18 (Layer Processing) 72 344.67 P
+0 F
+-0.18 ( as a mechanism to avoid the inter-layer inefficiencies which emerge when the infrastruc-) 149.02 344.67 P
+(ture is examined from the point of view of particular end-to-end systems.) 72 330.67 T
+-0.49 (In the area of operating systems, much functionality which has usually been in the domain of the system) 90 316.67 P
+0.5 (itself is being opened up to external control. One of the most obvious examples is Mach\325s external pager) 72 302.67 P
+0.57 ([Rashid et al. 1987], which allows user programs to involve themselves in aspects of the virtual memory) 72 288.67 P
+0.1 (system\325s operation. Similarly, Anderson et al. [1992] describe \322scheduler activations\323 as a means to avoid) 72 274.67 P
+-0.37 (trade-offs in the implementation of threads, which are traditionally a completely opaque abstraction over an) 72 260.67 P
+0.24 (implementation based either in the operating system kernel or in a user library. Scheduler activations pro-) 72 246.67 P
+(vide a finer grain of control and are explicitly designed to allow application-specific customisation.) 72 232.67 T
+0.1 (This trend is repeated in many other areas too, such as interprocessor communication [Felten 1992] or) 90 218.67 P
+0.63 (even microprocessor design [Athanas and Silverman 1993]. The same principle is at work in all of these) 72 204.67 P
+-0.12 (examples. They are all based on an understanding that traditional closed abstractions are not always appro-) 72 190.67 P
+0.73 (priate for high-level systems design in general, and in particular for the design of infrastructural compo-) 72 176.67 P
+0.66 (nents. The various solutions are oriented around a) 72 162.67 P
+1 F
+0.66 (downward flow of information) 299.14 162.67 P
+0 F
+0.66 (, from the higher levels) 435.13 162.67 P
+-0.55 (\050applications\051 to the lower levels \050toolkits and infrastructures\051, in order to support better interaction between) 72 148.67 P
+-0.38 (the two. This downward flow\321from application requirements to the details of system support\321mirrors the) 72 134.67 P
+(problems that Prospero addresses with reflective techniques.) 72 120.67 T
+0.78 (Reflection achieves this by opening up the underlying implementation and allowing the applications) 90 106.67 P
+0.33 (programmer to explore alternative implementations and behaviours within the metalevel framework. This) 72 92.67 P
+0.58 (corresponds with what Kay [1993] has characterised as) 72 78.67 P
+1 F
+0.58 (late-binding systems) 321.95 78.67 P
+0 F
+0.58 (\321those in which design and) 412.56 78.67 P
+FMENDPAGE
+%%EndPage: "16" 17
+%%Page: "17" 17
+612 792 0 FMBEGINPAGE
+72 36 540 54 R
+7 X
+0 K
+V
+0 11 Q
+0 X
+-0.13 (implementation decisions which affect observable behaviour are delayed until they can be resolved with as) 72 712.67 P
+0.24 (much context as possible. While the techniques discussed here have been derived from work on program-) 72 698.67 P
+-0.27 (ming language design, late-binding is useful and important in interactive systems, especially in CSCW sys-) 72 684.67 P
+(tems where contextual factors play such a large part in the interaction.) 72 670.67 T
+0.28 (Prospero is a toolkit for CSCW applications under development, based on these principles. It concen-) 90 656.67 P
+0.08 (trates primarily on issues in data distribution, conflict management and interface linkage. The examples in) 72 642.67 P
+0.02 (this paper have been drawn from this work in progress. The system provides default behaviours which can) 72 628.67 P
+-0.23 (be used to construct applications in the usual way, where they are appropriate. More importantly, though, it) 72 614.67 P
+0.28 (also provides a metalevel framework which can be used to revise implementation decisions, to extend the) 72 600.67 P
+(structure to cover new areas, and to make the toolkit more appropriate for a range of applications.) 72 586.67 T
+3 16 Q
+(6) 72 553.33 T
+(Summary) 93.6 553.33 T
+0 11 Q
+-0.4 (The primary focus of this paper has been on models of implementing interactive systems. I have argued that) 72 526.67 P
+-0.16 (recent years have seen a fundamental reorientation in our view of interactive systems and their use. In turn,) 72 512.67 P
+-0.24 (this forces a reorientation in our view of system design and structure. In particular, appreciation of the need) 72 498.67 P
+0.37 (for \050and use of\051 customisation facilities, the role of work practice and situation in system use, and the co-) 72 484.67 P
+0.34 (adaptive nature of system use and user behaviour lead us to a model of systems design which emphasises) 72 470.67 P
+(openness, dynamic behavior and evolution of systems and practices.) 72 456.67 T
+0.15 (The move away from static systems leads us to reconsider the architectures which underlie interactive) 90 442.67 P
+0.2 (systems. It is not enough to simply change the process of design; instead, we need to change the nature of) 72 428.67 P
+0.07 (the artefacts themselves. By drawing on the principles and techniques of computational reflection, derived) 72 414.67 P
+0.02 (originally from research into programming language semantics, I have outlined a model of interactive sys-) 72 400.67 P
+-0.59 (tem design which is oriented specifically towards these new goals of flexibility and adaptation. In particular,) 72 386.67 P
+0.21 (this model is currently being used as the implementational basis of a toolkit for CSCW design, and I have) 72 372.67 P
+0.23 (outlined how this toolkit tackles a number of current problems in CSCW toolkits which must be used in a) 72 358.67 P
+(wide range of different circumstances and situations.) 72 344.67 T
+-0.56 (This work is currently ongoing. It is hoped that the reflective toolkit for CSCW can provide insights into) 90 330.67 P
+0.07 (the general application of notions of open implementation and behaviour to a range of current problems in) 72 316.67 P
+(interactive system design.) 72 302.67 T
+3 14 Q
+(Acknowledgments) 72 274.67 T
+0 11 Q
+0.06 (The ideas expressed in this paper would never have seen the light of day without the contributions and en-) 72 250.67 P
+-0.05 (couragement of many people. I would particularly like to thank Hal Abelson, Bob Anderson, Victoria Bel-) 72 236.67 P
+-0.33 (lotti, Danny Bobrow, Jon Crowcroft, Gregor Kiczales and Wendy Mackay for fruitful and enlightening dis-) 72 222.67 P
+-0 (cussions. I am very grateful to Annette Adler, Jon Crowcroft, Laura Dekker, Marge Eldridge, Lorna Goul-) 72 208.67 P
+-0.2 (den, Jonathan Grudin, Gillian Ritchie, Lisa Tweedie and the anonymous reviewers for careful readings and) 72 194.67 P
+(valuable comments on earlier drafts of this paper.) 72 180.67 T
+3 14 Q
+(References) 72 152.67 T
+0 10 Q
+0.17 (S. Ahuja, J. Ensor, and S. Lucco,) 72 129.33 P
+1 F
+0.17 (\322A Comparison of Application Sharing Mechanisms In Real-time Desktop Confer-) 207.83 129.33 P
+(encing Systems\323) 82.8 117.33 T
+0 F
+(, Proc. Conference on Office Information Systems COIS\32590, Boston, Mass., April 1990.) 149.14 117.33 T
+-0.21 (Thomas Anderson, Brian Bershad, Edward Lazowska and Henry Levy, \322) 72 99.33 P
+1 F
+-0.21 (Scheduler Activations: Effective Kernel Sup-) 362.08 99.33 P
+-0 (port for the User-Level Management of Parallelism) 82.8 87.33 P
+0 F
+-0 (\323, ACM Transactions on Computer Systems, 10\0501\051, pp. 53\32079,) 289.33 87.33 P
+(February 1992.) 82.8 75.33 T
+FMENDPAGE
+%%EndPage: "17" 18
+%%Page: "18" 18
+612 792 0 FMBEGINPAGE
+72 36 540 54 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+0.77 (Peter Athanas and Harvey Silverman, \322) 72 713.33 P
+1 F
+0.77 (Processor Reconfiguration Through Instruction-Set Metamorphosis) 233.53 713.33 P
+0 F
+0.77 (\323, IEEE) 508.14 713.33 P
+(Computer, March 1993.) 82.8 701.33 T
+0.1 (Daniel Bobrow, Linda Demichiel, Richard Gabriel, Sonya Keene, Gregor Kiczales and David Moon, \322) 72 683.33 P
+1 F
+0.1 (Common Lisp) 484.09 683.33 P
+(Object System Specification) 82.8 671.33 T
+0 F
+(\323, X3J13 Document 88-002R, June 1988.) 194.39 671.33 T
+0.45 (Daniel Bobrow, Richard Gabriel and Jon L White, \322) 72 653.33 P
+1 F
+0.45 (CLOS in Context: The Shape of the Design Space) 284.31 653.33 P
+0 F
+0.45 (\323, in Paepcke) 486.1 653.33 P
+(\050ed.\051, \322Object-Oriented Programming: The CLOS Perspective\323, MIT Press, Cambridge, Mass., 1993.) 82.8 641.33 T
+-0.18 (Suzanne B\277dker and Kaj Gr\277nb\276k, \322) 72 623.33 P
+1 F
+-0.18 (Cooperative Prototyping: Users and Designers in Mutual Activity) 219.88 623.33 P
+0 F
+-0.18 (\323, Intl. Journal) 482.62 623.33 P
+(of Man-Machine Studies, 34\0503\051, pp. 453\320479, 1991.) 82.8 611.33 T
+-0.09 (Barry Boehm, \322) 72 593.33 P
+1 F
+-0.09 (A Spiral Model of Software Development and Enhancement) 135.38 593.33 P
+0 F
+-0.09 (\323, IEEE Computer, pp. 61\32072, May 1988.) 373.73 593.33 P
+(Grady Booch, \322) 72 575.33 T
+1 F
+(Object Oriented Design) 135.01 575.33 T
+0 F
+(\323, Benjamin/Cummings, Redwood City, Ca., 1991.) 230.49 575.33 T
+-0.35 (John Bowers and Tom Rodden,) 72 557.33 P
+1 F
+-0.35 (\322Exploding the Interface: Experiences of a CSCW Network\323) 199.04 557.33 P
+0 F
+-0.35 (, Proc. InterCHI\32593, Am-) 440.02 557.33 P
+(sterdam, Netherlands, April 1993.) 82.8 545.33 T
+0.63 (Harry Bretthauer, Harley Davis, J\237rgen Kopp and Keith Playford, \322) 72 527.33 P
+1 F
+0.63 (Balancing the EuLisp Metaobject Protocol) 348.05 527.33 P
+0 F
+0.63 (\323, in) 522.16 527.33 P
+(Proc. IMSA\32592 Workshop on Reflection and Metalevel Architectures, Tokyo, Japan, November 1992.) 82.8 515.33 T
+-0.2 (David Clark and David Tennenhouse, \322) 72 497.33 P
+1 F
+-0.2 (Architectural Considerations for a New Generation of Protocols) 229.21 497.33 P
+0 F
+-0.2 (\323, ACM SIG-) 486.27 497.33 P
+(COMM Communications Review, 20\0504\051, pp. 200\320208, 1990.) 82.8 485.33 T
+-0.32 (Terry Crowley, Paul Milazzo, Ellie Baker, Harry Forsdick and Raymond Tomlinson, \322) 72 467.33 P
+1 F
+-0.32 (MMConf: An Infrastructure for) 415.2 467.33 P
+-0 (Building Shared Multimedia Applications) 82.8 455.33 P
+0 F
+-0 (\323, in Proc. ACM Conference on Computer-Supported Cooperative Work) 249.66 455.33 P
+(CSCW\32590, Los Angeles, October, 1990.) 82.8 443.33 T
+0.48 (Prasun Dewan and Rajiv Choudhary, \322) 72 425.33 P
+1 F
+0.48 (Flexible User Interface Coupling In a Collaborative System) 229.84 425.33 P
+0 F
+0.48 (\323, in Proc. ACM) 472.77 425.33 P
+(Conf. Human Factors in Computing Systems CHI\32591, New Orleans, Louisiana, April 1991.) 82.8 413.33 T
+1.2 (Paul Dourish, \322) 72 395.33 P
+1 F
+1.2 (A Divergence-Based Model of Synchrony and Distribution in Collaborative Systems) 136.31 395.33 P
+0 F
+1.2 (\323, EuroPARC) 483.83 395.33 P
+(Technical Report EPC-94-102, Rank Xerox EuroPARC, Cambridge, UK, 1994.) 82.8 383.33 T
+-0.14 (Paul Dourish and Victoria Bellotti, \322) 72 365.33 P
+1 F
+-0.14 (Awareness and Coordination in Shared Workspaces) 217.87 365.33 P
+0 F
+-0.14 (\323, in Proc. ACM Conference) 426.21 365.33 P
+(on Computer-Supported Cooperative Work CSCW\32592, Toronto, Canada, November 1992.) 82.8 353.33 T
+(Pelle Ehn, \322) 72 335.33 T
+1 F
+(Work-Oriented Design of Computer Artifacts) 120.02 335.33 T
+0 F
+(\323, Arbetslivscentrum, Stockholm, 1988.) 301.02 335.33 T
+-0.22 (Clarence Ellis and Simon Gibbs, \322) 72 317.33 P
+1 F
+-0.22 (Concurrency Control in Groupware Systems) 208.6 317.33 P
+0 F
+-0.22 (\323, Proc. ACM Conference on Manage-) 386.5 317.33 P
+(ment of Data SIGMOD\32589, Seattle, Washington, 1989.) 82.8 305.33 T
+(Farallon Computing, \322) 72 287.33 T
+1 F
+(Timbuktu: The next best thing to being there) 162.23 287.33 T
+0 F
+(\323, 1987.) 339.62 287.33 T
+0.25 (Edward Felten, \322) 72 269.33 P
+1 F
+0.25 (The Case for Application-Specific Communication Protocols) 140.5 269.33 P
+0 F
+0.25 (\323, Technical Report TR-02-03-11, De-) 385.23 269.33 P
+(partment of Computer Science, University of Washington, Seattle, Washington, 1992) 82.8 257.33 T
+-0.51 (Genevi\217ve Filippi and Jacques Theureau,) 72 239.33 P
+1 F
+-0.51 (\322Analyzing Cooperative Work in an Urban Traffic Control Room for the De-) 237.12 239.33 P
+0.51 (sign of a Coordination Support System\323) 82.8 227.33 P
+0 F
+0.51 (, Proc. Third European Conference on Computer Supported Cooperative) 246.12 227.33 P
+(Work ECSCW\32593, Milano, Italy, September 1993.) 82.8 215.33 T
+-0.2 (Dan Garfinkel, Phil Gust, Mike Lemon and Steve Lowder, \322) 72 197.33 P
+1 F
+-0.2 (The SharedX Multi-User Interface User\325s Guide, Version) 311.66 197.33 P
+(2.0) 82.8 185.33 T
+0 F
+(\323, Software Technology Lab Report STL-TM-89-07, Hewlett-Packard Laboratories, Palo Alto, Ca., 1989.) 95.29 185.33 T
+-0.3 (Saul Greenberg, \322) 72 167.33 P
+1 F
+-0.3 (Personalisable Groupware: Accommodating Individual Roles and Group Differences) 143.28 167.33 P
+0 F
+-0.3 (\323, in Proc. Eu-) 483.45 167.33 P
+0.28 (ropean Conference on Computer-Supported Cooperative Work ECSCW\32591, Amsterdam, Netherlands, September) 82.8 155.33 P
+(1991.) 82.8 143.33 T
+0.89 (Saul Greenberg, Mark Roseman, Dave Webster and Ralph Bohnet, \322) 72 125.33 P
+1 F
+0.89 (Human and Technical Factors of Distributed) 354.81 125.33 P
+(Group Drawing Tools) 82.8 113.33 T
+0 F
+(\323, Interacting with Computers 4\0503\051, pp. 364-392, 1992.) 171.65 113.33 T
+0.33 (Jonathan Grudin, \322) 72 95.33 P
+1 F
+0.33 (The Computer Reaches Out: The Historical Continuity of Interface Design) 148.44 95.33 P
+0 F
+0.33 (\323, in Proc. ACM Con-) 450.4 95.33 P
+(ference on Human Factors in Computing Systems CHI\32590, Seattle, Washington, April 1990.) 82.8 83.33 T
+FMENDPAGE
+%%EndPage: "18" 19
+%%Page: "19" 19
+612 792 0 FMBEGINPAGE
+72 36 540 54 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+0.47 (Jonathan Grudin, \322) 72 713.33 P
+1 F
+0.47 (Obstacles to User Involvement in Software Product Development, with Implications for CSCW) 148.71 713.33 P
+0 F
+0.47 (\323,) 533.06 713.33 P
+(Intl. Journal of Man-Machine Studies, 34, pp. 435-452, 1991.) 82.8 701.33 T
+(Jonathan Grudin,) 72 683.33 T
+1 F
+(\322Interface: An Evolving Concept\323) 143.34 683.33 T
+0 F
+(, Communications of the ACM, 36\0504\051, pp. 110\320119, April 1993.) 281.3 683.33 T
+-0.18 (J\232rg Haake and Brian Wilson, \322) 72 665.33 P
+1 F
+-0.18 (Supporting Collaborative Writing of Hyperdocuments) 198.78 665.33 P
+0 F
+-0.18 (\323, in Proc. ACM Conference on) 414.05 665.33 P
+(Computer-Supported Cooperative Work CSCW\32592, Toronto, Canada, November 1992.) 82.8 653.33 T
+0.63 (Richard Harper, John Hughes and Dan Shapiro, \322) 72 635.33 P
+1 F
+0.63 (Harmonious Working and CSCW: Computer Technology and Air) 274.33 635.33 P
+0.28 (Traffic Control) 82.8 623.33 P
+0 F
+0.28 (\323, in Bowers and Benford \050Eds.\051 \322Studies in Computer Supported Cooperative Work\323, North-Hol-) 143.89 623.33 P
+(land, Amsterdam, 1991.) 82.8 611.33 T
+-0.06 (Christian Heath and Paul Luff, \322) 72 593.33 P
+1 F
+-0.06 (Collaborative Activity and Technological Design: Task Coordination in London Un-) 201.59 593.33 P
+2.47 (derground Control Rooms) 82.8 581.33 P
+0 F
+2.47 (\323, in Proc. European Conference on Computer-Supported Cooperative Work EC-) 193.25 581.33 P
+(SCW\32591, Amsterdam, Netherlands, September 1991.) 82.8 569.33 T
+-0.37 (Alan Kay, \322) 72 551.33 P
+1 F
+-0.37 (The Early History of Smalltalk) 119.28 551.33 P
+0 F
+-0.37 (\323, in Proc. ACM Conf. History of Programming Languages HOPL-II, Cam-) 240.53 551.33 P
+(bridge, Mass, published in SIGPLAN Notices 28\0503\051, March, 1993.) 82.8 539.33 T
+-0.12 (Gregor Kiczales, Jim des Rivi\217res and Danny Bobrow, \322) 72 521.33 P
+1 F
+-0.12 (The Art of the Metaobject Protocol) 297.52 521.33 P
+0 F
+-0.12 (\323, MIT Press, Cambridge,) 437.1 521.33 P
+(Mass., 1991.) 82.8 509.33 T
+-0.47 (Gregor Kiczales, \322) 72 491.33 P
+1 F
+-0.47 (Towards a New Model of Abstraction in Software Enginering) 145.71 491.33 P
+0 F
+-0.47 (\323, in Proc. IMSA\32592 Workshop on Re-) 387.93 491.33 P
+(flection and Metalevel Architectures, Tokyo, Japan, Nov. 4-7, 1992) 82.8 479.33 T
+0.33 (Wendy Mackay, \322) 72 461.33 P
+1 F
+0.33 (How Do Experienced Information Lens Users Use Rules?) 145.66 461.33 P
+0 F
+0.33 (\323, in Proc. ACM Conference on Human) 379.23 461.33 P
+(Factors in Computing Systems CHI\32589, Austin, Texas, 1989.) 82.8 449.33 T
+-0.42 (Wendy Mackay, \322) 72 431.33 P
+1 F
+-0.42 (Users and Customisable Software: A Co-Adaptive Phenomenon) 144.15 431.33 P
+0 F
+-0.42 (\323, PhD thesis, Sloan School of Man-) 397.04 431.33 P
+(agement, MIT, Cambridge, Mass., 1990 \050a\051.) 82.8 419.33 T
+0.67 (Wendy Mackay, \322) 72 401.33 P
+1 F
+0.67 (Patterns of Sharing Customisable Software) 146.32 401.33 P
+0 F
+0.67 (\323, in Proc. ACM Conference on Computer-Supported) 322.25 401.33 P
+(Cooperative Work CSCWW\32590, Los Angeles, Ca., October 1990 \050b\051.) 82.8 389.33 T
+0.33 (Wendy Mackay, \322) 72 371.33 P
+1 F
+0.33 (Triggers and Barriers to Customising Software) 145.65 371.33 P
+0 F
+0.33 (\323, in Proc. ACM Conference on Human Factors in) 336.39 371.33 P
+(Computing Systems CHI\32591, New Orleans, Louisiana, April 1991.) 82.8 359.33 T
+-0.5 (Lola McGuffin and Gary Olson, \322) 72 341.33 P
+1 F
+-0.5 (ShrEdit: A Shared Electronic Workspace) 205.52 341.33 P
+0 F
+-0.5 (\323, CSMIL Technical Report, Cognitive Sci-) 367.87 341.33 P
+(ence and Machine Intelligence Laboratory, University of Michigan, 1992.) 82.8 329.33 T
+0 (Allan MacLean, Kathleen Carter, Thomas Moran and Lennart Lovstrand, \322) 72 311.33 P
+1 F
+0 (User-Tailorable Systems: Pressing the Is-) 372.33 311.33 P
+-0.41 (sues with Buttons) 82.8 299.33 P
+0 F
+-0.41 (\323, in Proc. ACM Conference on Human Factors in Computing Systems CHI\32590, Seattle, Washing-) 151.95 299.33 P
+(ton, April 1990.) 82.8 287.33 T
+-0.53 (Pattie Maes, \322) 72 269.33 P
+1 F
+-0.53 (Computational Reflection) 127.29 269.33 P
+0 F
+-0.53 (\323, Technical Report 87.2, Artificial Intelligence Laboratory, Vrije Universiteit,) 229.76 269.33 P
+(Brussels, Belgium, 1987.) 82.8 257.33 T
+-0.48 (Tom Malone, Kevin Crowston, Ramana Rao, David Rosenblitt and Stu Card, \322) 72 239.33 P
+1 F
+-0.48 (Semi-Structured Messages Are Surpris-) 382.93 239.33 P
+-0.03 (ingly Useful for Computer-Supported Coordination) 82.8 227.33 P
+0 F
+-0.03 (\323, ACM Transactions on Office Information Systems, 5\0502\051, pp.) 288.71 227.33 P
+(115\320131, 1987.) 82.8 215.33 T
+0.13 (Bonnie Nardi and James Miller, \322) 72 197.33 P
+1 F
+0.13 (Twinkling Lights and Nested Loops: Distributed Problem Solving and Spreadsheet) 207.58 197.33 P
+1.06 (Development) 82.8 185.33 P
+0 F
+1.06 (\323, in Greenberg \050ed.\051, \322Computer-Supported Cooperative Work and Groupware\323, Academic Press,) 135.53 185.33 P
+(1991.) 82.8 173.33 T
+(Don Norman and Steve Draper \050eds.\051, \322) 72 155.33 T
+1 F
+(User-Centered Systems Design) 230.75 155.33 T
+0 F
+(\323, Lawrence Erlbaum Associates, 1986.) 355.1 155.33 T
+0.51 (Sean O\325Malley and Larry Peterson, \322) 72 137.33 P
+1 F
+0.51 (A Dynamic Network Architecture) 223.33 137.33 P
+0 F
+0.51 (\323, ACM Transactions on Computer Systems,) 358.38 137.33 P
+(10\0502\051, May 1992.) 82.8 125.33 T
+-0.13 (Andreas Paepcke, \322) 72 107.33 P
+1 F
+-0.13 (PCLOS: A Flexible Implementaton of CLOS Persistance) 150.28 107.33 P
+0 F
+-0.13 (\323, Proc. European Conference on Object-) 376.05 107.33 P
+(Oriented Programming ECOOP\32588, Springer-Verlag, 1988.) 82.8 95.33 T
+0.37 (John Patterson, Ralph Hill, Stephen Rohall and Scott Meeks, \322) 72 77.33 P
+1 F
+0.37 (Rendezvous: An Architecture for Synchronous Multi-) 325.78 77.33 P
+FMENDPAGE
+%%EndPage: "19" 20
+%%Page: "20" 20
+612 792 0 FMBEGINPAGE
+72 36 540 54 R
+7 X
+0 K
+V
+1 10 Q
+0 X
+-0.62 (User Applications) 82.8 713.33 P
+0 F
+-0.62 (\323, in Proc. ACM Conference on Computer-Supported Cooperative Work CSCW\32590, Los Angeles,) 154.64 713.33 P
+(Ca., October 1990.) 82.8 701.33 T
+0.67 (Ramana Rao, \322) 72 683.33 P
+1 F
+0.67 (Implementational Reflection in Silica) 134.13 683.33 P
+0 F
+0.67 (\323, in Proc. European Conference on Object-Oriented Program-) 285.22 683.33 P
+(ming ECOOP\32591, Geneva, Swizerland, 1991.) 82.8 671.33 T
+0.12 (Richard Rashid, Avadis Tevanian, Michael Young, David Golub, Robert Baron, David Black, William Bokosky and) 72 653.33 P
+-0.28 (Jonathan Chew, \322) 82.8 641.33 P
+1 F
+-0.28 (Machine-Independent Virtual Memory Management for Paged Uniprocessor and Multiprocessor) 153.03 641.33 P
+1.09 (Architectures) 82.8 629.33 P
+0 F
+1.09 (\323, in Proc. Conf. Architectural Support for Programming Languages and Operating Systems, Palo) 136.65 629.33 P
+(Alto, Ca., October 1987.) 82.8 617.33 T
+0.24 (Gail Rein and Clarence Ellis, \322) 72 599.33 P
+1 F
+0.24 (rIBIS: A Real-Time Group Hypertext System) 197.01 599.33 P
+0 F
+0.24 (\323, Intl. Journal of Man-Machine Studies,) 376.68 599.33 P
+(34, pp. 349-367, 1991.) 82.8 587.33 T
+0.92 (Jim des Rivi\217res and Brian Smith, \322) 72 569.33 P
+1 F
+0.92 (The Implementation of Procedurally Reflective Languages) 221.03 569.33 P
+0 F
+0.92 (\323, Technical Report) 459.62 569.33 P
+(ISL-4, Xerox PARC, Palo Alto, California, June 1984.) 82.8 557.33 T
+-0.26 (Mark Roseman and Saul Greenberg, \322) 72 539.33 P
+1 F
+-0.26 (GroupKit: A Groupware Toolkit for Building Real-Time Conferencing Applica-) 223.36 539.33 P
+-0.53 (tions) 82.8 527.33 P
+0 F
+-0.53 (\323, Proc. ACM Conference on Computer-Supported Cooperative Work CSCW\32592, Toronto, Canada, November) 102.24 527.33 P
+(1993.) 82.8 515.33 T
+(W. W. Royce, \322) 72 497.33 T
+1 F
+(Managing the Development of Large Software Systems) 135.84 497.33 T
+0 F
+(\323, Proc. WESTCON, Ca., 1970.) 355.69 497.33 T
+(Andrew Shalit, \322) 72 479.33 T
+1 F
+(Dylan: An Object-Oriented Dynamic Language) 139.45 479.33 T
+0 F
+(\323, Apple Computer, Cupertino, Ca., 1992.) 329.87 479.33 T
+-0.06 (Brian Smith, \322) 72 461.33 P
+1 F
+-0.06 (Reflection and Semantics in a Procedural Language) 129.9 461.33 P
+0 F
+-0.06 (\323, Report MIT-TR-272, MIT Laboratory for Com-) 338.85 461.33 P
+(puter Science, Cambridge, Mass., 1982.) 82.8 449.33 T
+-0.44 (Lee Sproull and Sara Kiesler, \322) 72 431.33 P
+1 F
+-0.44 (Connections: New Ways of Working in the Networked Organisation) 194.72 431.33 P
+0 F
+-0.44 (\323, MIT Press, Cam-) 462.75 431.33 P
+(bridge, Mass., 1991.) 82.8 419.33 T
+(Lucy Suchman, \322) 72 401.33 T
+1 F
+(Plans and Situated Actions) 141.67 401.33 T
+0 F
+(\323, Cambridge University Press, Cambridge, UK, 1987.) 249.67 401.33 T
+-0.44 (Lucy Suchman,) 72 383.33 P
+1 F
+-0.44 (\322Technologies of Accountability: Of Lizards and Aeroplanes\323) 136.35 383.33 P
+0 F
+-0.44 (, in Button \050ed.\051, \322Technology in Work-) 383.03 383.33 P
+(ing Order: Studies of Work, Interaction and Technology\323, Routledge, 1992.) 82.8 371.33 T
+-0.34 (Randy Trigg, Tom Moran and Frank Halasz, \322) 72 353.33 P
+1 F
+-0.34 (Adaptability and Tailorability in NoteCards) 255.34 353.33 P
+0 F
+-0.34 (\323, in Proc. Interact\32587, Stut-) 430.04 353.33 P
+(tgart, Germany, 1987.) 82.8 341.33 T
+0.51 (H. Zimmerman,) 72 323.33 P
+1 F
+0.51 (\322OSI Reference Model\321The ISO Model of Architecture for Open Systems Interconnection\323) 139.65 323.33 P
+0 F
+0.51 (, IEEE) 512.84 323.33 P
+(Transactions on Communications, 28\0504\051, pp. 425\320432, April 1980.) 82.8 311.33 T
+FMENDPAGE
+%%EndPage: "20" 21
+%%Trailer
